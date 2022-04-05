@@ -1,0 +1,36 @@
+!SESSION 2022-04-05 15:23:07.721 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-04-05 15:25:06.929
+!MESSAGE Log4j initialized with config file /home/marcel/Documents/semestrVI/WDS/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-04-05 15:25:15.193
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2022-04-05 15:25:15.669
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-04-05 15:32:28.460
+!MESSAGE Indexed 'stm32Project' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-04-05 15:32:48.484
+!MESSAGE Indexed 'stm32Project' (22 sources, 23 headers) in 4.39 sec: 2,313 declarations; 14,228 references; 1 unresolved inclusions; 268 syntax errors; 4,704 unresolved names (22%)
+!SESSION 2022-04-05 16:49:05.000 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-04-05 16:49:34.369
+!MESSAGE Log4j initialized with config file /home/marcel/Documents/semestrVI/WDS/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2022-04-05 16:49:40.314
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-04-05 16:49:40.680
+!MESSAGE Started RMI Server, listening on port 41337
