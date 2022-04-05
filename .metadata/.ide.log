@@ -664,3 +664,7 @@
 2022-04-05 16:50:07,002 [INFO] RetryExec:113 - Retrying request to {s}->https://archive.eclipse.org:443
 2022-04-05 16:50:08,074 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://download.eclipse.org:443: The target server failed to respond
 2022-04-05 16:50:08,075 [INFO] RetryExec:113 - Retrying request to {s}->https://download.eclipse.org:443
+2022-04-05 18:34:04,792 [INFO] Activator:178 - 
+
+
+2022-04-05 18:34:04,794 [INFO] Activator:179 - !SESSION log4j initialized
