@@ -6,6 +6,8 @@
  */
 #include "i2c.h"
 #include"bma2x2.h"
+#include "bma2x2_my.h"
+#include <stdio.h>
 
 struct bma2x2_t bma2x2;
 
@@ -16,7 +18,7 @@ int8_t BMA220_init(void){
 	bma2x2.chip_id=BMA2x2;
 	//bma2x2.ctrl_mode_reg=
 	//bma2x2.low_mode_reg=
-	bma2x2.dev_addr=BMA2x2_I2C_ADDR1;
+	bma2x2.dev_addr=0x00;
 	//bma2x2.fifo_config=
 	bma2x2.bus_read=BMA2x2_I2C_bus_read;
 	bma2x2.bus_write=BMA2x2_I2C_bus_write;
@@ -38,6 +40,7 @@ uint32_t BM220_read_data(void){
 	struct bma2x2_accel_data sample_xyz;
 	bma2x2_read_accel_xyz(&sample_xyz);
 	printf("X = %d Y = %d z= %d",sample_xyz.x,sample_xyz.y,sample_xyz.z);
+	HAL_Delay(1000);
 
 }
 

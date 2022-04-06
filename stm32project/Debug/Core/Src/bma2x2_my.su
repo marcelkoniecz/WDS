@@ -1,0 +1,5 @@
+bma2x2_my.c:14:8:BMA220_init	16	static
+bma2x2_my.c:37:10:BM220_read_data	16	static
+bma2x2_my.c:47:6:BMA2x2_delay_msek	16	static
+bma2x2_my.c:52:8:BMA2x2_I2C_bus_read	32	static
+bma2x2_my.c:57:8:BMA2x2_I2C_bus_write	40	static

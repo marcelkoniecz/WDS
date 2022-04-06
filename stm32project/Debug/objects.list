@@ -1,3 +1,6 @@
+"Core/Src/bma220.o"
+"Core/Src/bma2x2.o"
+"Core/Src/bma2x2_my.o"
 "Core/Src/gpio.o"
 "Core/Src/i2c.o"
 "Core/Src/main.o"
