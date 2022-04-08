@@ -1,5 +1,5 @@
 bma220.c:10:9:BMA220_Init	24	static
-bma220.c:50:19:BMA220_ReadAcc	24	static
-bma220.c:75:19:BMA220_ReadRegister	40	static
-bma220.c:79:19:BMA220_ReadRegisters	40	static
-bma220.c:83:19:BMA220_WriteRegister	40	static
+bma220.c:53:19:BMA220_ReadAcc	24	static
+bma220.c:78:19:BMA220_ReadRegister	40	static
+bma220.c:82:19:BMA220_ReadRegisters	40	static
+bma220.c:86:19:BMA220_WriteRegister	40	static

@@ -10,9 +10,12 @@
 uint8_t BMA220_Init(BMA220 *dev, I2C_HandleTypeDef *i2cHandle){
 	dev->i2cHandle=hi2c1;
 
-	dev->accData[0]=0.3f;
-	dev->accData[1]=0.3f;
-	dev->accData[2]=0.3f;
+	dev->accData[0]=0;
+	dev->accData[1]=0;
+	dev->accData[2]=0;
+	//dev->accData[0]=0.3f;
+	//dev->accData[1]=0.3f;
+	//dev->accData[2]=0.3f;
 
 	uint8_t errNum=0; //Liczba bledow
 	HAL_StatusTypeDef status;
@@ -40,7 +43,7 @@ uint8_t BMA220_Init(BMA220 *dev, I2C_HandleTypeDef *i2cHandle){
 
 	//Setting 4g
 
-	regData=0x00;
+	regData=G4_MES;
 	status =BMA220_ReadRegister(dev,0x22,&regData);
 	errNum+=(status!=HAL_OK);
 
@@ -55,18 +58,18 @@ HAL_StatusTypeDef BMA220_ReadAcc(BMA220 *dev){
 	status=BMA220_ReadRegister(dev,BMA220_REG_ACC_X,&data);
 	errNum+=(status!=HAL_OK);
 //	dev->accData[0]=data*0.0625*9.81;
-	dev->accData[0]=data;
-
-	status=BMA220_ReadRegister(dev,BMA220_REG_ACC_X,&data);
+	dev->accData[0]=(data>>2);
+	//dev->accData[0]=data;
+	status=BMA220_ReadRegister(dev,BMA220_REG_ACC_Y,&data);
 	errNum+=(status!=HAL_OK);
 //	dev->accData[1]=data*0.0625*9.81;
-	dev->accData[1]=data;
-
-	status=BMA220_ReadRegister(dev,BMA220_REG_ACC_X,&data);
+	dev->accData[1]=(data>>2);
+	//dev->accData[1]=data;
+	status=BMA220_ReadRegister(dev,BMA220_REG_ACC_Z,&data);
 	errNum+=(status!=HAL_OK);
 //	dev->accData[2]=data*0.0625*9.81;
-	dev->accData[2]=data;
-
+	dev->accData[2]=(data>>2);
+	//dev->accData[2]=data;
 	return errNum;
 
 }

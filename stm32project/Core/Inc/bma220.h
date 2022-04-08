@@ -15,8 +15,13 @@
 #define CHIP_ID 	0xDD
 #define REVISION_ID 0x00
 
-#define BMA220_REG_CHIP_ID 	0x00
-#define BMA220_REG_REV_ID 	0x02
+#define G2_MES		0x00
+#define G4_MES		0x01
+#define G8_MES		0x02
+#define G16_MES		0x03
+
+#define BMA220_REG_CHIP_ID 		0x00
+#define BMA220_REG_REV_ID 		0x02
 #define BMA220_REG_ACC_X 		0x04
 #define BMA220_REG_ACC_Y 		0x06
 #define BMA220_REG_ACC_Z		0x08
@@ -27,7 +32,7 @@ typedef struct{
 
 	//Acceleration data
 
-	float accData[3];
+	int8_t accData[3];
 
 }BMA220;
 
