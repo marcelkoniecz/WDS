@@ -29,6 +29,7 @@
 //#include "bma2x2_my.h"
 #include <stdio.h>
 #include "bma220.h"
+#include "crc8.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -105,7 +106,8 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  BMA220_ReadAcc(&acc);
-	 printf("X = %d, Y= %d, Z= %d \n\r",acc.accData[0],acc.accData[1],acc.accData[2]);
+	  printValues(acc);
+	 //printf("%d %d %d",acc.accData[0],acc.accData[1],acc.accData[2]);
 	  // printf("X  d Y d Z d/n");
 	 HAL_Delay(1000);
   }

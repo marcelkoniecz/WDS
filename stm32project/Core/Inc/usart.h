@@ -39,7 +39,9 @@ extern UART_HandleTypeDef huart2;
 void MX_USART2_UART_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-int _write(int file,char *ptr,int len);
+//uint16_t CRCSingleByte(uint16_t data);
+//uint16_t CalculateCRC8(uint8_t *ptr, uint32_t len);
+//int _write(int file,char *ptr,int len);
 //	int __io_putchar(int ch);
 /* USER CODE END Prototypes */
 

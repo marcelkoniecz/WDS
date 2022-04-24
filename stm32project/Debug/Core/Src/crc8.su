@@ -1,0 +1,3 @@
+crc8.c:13:10:CRCSingleByte	24	static
+crc8.c:23:10:CalculateCRC8	24	static
+crc8.c:34:6:printValues	32	static
