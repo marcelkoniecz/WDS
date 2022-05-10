@@ -4,12 +4,18 @@
 #include <QtWidgets>
 #include <QLabel>
 #include "inc/odczyt.hpp"
-#include "inc/crc8.hpp"
+//#include "inc/crc8.hpp"
+
+//#include "oknogry.hpp"
+#include "widgetgry.hpp"
 
 int main(int argc, char *argv[])
 {
     QApplication App(argc,argv);
-    UARTWindow Start;
+    //UARTWindow Start;
+    
+    gameWindow Start;
+
     Start.show();
     return App.exec();
 }

@@ -1,4 +1,4 @@
-#include "inc/crc8.hpp"
+/*#include "inc/crc8.hpp"
 #include "cstring"
 
 
@@ -22,3 +22,4 @@ uint16_t CalculateCRC8( char *ptr) {
 	data = CRCSingleByte(data);
 	return (data >> 8);
 }
+*/

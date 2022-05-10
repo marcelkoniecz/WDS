@@ -16,7 +16,6 @@ uint16_t CRCSingleByte(uint16_t data) {
 }
 
 uint16_t CalculateCRC8(char* ptr) {
-    //	std::cout<<ptr;
     uint16_t data = ptr[0] << 8;
 
     for (int i = 1; i < strlen(ptr); i++) {
@@ -32,15 +31,14 @@ uint16_t CalculateCRC8(char* ptr) {
 UARTWindow::UARTWindow(QWidget* parent) {
     this->CentralWidget = new UARTRead(this);
     this->device = new QSerialPort(this);
-    //statusBar->showMessage(tr("Odczyt UART"));
     setCentralWidget(CentralWidget);
     resize(600, 400);
     connect(CentralWidget, SIGNAL(EmitClosing()), this, SLOT(close()));
     connect(CentralWidget, SIGNAL(EmitStartUART()), this, SLOT(ConnectDevice()));
 }
 
+
 void UARTWindow::ConnectDevice() {
-    // std::cout<<"jestem tu";
     if (device->isOpen()) {
         CentralWidget->EditText("Closing conection");
         device->close();
@@ -77,14 +75,13 @@ void UARTWindow::ConnectDevice() {
         CentralWidget->EditText("Can't connect with device");
     }
 }
-//UARTWindow::addToLogs(QString message){}
 
 void UARTWindow::ReadTransmision() {
     uint16_t CRC8;
     std::string str;
     QString hexCRC8;
     QString terminator = " ";
-    QString lineWOHex; //line without hex code at end
+    QString lineWOHex;          //line without hex code at end
     while (this->device->canReadLine()) {
         QString line = this->device->readLine();
         if (line.at(0) != "X")
@@ -93,29 +90,11 @@ void UARTWindow::ReadTransmision() {
         lineWOHex = line.left(pos1);
         int pos2 = lineWOHex.lastIndexOf(terminator);
         lineWOHex = line.left(pos2);
-        // qDebug() <<line.left(pos2);
-        // qDebug() <<pos1<<pos2<< line.mid(pos2+1,pos1-1)<<line.length();
         str = line.left(pos2).toStdString();
         CRC8 = CalculateCRC8(const_cast<char*>(str.c_str()));
-
-        hexCRC8 = QString::number(CRC8, 16).toUpper();
-        //qDebug()<<"Bez ifa "<<hexCRC8<<line.mid(pos2+1,pos1-1);
+        hexCRC8 = QString::number(CRC8, 16).toUpper(); //Cast uint16_t to Qstring
         if (hexCRC8 == line.mid(pos2 + 1, pos1 - 1).trimmed())
-            this->CentralWidget->EditText(lineWOHex);
-
-        //qDebug() <<CRC8<<hexCRC8;
-       // = QString("%1").arg(CRC8,8,16);
-       // sprintf(CRC8Convert,"%X",CRC8);
-        //qDebug() <<CRC8<<line.mid(pos2+1,pos1-1);
-        //qDebug()<<hexCRC8;
-      //  qDebug() <<CRC8Convert<<lineWOHex.toUtf8();
-        //qDebug()<<line.mid(9,10);
-        //std::cout << str;
-        // str=line.mid(10,11);
-        // if(str==)
-        // qDebug()<<line.left((line.length()-2))<<HEX<<CRC8;
-        //qDebug() << line.left(pos);
-
+            this->CentralWidget->EditText(line.left(line.length()-2));
     }
 
 }
@@ -140,17 +119,16 @@ UARTRead::UARTRead(QWidget* parent) :QWidget(parent)
 }
 
 
-//Functions
+//Funkcje
 
 void UARTRead::EditText(QString textToWrite) {
     this->text->append(textToWrite + "\t");
     //this->text->setText(textToWrite);
 }
 
-//Slots
+//Sloty
 
 void UARTRead::EndProgram() {
-    //static_cast<QWidget*>(parent())->close();
     std::cout << std::endl << "Koniec programu" << std::endl;
     emit EmitClosing();
 }
@@ -158,6 +136,5 @@ void UARTRead::EndProgram() {
 void UARTRead::StartTransmit() {
     std::cout << std::endl << "Nacisniecie szukania" << std::endl;
     emit EmitStartUART();
-    //EditText("tak\t");
 }
 
