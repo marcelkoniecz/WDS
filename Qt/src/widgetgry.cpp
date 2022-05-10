@@ -25,11 +25,11 @@ void mainGameWidget::paintEvent(QPaintEvent*) {
 
 
 gameWidget::gameWidget(QWidget* parent) :QWidget(parent) {
-  oknogry = new mainGameWidget(this);
+  //oknogry = new mainGameWidget(this);
   timer = new QTimer(this);
   accTime.setHMS(0, 0, 0);
   setupUi(this);
-  gameBox->addWidget(oknogry);
+ // gameBox->addWidget(oknogry);
   pauzeGame->setText("Start");
  //pauzeGame->setObjectName(QStringLiteral("Start game"));
 

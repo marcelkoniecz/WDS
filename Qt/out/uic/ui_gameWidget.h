@@ -27,7 +27,7 @@ QT_BEGIN_NAMESPACE
 class Ui_gameWidget
 {
 public:
-    QWidget *verticalLayoutWidget_2;
+    QVBoxLayout *verticalLayout;
     QVBoxLayout *infoBox;
     QSpacerItem *verticalSpacer_5;
     QHBoxLayout *horizontalLayout_2;
@@ -45,21 +45,16 @@ public:
     QSpacerItem *verticalSpacer_3;
     QPushButton *exitAplication;
     QSpacerItem *verticalSpacer_4;
-    QWidget *verticalLayoutWidget;
-    QVBoxLayout *gameBox;
 
     void setupUi(QWidget *gameWidget)
     {
         if (gameWidget->objectName().isEmpty())
             gameWidget->setObjectName(QStringLiteral("gameWidget"));
-        gameWidget->resize(664, 418);
-        gameWidget->setInputMethodHints(Qt::ImhNone);
-        verticalLayoutWidget_2 = new QWidget(gameWidget);
-        verticalLayoutWidget_2->setObjectName(QStringLiteral("verticalLayoutWidget_2"));
-        verticalLayoutWidget_2->setGeometry(QRect(500, 40, 141, 271));
-        infoBox = new QVBoxLayout(verticalLayoutWidget_2);
+        gameWidget->resize(216, 311);
+        verticalLayout = new QVBoxLayout(gameWidget);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        infoBox = new QVBoxLayout();
         infoBox->setObjectName(QStringLiteral("infoBox"));
-        infoBox->setContentsMargins(0, 0, 0, 0);
         verticalSpacer_5 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         infoBox->addItem(verticalSpacer_5);
@@ -70,7 +65,7 @@ public:
 
         horizontalLayout_2->addItem(horizontalSpacer_3);
 
-        gameTimeLabel = new QLabel(verticalLayoutWidget_2);
+        gameTimeLabel = new QLabel(gameWidget);
         gameTimeLabel->setObjectName(QStringLiteral("gameTimeLabel"));
 
         horizontalLayout_2->addWidget(gameTimeLabel);
@@ -88,7 +83,7 @@ public:
 
         horizontalLayout_3->addItem(horizontalSpacer);
 
-        lineEdit = new QLineEdit(verticalLayoutWidget_2);
+        lineEdit = new QLineEdit(gameWidget);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
         lineEdit->setAlignment(Qt::AlignCenter);
 
@@ -105,7 +100,7 @@ public:
 
         infoBox->addItem(verticalSpacer);
 
-        pauzeGame = new QPushButton(verticalLayoutWidget_2);
+        pauzeGame = new QPushButton(gameWidget);
         pauzeGame->setObjectName(QStringLiteral("pauzeGame"));
 
         infoBox->addWidget(pauzeGame);
@@ -114,7 +109,7 @@ public:
 
         infoBox->addItem(verticalSpacer_2);
 
-        endGame = new QPushButton(verticalLayoutWidget_2);
+        endGame = new QPushButton(gameWidget);
         endGame->setObjectName(QStringLiteral("endGame"));
 
         infoBox->addWidget(endGame);
@@ -123,7 +118,7 @@ public:
 
         infoBox->addItem(verticalSpacer_3);
 
-        exitAplication = new QPushButton(verticalLayoutWidget_2);
+        exitAplication = new QPushButton(gameWidget);
         exitAplication->setObjectName(QStringLiteral("exitAplication"));
 
         infoBox->addWidget(exitAplication);
@@ -132,12 +127,9 @@ public:
 
         infoBox->addItem(verticalSpacer_4);
 
-        verticalLayoutWidget = new QWidget(gameWidget);
-        verticalLayoutWidget->setObjectName(QStringLiteral("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(20, 20, 471, 391));
-        gameBox = new QVBoxLayout(verticalLayoutWidget);
-        gameBox->setObjectName(QStringLiteral("gameBox"));
-        gameBox->setContentsMargins(0, 0, 0, 0);
+
+        verticalLayout->addLayout(infoBox);
+
 
         retranslateUi(gameWidget);
 
