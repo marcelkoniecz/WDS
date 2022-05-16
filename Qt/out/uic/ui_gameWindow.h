@@ -15,49 +15,85 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
-class Ui_MainWindow
+class Ui_gameWindow
 {
 public:
+    QAction *actionUstawienia;
+    QAction *actionPolaczenie;
+    QAction *actionSettings;
+    QAction *actionConnect;
+    QAction *actionDisconnect;
     QWidget *centralwidget;
     QMenuBar *menubar;
+    QMenu *menuUstawienia_gry;
+    QMenu *menuPolaczenie;
     QStatusBar *statusbar;
 
-    void setupUi(QMainWindow *MainWindow)
+    void setupUi(QMainWindow *gameWindow)
     {
-        if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(800, 600);
-        centralwidget = new QWidget(MainWindow);
+        if (gameWindow->objectName().isEmpty())
+            gameWindow->setObjectName(QStringLiteral("gameWindow"));
+        gameWindow->resize(800, 600);
+        actionUstawienia = new QAction(gameWindow);
+        actionUstawienia->setObjectName(QStringLiteral("actionUstawienia"));
+        actionPolaczenie = new QAction(gameWindow);
+        actionPolaczenie->setObjectName(QStringLiteral("actionPolaczenie"));
+        actionSettings = new QAction(gameWindow);
+        actionSettings->setObjectName(QStringLiteral("actionSettings"));
+        actionConnect = new QAction(gameWindow);
+        actionConnect->setObjectName(QStringLiteral("actionConnect"));
+        actionDisconnect = new QAction(gameWindow);
+        actionDisconnect->setObjectName(QStringLiteral("actionDisconnect"));
+        centralwidget = new QWidget(gameWindow);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
-        MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
+        centralwidget->setEnabled(true);
+        gameWindow->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(gameWindow);
         menubar->setObjectName(QStringLiteral("menubar"));
         menubar->setGeometry(QRect(0, 0, 800, 22));
-        MainWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(MainWindow);
+        menuUstawienia_gry = new QMenu(menubar);
+        menuUstawienia_gry->setObjectName(QStringLiteral("menuUstawienia_gry"));
+        menuPolaczenie = new QMenu(menubar);
+        menuPolaczenie->setObjectName(QStringLiteral("menuPolaczenie"));
+        gameWindow->setMenuBar(menubar);
+        statusbar = new QStatusBar(gameWindow);
         statusbar->setObjectName(QStringLiteral("statusbar"));
-        MainWindow->setStatusBar(statusbar);
+        gameWindow->setStatusBar(statusbar);
 
-        retranslateUi(MainWindow);
+        menubar->addAction(menuUstawienia_gry->menuAction());
+        menubar->addAction(menuPolaczenie->menuAction());
+        menuUstawienia_gry->addAction(actionSettings);
+        menuPolaczenie->addAction(actionConnect);
+        menuPolaczenie->addAction(actionDisconnect);
 
-        QMetaObject::connectSlotsByName(MainWindow);
+        retranslateUi(gameWindow);
+
+        QMetaObject::connectSlotsByName(gameWindow);
     } // setupUi
 
-    void retranslateUi(QMainWindow *MainWindow)
+    void retranslateUi(QMainWindow *gameWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
+        gameWindow->setWindowTitle(QApplication::translate("gameWindow", "MainWindow", Q_NULLPTR));
+        actionUstawienia->setText(QApplication::translate("gameWindow", "Ustawienia", Q_NULLPTR));
+        actionPolaczenie->setText(QApplication::translate("gameWindow", "Polaczenie", Q_NULLPTR));
+        actionSettings->setText(QApplication::translate("gameWindow", "Settings", Q_NULLPTR));
+        actionConnect->setText(QApplication::translate("gameWindow", "Connect", Q_NULLPTR));
+        actionDisconnect->setText(QApplication::translate("gameWindow", "Disconnect", Q_NULLPTR));
+        menuUstawienia_gry->setTitle(QApplication::translate("gameWindow", "Game Settings", Q_NULLPTR));
+        menuPolaczenie->setTitle(QApplication::translate("gameWindow", "Connectivity", Q_NULLPTR));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class MainWindow: public Ui_MainWindow {};
+    class gameWindow: public Ui_gameWindow {};
 } // namespace Ui
 
 QT_END_NAMESPACE

@@ -47,7 +47,7 @@
        <item>
         <widget class="QLabel" name="gameTimeLabel">
          <property name="text">
-          <string>Czas gry</string>
+          <string>Game time</string>
          </property>
         </widget>
        </item>
@@ -122,7 +122,7 @@
      <item>
       <widget class="QPushButton" name="pauzeGame">
        <property name="text">
-        <string>Pauza</string>
+        <string>Pause</string>
        </property>
       </widget>
      </item>
@@ -142,7 +142,7 @@
      <item>
       <widget class="QPushButton" name="endGame">
        <property name="text">
-        <string>Koniec gry</string>
+        <string>End game</string>
        </property>
       </widget>
      </item>
@@ -162,7 +162,7 @@
      <item>
       <widget class="QPushButton" name="exitAplication">
        <property name="text">
-        <string>Wyjdz z aplikacji</string>
+        <string>Exit application</string>
        </property>
       </widget>
      </item>

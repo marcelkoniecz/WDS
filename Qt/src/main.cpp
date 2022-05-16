@@ -3,7 +3,7 @@
 #include <QtSerialPort/QtSerialPort>
 #include <QtWidgets>
 #include <QLabel>
-#include "inc/odczyt.hpp"
+//#include "odczyt.hpp"
 //#include "inc/crc8.hpp"
 
 //#include "oknogry.hpp"

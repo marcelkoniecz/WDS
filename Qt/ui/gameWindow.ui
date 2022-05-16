@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>gameWindow</class>
+ <widget class="QMainWindow" name="gameWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,7 +13,11 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -23,8 +27,48 @@
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuUstawienia_gry">
+    <property name="title">
+     <string>Game Settings</string>
+    </property>
+    <addaction name="actionSettings"/>
+   </widget>
+   <widget class="QMenu" name="menuPolaczenie">
+    <property name="title">
+     <string>Connectivity</string>
+    </property>
+    <addaction name="actionConnect"/>
+    <addaction name="actionDisconnect"/>
+   </widget>
+   <addaction name="menuUstawienia_gry"/>
+   <addaction name="menuPolaczenie"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionUstawienia">
+   <property name="text">
+    <string>Ustawienia</string>
+   </property>
+  </action>
+  <action name="actionPolaczenie">
+   <property name="text">
+    <string>Polaczenie</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="text">
+    <string>Disconnect</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

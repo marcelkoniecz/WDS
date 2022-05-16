@@ -14,18 +14,39 @@
 #include <QPainter>
 #include <QImage>
 #include <QTimer>
+#include <QDialog>
+#include "odczyt.hpp"
 #include "ui_gameWidget.h"
-//#include "ui_aplicationmainwindow.h"
+#include "ui_gameWindow.h"
+#include "ui_disDialog.h"
+#include "ui_conDialog.h"
 
-/*
-class Test :public QMainWindow,public Ui::MainWindow {
 
+class disDialog :public QDialog, public Ui::disDialog {
+    Q_OBJECT
 public:
-    Test() {
-        setupUi(this);
-    }
+    disDialog();
+
 };
-*/
+
+class conDialog :public QDialog, public Ui::conDialog {
+    Q_OBJECT
+        QList<QSerialPortInfo> portList;
+public:
+    conDialog();
+public slots:
+    //void searchDev();
+    //void chooseDev();
+    void on_searchDeviceButton_clicked();
+     void on_cancelButton_clicked();
+    // void on_connectButton_clicked();
+
+signals:
+    //void EmitSearchDev();
+    void EmitChooseDev();
+};
+
+//Pole gry
 class mainGameWidget :public QWidget {
     Q_OBJECT
         QImage background;
@@ -34,17 +55,16 @@ class mainGameWidget :public QWidget {
     QImage ball;
 public:
     mainGameWidget(QWidget* parent = nullptr);
-    void paintEvent(QPaintEvent *ptr);
-  //  virtual void resizeEvent( QResizeEvent * event ) override;
-
+    void paintEvent(QPaintEvent* ptr);
 };
 
+//panel boczny
 class gameWidget :public QWidget, public Ui::gameWidget {
     Q_OBJECT
-    mainGameWidget  *oknogry;
-    QTimer *timer;
+        mainGameWidget* oknogry;
+    QTimer* timer;
     QTime accTime;
-    bool isStarted=0;
+    bool isStarted = 0;
 public:
     gameWidget(QWidget* parent = nullptr);
 
@@ -55,16 +75,39 @@ public slots:
     void EndGame();
 signals:
     void EmitClosing();
-   // virtual void resizeEvent( QResizeEvent * event ) override;
 };
 
-class gameWindow :public QMainWindow {
+//Widget zawierajacy pole gry oraz panel boczny
+class mainWidget :public QWidget {
+    Q_OBJECT
+        mainGameWidget* okienko;
+
+public:
+    gameWidget* statystyki;
+    mainWidget(QWidget* parent = nullptr);
+};
+
+
+//Okno 
+class gameWindow :public QMainWindow, public Ui::gameWindow {
     Q_OBJECT
         QSerialPort* device;
-    gameWidget* CentralWidget;
+    mainWidget* CentralWidget;
+    //QMenuBar *menuBar;
+    //QMenu *menuUstawienia;
+    QDialog* connectionDialog;
+    // QDialog *disconnectionDialog;
+    QDialog* settingsDialog;
 public:
     gameWindow(QWidget* parent = nullptr);
     //  virtual ~gameWindow() = default;
+
+public slots:
+    void on_actionSettings_triggered();
+    void on_actionConnect_triggered();
+    void on_actionDisconnect_triggered();
 };
+
+
 
 #endif

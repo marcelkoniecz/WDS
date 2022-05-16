@@ -56,7 +56,8 @@ SOURCES       = src/crc8.cpp \
 		src/okno.cpp \
 		src/oknogry.cpp \
 		src/test.cpp \
-		src/widgetgry.cpp out/moc/moc_odczyt.cpp \
+		src/widgetgry.cpp out/rcc/qrc_zasoby.cpp \
+		out/moc/moc_odczyt.cpp \
 		out/moc/moc_widgetgry.cpp
 OBJECTS       = out/obj/crc8.o \
 		out/obj/main.o \
@@ -65,6 +66,7 @@ OBJECTS       = out/obj/crc8.o \
 		out/obj/oknogry.o \
 		out/obj/test.o \
 		out/obj/widgetgry.o \
+		out/obj/qrc_zasoby.o \
 		out/obj/moc_odczyt.o \
 		out/obj/moc_widgetgry.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
@@ -161,7 +163,7 @@ TARGET        = gra
 first: all
 ####### Build rules
 
-$(TARGET): out/uic/ui_aplicationmainwindow.h out/uic/ui_gameWidget.h out/uic/ui_gameWindow.h $(OBJECTS)  
+$(TARGET): out/uic/ui_aplicationmainwindow.h out/uic/ui_conDialog.h out/uic/ui_disDialog.h out/uic/ui_gameWidget.h out/uic/ui_gameWidgetv2.h out/uic/ui_gameWindow.h $(OBJECTS)  
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
 Makefile.app: out/pro/gra.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
@@ -239,6 +241,7 @@ Makefile.app: out/pro/gra.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qm
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
 		out/pro/gra.pro \
+		res/zasoby.qrc \
 		/usr/lib/x86_64-linux-gnu/libQt5Widgets.prl \
 		/usr/lib/x86_64-linux-gnu/libQt5Gui.prl \
 		/usr/lib/x86_64-linux-gnu/libQt5SerialPort.prl \
@@ -319,6 +322,7 @@ Makefile.app: out/pro/gra.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qm
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf:
 out/pro/gra.pro:
+res/zasoby.qrc:
 /usr/lib/x86_64-linux-gnu/libQt5Widgets.prl:
 /usr/lib/x86_64-linux-gnu/libQt5Gui.prl:
 /usr/lib/x86_64-linux-gnu/libQt5SerialPort.prl:
@@ -337,10 +341,11 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
+	$(COPY_FILE) --parents res/zasoby.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents inc/crc8.hpp inc/odczyt.hpp inc/okno.hpp inc/oknogry.hpp inc/test.hpp inc/widgetgry.hpp $(DISTDIR)/
 	$(COPY_FILE) --parents src/crc8.cpp src/main.cpp src/odczyt.cpp src/okno.cpp src/oknogry.cpp src/test.cpp src/widgetgry.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ui/aplicationmainwindow.ui ui/gameWidget.ui ui/gameWindow.ui $(DISTDIR)/
+	$(COPY_FILE) --parents ui/aplicationmainwindow.ui ui/conDialog.ui ui/disDialog.ui ui/gameWidget.ui ui/gameWidgetv2.ui ui/gameWindow.ui $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -364,8 +369,15 @@ check: first
 
 benchmark: first
 
-compiler_rcc_make_all:
+compiler_rcc_make_all: out/rcc/qrc_zasoby.cpp
 compiler_rcc_clean:
+	-$(DEL_FILE) out/rcc/qrc_zasoby.cpp
+out/rcc/qrc_zasoby.cpp: res/zasoby.qrc \
+		/usr/lib/qt5/bin/rcc \
+		res/img/plytka.png \
+		res/img/tlo.png
+	/usr/lib/qt5/bin/rcc -name zasoby res/zasoby.qrc -o out/rcc/qrc_zasoby.cpp
+
 compiler_moc_predefs_make_all: out/moc/moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) out/moc/moc_predefs.h
@@ -380,7 +392,10 @@ out/moc/moc_odczyt.cpp: inc/odczyt.hpp \
 		/usr/lib/qt5/bin/moc
 	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/odczyt.hpp -o out/moc/moc_odczyt.cpp
 
-out/moc/moc_widgetgry.cpp: out/uic/ui_gameWidget.h \
+out/moc/moc_widgetgry.cpp: inc/odczyt.hpp \
+		out/uic/ui_gameWidget.h \
+		out/uic/ui_gameWindow.h \
+		out/uic/ui_disDialog.h \
 		inc/widgetgry.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
@@ -388,16 +403,28 @@ out/moc/moc_widgetgry.cpp: out/uic/ui_gameWidget.h \
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: out/uic/ui_aplicationmainwindow.h out/uic/ui_gameWidget.h out/uic/ui_gameWindow.h
+compiler_uic_make_all: out/uic/ui_aplicationmainwindow.h out/uic/ui_conDialog.h out/uic/ui_disDialog.h out/uic/ui_gameWidget.h out/uic/ui_gameWidgetv2.h out/uic/ui_gameWindow.h
 compiler_uic_clean:
-	-$(DEL_FILE) out/uic/ui_aplicationmainwindow.h out/uic/ui_gameWidget.h out/uic/ui_gameWindow.h
+	-$(DEL_FILE) out/uic/ui_aplicationmainwindow.h out/uic/ui_conDialog.h out/uic/ui_disDialog.h out/uic/ui_gameWidget.h out/uic/ui_gameWidgetv2.h out/uic/ui_gameWindow.h
 out/uic/ui_aplicationmainwindow.h: ui/aplicationmainwindow.ui \
 		/usr/lib/qt5/bin/uic
 	/usr/lib/qt5/bin/uic ui/aplicationmainwindow.ui -o out/uic/ui_aplicationmainwindow.h
 
+out/uic/ui_conDialog.h: ui/conDialog.ui \
+		/usr/lib/qt5/bin/uic
+	/usr/lib/qt5/bin/uic ui/conDialog.ui -o out/uic/ui_conDialog.h
+
+out/uic/ui_disDialog.h: ui/disDialog.ui \
+		/usr/lib/qt5/bin/uic
+	/usr/lib/qt5/bin/uic ui/disDialog.ui -o out/uic/ui_disDialog.h
+
 out/uic/ui_gameWidget.h: ui/gameWidget.ui \
 		/usr/lib/qt5/bin/uic
 	/usr/lib/qt5/bin/uic ui/gameWidget.ui -o out/uic/ui_gameWidget.h
+
+out/uic/ui_gameWidgetv2.h: ui/gameWidgetv2.ui \
+		/usr/lib/qt5/bin/uic
+	/usr/lib/qt5/bin/uic ui/gameWidgetv2.ui -o out/uic/ui_gameWidgetv2.h
 
 out/uic/ui_gameWindow.h: ui/gameWindow.ui \
 		/usr/lib/qt5/bin/uic
@@ -409,16 +436,18 @@ compiler_yacc_impl_make_all:
 compiler_yacc_impl_clean:
 compiler_lex_make_all:
 compiler_lex_clean:
-compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_uic_clean 
+compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_header_clean compiler_uic_clean 
 
 ####### Compile
 
 out/obj/crc8.o: src/crc8.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/crc8.o src/crc8.cpp
 
-out/obj/main.o: src/main.cpp inc/odczyt.hpp \
-		inc/widgetgry.hpp \
-		out/uic/ui_gameWidget.h
+out/obj/main.o: src/main.cpp inc/widgetgry.hpp \
+		inc/odczyt.hpp \
+		out/uic/ui_gameWidget.h \
+		out/uic/ui_gameWindow.h \
+		out/uic/ui_disDialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/main.o src/main.cpp
 
 out/obj/odczyt.o: src/odczyt.cpp inc/odczyt.hpp
@@ -434,8 +463,14 @@ out/obj/test.o: src/test.cpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/test.o src/test.cpp
 
 out/obj/widgetgry.o: src/widgetgry.cpp inc/widgetgry.hpp \
-		out/uic/ui_gameWidget.h
+		inc/odczyt.hpp \
+		out/uic/ui_gameWidget.h \
+		out/uic/ui_gameWindow.h \
+		out/uic/ui_disDialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/widgetgry.o src/widgetgry.cpp
+
+out/obj/qrc_zasoby.o: out/rcc/qrc_zasoby.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/qrc_zasoby.o out/rcc/qrc_zasoby.cpp
 
 out/obj/moc_odczyt.o: out/moc/moc_odczyt.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/moc_odczyt.o out/moc/moc_odczyt.cpp

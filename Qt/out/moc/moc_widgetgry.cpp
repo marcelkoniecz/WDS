@@ -20,6 +20,195 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
+struct qt_meta_stringdata_disDialog_t {
+    QByteArrayData data[1];
+    char stringdata0[10];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_disDialog_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_disDialog_t qt_meta_stringdata_disDialog = {
+    {
+QT_MOC_LITERAL(0, 0, 9) // "disDialog"
+
+    },
+    "disDialog"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_disDialog[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+void disDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject disDialog::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_disDialog.data,
+      qt_meta_data_disDialog,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *disDialog::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *disDialog::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_disDialog.stringdata0))
+        return static_cast<void*>(this);
+    if (!strcmp(_clname, "Ui::disDialog"))
+        return static_cast< Ui::disDialog*>(this);
+    return QDialog::qt_metacast(_clname);
+}
+
+int disDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QDialog::qt_metacall(_c, _id, _a);
+    return _id;
+}
+struct qt_meta_stringdata_conDialog_t {
+    QByteArrayData data[5];
+    char stringdata0[79];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_conDialog_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_conDialog_t qt_meta_stringdata_conDialog = {
+    {
+QT_MOC_LITERAL(0, 0, 9), // "conDialog"
+QT_MOC_LITERAL(1, 10, 13), // "EmitChooseDev"
+QT_MOC_LITERAL(2, 24, 0), // ""
+QT_MOC_LITERAL(3, 25, 29), // "on_searchDeviceButton_clicked"
+QT_MOC_LITERAL(4, 55, 23) // "on_cancelButton_clicked"
+
+    },
+    "conDialog\0EmitChooseDev\0\0"
+    "on_searchDeviceButton_clicked\0"
+    "on_cancelButton_clicked"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_conDialog[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       3,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       1,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags
+       1,    0,   29,    2, 0x06 /* Public */,
+
+ // slots: name, argc, parameters, tag, flags
+       3,    0,   30,    2, 0x0a /* Public */,
+       4,    0,   31,    2, 0x0a /* Public */,
+
+ // signals: parameters
+    QMetaType::Void,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+
+       0        // eod
+};
+
+void conDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        conDialog *_t = static_cast<conDialog *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->EmitChooseDev(); break;
+        case 1: _t->on_searchDeviceButton_clicked(); break;
+        case 2: _t->on_cancelButton_clicked(); break;
+        default: ;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            typedef void (conDialog::*_t)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&conDialog::EmitChooseDev)) {
+                *result = 0;
+                return;
+            }
+        }
+    }
+    Q_UNUSED(_a);
+}
+
+const QMetaObject conDialog::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_conDialog.data,
+      qt_meta_data_conDialog,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *conDialog::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *conDialog::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_conDialog.stringdata0))
+        return static_cast<void*>(this);
+    if (!strcmp(_clname, "Ui::conDialog"))
+        return static_cast< Ui::conDialog*>(this);
+    return QDialog::qt_metacast(_clname);
+}
+
+int conDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QDialog::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 3)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 3;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 3)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 3;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void conDialog::EmitChooseDev()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
 struct qt_meta_stringdata_mainGameWidget_t {
     QByteArrayData data[1];
     char stringdata0[15];
@@ -214,25 +403,25 @@ void gameWidget::EmitClosing()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
-struct qt_meta_stringdata_gameWindow_t {
+struct qt_meta_stringdata_mainWidget_t {
     QByteArrayData data[1];
     char stringdata0[11];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_gameWindow_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_mainWidget_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_gameWindow_t qt_meta_stringdata_gameWindow = {
+static const qt_meta_stringdata_mainWidget_t qt_meta_stringdata_mainWidget = {
     {
-QT_MOC_LITERAL(0, 0, 10) // "gameWindow"
+QT_MOC_LITERAL(0, 0, 10) // "mainWidget"
 
     },
-    "gameWindow"
+    "mainWidget"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_gameWindow[] = {
+static const uint qt_meta_data_mainWidget[] = {
 
  // content:
        7,       // revision
@@ -248,11 +437,100 @@ static const uint qt_meta_data_gameWindow[] = {
        0        // eod
 };
 
-void gameWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void mainWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
     Q_UNUSED(_id);
     Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject mainWidget::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_mainWidget.data,
+      qt_meta_data_mainWidget,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *mainWidget::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *mainWidget::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_mainWidget.stringdata0))
+        return static_cast<void*>(this);
+    return QWidget::qt_metacast(_clname);
+}
+
+int mainWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QWidget::qt_metacall(_c, _id, _a);
+    return _id;
+}
+struct qt_meta_stringdata_gameWindow_t {
+    QByteArrayData data[5];
+    char stringdata0[97];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_gameWindow_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_gameWindow_t qt_meta_stringdata_gameWindow = {
+    {
+QT_MOC_LITERAL(0, 0, 10), // "gameWindow"
+QT_MOC_LITERAL(1, 11, 27), // "on_actionSettings_triggered"
+QT_MOC_LITERAL(2, 39, 0), // ""
+QT_MOC_LITERAL(3, 40, 26), // "on_actionConnect_triggered"
+QT_MOC_LITERAL(4, 67, 29) // "on_actionDisconnect_triggered"
+
+    },
+    "gameWindow\0on_actionSettings_triggered\0"
+    "\0on_actionConnect_triggered\0"
+    "on_actionDisconnect_triggered"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_gameWindow[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       3,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: name, argc, parameters, tag, flags
+       1,    0,   29,    2, 0x0a /* Public */,
+       3,    0,   30,    2, 0x0a /* Public */,
+       4,    0,   31,    2, 0x0a /* Public */,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+
+       0        // eod
+};
+
+void gameWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        gameWindow *_t = static_cast<gameWindow *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->on_actionSettings_triggered(); break;
+        case 1: _t->on_actionConnect_triggered(); break;
+        case 2: _t->on_actionDisconnect_triggered(); break;
+        default: ;
+        }
+    }
     Q_UNUSED(_a);
 }
 
@@ -272,12 +550,25 @@ void *gameWindow::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_gameWindow.stringdata0))
         return static_cast<void*>(this);
+    if (!strcmp(_clname, "Ui::gameWindow"))
+        return static_cast< Ui::gameWindow*>(this);
     return QMainWindow::qt_metacast(_clname);
 }
 
 int gameWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QMainWindow::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 3)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 3;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 3)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 3;
+    }
     return _id;
 }
 QT_WARNING_POP
