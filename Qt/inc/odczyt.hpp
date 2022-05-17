@@ -9,7 +9,7 @@
 #include <QString>
 #include <QDebug>
 
-
+/*
 class UARTRead :public QWidget {
     Q_OBJECT
         QTextEdit* text;
@@ -37,6 +37,6 @@ public slots:
     void ConnectDevice();
     void ReadTransmision();
 };
-
+*/
 
 

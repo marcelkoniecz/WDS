@@ -2,7 +2,7 @@
 //#include "inc/crc8.hpp"
 #include <string>
 #include "cstring"
-
+/*
 #define POLYNOMIAL 0x161
 
 uint16_t CRCSingleByte(uint16_t data) {
@@ -138,3 +138,4 @@ void UARTRead::StartTransmit() {
     emit EmitStartUART();
 }
 
+*/
