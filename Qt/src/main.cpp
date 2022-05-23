@@ -3,11 +3,14 @@
 #include <QtSerialPort/QtSerialPort>
 #include <QtWidgets>
 #include <QLabel>
+#include "mainWidget.hpp"
+#include "gameWindow.hpp"
+
 //#include "odczyt.hpp"
 //#include "inc/crc8.hpp"
 
 //#include "oknogry.hpp"
-#include "widgetgry.hpp"
+//#include "widgetgry.hpp"
 
 int main(int argc, char *argv[])
 {

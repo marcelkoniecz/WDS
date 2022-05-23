@@ -109,7 +109,7 @@ int main(void)
 	  printValues(acc);
 	 //printf("%d %d %d",acc.accData[0],acc.accData[1],acc.accData[2]);
 	  // printf("X  d Y d Z d/n");
-	 HAL_Delay(1000);
+	 HAL_Delay(10);
   }
   /* USER CODE END 3 */
 }
