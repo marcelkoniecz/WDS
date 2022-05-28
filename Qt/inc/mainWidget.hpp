@@ -1,7 +1,6 @@
 #ifndef MAINWIDGET_HPP
 #define MAINWIDGET_HPP
 
-#pragma once
 #include <iostream>
 #include <QtSerialPort/QtSerialPort>
 #include <QSerialPortInfo>
@@ -18,48 +17,53 @@
 #include <QDialog>
 #include "gameWindow.hpp"
 #include "gameWidget.hpp"
-#include "statisticWidget.hpp"
+#include "sideWidget.hpp"
 
-class mainGmaeWidget;
+class mainGameWidget;
+class SidePanelWidget;
 class gameWidget;
 class gameWindow;
-class gameParameters;
+class UARTVal;
 
 
 
 //Widget zawierajacy pole gry oraz panel boczny
 /**
  * @brief Klasa reprezentujaca widget glowny
+ * Klasa jest odpowiedzialna za stworzenie w widgecie glownym widgetu z gra
+ * oraz widgetu panelu bocznego z opcjami
  *
  */
 class mainWidget :public QWidget {
     Q_OBJECT
-        /**
-         * @brief Pole reprezentujace timer
-         */
-        QTimer* gameTimer;
+private:
+
 public:
     /**
-     * @brief
+     * @brief Pole reprezentujace timer gry
+     */
+    QTimer* gameTimer;
+    /**
+     * @brief Pole reprezentujace widget z gra
      *
      */
     mainGameWidget* okienko;
     /**
-     * @brief
+     * @brief Pole reprezentujace widget z panelem bocznym
      *
      */
-    gameWidget* statystyki;
+    SidePanelWidget* statystyki;
     //mainWidget(gameWindow* parent = nullptr);
     /**
-     * @brief Construct a new main Widget object
+     * @brief Konstruktor tworzący widget glowny aplikacji
      *
-     * @param parent
-     * @param gameInfo
+     * @param parent Wskaznik do rodzica
+     * @param gameInfo Wskaznik do struktury z danymi odczytanymi z akcelerometru
      */
-    mainWidget(gameWindow* parent = nullptr, gameParameters* gameInfo = nullptr);
+    mainWidget(gameWindow* parent = nullptr, UARTVal* gameInfo = nullptr);
 public slots:
     /**
-     * @brief
+     * @brief Slot odwiezenia czasu
      *
      */
     void updateTime();

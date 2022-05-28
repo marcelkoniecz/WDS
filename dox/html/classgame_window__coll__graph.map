@@ -1,0 +1,14 @@
+<map id="gameWindow" name="gameWindow">
+<area shape="rect" id="node3" href="$class_ui_1_1game_window.html" title="Ui::gameWindow" alt="" coords="136,288,259,315"/>
+<area shape="rect" id="node4" href="$class_ui__game_window.html" title="Ui_gameWindow" alt="" coords="126,199,247,225"/>
+<area shape="rect" id="node5" href="$classgame_parameters.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="225,5,346,32"/>
+<area shape="rect" id="node15" href="$classmain_game_widget.html" title="mainGameWidget" alt="" coords="373,109,499,136"/>
+<area shape="rect" id="node6" href="$classcon_dialog.html" title="conDialog" alt="" coords="691,288,771,315"/>
+<area shape="rect" id="node8" href="$class_ui_1_1con_dialog.html" title="Ui::conDialog" alt="" coords="789,199,891,225"/>
+<area shape="rect" id="node9" href="$class_ui__con_dialog.html" title="Ui_conDialog" alt="" coords="790,109,890,136"/>
+<area shape="rect" id="node10" href="$classmain_widget.html" title="Klasa reprezentujaca widget glowny Klasa jest odpowiedzialna za stworzenie w widgecie glownym widgetu..." alt="" coords="443,288,533,315"/>
+<area shape="rect" id="node12" href="$classgame_widget.html" title="Klasa panelu bocznego. " alt="" coords="577,199,671,225"/>
+<area shape="rect" id="node13" href="$class_ui_1_1game_widget.html" title="Ui::gameWidget" alt="" coords="639,109,755,136"/>
+<area shape="rect" id="node14" href="$class_ui__game_widget.html" title="Ui_gameWidget" alt="" coords="640,5,755,32"/>
+<area shape="rect" id="node16" href="$classimage_parameters.html" title="imageParameters" alt="" coords="370,5,494,32"/>
+</map>

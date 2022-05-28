@@ -1,0 +1,5 @@
+<map id="mainGameWidget::calculateUserPlate" name="mainGameWidget::calculateUserPlate">
+<area shape="rect" id="node2" href="$classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="mainGameWidget::makeGameStep" alt="" coords="240,13,468,39"/>
+<area shape="rect" id="node3" href="$classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="mainGameWidget::updateTime" alt="" coords="516,13,719,39"/>
+<area shape="rect" id="node4" href="$classmain_game_widget.html#a16d08bf7ad875c2155b9ca6ed765c663" title="mainGameWidget::mainGame\lWidget" alt="" coords="767,5,964,47"/>
+</map>

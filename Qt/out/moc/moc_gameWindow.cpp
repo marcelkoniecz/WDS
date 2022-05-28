@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_gameWindow_t {
-    QByteArrayData data[8];
-    char stringdata0[132];
+    QByteArrayData data[12];
+    char stringdata0[188];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -38,13 +38,19 @@ QT_MOC_LITERAL(3, 40, 26), // "on_actionConnect_triggered"
 QT_MOC_LITERAL(4, 67, 29), // "on_actionDisconnect_triggered"
 QT_MOC_LITERAL(5, 97, 10), // "initDevice"
 QT_MOC_LITERAL(6, 108, 7), // "devName"
-QT_MOC_LITERAL(7, 116, 15) // "ReadTransmision"
+QT_MOC_LITERAL(7, 116, 15), // "ReadTransmision"
+QT_MOC_LITERAL(8, 132, 11), // "restartGame"
+QT_MOC_LITERAL(9, 144, 7), // "endGame"
+QT_MOC_LITERAL(10, 152, 20), // "openStatisticsWidget"
+QT_MOC_LITERAL(11, 173, 14) // "openGameWidget"
 
     },
     "gameWindow\0on_actionSettings_triggered\0"
     "\0on_actionConnect_triggered\0"
     "on_actionDisconnect_triggered\0initDevice\0"
-    "devName\0ReadTransmision"
+    "devName\0ReadTransmision\0restartGame\0"
+    "endGame\0openStatisticsWidget\0"
+    "openGameWidget"
 };
 #undef QT_MOC_LITERAL
 
@@ -54,7 +60,7 @@ static const uint qt_meta_data_gameWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -62,17 +68,25 @@ static const uint qt_meta_data_gameWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   39,    2, 0x0a /* Public */,
-       3,    0,   40,    2, 0x0a /* Public */,
-       4,    0,   41,    2, 0x0a /* Public */,
-       5,    1,   42,    2, 0x0a /* Public */,
-       7,    0,   45,    2, 0x0a /* Public */,
+       1,    0,   59,    2, 0x0a /* Public */,
+       3,    0,   60,    2, 0x0a /* Public */,
+       4,    0,   61,    2, 0x0a /* Public */,
+       5,    1,   62,    2, 0x0a /* Public */,
+       7,    0,   65,    2, 0x0a /* Public */,
+       8,    0,   66,    2, 0x0a /* Public */,
+       9,    0,   67,    2, 0x0a /* Public */,
+      10,    0,   68,    2, 0x0a /* Public */,
+      11,    0,   69,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,    6,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -89,6 +103,10 @@ void gameWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 2: _t->on_actionDisconnect_triggered(); break;
         case 3: _t->initDevice((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 4: _t->ReadTransmision(); break;
+        case 5: _t->restartGame(); break;
+        case 6: _t->endGame(); break;
+        case 7: _t->openStatisticsWidget(); break;
+        case 8: _t->openGameWidget(); break;
         default: ;
         }
     }
@@ -121,13 +139,13 @@ int gameWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 9)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 5;
+        _id -= 9;
     }
     return _id;
 }

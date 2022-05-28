@@ -16,55 +16,16 @@
 #include <QTimer>
 #include <QDialog>
 #include "mainWidget.hpp"
+#include "gameStatistics.hpp"
 #include "dialogs.hpp"
 #include "ui_gameWindow.h"
+#include "uartParam.hpp"
+#include "gameSettings.hpp"
 
 class mainWidget;
+class gameStatistics;
 
-/**
- * @brief Klasa zawierajaca informacje na temat gry
- */
-class gameParameters {
-public:
-    /**
-     * @brief  Pole nazwy podlaczonego urzadzenia
-     */
-    QString devName;
-    /**
-     * @brief Pole predkosc pilki
-     */
-    double ballVel;
-    /**
-     * @brief Pole predkosc plytki gracza
-     */
-    double userPlateVel;
-    /**
-     * @brief Pole predkosc plytki sterowanej przez komputer
-     */
-    double comPlateVel;
-    double XVal;
-    double YVal;
-    double ZVal;
-    /**
-     * @brief  Pole typu bool reprezentujaca kierunek poruszania sie pilki
-     *  Dla wartosci rownej 1 pilka porusza sie do gory
-     *  Dla wartosci rownej 0 pilka porusza sie w dol
-     */
-    int ballDirection = 1; //dir = 0 bottom, dir = 1 top
-   /**
-    * @brief Pole typu bool reprezentujaca czy gra sie aktualnie toczy
-    *  Dla wartosci rownej 0 gra jest nieaktywna
-    *  Dla wartosci rownej 1 gra jest aktywna
-    */
-    bool isGameActive = 0; //If game is started
-    /**
-     * @brief Pole typu bool reprezentujaca czy urzadzenie jest podlaczone
-    * Dla wartosci rownej 0 urzadzenie nie jest podlaczone
-     * Dla wartosci rownej 1 jest podlaczone urzadzenie
-     */
-    bool isConnected = 0;  //If device is connected
-    void calculateVel();
-};
+
 
 /**
  * @brief Klasa reprezentujaca glowne okno
@@ -73,27 +34,32 @@ public:
  */
 class gameWindow :public QMainWindow, public Ui::gameWindow {
     Q_OBJECT
-
-        /**
-         * @brief Pole Urzadzenie podlaczone do gry
-         */
-        QSerialPort* device;
+private:
     /**
-     * @brief Dialog polaczenia
+     * @brief Pole Urzadzenia podlaczonego do gry
+     */
+    QSerialPort* device;
+    /**
+     * @brief Pole dialog polaczenia
      */
     conDialog* connectionDialog;
     /**
-     * @brief Dialog rozlaczenia
+     * @brief Pole dialog rozlaczenia
      */
     QDialog* disconnectionDialog;
     /**
-     * @brief  Widget paska bocznego
+     * @brief  Pole struktury z odczytami
      */
-    gameParameters gameInfo;
+    endDialog *endGameDialog;
+    settDialog *settingsDialog;
+
+    UARTVal gameInfo;
     /**
-     * @brief Widget gry
+     * @brief Pole widgetu gry
      */
     mainWidget* CentralWidget;
+    QStackedWidget *stackWidget;
+    gameStatisticsWidget* statsWidget;
 
 public:
     /**
@@ -105,13 +71,12 @@ public:
 
 public slots:
     /**
-     * @brief Slot dla wcisnietego przycisku 
-     * 
+     * @brief Slot wywowujacy dialog z ustawieniami
+     *
      */
     void on_actionSettings_triggered();
     /**
-     * @brief Slot dla wcisnietego przycisku
-     *
+     * @brief Slot wywołujacy dialog z polaczeniem
      */
     void on_actionConnect_triggered();
     /**
@@ -120,16 +85,21 @@ public slots:
      */
     void on_actionDisconnect_triggered();
     /**
-     * @brief
+     * @brief Slot inicjalizujacy polaczenie z mikrokontrolerem
      *
-     * @param devName
+     * @param devName Nazwa polaczonego urzadzenia
      */
     void initDevice(QString devName);
     /**
-     * @brief Slot dla 
+     * @brief Slot do odczytywania danych z UART
+     * Za pomocą tej funkcji odczytywane oraz zapisywane są dane w jaki sposób porusza się akcelerometr
      *
      */
     void ReadTransmision();
+    void restartGame();
+    void endGame();
+    void openStatisticsWidget();
+    void openGameWidget();
 };
 
 

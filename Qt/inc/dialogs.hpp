@@ -1,5 +1,5 @@
-#ifndef WIDGETGRY_HPP
-#define WIDGETGRY_HPP
+#ifndef DIALOGS_HPP
+#define DIALOGS_HPP
 
 #include <iostream>
 #include <QtSerialPort/QtSerialPort>
@@ -17,12 +17,42 @@
 #include <QDialog>
 #include "ui_disDialog.h"
 #include "ui_conDialog.h"
+#include "ui_endGameDialog.h"
+#include "ui_settDialog.h"
 //#include "gameWindow.hpp"
+
+class settDialog :public QDialog, public Ui::settDialog {
+    Q_OBJECT
+
+public:
+    settDialog();
+public slots:
+    void on_saveButton_clicked();
+    void on_returnButton_clicked();
+
+};
+
+
+class endDialog :public QDialog, public Ui::endGameDialog {
+    Q_OBJECT
+private:
+
+public:
+    endDialog();
+public slots:
+    void on_statisticsButton_clicked();
+    void on_restartButton_clicked();
+    void on_exitButton_clicked();
+signals:
+    void EmitClosing();
+    void EmitRestartGame();
+    void EmitOpenStatistics();
+};
 
 class disDialog :public QDialog, public Ui::disDialog {
     Q_OBJECT
 public:
-    disDialog(QString connectedDev="No device connected");
+    disDialog(QString connectedDev = "No device connected");
     void StartDialog(QString connectedDev);
 };
 

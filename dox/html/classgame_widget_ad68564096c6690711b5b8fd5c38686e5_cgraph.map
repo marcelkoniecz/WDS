@@ -1,0 +1,8 @@
+<map id="gameWidget::gameWidget" name="gameWidget::gameWidget">
+<area shape="rect" id="node2" href="$class_ui__game_widget.html#ac330b43117ca60561518b386c8987653" title="Ui_gameWidget::setupUi" alt="" coords="233,5,401,32"/>
+<area shape="rect" id="node4" href="$classgame_widget.html#aed11e7dc011e62a989ce1d045209244d" title="Slot. " alt="" coords="231,56,402,83"/>
+<area shape="rect" id="node5" href="$classgame_widget.html#a2f4d8ccae8c5e80aa7f017868242d3b4" title="Slot. " alt="" coords="237,107,397,133"/>
+<area shape="rect" id="node6" href="$classgame_widget.html#a852c527b8c0bf342c1b299bffb6eb9dc" title="Slot. " alt="" coords="236,157,397,184"/>
+<area shape="rect" id="node7" href="$classgame_widget.html#afb9c8622ff0ad402e1244a7bf4737c7a" title="Slot. " alt="" coords="229,208,404,235"/>
+<area shape="rect" id="node3" href="$class_ui__game_widget.html#abadfc0fefa7fb0d675599c70a32ff817" title="Ui_gameWidget::retranslateUi" alt="" coords="452,5,649,32"/>
+</map>

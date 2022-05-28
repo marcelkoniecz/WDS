@@ -50,41 +50,33 @@ OBJECTS_DIR   = out/obj/
 
 ####### Files
 
-SOURCES       = src/crc8.cpp \
-		src/dialogs.cpp \
+SOURCES       = src/dialogs.cpp \
+		src/gameStatistics.cpp \
 		src/gameWidget.cpp \
 		src/gameWindow.cpp \
 		src/main.cpp \
 		src/mainWidget.cpp \
-		src/odczyt.cpp \
-		src/okno.cpp \
-		src/oknogry.cpp \
-		src/statisticWidget.cpp \
-		src/test.cpp \
-		src/widgetgry.cpp out/rcc/qrc_zasoby.cpp \
+		src/sideWidget.cpp out/rcc/qrc_zasoby.cpp \
 		out/moc/moc_dialogs.cpp \
+		out/moc/moc_gameStatistics.cpp \
 		out/moc/moc_gameWidget.cpp \
 		out/moc/moc_gameWindow.cpp \
 		out/moc/moc_mainWidget.cpp \
-		out/moc/moc_statisticWidget.cpp
-OBJECTS       = out/obj/crc8.o \
-		out/obj/dialogs.o \
+		out/moc/moc_sideWidget.cpp
+OBJECTS       = out/obj/dialogs.o \
+		out/obj/gameStatistics.o \
 		out/obj/gameWidget.o \
 		out/obj/gameWindow.o \
 		out/obj/main.o \
 		out/obj/mainWidget.o \
-		out/obj/odczyt.o \
-		out/obj/okno.o \
-		out/obj/oknogry.o \
-		out/obj/statisticWidget.o \
-		out/obj/test.o \
-		out/obj/widgetgry.o \
+		out/obj/sideWidget.o \
 		out/obj/qrc_zasoby.o \
 		out/obj/moc_dialogs.o \
+		out/obj/moc_gameStatistics.o \
 		out/obj/moc_gameWidget.o \
 		out/obj/moc_gameWindow.o \
 		out/obj/moc_mainWidget.o \
-		out/obj/moc_statisticWidget.o
+		out/obj/moc_sideWidget.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/linux.conf \
@@ -159,28 +151,21 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exceptions.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
-		out/pro/out/pro/gra.pro inc/crc8.hpp \
-		inc/dialogs.hpp \
+		out/pro/out/pro/gra.pro inc/dialogs.hpp \
+		inc/gameParameters.hpp \
+		inc/gameSettings.hpp \
+		inc/gameStatistics.hpp \
 		inc/gameWidget.hpp \
 		inc/gameWindow.hpp \
 		inc/mainWidget.hpp \
-		inc/odczyt.hpp \
-		inc/okno.hpp \
-		inc/oknogry.hpp \
-		inc/statisticWidget.hpp \
-		inc/test.hpp \
-		inc/widgetgry.hpp src/crc8.cpp \
-		src/dialogs.cpp \
+		inc/sideWidget.hpp \
+		inc/uartParam.hpp src/dialogs.cpp \
+		src/gameStatistics.cpp \
 		src/gameWidget.cpp \
 		src/gameWindow.cpp \
 		src/main.cpp \
 		src/mainWidget.cpp \
-		src/odczyt.cpp \
-		src/okno.cpp \
-		src/oknogry.cpp \
-		src/statisticWidget.cpp \
-		src/test.cpp \
-		src/widgetgry.cpp
+		src/sideWidget.cpp
 QMAKE_TARGET  = gra
 DESTDIR       = 
 TARGET        = gra
@@ -189,7 +174,7 @@ TARGET        = gra
 first: all
 ####### Build rules
 
-$(TARGET): out/uic/ui_aplicationmainwindow.h out/uic/ui_conDialog.h out/uic/ui_disDialog.h out/uic/ui_gameWidget.h out/uic/ui_gameWidgetv2.h out/uic/ui_gameWindow.h $(OBJECTS)  
+$(TARGET): out/uic/ui_aplicationmainwindow.h out/uic/ui_conDialog.h out/uic/ui_disDialog.h out/uic/ui_endGameDialog.h out/uic/ui_endGameDialog2.h out/uic/ui_gameStatistics.h out/uic/ui_gameWidget.h out/uic/ui_gameWidgetv2.h out/uic/ui_gameWindow.h out/uic/ui_settDialog.h out/uic/ui_settingsDialog.h out/uic/ui_sidePanelWidget.h out/uic/ui_sideWidget.h $(OBJECTS)  
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
 Makefile.app: out/pro/gra.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
@@ -369,9 +354,9 @@ distdir: FORCE
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents res/zasoby.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents inc/crc8.hpp inc/dialogs.hpp inc/gameWidget.hpp inc/gameWindow.hpp inc/mainWidget.hpp inc/odczyt.hpp inc/okno.hpp inc/oknogry.hpp inc/statisticWidget.hpp inc/test.hpp inc/widgetgry.hpp $(DISTDIR)/
-	$(COPY_FILE) --parents src/crc8.cpp src/dialogs.cpp src/gameWidget.cpp src/gameWindow.cpp src/main.cpp src/mainWidget.cpp src/odczyt.cpp src/okno.cpp src/oknogry.cpp src/statisticWidget.cpp src/test.cpp src/widgetgry.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ui/aplicationmainwindow.ui ui/conDialog.ui ui/disDialog.ui ui/gameWidget.ui ui/gameWidgetv2.ui ui/gameWindow.ui $(DISTDIR)/
+	$(COPY_FILE) --parents inc/dialogs.hpp inc/gameParameters.hpp inc/gameSettings.hpp inc/gameStatistics.hpp inc/gameWidget.hpp inc/gameWindow.hpp inc/mainWidget.hpp inc/sideWidget.hpp inc/uartParam.hpp $(DISTDIR)/
+	$(COPY_FILE) --parents src/dialogs.cpp src/gameStatistics.cpp src/gameWidget.cpp src/gameWindow.cpp src/main.cpp src/mainWidget.cpp src/sideWidget.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ui/aplicationmainwindow.ui ui/conDialog.ui ui/disDialog.ui ui/endGameDialog.ui ui/endGameDialog2.ui ui/gameStatistics.ui ui/gameWidget.ui ui/gameWidgetv2.ui ui/gameWindow.ui ui/settDialog.ui ui/settingsDialog.ui ui/sidePanelWidget.ui ui/sideWidget.ui $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -410,25 +395,38 @@ compiler_moc_predefs_clean:
 out/moc/moc_predefs.h: /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 	g++ -pipe -g -O2 -Wall -W -dM -E -o out/moc/moc_predefs.h /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: out/moc/moc_dialogs.cpp out/moc/moc_gameWidget.cpp out/moc/moc_gameWindow.cpp out/moc/moc_mainWidget.cpp out/moc/moc_statisticWidget.cpp
+compiler_moc_header_make_all: out/moc/moc_dialogs.cpp out/moc/moc_gameStatistics.cpp out/moc/moc_gameWidget.cpp out/moc/moc_gameWindow.cpp out/moc/moc_mainWidget.cpp out/moc/moc_sideWidget.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) out/moc/moc_dialogs.cpp out/moc/moc_gameWidget.cpp out/moc/moc_gameWindow.cpp out/moc/moc_mainWidget.cpp out/moc/moc_statisticWidget.cpp
+	-$(DEL_FILE) out/moc/moc_dialogs.cpp out/moc/moc_gameStatistics.cpp out/moc/moc_gameWidget.cpp out/moc/moc_gameWindow.cpp out/moc/moc_mainWidget.cpp out/moc/moc_sideWidget.cpp
 out/moc/moc_dialogs.cpp: out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
+		out/uic/ui_endGameDialog.h \
+		out/uic/ui_settDialog.h \
 		inc/dialogs.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
 	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/dialogs.hpp -o out/moc/moc_dialogs.cpp
 
+out/moc/moc_gameStatistics.cpp: out/uic/ui_gameStatistics.h \
+		inc/gameStatistics.hpp \
+		out/moc/moc_predefs.h \
+		/usr/lib/qt5/bin/moc
+	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/gameStatistics.hpp -o out/moc/moc_gameStatistics.cpp
+
 out/moc/moc_gameWidget.cpp: inc/mainWidget.hpp \
 		inc/gameWindow.hpp \
+		inc/gameStatistics.hpp \
+		out/uic/ui_gameStatistics.h \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
+		out/uic/ui_endGameDialog.h \
+		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
+		inc/uartParam.hpp \
 		inc/gameWidget.hpp \
-		inc/statisticWidget.hpp \
-		out/uic/ui_gameWidget.h \
+		inc/sideWidget.hpp \
+		out/uic/ui_sidePanelWidget.h \
 		inc/gameWidget.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
@@ -436,13 +434,18 @@ out/moc/moc_gameWidget.cpp: inc/mainWidget.hpp \
 
 out/moc/moc_gameWindow.cpp: inc/mainWidget.hpp \
 		inc/gameWindow.hpp \
+		inc/gameStatistics.hpp \
+		out/uic/ui_gameStatistics.h \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
+		out/uic/ui_endGameDialog.h \
+		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
+		inc/uartParam.hpp \
 		inc/gameWidget.hpp \
-		inc/statisticWidget.hpp \
-		out/uic/ui_gameWidget.h \
+		inc/sideWidget.hpp \
+		out/uic/ui_sidePanelWidget.h \
 		inc/gameWindow.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
@@ -451,36 +454,46 @@ out/moc/moc_gameWindow.cpp: inc/mainWidget.hpp \
 out/moc/moc_mainWidget.cpp: inc/gameWindow.hpp \
 		inc/mainWidget.hpp \
 		inc/gameWidget.hpp \
-		inc/statisticWidget.hpp \
-		out/uic/ui_gameWidget.h \
+		inc/sideWidget.hpp \
+		out/uic/ui_sidePanelWidget.h \
+		inc/gameStatistics.hpp \
+		out/uic/ui_gameStatistics.h \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
+		out/uic/ui_endGameDialog.h \
+		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
+		inc/uartParam.hpp \
 		inc/mainWidget.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
 	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/mainWidget.hpp -o out/moc/moc_mainWidget.cpp
 
-out/moc/moc_statisticWidget.cpp: inc/mainWidget.hpp \
+out/moc/moc_sideWidget.cpp: inc/mainWidget.hpp \
 		inc/gameWindow.hpp \
+		inc/gameStatistics.hpp \
+		out/uic/ui_gameStatistics.h \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
+		out/uic/ui_endGameDialog.h \
+		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
+		inc/uartParam.hpp \
 		inc/gameWidget.hpp \
-		inc/statisticWidget.hpp \
-		out/uic/ui_gameWidget.h \
-		inc/statisticWidget.hpp \
+		inc/sideWidget.hpp \
+		out/uic/ui_sidePanelWidget.h \
+		inc/sideWidget.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/statisticWidget.hpp -o out/moc/moc_statisticWidget.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/sideWidget.hpp -o out/moc/moc_sideWidget.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: out/uic/ui_aplicationmainwindow.h out/uic/ui_conDialog.h out/uic/ui_disDialog.h out/uic/ui_gameWidget.h out/uic/ui_gameWidgetv2.h out/uic/ui_gameWindow.h
+compiler_uic_make_all: out/uic/ui_aplicationmainwindow.h out/uic/ui_conDialog.h out/uic/ui_disDialog.h out/uic/ui_endGameDialog.h out/uic/ui_endGameDialog2.h out/uic/ui_gameStatistics.h out/uic/ui_gameWidget.h out/uic/ui_gameWidgetv2.h out/uic/ui_gameWindow.h out/uic/ui_settDialog.h out/uic/ui_settingsDialog.h out/uic/ui_sidePanelWidget.h out/uic/ui_sideWidget.h
 compiler_uic_clean:
-	-$(DEL_FILE) out/uic/ui_aplicationmainwindow.h out/uic/ui_conDialog.h out/uic/ui_disDialog.h out/uic/ui_gameWidget.h out/uic/ui_gameWidgetv2.h out/uic/ui_gameWindow.h
+	-$(DEL_FILE) out/uic/ui_aplicationmainwindow.h out/uic/ui_conDialog.h out/uic/ui_disDialog.h out/uic/ui_endGameDialog.h out/uic/ui_endGameDialog2.h out/uic/ui_gameStatistics.h out/uic/ui_gameWidget.h out/uic/ui_gameWidgetv2.h out/uic/ui_gameWindow.h out/uic/ui_settDialog.h out/uic/ui_settingsDialog.h out/uic/ui_sidePanelWidget.h out/uic/ui_sideWidget.h
 out/uic/ui_aplicationmainwindow.h: ui/aplicationmainwindow.ui \
 		/usr/lib/qt5/bin/uic
 	/usr/lib/qt5/bin/uic ui/aplicationmainwindow.ui -o out/uic/ui_aplicationmainwindow.h
@@ -492,6 +505,18 @@ out/uic/ui_conDialog.h: ui/conDialog.ui \
 out/uic/ui_disDialog.h: ui/disDialog.ui \
 		/usr/lib/qt5/bin/uic
 	/usr/lib/qt5/bin/uic ui/disDialog.ui -o out/uic/ui_disDialog.h
+
+out/uic/ui_endGameDialog.h: ui/endGameDialog.ui \
+		/usr/lib/qt5/bin/uic
+	/usr/lib/qt5/bin/uic ui/endGameDialog.ui -o out/uic/ui_endGameDialog.h
+
+out/uic/ui_endGameDialog2.h: ui/endGameDialog2.ui \
+		/usr/lib/qt5/bin/uic
+	/usr/lib/qt5/bin/uic ui/endGameDialog2.ui -o out/uic/ui_endGameDialog2.h
+
+out/uic/ui_gameStatistics.h: ui/gameStatistics.ui \
+		/usr/lib/qt5/bin/uic
+	/usr/lib/qt5/bin/uic ui/gameStatistics.ui -o out/uic/ui_gameStatistics.h
 
 out/uic/ui_gameWidget.h: ui/gameWidget.ui \
 		/usr/lib/qt5/bin/uic
@@ -505,6 +530,22 @@ out/uic/ui_gameWindow.h: ui/gameWindow.ui \
 		/usr/lib/qt5/bin/uic
 	/usr/lib/qt5/bin/uic ui/gameWindow.ui -o out/uic/ui_gameWindow.h
 
+out/uic/ui_settDialog.h: ui/settDialog.ui \
+		/usr/lib/qt5/bin/uic
+	/usr/lib/qt5/bin/uic ui/settDialog.ui -o out/uic/ui_settDialog.h
+
+out/uic/ui_settingsDialog.h: ui/settingsDialog.ui \
+		/usr/lib/qt5/bin/uic
+	/usr/lib/qt5/bin/uic ui/settingsDialog.ui -o out/uic/ui_settingsDialog.h
+
+out/uic/ui_sidePanelWidget.h: ui/sidePanelWidget.ui \
+		/usr/lib/qt5/bin/uic
+	/usr/lib/qt5/bin/uic ui/sidePanelWidget.ui -o out/uic/ui_sidePanelWidget.h
+
+out/uic/ui_sideWidget.h: ui/sideWidget.ui \
+		/usr/lib/qt5/bin/uic
+	/usr/lib/qt5/bin/uic ui/sideWidget.ui -o out/uic/ui_sideWidget.h
+
 compiler_yacc_decl_make_all:
 compiler_yacc_decl_clean:
 compiler_yacc_impl_make_all:
@@ -515,94 +556,105 @@ compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_heade
 
 ####### Compile
 
-out/obj/crc8.o: src/crc8.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/crc8.o src/crc8.cpp
-
 out/obj/dialogs.o: src/dialogs.cpp inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
-		out/uic/ui_conDialog.h
+		out/uic/ui_conDialog.h \
+		out/uic/ui_endGameDialog.h \
+		out/uic/ui_settDialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/dialogs.o src/dialogs.cpp
+
+out/obj/gameStatistics.o: src/gameStatistics.cpp inc/gameStatistics.hpp \
+		out/uic/ui_gameStatistics.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/gameStatistics.o src/gameStatistics.cpp
 
 out/obj/gameWidget.o: src/gameWidget.cpp inc/gameWidget.hpp \
 		inc/mainWidget.hpp \
 		inc/gameWindow.hpp \
+		inc/gameStatistics.hpp \
+		out/uic/ui_gameStatistics.h \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
+		out/uic/ui_endGameDialog.h \
+		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
-		inc/statisticWidget.hpp \
-		out/uic/ui_gameWidget.h
+		inc/uartParam.hpp \
+		inc/sideWidget.hpp \
+		out/uic/ui_sidePanelWidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/gameWidget.o src/gameWidget.cpp
 
 out/obj/gameWindow.o: src/gameWindow.cpp inc/gameWindow.hpp \
 		inc/mainWidget.hpp \
 		inc/gameWidget.hpp \
-		inc/statisticWidget.hpp \
-		out/uic/ui_gameWidget.h \
+		inc/sideWidget.hpp \
+		out/uic/ui_sidePanelWidget.h \
+		inc/gameStatistics.hpp \
+		out/uic/ui_gameStatistics.h \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
-		out/uic/ui_gameWindow.h
+		out/uic/ui_endGameDialog.h \
+		out/uic/ui_settDialog.h \
+		out/uic/ui_gameWindow.h \
+		inc/uartParam.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/gameWindow.o src/gameWindow.cpp
 
-out/obj/main.o: src/main.cpp inc/gameWindow.hpp \
-		inc/mainWidget.hpp \
-		inc/gameWidget.hpp \
-		inc/statisticWidget.hpp \
-		out/uic/ui_gameWidget.h \
+out/obj/main.o: src/main.cpp inc/mainWidget.hpp \
+		inc/gameWindow.hpp \
+		inc/gameStatistics.hpp \
+		out/uic/ui_gameStatistics.h \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
-		out/uic/ui_gameWindow.h
+		out/uic/ui_endGameDialog.h \
+		out/uic/ui_settDialog.h \
+		out/uic/ui_gameWindow.h \
+		inc/uartParam.hpp \
+		inc/gameWidget.hpp \
+		inc/sideWidget.hpp \
+		out/uic/ui_sidePanelWidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/main.o src/main.cpp
 
 out/obj/mainWidget.o: src/mainWidget.cpp inc/mainWidget.hpp \
 		inc/gameWindow.hpp \
+		inc/gameStatistics.hpp \
+		out/uic/ui_gameStatistics.h \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
+		out/uic/ui_endGameDialog.h \
+		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
+		inc/uartParam.hpp \
 		inc/gameWidget.hpp \
-		inc/statisticWidget.hpp \
-		out/uic/ui_gameWidget.h
+		inc/sideWidget.hpp \
+		out/uic/ui_sidePanelWidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/mainWidget.o src/mainWidget.cpp
 
-out/obj/odczyt.o: src/odczyt.cpp inc/odczyt.hpp
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/odczyt.o src/odczyt.cpp
-
-out/obj/okno.o: src/okno.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/okno.o src/okno.cpp
-
-out/obj/oknogry.o: src/oknogry.cpp inc/oknogry.hpp
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/oknogry.o src/oknogry.cpp
-
-out/obj/statisticWidget.o: src/statisticWidget.cpp inc/statisticWidget.hpp \
+out/obj/sideWidget.o: src/sideWidget.cpp inc/sideWidget.hpp \
 		inc/mainWidget.hpp \
 		inc/gameWindow.hpp \
+		inc/gameStatistics.hpp \
+		out/uic/ui_gameStatistics.h \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
+		out/uic/ui_endGameDialog.h \
+		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
+		inc/uartParam.hpp \
 		inc/gameWidget.hpp \
-		out/uic/ui_gameWidget.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/statisticWidget.o src/statisticWidget.cpp
-
-out/obj/test.o: src/test.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/test.o src/test.cpp
-
-out/obj/widgetgry.o: src/widgetgry.cpp inc/widgetgry.hpp \
-		inc/odczyt.hpp \
-		out/uic/ui_gameWidget.h \
-		out/uic/ui_gameWindow.h \
-		out/uic/ui_disDialog.h \
-		out/uic/ui_conDialog.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/widgetgry.o src/widgetgry.cpp
+		out/uic/ui_sidePanelWidget.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/sideWidget.o src/sideWidget.cpp
 
 out/obj/qrc_zasoby.o: out/rcc/qrc_zasoby.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/qrc_zasoby.o out/rcc/qrc_zasoby.cpp
 
 out/obj/moc_dialogs.o: out/moc/moc_dialogs.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/moc_dialogs.o out/moc/moc_dialogs.cpp
+
+out/obj/moc_gameStatistics.o: out/moc/moc_gameStatistics.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/moc_gameStatistics.o out/moc/moc_gameStatistics.cpp
 
 out/obj/moc_gameWidget.o: out/moc/moc_gameWidget.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/moc_gameWidget.o out/moc/moc_gameWidget.cpp
@@ -613,8 +665,8 @@ out/obj/moc_gameWindow.o: out/moc/moc_gameWindow.cpp
 out/obj/moc_mainWidget.o: out/moc/moc_mainWidget.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/moc_mainWidget.o out/moc/moc_mainWidget.cpp
 
-out/obj/moc_statisticWidget.o: out/moc/moc_statisticWidget.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/moc_statisticWidget.o out/moc/moc_statisticWidget.cpp
+out/obj/moc_sideWidget.o: out/moc/moc_sideWidget.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/moc_sideWidget.o out/moc/moc_sideWidget.cpp
 
 ####### Install
 

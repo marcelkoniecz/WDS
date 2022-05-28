@@ -13,7 +13,8 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -29,103 +30,124 @@ class Ui_gameWidget
 public:
     QVBoxLayout *verticalLayout;
     QVBoxLayout *infoBox;
-    QSpacerItem *verticalSpacer_5;
-    QHBoxLayout *horizontalLayout_2;
-    QSpacerItem *horizontalSpacer_3;
+    QGridLayout *gridLayout;
     QLabel *gameTimeLabel;
-    QSpacerItem *horizontalSpacer_4;
-    QHBoxLayout *horizontalLayout_3;
-    QSpacerItem *horizontalSpacer;
     QLineEdit *lineEdit;
-    QSpacerItem *horizontalSpacer_2;
+    QSpacerItem *horizontalSpacer_3;
+    QSpacerItem *horizontalSpacer_4;
+    QFrame *frame;
+    QVBoxLayout *verticalLayout_2;
+    QGridLayout *gridLayout_2;
     QSpacerItem *verticalSpacer;
-    QPushButton *pauzeGame;
-    QSpacerItem *verticalSpacer_2;
     QPushButton *endGame;
+    QSpacerItem *horizontalSpacer;
     QSpacerItem *verticalSpacer_3;
+    QSpacerItem *verticalSpacer_2;
     QPushButton *exitAplication;
+    QSpacerItem *horizontalSpacer_2;
+    QPushButton *pauzeGame;
     QSpacerItem *verticalSpacer_4;
 
     void setupUi(QWidget *gameWidget)
     {
         if (gameWidget->objectName().isEmpty())
             gameWidget->setObjectName(QStringLiteral("gameWidget"));
-        gameWidget->resize(216, 311);
+        gameWidget->resize(541, 453);
         verticalLayout = new QVBoxLayout(gameWidget);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         infoBox = new QVBoxLayout();
         infoBox->setObjectName(QStringLiteral("infoBox"));
-        verticalSpacer_5 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        infoBox->addItem(verticalSpacer_5);
-
-        horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_2->addItem(horizontalSpacer_3);
-
+        gridLayout = new QGridLayout();
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gameTimeLabel = new QLabel(gameWidget);
         gameTimeLabel->setObjectName(QStringLiteral("gameTimeLabel"));
+        QFont font;
+        font.setPointSize(12);
+        gameTimeLabel->setFont(font);
 
-        horizontalLayout_2->addWidget(gameTimeLabel);
-
-        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_2->addItem(horizontalSpacer_4);
-
-
-        infoBox->addLayout(horizontalLayout_2);
-
-        horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_3->addItem(horizontalSpacer);
+        gridLayout->addWidget(gameTimeLabel, 0, 1, 1, 1);
 
         lineEdit = new QLineEdit(gameWidget);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        lineEdit->setMaximumSize(QSize(100, 16777215));
+        lineEdit->setFont(font);
         lineEdit->setAlignment(Qt::AlignCenter);
 
-        horizontalLayout_3->addWidget(lineEdit);
+        gridLayout->addWidget(lineEdit, 0, 2, 1, 1);
 
-        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        horizontalLayout_3->addItem(horizontalSpacer_2);
+        gridLayout->addItem(horizontalSpacer_3, 0, 0, 1, 1);
+
+        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_4, 0, 3, 1, 1);
 
 
-        infoBox->addLayout(horizontalLayout_3);
+        infoBox->addLayout(gridLayout);
 
+        frame = new QFrame(gameWidget);
+        frame->setObjectName(QStringLiteral("frame"));
+        frame->setMaximumSize(QSize(16777215, 200));
+        frame->setFrameShape(QFrame::Box);
+        frame->setFrameShadow(QFrame::Raised);
+        frame->setLineWidth(1);
+        frame->setMidLineWidth(2);
+        verticalLayout_2 = new QVBoxLayout(frame);
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        gridLayout_2 = new QGridLayout();
+        gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        infoBox->addItem(verticalSpacer);
+        gridLayout_2->addItem(verticalSpacer, 2, 1, 1, 1);
 
-        pauzeGame = new QPushButton(gameWidget);
-        pauzeGame->setObjectName(QStringLiteral("pauzeGame"));
-
-        infoBox->addWidget(pauzeGame);
-
-        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        infoBox->addItem(verticalSpacer_2);
-
-        endGame = new QPushButton(gameWidget);
+        endGame = new QPushButton(frame);
         endGame->setObjectName(QStringLiteral("endGame"));
+        endGame->setMaximumSize(QSize(300, 16777215));
+        endGame->setFont(font);
 
-        infoBox->addWidget(endGame);
+        gridLayout_2->addWidget(endGame, 3, 1, 1, 1);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_2->addItem(horizontalSpacer, 1, 0, 1, 1);
 
         verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        infoBox->addItem(verticalSpacer_3);
+        gridLayout_2->addItem(verticalSpacer_3, 6, 1, 1, 1);
 
-        exitAplication = new QPushButton(gameWidget);
+        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_2->addItem(verticalSpacer_2, 4, 1, 1, 1);
+
+        exitAplication = new QPushButton(frame);
         exitAplication->setObjectName(QStringLiteral("exitAplication"));
+        exitAplication->setMaximumSize(QSize(300, 16777215));
+        exitAplication->setFont(font);
 
-        infoBox->addWidget(exitAplication);
+        gridLayout_2->addWidget(exitAplication, 5, 1, 1, 1);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_2->addItem(horizontalSpacer_2, 1, 2, 1, 1);
+
+        pauzeGame = new QPushButton(frame);
+        pauzeGame->setObjectName(QStringLiteral("pauzeGame"));
+        pauzeGame->setMinimumSize(QSize(200, 0));
+        pauzeGame->setMaximumSize(QSize(300, 16777215));
+        pauzeGame->setFont(font);
+
+        gridLayout_2->addWidget(pauzeGame, 1, 1, 1, 1);
 
         verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
-        infoBox->addItem(verticalSpacer_4);
+        gridLayout_2->addItem(verticalSpacer_4, 0, 1, 1, 1);
+
+
+        verticalLayout_2->addLayout(gridLayout_2);
+
+
+        infoBox->addWidget(frame);
 
 
         verticalLayout->addLayout(infoBox);
@@ -141,9 +163,9 @@ public:
         gameWidget->setWindowTitle(QApplication::translate("gameWidget", "Form", Q_NULLPTR));
         gameTimeLabel->setText(QApplication::translate("gameWidget", "Game time", Q_NULLPTR));
         lineEdit->setText(QApplication::translate("gameWidget", "00:00:00", Q_NULLPTR));
-        pauzeGame->setText(QApplication::translate("gameWidget", "Pause", Q_NULLPTR));
         endGame->setText(QApplication::translate("gameWidget", "End game", Q_NULLPTR));
         exitAplication->setText(QApplication::translate("gameWidget", "Exit application", Q_NULLPTR));
+        pauzeGame->setText(QApplication::translate("gameWidget", "Pause", Q_NULLPTR));
     } // retranslateUi
 
 };

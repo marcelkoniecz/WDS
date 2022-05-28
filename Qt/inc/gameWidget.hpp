@@ -17,55 +17,48 @@
 #include <QDialog>
 #include "mainWidget.hpp"
 
-class gameParameters;
+class UARTVal;
 
 
 class imageParameters {
-   // double RotationMatrix[2][2];
 public:
-    double ballSpeed=5;
+    double ballSpeed ;
     double plateSpeed;
     double XtargetComPlate;
+    int userLives;
+    int compLives;
     volatile double userPlateLoc[2][2];//
     volatile double comPlateLoc[2][2];
-    volatile double ballPos[2]={200,200};  //x y
+    volatile double ballPos[2];  //x y
     volatile double currentAngle;
     double newScala;
-
-    void calculatePosition(double const angle);
-    bool calculateIfBounced(bool turn,int height,volatile gameParameters *game);
 };
 //Pole gry
 
 class mainGameWidget :public QWidget {
     Q_OBJECT
-
-        QImage background;
+private:
+    QImage background;
     QImage computerPlate;
     imageParameters imageInfo;
     imageParameters gameParam;
     QImage userPlate;
     QImage ball;
-    volatile gameParameters* gameInfo;
+    QImage life;
+    volatile UARTVal* gameInfo;
     QTimer* gameTimer;
-   // int userPlateX;
-    //int comPlateX;
-   // double ballCoo[2]{ 200,200 };
-  //  double ballPCoo[2]{ 200,199 };
-   // double newScala;
-    // QSerialPort* device;
 public:
-    mainGameWidget(QWidget* parent = nullptr, gameParameters* gameInformations = nullptr, QTimer* appTimer = nullptr);
+    mainGameWidget(QWidget* parent = nullptr, UARTVal* gameInformations = nullptr, QTimer* appTimer = nullptr);
     void paintEvent(QPaintEvent* ptr);
-    
+
     void calculateBallPosition();
     void calculateUserPlate();
     void calculateComPlatePosition();
     void calculateIfBouncedPlate();
     void calculateIfBouncedWall();
     void calculateIfEndGame();
-    void initValues();
-    
+    void initValues(int comLives,int userLives);
+
     void makeGameStep();
 
     void gameEnd();
@@ -73,6 +66,9 @@ public:
     void calBal();
 public slots:
     void updateTime();
+
+signals:
+    void EmitEndGame();
 
 };
 

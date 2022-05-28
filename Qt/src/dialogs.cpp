@@ -1,5 +1,37 @@
 #include "dialogs.hpp"
 
+settDialog::settDialog() {
+  setupUi(this);
+}
+
+void settDialog::on_returnButton_clicked(){
+  this->close();
+}
+void settDialog::on_saveButton_clicked() {
+  this->close();
+}
+
+
+endDialog::endDialog() {
+  setupUi(this);
+}
+
+
+
+void endDialog::on_statisticsButton_clicked() {
+  emit EmitOpenStatistics();
+  this->close();
+}
+
+void endDialog::on_restartButton_clicked() {
+  emit EmitRestartGame();
+  this->close();
+}
+
+void endDialog::on_exitButton_clicked() {
+  emit  EmitClosing();
+  this->close();
+}
 
 conDialog::conDialog() {
   setupUi(this);

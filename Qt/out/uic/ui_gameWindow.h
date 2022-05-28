@@ -18,6 +18,7 @@
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -30,17 +31,19 @@ public:
     QAction *actionSettings;
     QAction *actionConnect;
     QAction *actionDisconnect;
-    QWidget *centralwidget;
+    QWidget *mainwidget;
     QMenuBar *menubar;
     QMenu *menuUstawienia_gry;
     QMenu *menuPolaczenie;
     QStatusBar *statusbar;
+    QToolBar *toolBar;
+    QToolBar *toolBar_2;
 
     void setupUi(QMainWindow *gameWindow)
     {
         if (gameWindow->objectName().isEmpty())
             gameWindow->setObjectName(QStringLiteral("gameWindow"));
-        gameWindow->resize(800, 600);
+        gameWindow->resize(796, 600);
         actionUstawienia = new QAction(gameWindow);
         actionUstawienia->setObjectName(QStringLiteral("actionUstawienia"));
         actionPolaczenie = new QAction(gameWindow);
@@ -51,13 +54,13 @@ public:
         actionConnect->setObjectName(QStringLiteral("actionConnect"));
         actionDisconnect = new QAction(gameWindow);
         actionDisconnect->setObjectName(QStringLiteral("actionDisconnect"));
-        centralwidget = new QWidget(gameWindow);
-        centralwidget->setObjectName(QStringLiteral("centralwidget"));
-        centralwidget->setEnabled(true);
-        gameWindow->setCentralWidget(centralwidget);
+        mainwidget = new QWidget(gameWindow);
+        mainwidget->setObjectName(QStringLiteral("mainwidget"));
+        mainwidget->setEnabled(true);
+        gameWindow->setCentralWidget(mainwidget);
         menubar = new QMenuBar(gameWindow);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 22));
+        menubar->setGeometry(QRect(0, 0, 796, 22));
         menuUstawienia_gry = new QMenu(menubar);
         menuUstawienia_gry->setObjectName(QStringLiteral("menuUstawienia_gry"));
         menuPolaczenie = new QMenu(menubar);
@@ -66,6 +69,12 @@ public:
         statusbar = new QStatusBar(gameWindow);
         statusbar->setObjectName(QStringLiteral("statusbar"));
         gameWindow->setStatusBar(statusbar);
+        toolBar = new QToolBar(gameWindow);
+        toolBar->setObjectName(QStringLiteral("toolBar"));
+        gameWindow->addToolBar(Qt::TopToolBarArea, toolBar);
+        toolBar_2 = new QToolBar(gameWindow);
+        toolBar_2->setObjectName(QStringLiteral("toolBar_2"));
+        gameWindow->addToolBar(Qt::TopToolBarArea, toolBar_2);
 
         menubar->addAction(menuUstawienia_gry->menuAction());
         menubar->addAction(menuPolaczenie->menuAction());
@@ -88,6 +97,8 @@ public:
         actionDisconnect->setText(QApplication::translate("gameWindow", "Disconnect", Q_NULLPTR));
         menuUstawienia_gry->setTitle(QApplication::translate("gameWindow", "Game Settings", Q_NULLPTR));
         menuPolaczenie->setTitle(QApplication::translate("gameWindow", "Connectivity", Q_NULLPTR));
+        toolBar->setWindowTitle(QApplication::translate("gameWindow", "toolBar", Q_NULLPTR));
+        toolBar_2->setWindowTitle(QApplication::translate("gameWindow", "toolBar_2", Q_NULLPTR));
     } // retranslateUi
 
 };

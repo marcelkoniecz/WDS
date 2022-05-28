@@ -22,19 +22,22 @@ uint16_t CalculateCRC8(char* ptr) {
   return (data >> 8);
 }
 
-void gameParameters::calculateVel() {
-  if (ZVal < 8 || ZVal>10)
-    ballVel = ballVel * ZVal / 9.81;
-  userPlateVel = userPlateVel * YVal / 9.81;
-}
+
 
 gameWindow::gameWindow(QMainWindow* parent) {
+
   setupUi(this);
-  this->CentralWidget = new mainWidget(this,&gameInfo);
+  this->CentralWidget = new mainWidget(this, &gameInfo);
   this->connectionDialog = new conDialog;
   this->device = new QSerialPort;
   this->disconnectionDialog = new disDialog();
-  setCentralWidget(CentralWidget);
+  this->endGameDialog = new endDialog();
+  this->settingsDialog=new settDialog();
+  this->statsWidget = new gameStatisticsWidget();
+  this->stackWidget = new QStackedWidget();
+  stackWidget->addWidget(CentralWidget);
+  stackWidget->addWidget(statsWidget);
+  this->setCentralWidget(stackWidget);
   // this->setGeometry(0, 0, 620, 410);
   // menuBar=new QMenuBar(this);
   // menuBar->setObjectName("menuBar");
@@ -43,10 +46,36 @@ gameWindow::gameWindow(QMainWindow* parent) {
   // menuUstawienia->setObjectName(QStringLiteral("menu_Ustawienia"));
  // connect(gameTimer,SIGNAL(timeout()),this,callOnTimeout())
   connect(CentralWidget->statystyki, SIGNAL(EmitClosing()), this, SLOT(close()));
+  connect(CentralWidget->statystyki, SIGNAL(EmitEndGame()), this, SLOT(endGame()));
+  connect(CentralWidget->okienko, SIGNAL(EmitEndGame()), this, SLOT(endGame()));
+  connect(statsWidget, SIGNAL(EmitChangeWidget()), this, SLOT(openGameWidget()));
   //connect(this,SIGNAL(timeout()),CentralWidget->okienko,SLOT(CentralWidget->okienko.tak()));
   // connect(connectionDialog, SIGNAL(EmitClosing()), this, SLOT(close()));
   connect(connectionDialog, SIGNAL(EmitChoosenDev(QString)), this, SLOT(initDevice(QString)));
+  connect(endGameDialog, SIGNAL(EmitClosing()), this, SLOT(close()));
+  connect(endGameDialog, SIGNAL(EmitRestartGame()), this, SLOT(restartGame()));
+  connect(endGameDialog, SIGNAL(EmitOpenStatistics()), this, SLOT(openStatisticsWidget()));
 }
+
+void gameWindow::openGameWidget() {
+  stackWidget->setCurrentIndex(0);
+    endGameDialog->show();
+}
+
+void gameWindow::openStatisticsWidget() {
+  stackWidget->setCurrentIndex(1);
+}
+
+void gameWindow::endGame() {
+  //gameInfo.resetPosition=true;
+  endGameDialog->show();
+}
+void gameWindow::restartGame() {
+  CentralWidget->gameTimer->start(10);
+  gameInfo.isGameActive = true;
+  gameInfo.resetPosition = true;
+}
+
 
 void gameWindow::initDevice(QString devName) {
   gameInfo.devName = devName;
@@ -110,7 +139,7 @@ void gameWindow::on_actionConnect_triggered() {
 }
 
 void gameWindow::on_actionSettings_triggered() {
-  close();
+    settingsDialog->show();
 }
 void gameWindow::on_actionDisconnect_triggered() {
 

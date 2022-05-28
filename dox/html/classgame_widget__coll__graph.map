@@ -1,0 +1,7 @@
+<map id="gameWidget" name="gameWidget">
+<area shape="rect" id="node5" href="$classmain_game_widget.html" title="mainGameWidget" alt="" coords="100,109,227,136"/>
+<area shape="rect" id="node3" href="$class_ui_1_1game_widget.html" title="Ui::gameWidget" alt="" coords="396,109,512,136"/>
+<area shape="rect" id="node4" href="$class_ui__game_widget.html" title="Ui_gameWidget" alt="" coords="397,5,511,32"/>
+<area shape="rect" id="node6" href="$classgame_parameters.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="103,5,224,32"/>
+<area shape="rect" id="node7" href="$classimage_parameters.html" title="imageParameters" alt="" coords="248,5,372,32"/>
+</map>
