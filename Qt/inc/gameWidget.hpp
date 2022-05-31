@@ -16,13 +16,14 @@
 #include <QTimer>
 #include <QDialog>
 #include "mainWidget.hpp"
+#include "gameParameters.hpp"
 
 class UARTVal;
 
 
 class imageParameters {
 public:
-    double ballSpeed ;
+    double ballSpeed;
     double plateSpeed;
     double XtargetComPlate;
     int userLives;
@@ -47,8 +48,11 @@ private:
     QImage life;
     volatile UARTVal* gameInfo;
     QTimer* gameTimer;
+    gameParameters* gameParame;
+    double timerun;
 public:
-    mainGameWidget(QWidget* parent = nullptr, UARTVal* gameInformations = nullptr, QTimer* appTimer = nullptr);
+    mainGameWidget(QWidget* parent = nullptr, UARTVal* gameInformations = nullptr,
+        QTimer* appTimer = nullptr, gameParameters* gameParamtr = nullptr);
     void paintEvent(QPaintEvent* ptr);
 
     void calculateBallPosition();
@@ -57,7 +61,7 @@ public:
     void calculateIfBouncedPlate();
     void calculateIfBouncedWall();
     void calculateIfEndGame();
-    void initValues(int comLives,int userLives);
+    void initValues(int comLives, int userLives);
 
     void makeGameStep();
 

@@ -18,7 +18,8 @@ QT = OBJECTS_DIR=${OBJ_FOL} INCLUDEPATH=inc INCLUDEPATH+=ui/inc\
     	QT+=serialport\
 		QT+=gui\
 		LIBS+=-lpthread\
-		QT+=core
+		QT+=core\
+		QT+=charts
 
 
 __start__: Makefile.app ${APP}

@@ -36,7 +36,7 @@ public:
     QLabel *mainText;
     QSpacerItem *horizontalSpacer_2;
     QHBoxLayout *horizontalLayout_6;
-    QFrame *frame_2;
+    QFrame *frameStatistics;
     QGridLayout *gridLayout;
     QLabel *bouncingLabel;
     QLineEdit *lineEdit_3;
@@ -44,7 +44,7 @@ public:
     QLineEdit *lineEdit;
     QLineEdit *lineEdit_2;
     QLabel *ballVelLabel;
-    QFrame *frame_3;
+    QFrame *frameChart;
     QWidget *widget;
     QHBoxLayout *horizontalLayout_5;
     QSpacerItem *horizontalSpacer_3;
@@ -86,15 +86,15 @@ public:
 
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
-        frame_2 = new QFrame(gameStatistics);
-        frame_2->setObjectName(QStringLiteral("frame_2"));
-        frame_2->setMinimumSize(QSize(300, 0));
-        frame_2->setMaximumSize(QSize(300, 500));
-        frame_2->setFrameShape(QFrame::StyledPanel);
-        frame_2->setFrameShadow(QFrame::Raised);
-        gridLayout = new QGridLayout(frame_2);
+        frameStatistics = new QFrame(gameStatistics);
+        frameStatistics->setObjectName(QStringLiteral("frameStatistics"));
+        frameStatistics->setMinimumSize(QSize(300, 0));
+        frameStatistics->setMaximumSize(QSize(300, 500));
+        frameStatistics->setFrameShape(QFrame::StyledPanel);
+        frameStatistics->setFrameShadow(QFrame::Raised);
+        gridLayout = new QGridLayout(frameStatistics);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        bouncingLabel = new QLabel(frame_2);
+        bouncingLabel = new QLabel(frameStatistics);
         bouncingLabel->setObjectName(QStringLiteral("bouncingLabel"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
@@ -109,47 +109,47 @@ public:
 
         gridLayout->addWidget(bouncingLabel, 3, 0, 1, 1);
 
-        lineEdit_3 = new QLineEdit(frame_2);
+        lineEdit_3 = new QLineEdit(frameStatistics);
         lineEdit_3->setObjectName(QStringLiteral("lineEdit_3"));
         lineEdit_3->setMaximumSize(QSize(100, 16777215));
 
         gridLayout->addWidget(lineEdit_3, 6, 1, 1, 1);
 
-        gameTimeLabel = new QLabel(frame_2);
+        gameTimeLabel = new QLabel(frameStatistics);
         gameTimeLabel->setObjectName(QStringLiteral("gameTimeLabel"));
         gameTimeLabel->setFont(font1);
         gameTimeLabel->setAlignment(Qt::AlignCenter);
 
         gridLayout->addWidget(gameTimeLabel, 2, 0, 1, 1);
 
-        lineEdit = new QLineEdit(frame_2);
+        lineEdit = new QLineEdit(frameStatistics);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
         lineEdit->setMaximumSize(QSize(100, 16777215));
 
         gridLayout->addWidget(lineEdit, 2, 1, 1, 1);
 
-        lineEdit_2 = new QLineEdit(frame_2);
+        lineEdit_2 = new QLineEdit(frameStatistics);
         lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
         lineEdit_2->setMaximumSize(QSize(100, 16777215));
 
         gridLayout->addWidget(lineEdit_2, 3, 1, 1, 1);
 
-        ballVelLabel = new QLabel(frame_2);
+        ballVelLabel = new QLabel(frameStatistics);
         ballVelLabel->setObjectName(QStringLiteral("ballVelLabel"));
         ballVelLabel->setFont(font1);
 
         gridLayout->addWidget(ballVelLabel, 6, 0, 1, 1);
 
 
-        horizontalLayout_6->addWidget(frame_2);
+        horizontalLayout_6->addWidget(frameStatistics);
 
-        frame_3 = new QFrame(gameStatistics);
-        frame_3->setObjectName(QStringLiteral("frame_3"));
-        frame_3->setMinimumSize(QSize(500, 300));
-        frame_3->setFrameShape(QFrame::StyledPanel);
-        frame_3->setFrameShadow(QFrame::Raised);
+        frameChart = new QFrame(gameStatistics);
+        frameChart->setObjectName(QStringLiteral("frameChart"));
+        frameChart->setMinimumSize(QSize(500, 300));
+        frameChart->setFrameShape(QFrame::StyledPanel);
+        frameChart->setFrameShadow(QFrame::Raised);
 
-        horizontalLayout_6->addWidget(frame_3);
+        horizontalLayout_6->addWidget(frameChart);
 
 
         verticalLayout_2->addLayout(horizontalLayout_6);

@@ -12,10 +12,10 @@ MAKEFILE      = Makefile.app
 
 CC            = gcc
 CXX           = g++
-DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB
+DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -O2 -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -g -O2 -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -Iout/pro -I. -Iinc -Iui/inc -I.inc -I./res/inc -I./ui/inc -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -Iout/moc -isystem /usr/include/libdrm -Iout/uic -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++
+INCPATH       = -Iout/pro -I. -Iinc -Iui/inc -I.inc -I./res/inc -I./ui/inc -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCharts -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtSerialPort -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -Iout/moc -isystem /usr/include/libdrm -Iout/uic -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++
 QMAKE         = /usr/lib/qt5/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -38,7 +38,7 @@ DISTNAME      = gra1.0.0
 DISTDIR = /home/marcel/Documents/semestrVI/WDS/Qt/out/obj/gra1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1
-LIBS          = $(SUBLIBS) -lQt5Widgets -lQt5Gui -lQt5SerialPort -lQt5Core -lGL -lpthread 
+LIBS          = $(SUBLIBS) -lQt5Charts -lQt5Widgets -lQt5Gui -lQt5SerialPort -lQt5Core -lGL -lpthread 
 AR            = ar cqs
 RANLIB        = 
 SED           = sed
@@ -88,6 +88,7 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/qconfig.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_accessibility_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_charts.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_concurrent.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_concurrent_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_core.pri \
@@ -188,6 +189,7 @@ Makefile.app: out/pro/gra.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qm
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/qconfig.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_accessibility_support_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri \
+		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_charts.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_concurrent.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_concurrent_private.pri \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_core.pri \
@@ -253,6 +255,7 @@ Makefile.app: out/pro/gra.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qm
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
 		out/pro/gra.pro \
 		res/zasoby.qrc \
+		/usr/lib/x86_64-linux-gnu/libQt5Charts.prl \
 		/usr/lib/x86_64-linux-gnu/libQt5Widgets.prl \
 		/usr/lib/x86_64-linux-gnu/libQt5Gui.prl \
 		/usr/lib/x86_64-linux-gnu/libQt5SerialPort.prl \
@@ -269,6 +272,7 @@ Makefile.app: out/pro/gra.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qm
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/qconfig.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_accessibility_support_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_bootstrap_private.pri:
+/usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_charts.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_concurrent.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_concurrent_private.pri:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_lib_core.pri:
@@ -334,6 +338,7 @@ Makefile.app: out/pro/gra.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qm
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf:
 out/pro/gra.pro:
 res/zasoby.qrc:
+/usr/lib/x86_64-linux-gnu/libQt5Charts.prl:
 /usr/lib/x86_64-linux-gnu/libQt5Widgets.prl:
 /usr/lib/x86_64-linux-gnu/libQt5Gui.prl:
 /usr/lib/x86_64-linux-gnu/libQt5SerialPort.prl:
@@ -405,18 +410,20 @@ out/moc/moc_dialogs.cpp: out/uic/ui_disDialog.h \
 		inc/dialogs.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/dialogs.hpp -o out/moc/moc_dialogs.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/dialogs.hpp -o out/moc/moc_dialogs.cpp
 
 out/moc/moc_gameStatistics.cpp: out/uic/ui_gameStatistics.h \
+		inc/gameParameters.hpp \
 		inc/gameStatistics.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/gameStatistics.hpp -o out/moc/moc_gameStatistics.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/gameStatistics.hpp -o out/moc/moc_gameStatistics.cpp
 
 out/moc/moc_gameWidget.cpp: inc/mainWidget.hpp \
 		inc/gameWindow.hpp \
 		inc/gameStatistics.hpp \
 		out/uic/ui_gameStatistics.h \
+		inc/gameParameters.hpp \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
@@ -424,18 +431,20 @@ out/moc/moc_gameWidget.cpp: inc/mainWidget.hpp \
 		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
+		inc/gameSettings.hpp \
 		inc/gameWidget.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h \
 		inc/gameWidget.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/gameWidget.hpp -o out/moc/moc_gameWidget.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/gameWidget.hpp -o out/moc/moc_gameWidget.cpp
 
 out/moc/moc_gameWindow.cpp: inc/mainWidget.hpp \
 		inc/gameWindow.hpp \
 		inc/gameStatistics.hpp \
 		out/uic/ui_gameStatistics.h \
+		inc/gameParameters.hpp \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
@@ -443,17 +452,19 @@ out/moc/moc_gameWindow.cpp: inc/mainWidget.hpp \
 		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
+		inc/gameSettings.hpp \
 		inc/gameWidget.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h \
 		inc/gameWindow.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/gameWindow.hpp -o out/moc/moc_gameWindow.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/gameWindow.hpp -o out/moc/moc_gameWindow.cpp
 
 out/moc/moc_mainWidget.cpp: inc/gameWindow.hpp \
 		inc/mainWidget.hpp \
 		inc/gameWidget.hpp \
+		inc/gameParameters.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h \
 		inc/gameStatistics.hpp \
@@ -465,15 +476,17 @@ out/moc/moc_mainWidget.cpp: inc/gameWindow.hpp \
 		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
+		inc/gameSettings.hpp \
 		inc/mainWidget.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/mainWidget.hpp -o out/moc/moc_mainWidget.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/mainWidget.hpp -o out/moc/moc_mainWidget.cpp
 
 out/moc/moc_sideWidget.cpp: inc/mainWidget.hpp \
 		inc/gameWindow.hpp \
 		inc/gameStatistics.hpp \
 		out/uic/ui_gameStatistics.h \
+		inc/gameParameters.hpp \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
@@ -481,13 +494,14 @@ out/moc/moc_sideWidget.cpp: inc/mainWidget.hpp \
 		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
+		inc/gameSettings.hpp \
 		inc/gameWidget.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h \
 		inc/sideWidget.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/sideWidget.hpp -o out/moc/moc_sideWidget.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include ./out/moc/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/.inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/res/inc -I/home/marcel/Documents/semestrVI/WDS/Qt/out/pro/ui/inc -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtCharts -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtSerialPort -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include inc/sideWidget.hpp -o out/moc/moc_sideWidget.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -564,7 +578,8 @@ out/obj/dialogs.o: src/dialogs.cpp inc/dialogs.hpp \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/dialogs.o src/dialogs.cpp
 
 out/obj/gameStatistics.o: src/gameStatistics.cpp inc/gameStatistics.hpp \
-		out/uic/ui_gameStatistics.h
+		out/uic/ui_gameStatistics.h \
+		inc/gameParameters.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/gameStatistics.o src/gameStatistics.cpp
 
 out/obj/gameWidget.o: src/gameWidget.cpp inc/gameWidget.hpp \
@@ -572,6 +587,7 @@ out/obj/gameWidget.o: src/gameWidget.cpp inc/gameWidget.hpp \
 		inc/gameWindow.hpp \
 		inc/gameStatistics.hpp \
 		out/uic/ui_gameStatistics.h \
+		inc/gameParameters.hpp \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
@@ -579,6 +595,7 @@ out/obj/gameWidget.o: src/gameWidget.cpp inc/gameWidget.hpp \
 		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
+		inc/gameSettings.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/gameWidget.o src/gameWidget.cpp
@@ -586,6 +603,7 @@ out/obj/gameWidget.o: src/gameWidget.cpp inc/gameWidget.hpp \
 out/obj/gameWindow.o: src/gameWindow.cpp inc/gameWindow.hpp \
 		inc/mainWidget.hpp \
 		inc/gameWidget.hpp \
+		inc/gameParameters.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h \
 		inc/gameStatistics.hpp \
@@ -596,13 +614,15 @@ out/obj/gameWindow.o: src/gameWindow.cpp inc/gameWindow.hpp \
 		out/uic/ui_endGameDialog.h \
 		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
-		inc/uartParam.hpp
+		inc/uartParam.hpp \
+		inc/gameSettings.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/gameWindow.o src/gameWindow.cpp
 
 out/obj/main.o: src/main.cpp inc/mainWidget.hpp \
 		inc/gameWindow.hpp \
 		inc/gameStatistics.hpp \
 		out/uic/ui_gameStatistics.h \
+		inc/gameParameters.hpp \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
@@ -610,6 +630,7 @@ out/obj/main.o: src/main.cpp inc/mainWidget.hpp \
 		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
+		inc/gameSettings.hpp \
 		inc/gameWidget.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h
@@ -619,6 +640,7 @@ out/obj/mainWidget.o: src/mainWidget.cpp inc/mainWidget.hpp \
 		inc/gameWindow.hpp \
 		inc/gameStatistics.hpp \
 		out/uic/ui_gameStatistics.h \
+		inc/gameParameters.hpp \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
@@ -626,6 +648,7 @@ out/obj/mainWidget.o: src/mainWidget.cpp inc/mainWidget.hpp \
 		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
+		inc/gameSettings.hpp \
 		inc/gameWidget.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h
@@ -636,6 +659,7 @@ out/obj/sideWidget.o: src/sideWidget.cpp inc/sideWidget.hpp \
 		inc/gameWindow.hpp \
 		inc/gameStatistics.hpp \
 		out/uic/ui_gameStatistics.h \
+		inc/gameParameters.hpp \
 		inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
@@ -643,6 +667,7 @@ out/obj/sideWidget.o: src/sideWidget.cpp inc/sideWidget.hpp \
 		out/uic/ui_settDialog.h \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
+		inc/gameSettings.hpp \
 		inc/gameWidget.hpp \
 		out/uic/ui_sidePanelWidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/sideWidget.o src/sideWidget.cpp

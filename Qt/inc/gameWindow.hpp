@@ -21,6 +21,7 @@
 #include "ui_gameWindow.h"
 #include "uartParam.hpp"
 #include "gameSettings.hpp"
+#include "gameParameters.hpp"
 
 class mainWidget;
 class gameStatistics;
@@ -54,6 +55,7 @@ private:
     settDialog *settingsDialog;
 
     UARTVal gameInfo;
+
     /**
      * @brief Pole widgetu gry
      */
@@ -61,7 +63,9 @@ private:
     QStackedWidget *stackWidget;
     gameStatisticsWidget* statsWidget;
 
+
 public:
+    gameParameters gameParam;
     /**
      * @brief Konstruktor nowego okna gry
      * @param parent Rodzic qmainWindow domyslnie wskazujacy na NULL

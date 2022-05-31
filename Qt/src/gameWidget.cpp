@@ -7,7 +7,7 @@ double Deg2Rad(double Ang_deg)
   return Ang_deg * M_PI / 180;
 }
 
-mainGameWidget::mainGameWidget(QWidget* parent, UARTVal* gameInformations, QTimer* appTimer) :QWidget(parent) {
+mainGameWidget::mainGameWidget(QWidget* parent, UARTVal* gameInformations, QTimer* appTimer, gameParameters* gameParamtr) :QWidget(parent) {
   background.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/tlo.png");
   computerPlate.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/plytka.png");
   userPlate.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/plytka.png");
@@ -15,13 +15,15 @@ mainGameWidget::mainGameWidget(QWidget* parent, UARTVal* gameInformations, QTime
   //life.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/zyciebez.png");
   gameTimer = appTimer;
   gameInfo = gameInformations;
+  gameParame = gameParamtr;
   connect(gameTimer, SIGNAL(timeout()), this, SLOT(updateTime()));
-  initValues(1,1);
+  initValues(1, 1);
+  timerun = 0;
   //gameInfo->isGameActive = 1;
   //gameParam.currentAngle = 90;
 }
 
-void mainGameWidget::initValues(int comLives,int userLives) {
+void mainGameWidget::initValues(int comLives, int userLives) {
 
   gameParam.currentAngle = 90;
   gameInfo->isGameActive = true;
@@ -29,20 +31,18 @@ void mainGameWidget::initValues(int comLives,int userLives) {
   gameParam.ballPos[1] = 200;
   gameParam.ballSpeed = 5;
   gameParam.plateSpeed = 3;
-  gameParam.userLives=comLives;
-  gameParam.compLives=userLives;
-  //ba
-  for(int i=0; i<100;i++) printf(" ");
-  printf("Marcello");
+  gameParam.userLives = comLives;
+  gameParam.compLives = userLives;
+
 }
 
 
 
 void mainGameWidget::updateTime() {
-  
-  if(gameInfo->resetPosition){
-    initValues(1,1);
-    gameInfo->resetPosition=false;
+
+  if (gameInfo->resetPosition) {
+    initValues(1, 1);
+    gameInfo->resetPosition = false;
   }
   this->makeGameStep();
   update();
@@ -60,6 +60,11 @@ void mainGameWidget::calculateUserPlate() {
   if (gameInfo->isGameActive) {
     if (gameParam.userPlateLoc[0][0] + gameInfo->YVal + 120 < width() - 60 &&
       gameParam.userPlateLoc[0][0] + gameInfo->YVal > 0) {
+      timerun += 0.1;
+      //qDebug()<<gameInfo->YVal<<timerun;
+      //gameParame->accValues.append(gameInfo->YVal);
+      gameParame->accValues.append(timerun,gameInfo->YVal);
+      //(gameParame->accValues)<<QPointF(gameInfo->YVal,timerun);
       gameParam.userPlateLoc[0][0] += gameInfo->YVal;
       gameParam.userPlateLoc[0][1] += gameInfo->YVal;
     }

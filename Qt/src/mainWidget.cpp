@@ -1,11 +1,11 @@
 #include "mainWidget.hpp"
 
-mainWidget:: mainWidget(gameWindow* parent, UARTVal* gameInfo) {
+mainWidget:: mainWidget(gameWindow* parent, UARTVal* gameInfo, gameParameters* gameParam) {
   QHBoxLayout* whZarzadzca = new QHBoxLayout;
   gameTimer = new QTimer(this);
   gameTimer->start(10);
   gameTimer->stop();
-  okienko = new mainGameWidget(this,gameInfo,gameTimer);
+  okienko = new mainGameWidget(this,gameInfo,gameTimer,gameParam);
   statystyki = new SidePanelWidget(this,gameTimer);
   okienko->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
   okienko->setMinimumSize(500, 500);

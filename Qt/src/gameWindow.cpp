@@ -27,13 +27,13 @@ uint16_t CalculateCRC8(char* ptr) {
 gameWindow::gameWindow(QMainWindow* parent) {
 
   setupUi(this);
-  this->CentralWidget = new mainWidget(this, &gameInfo);
+  this->CentralWidget = new mainWidget(this, &gameInfo,&gameParam);
   this->connectionDialog = new conDialog;
   this->device = new QSerialPort;
   this->disconnectionDialog = new disDialog();
   this->endGameDialog = new endDialog();
   this->settingsDialog=new settDialog();
-  this->statsWidget = new gameStatisticsWidget();
+  this->statsWidget = new gameStatisticsWidget(&gameParam);
   this->stackWidget = new QStackedWidget();
   stackWidget->addWidget(CentralWidget);
   stackWidget->addWidget(statsWidget);
@@ -63,6 +63,7 @@ void gameWindow::openGameWidget() {
 }
 
 void gameWindow::openStatisticsWidget() {
+  statsWidget->printChart();
   stackWidget->setCurrentIndex(1);
 }
 

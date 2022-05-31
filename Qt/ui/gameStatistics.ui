@@ -79,7 +79,7 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_6">
      <item>
-      <widget class="QFrame" name="frame_2">
+      <widget class="QFrame" name="frameStatistics">
        <property name="minimumSize">
         <size>
          <width>300</width>
@@ -184,7 +184,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QFrame" name="frame_3">
+      <widget class="QFrame" name="frameChart">
        <property name="minimumSize">
         <size>
          <width>500</width>

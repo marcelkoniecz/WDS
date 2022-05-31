@@ -16,14 +16,33 @@
 #include <QTimer>
 #include <QDialog>
 #include "ui_gameStatistics.h"
+#include <QChart>
+#include <QPainter>
+#include <QtCharts>
+#include "gameParameters.hpp"
+#include <QLineSeries>
+// class myChart :public QChart {
+//     Q_OBJECT
+// private:
+//     QChart* chart;
+// public:
+//     myChart();
+
+// }
+
 
 
 
 class gameStatisticsWidget :public QWidget, public Ui::gameStatistics {
     Q_OBJECT
+public:
+    QChart* chart;
+    gameParameters *gameParam;
+    QLineSeries* points;
 
 public:
-    gameStatisticsWidget();
+    gameStatisticsWidget(gameParameters *game=nullptr);
+    void printChart();
 public slots:
     void on_returnButton_clicked();
 signals:
