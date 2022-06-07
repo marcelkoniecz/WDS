@@ -38,16 +38,16 @@ public:
     QSpacerItem *horizontalSpacer;
     QFrame *gridFrame;
     QGridLayout *gridLayout;
-    QCheckBox *checkBox;
+    QCheckBox *vellCheck;
     QLabel *label;
     QLabel *label_3;
-    QComboBox *comboBox_3;
-    QComboBox *comboBox_2;
+    QComboBox *levelBox;
+    QComboBox *lifesBox;
     QLabel *label_2;
     QLabel *label_5;
     QLabel *label_4;
-    QCheckBox *checkBox_2;
-    QComboBox *comboBox;
+    QCheckBox *bouncingCheck;
+    QComboBox *languageBox;
     QFrame *frame_2;
     QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer_3;
@@ -97,14 +97,14 @@ public:
         gridLayout = new QGridLayout(gridFrame);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setContentsMargins(10, 10, 10, 10);
-        checkBox = new QCheckBox(gridFrame);
-        checkBox->setObjectName(QStringLiteral("checkBox"));
+        vellCheck = new QCheckBox(gridFrame);
+        vellCheck->setObjectName(QStringLiteral("vellCheck"));
         QFont font1;
         font1.setPointSize(15);
-        checkBox->setFont(font1);
-        checkBox->setIconSize(QSize(30, 30));
+        vellCheck->setFont(font1);
+        vellCheck->setIconSize(QSize(30, 30));
 
-        gridLayout->addWidget(checkBox, 4, 1, 1, 1, Qt::AlignHCenter);
+        gridLayout->addWidget(vellCheck, 4, 1, 1, 1, Qt::AlignHCenter);
 
         label = new QLabel(gridFrame);
         label->setObjectName(QStringLiteral("label"));
@@ -122,17 +122,17 @@ public:
 
         gridLayout->addWidget(label_3, 3, 0, 1, 1);
 
-        comboBox_3 = new QComboBox(gridFrame);
-        comboBox_3->setObjectName(QStringLiteral("comboBox_3"));
-        comboBox_3->setFont(font2);
+        levelBox = new QComboBox(gridFrame);
+        levelBox->setObjectName(QStringLiteral("levelBox"));
+        levelBox->setFont(font2);
 
-        gridLayout->addWidget(comboBox_3, 3, 1, 1, 1);
+        gridLayout->addWidget(levelBox, 3, 1, 1, 1);
 
-        comboBox_2 = new QComboBox(gridFrame);
-        comboBox_2->setObjectName(QStringLiteral("comboBox_2"));
-        comboBox_2->setFont(font2);
+        lifesBox = new QComboBox(gridFrame);
+        lifesBox->setObjectName(QStringLiteral("lifesBox"));
+        lifesBox->setFont(font2);
 
-        gridLayout->addWidget(comboBox_2, 2, 1, 1, 1);
+        gridLayout->addWidget(lifesBox, 2, 1, 1, 1);
 
         label_2 = new QLabel(gridFrame);
         label_2->setObjectName(QStringLiteral("label_2"));
@@ -155,19 +155,19 @@ public:
 
         gridLayout->addWidget(label_4, 4, 0, 1, 1);
 
-        checkBox_2 = new QCheckBox(gridFrame);
-        checkBox_2->setObjectName(QStringLiteral("checkBox_2"));
-        checkBox_2->setFont(font1);
-        checkBox_2->setLayoutDirection(Qt::LeftToRight);
-        checkBox_2->setIconSize(QSize(22, 22));
+        bouncingCheck = new QCheckBox(gridFrame);
+        bouncingCheck->setObjectName(QStringLiteral("bouncingCheck"));
+        bouncingCheck->setFont(font1);
+        bouncingCheck->setLayoutDirection(Qt::LeftToRight);
+        bouncingCheck->setIconSize(QSize(22, 22));
 
-        gridLayout->addWidget(checkBox_2, 5, 1, 1, 1, Qt::AlignHCenter);
+        gridLayout->addWidget(bouncingCheck, 5, 1, 1, 1, Qt::AlignHCenter);
 
-        comboBox = new QComboBox(gridFrame);
-        comboBox->setObjectName(QStringLiteral("comboBox"));
-        comboBox->setFont(font2);
+        languageBox = new QComboBox(gridFrame);
+        languageBox->setObjectName(QStringLiteral("languageBox"));
+        languageBox->setFont(font2);
 
-        gridLayout->addWidget(comboBox, 0, 1, 1, 1);
+        gridLayout->addWidget(languageBox, 0, 1, 1, 1);
 
 
         verticalLayout->addWidget(gridFrame);
@@ -206,17 +206,17 @@ public:
     {
         Dialog->setWindowTitle(QApplication::translate("Dialog", "Dialog", Q_NULLPTR));
         setings->setText(QApplication::translate("Dialog", "Settings", Q_NULLPTR));
-        checkBox->setText(QString());
+        vellCheck->setText(QString());
         label->setText(QApplication::translate("Dialog", "Language", Q_NULLPTR));
         label_3->setText(QApplication::translate("Dialog", "Difficulty Level", Q_NULLPTR));
-        comboBox_3->clear();
-        comboBox_3->insertItems(0, QStringList()
+        levelBox->clear();
+        levelBox->insertItems(0, QStringList()
          << QApplication::translate("Dialog", "Easy", Q_NULLPTR)
          << QApplication::translate("Dialog", "Medium", Q_NULLPTR)
          << QApplication::translate("Dialog", "Hard", Q_NULLPTR)
         );
-        comboBox_2->clear();
-        comboBox_2->insertItems(0, QStringList()
+        lifesBox->clear();
+        lifesBox->insertItems(0, QStringList()
          << QApplication::translate("Dialog", "1", Q_NULLPTR)
          << QApplication::translate("Dialog", "2", Q_NULLPTR)
          << QApplication::translate("Dialog", "3", Q_NULLPTR)
@@ -224,9 +224,9 @@ public:
         label_2->setText(QApplication::translate("Dialog", "Lifes", Q_NULLPTR));
         label_5->setText(QApplication::translate("Dialog", "Random bouncing", Q_NULLPTR));
         label_4->setText(QApplication::translate("Dialog", "Random ball velocity", Q_NULLPTR));
-        checkBox_2->setText(QString());
-        comboBox->clear();
-        comboBox->insertItems(0, QStringList()
+        bouncingCheck->setText(QString());
+        languageBox->clear();
+        languageBox->insertItems(0, QStringList()
          << QApplication::translate("Dialog", "English", Q_NULLPTR)
          << QApplication::translate("Dialog", "Polish", Q_NULLPTR)
         );

@@ -362,6 +362,7 @@ distdir: FORCE
 	$(COPY_FILE) --parents inc/dialogs.hpp inc/gameParameters.hpp inc/gameSettings.hpp inc/gameStatistics.hpp inc/gameWidget.hpp inc/gameWindow.hpp inc/mainWidget.hpp inc/sideWidget.hpp inc/uartParam.hpp $(DISTDIR)/
 	$(COPY_FILE) --parents src/dialogs.cpp src/gameStatistics.cpp src/gameWidget.cpp src/gameWindow.cpp src/main.cpp src/mainWidget.cpp src/sideWidget.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ui/aplicationmainwindow.ui ui/conDialog.ui ui/disDialog.ui ui/endGameDialog.ui ui/endGameDialog2.ui ui/gameStatistics.ui ui/gameWidget.ui ui/gameWidgetv2.ui ui/gameWindow.ui ui/settDialog.ui ui/settingsDialog.ui ui/sidePanelWidget.ui ui/sideWidget.ui $(DISTDIR)/
+	$(COPY_FILE) --parents gra_pl.ts $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -407,6 +408,18 @@ out/moc/moc_dialogs.cpp: out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
 		out/uic/ui_endGameDialog.h \
 		out/uic/ui_settDialog.h \
+		inc/gameSettings.hpp \
+		inc/gameWindow.hpp \
+		inc/mainWidget.hpp \
+		inc/gameWidget.hpp \
+		inc/gameParameters.hpp \
+		inc/sideWidget.hpp \
+		out/uic/ui_sidePanelWidget.h \
+		inc/gameStatistics.hpp \
+		out/uic/ui_gameStatistics.h \
+		inc/dialogs.hpp \
+		out/uic/ui_gameWindow.h \
+		inc/uartParam.hpp \
 		inc/dialogs.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
@@ -429,9 +442,9 @@ out/moc/moc_gameWidget.cpp: inc/mainWidget.hpp \
 		out/uic/ui_conDialog.h \
 		out/uic/ui_endGameDialog.h \
 		out/uic/ui_settDialog.h \
+		inc/gameSettings.hpp \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
-		inc/gameSettings.hpp \
 		inc/gameWidget.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h \
@@ -450,9 +463,9 @@ out/moc/moc_gameWindow.cpp: inc/mainWidget.hpp \
 		out/uic/ui_conDialog.h \
 		out/uic/ui_endGameDialog.h \
 		out/uic/ui_settDialog.h \
+		inc/gameSettings.hpp \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
-		inc/gameSettings.hpp \
 		inc/gameWidget.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h \
@@ -474,9 +487,9 @@ out/moc/moc_mainWidget.cpp: inc/gameWindow.hpp \
 		out/uic/ui_conDialog.h \
 		out/uic/ui_endGameDialog.h \
 		out/uic/ui_settDialog.h \
+		inc/gameSettings.hpp \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
-		inc/gameSettings.hpp \
 		inc/mainWidget.hpp \
 		out/moc/moc_predefs.h \
 		/usr/lib/qt5/bin/moc
@@ -492,9 +505,9 @@ out/moc/moc_sideWidget.cpp: inc/mainWidget.hpp \
 		out/uic/ui_conDialog.h \
 		out/uic/ui_endGameDialog.h \
 		out/uic/ui_settDialog.h \
+		inc/gameSettings.hpp \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
-		inc/gameSettings.hpp \
 		inc/gameWidget.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h \
@@ -574,7 +587,18 @@ out/obj/dialogs.o: src/dialogs.cpp inc/dialogs.hpp \
 		out/uic/ui_disDialog.h \
 		out/uic/ui_conDialog.h \
 		out/uic/ui_endGameDialog.h \
-		out/uic/ui_settDialog.h
+		out/uic/ui_settDialog.h \
+		inc/gameSettings.hpp \
+		inc/gameWindow.hpp \
+		inc/mainWidget.hpp \
+		inc/gameWidget.hpp \
+		inc/gameParameters.hpp \
+		inc/sideWidget.hpp \
+		out/uic/ui_sidePanelWidget.h \
+		inc/gameStatistics.hpp \
+		out/uic/ui_gameStatistics.h \
+		out/uic/ui_gameWindow.h \
+		inc/uartParam.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/dialogs.o src/dialogs.cpp
 
 out/obj/gameStatistics.o: src/gameStatistics.cpp inc/gameStatistics.hpp \
@@ -593,9 +617,9 @@ out/obj/gameWidget.o: src/gameWidget.cpp inc/gameWidget.hpp \
 		out/uic/ui_conDialog.h \
 		out/uic/ui_endGameDialog.h \
 		out/uic/ui_settDialog.h \
+		inc/gameSettings.hpp \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
-		inc/gameSettings.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/gameWidget.o src/gameWidget.cpp
@@ -613,9 +637,9 @@ out/obj/gameWindow.o: src/gameWindow.cpp inc/gameWindow.hpp \
 		out/uic/ui_conDialog.h \
 		out/uic/ui_endGameDialog.h \
 		out/uic/ui_settDialog.h \
+		inc/gameSettings.hpp \
 		out/uic/ui_gameWindow.h \
-		inc/uartParam.hpp \
-		inc/gameSettings.hpp
+		inc/uartParam.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/gameWindow.o src/gameWindow.cpp
 
 out/obj/main.o: src/main.cpp inc/mainWidget.hpp \
@@ -628,9 +652,9 @@ out/obj/main.o: src/main.cpp inc/mainWidget.hpp \
 		out/uic/ui_conDialog.h \
 		out/uic/ui_endGameDialog.h \
 		out/uic/ui_settDialog.h \
+		inc/gameSettings.hpp \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
-		inc/gameSettings.hpp \
 		inc/gameWidget.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h
@@ -646,9 +670,9 @@ out/obj/mainWidget.o: src/mainWidget.cpp inc/mainWidget.hpp \
 		out/uic/ui_conDialog.h \
 		out/uic/ui_endGameDialog.h \
 		out/uic/ui_settDialog.h \
+		inc/gameSettings.hpp \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
-		inc/gameSettings.hpp \
 		inc/gameWidget.hpp \
 		inc/sideWidget.hpp \
 		out/uic/ui_sidePanelWidget.h
@@ -665,9 +689,9 @@ out/obj/sideWidget.o: src/sideWidget.cpp inc/sideWidget.hpp \
 		out/uic/ui_conDialog.h \
 		out/uic/ui_endGameDialog.h \
 		out/uic/ui_settDialog.h \
+		inc/gameSettings.hpp \
 		out/uic/ui_gameWindow.h \
 		inc/uartParam.hpp \
-		inc/gameSettings.hpp \
 		inc/gameWidget.hpp \
 		out/uic/ui_sidePanelWidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o out/obj/sideWidget.o src/sideWidget.cpp

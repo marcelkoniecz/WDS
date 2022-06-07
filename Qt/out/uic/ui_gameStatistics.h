@@ -39,16 +39,16 @@ public:
     QFrame *frameStatistics;
     QGridLayout *gridLayout;
     QLabel *bouncingLabel;
-    QLineEdit *lineEdit_3;
+    QLineEdit *ballVelLab;
     QLabel *gameTimeLabel;
-    QLineEdit *lineEdit;
-    QLineEdit *lineEdit_2;
+    QLineEdit *gameTimeLable;
+    QLineEdit *bouncingLable;
     QLabel *ballVelLabel;
     QFrame *frameChart;
     QWidget *widget;
     QHBoxLayout *horizontalLayout_5;
     QSpacerItem *horizontalSpacer_3;
-    QPushButton *backButton;
+    QPushButton *returnButton;
 
     void setupUi(QWidget *gameStatistics)
     {
@@ -109,11 +109,13 @@ public:
 
         gridLayout->addWidget(bouncingLabel, 3, 0, 1, 1);
 
-        lineEdit_3 = new QLineEdit(frameStatistics);
-        lineEdit_3->setObjectName(QStringLiteral("lineEdit_3"));
-        lineEdit_3->setMaximumSize(QSize(100, 16777215));
+        ballVelLab = new QLineEdit(frameStatistics);
+        ballVelLab->setObjectName(QStringLiteral("ballVelLab"));
+        ballVelLab->setMaximumSize(QSize(100, 16777215));
+        ballVelLab->setAlignment(Qt::AlignCenter);
+        ballVelLab->setReadOnly(true);
 
-        gridLayout->addWidget(lineEdit_3, 6, 1, 1, 1);
+        gridLayout->addWidget(ballVelLab, 6, 1, 1, 1);
 
         gameTimeLabel = new QLabel(frameStatistics);
         gameTimeLabel->setObjectName(QStringLiteral("gameTimeLabel"));
@@ -122,17 +124,21 @@ public:
 
         gridLayout->addWidget(gameTimeLabel, 2, 0, 1, 1);
 
-        lineEdit = new QLineEdit(frameStatistics);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
-        lineEdit->setMaximumSize(QSize(100, 16777215));
+        gameTimeLable = new QLineEdit(frameStatistics);
+        gameTimeLable->setObjectName(QStringLiteral("gameTimeLable"));
+        gameTimeLable->setMaximumSize(QSize(100, 16777215));
+        gameTimeLable->setAlignment(Qt::AlignCenter);
+        gameTimeLable->setReadOnly(true);
 
-        gridLayout->addWidget(lineEdit, 2, 1, 1, 1);
+        gridLayout->addWidget(gameTimeLable, 2, 1, 1, 1);
 
-        lineEdit_2 = new QLineEdit(frameStatistics);
-        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
-        lineEdit_2->setMaximumSize(QSize(100, 16777215));
+        bouncingLable = new QLineEdit(frameStatistics);
+        bouncingLable->setObjectName(QStringLiteral("bouncingLable"));
+        bouncingLable->setMaximumSize(QSize(100, 16777215));
+        bouncingLable->setAlignment(Qt::AlignCenter);
+        bouncingLable->setReadOnly(true);
 
-        gridLayout->addWidget(lineEdit_2, 3, 1, 1, 1);
+        gridLayout->addWidget(bouncingLable, 3, 1, 1, 1);
 
         ballVelLabel = new QLabel(frameStatistics);
         ballVelLabel->setObjectName(QStringLiteral("ballVelLabel"));
@@ -162,14 +168,14 @@ public:
 
         horizontalLayout_5->addItem(horizontalSpacer_3);
 
-        backButton = new QPushButton(widget);
-        backButton->setObjectName(QStringLiteral("backButton"));
+        returnButton = new QPushButton(widget);
+        returnButton->setObjectName(QStringLiteral("returnButton"));
         QFont font2;
         font2.setPointSize(14);
-        backButton->setFont(font2);
-        backButton->setIconSize(QSize(20, 20));
+        returnButton->setFont(font2);
+        returnButton->setIconSize(QSize(20, 20));
 
-        horizontalLayout_5->addWidget(backButton);
+        horizontalLayout_5->addWidget(returnButton);
 
 
         verticalLayout_2->addWidget(widget);
@@ -187,7 +193,7 @@ public:
         bouncingLabel->setText(QApplication::translate("gameStatistics", "Bouncing:", Q_NULLPTR));
         gameTimeLabel->setText(QApplication::translate("gameStatistics", "Game time:", Q_NULLPTR));
         ballVelLabel->setText(QApplication::translate("gameStatistics", "Average ball velocity", Q_NULLPTR));
-        backButton->setText(QApplication::translate("gameStatistics", "Return", Q_NULLPTR));
+        returnButton->setText(QApplication::translate("gameStatistics", "Return", Q_NULLPTR));
     } // retranslateUi
 
 };

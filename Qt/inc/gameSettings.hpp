@@ -5,10 +5,11 @@ enum gameDifficulty { easy, medium, hard };
 enum applicationLanguage { english, polish };
 
 class gameSettings {
+    public:
     gameDifficulty gamelvl = easy;
     applicationLanguage language = english;
     int lifes = 1;
-    bool randomBouncing = true;
+    bool rndBcnPlts = true; //Random plates bouncing
     bool randomBallSpeed = false;
 };
 

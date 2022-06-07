@@ -15,18 +15,22 @@
 #include <QImage>
 #include <QTimer>
 #include <QDialog>
+#include "gameParameters.hpp"
 #include "mainWidget.hpp"
 #include "gameStatistics.hpp"
 #include "dialogs.hpp"
 #include "ui_gameWindow.h"
 #include "uartParam.hpp"
 #include "gameSettings.hpp"
-#include "gameParameters.hpp"
+
 
 class mainWidget;
 class gameStatistics;
-
-
+class settDialog;
+class endDialog;
+class disDialog;
+class conDialog;
+class gameStatisticsWidget;
 
 /**
  * @brief Klasa reprezentujaca glowne okno
@@ -47,31 +51,39 @@ private:
     /**
      * @brief Pole dialog rozlaczenia
      */
-    QDialog* disconnectionDialog;
+    disDialog* disconnectionDialog;
     /**
      * @brief  Pole struktury z odczytami
      */
-    endDialog *endGameDialog;
-    settDialog *settingsDialog;
+    endDialog* endGameDialog;
+    settDialog* settingsDialog;
 
     UARTVal gameInfo;
-
+    gameSettings gameSett;
     /**
      * @brief Pole widgetu gry
      */
     mainWidget* CentralWidget;
-    QStackedWidget *stackWidget;
+    QStackedWidget* stackWidget;
     gameStatisticsWidget* statsWidget;
 
+    gameParameters gameParam;
+
+    friend class SidePanelWidget;
+    friend class settDialog;
+    friend class mainWidget;
+    friend class mainGameWidget;
+    friend class  gameStatisticsWidget;
 
 public:
-    gameParameters gameParam;
+
     /**
      * @brief Konstruktor nowego okna gry
      * @param parent Rodzic qmainWindow domyslnie wskazujacy na NULL
      */
     gameWindow(QMainWindow* parent = nullptr);
     //  virtual ~gameWindow() = default;
+     virtual void changeEvent(QEvent *event) override;
 
 public slots:
     /**
@@ -104,6 +116,13 @@ public slots:
     void endGame();
     void openStatisticsWidget();
     void openGameWidget();
+    void disconnectDevice();
+    void checkLanguage();
+signals:
+   void EmitRestartGame();
+   void EmitRetranslate();
+   void EmitBlockButtons();
+
 };
 
 

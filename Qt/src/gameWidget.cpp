@@ -7,18 +7,21 @@ double Deg2Rad(double Ang_deg)
   return Ang_deg * M_PI / 180;
 }
 
-mainGameWidget::mainGameWidget(QWidget* parent, UARTVal* gameInformations, QTimer* appTimer, gameParameters* gameParamtr) :QWidget(parent) {
+//mainGameWidget::mainGameWidget(QWidget* parent, UARTVal* gameInformations, QTimer* appTimer, gameParameters* gameParamtr) :QWidget(parent) {
+mainGameWidget::mainGameWidget(mainWidget* parent, gameWindow* gameWin) {
   background.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/tlo.png");
   computerPlate.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/plytka.png");
   userPlate.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/plytka.png");
   ball.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/circle.png");
   //life.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/zyciebez.png");
-  gameTimer = appTimer;
-  gameInfo = gameInformations;
-  gameParame = gameParamtr;
+  gameTimer = parent->gameTimer;
+  gameInfo = &(gameWin->gameInfo);
+  gameParame = &(gameWin->gameParam);
   connect(gameTimer, SIGNAL(timeout()), this, SLOT(updateTime()));
   initValues(1, 1);
   timerun = 0;
+  gameParame->averageBallVel = gameParam.ballSpeed;
+
   //gameInfo->isGameActive = 1;
   //gameParam.currentAngle = 90;
 }
@@ -33,6 +36,8 @@ void mainGameWidget::initValues(int comLives, int userLives) {
   gameParam.plateSpeed = 3;
   gameParam.userLives = comLives;
   gameParam.compLives = userLives;
+  gameParame->ballBounceNumber = 0;
+  timerun = 0;
 
 }
 
@@ -60,10 +65,11 @@ void mainGameWidget::calculateUserPlate() {
   if (gameInfo->isGameActive) {
     if (gameParam.userPlateLoc[0][0] + gameInfo->YVal + 120 < width() - 60 &&
       gameParam.userPlateLoc[0][0] + gameInfo->YVal > 0) {
-      timerun += 0.1;
+      timerun += 0.01;
       //qDebug()<<gameInfo->YVal<<timerun;
       //gameParame->accValues.append(gameInfo->YVal);
-      gameParame->accValues.append(timerun,gameInfo->YVal);
+      //qDebug()<<gameInfo->ZVal;
+      gameParame->accValues.append(timerun, gameInfo->YVal);
       //(gameParame->accValues)<<QPointF(gameInfo->YVal,timerun);
       gameParam.userPlateLoc[0][0] += gameInfo->YVal;
       gameParam.userPlateLoc[0][1] += gameInfo->YVal;
@@ -131,6 +137,7 @@ void mainGameWidget::calculateIfBouncedPlate() {
       gameParam.userPlateLoc[1][0] < (gameParam.ballPos[1] + 55)) {
       gameParam.currentAngle = rand() % 120 + 30;
       gameParam.currentAngle = gameParam.currentAngle * -1;
+      gameParame->ballBounceNumber++;
       //gameParam.ballSpeed=rand()%5;
     }
   }
@@ -141,6 +148,7 @@ void mainGameWidget::calculateIfBouncedPlate() {
       gameParam.comPlateLoc[1][0] + 50 > (gameParam.ballPos[1])) {
       gameParam.currentAngle = (rand() % 120 + 30);
       gameParam.currentAngle = gameParam.currentAngle;
+      gameParame->ballBounceNumber++;
     }
 
   }

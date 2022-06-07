@@ -14,11 +14,11 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
 
@@ -34,14 +34,15 @@ public:
     QLineEdit *lineEdit;
     QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer;
-    QDialogButtonBox *buttonBox;
+    QPushButton *disconnectButton;
+    QPushButton *cancelButton;
     QSpacerItem *horizontalSpacer_2;
 
     void setupUi(QDialog *disDialog)
     {
         if (disDialog->objectName().isEmpty())
             disDialog->setObjectName(QStringLiteral("disDialog"));
-        disDialog->resize(363, 80);
+        disDialog->resize(396, 140);
         verticalLayout_2 = new QVBoxLayout(disDialog);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         verticalLayout = new QVBoxLayout();
@@ -50,12 +51,16 @@ public:
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         label = new QLabel(disDialog);
         label->setObjectName(QStringLiteral("label"));
+        QFont font;
+        font.setPointSize(12);
+        label->setFont(font);
 
         horizontalLayout_2->addWidget(label);
 
         lineEdit = new QLineEdit(disDialog);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
         lineEdit->setMinimumSize(QSize(150, 0));
+        lineEdit->setFont(font);
 
         horizontalLayout_2->addWidget(lineEdit);
 
@@ -71,11 +76,19 @@ public:
 
         horizontalLayout->addItem(horizontalSpacer);
 
-        buttonBox = new QDialogButtonBox(disDialog);
-        buttonBox->setObjectName(QStringLiteral("buttonBox"));
-        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
+        disconnectButton = new QPushButton(disDialog);
+        disconnectButton->setObjectName(QStringLiteral("disconnectButton"));
+        disconnectButton->setMinimumSize(QSize(100, 0));
+        disconnectButton->setFont(font);
 
-        horizontalLayout->addWidget(buttonBox);
+        horizontalLayout->addWidget(disconnectButton);
+
+        cancelButton = new QPushButton(disDialog);
+        cancelButton->setObjectName(QStringLiteral("cancelButton"));
+        cancelButton->setMinimumSize(QSize(100, 0));
+        cancelButton->setFont(font);
+
+        horizontalLayout->addWidget(cancelButton);
 
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -94,6 +107,8 @@ public:
     {
         disDialog->setWindowTitle(QApplication::translate("disDialog", "Dialog", Q_NULLPTR));
         label->setText(QApplication::translate("disDialog", "Are you sure to disconnect:", Q_NULLPTR));
+        disconnectButton->setText(QApplication::translate("disDialog", "Disconnect", Q_NULLPTR));
+        cancelButton->setText(QApplication::translate("disDialog", "Cancel", Q_NULLPTR));
     } // retranslateUi
 
 };

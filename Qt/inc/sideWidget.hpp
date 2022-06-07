@@ -16,10 +16,12 @@
 #include <QTimer>
 #include <QDialog>
 #include "mainWidget.hpp"
+#include "gameWindow.hpp"
+#include "gameParameters.hpp"
 #include "ui_sidePanelWidget.h"
 
-//lass mainGameWidget;
-
+class mainGameWidget;
+class gameWindow;
 
 /**
  * @brief Klasa panelu bocznego
@@ -31,6 +33,8 @@ class SidePanelWidget :public QWidget, public Ui::sidePanelWidget {
     Q_OBJECT
 
 private:
+    gameParameters* gamePar;
+    UARTVal* gameUART;
     /**
      * @brief Pole
      *
@@ -58,8 +62,9 @@ public:
      * @param parent
      * @param applTimer
      */
-    SidePanelWidget(QWidget* parent = nullptr, QTimer* applTimer = nullptr);
-
+    SidePanelWidget(mainWidget* parent = nullptr, gameWindow* gameWin = nullptr);
+    void checkConnection();
+    //void setTimerNull();
 public slots:
     /**
      * @brief Slot
@@ -81,6 +86,9 @@ public slots:
      *
      */
     void EndGame();
+    void setTimerNull();
+    void retranslatePanel();
+    void checkBlockButtons();
 signals:
     /**
      * @brief Slot

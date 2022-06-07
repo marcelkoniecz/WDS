@@ -60,7 +60,8 @@ public:
      * @param parent Wskaznik do rodzica
      * @param gameInfo Wskaznik do struktury z danymi odczytanymi z akcelerometru
      */
-    mainWidget(gameWindow* parent = nullptr, UARTVal* gameInfo = nullptr, gameParameters* gameParam = nullptr);
+   // mainWidget(gameWindow* parent = nullptr, UARTVal* gameInfo = nullptr, gameParameters* gameParam = nullptr);
+    mainWidget(gameWindow* parent=nullptr);
 public slots:
     /**
      * @brief Slot odwiezenia czasu

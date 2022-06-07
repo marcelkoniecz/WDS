@@ -19,7 +19,8 @@ QT = OBJECTS_DIR=${OBJ_FOL} INCLUDEPATH=inc INCLUDEPATH+=ui/inc\
 		QT+=gui\
 		LIBS+=-lpthread\
 		QT+=core\
-		QT+=charts
+		QT+=charts\
+		TRANSLATIONS=gra_pl.ts
 
 
 __start__: Makefile.app ${APP}

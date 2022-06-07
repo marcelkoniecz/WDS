@@ -21,6 +21,8 @@
 #include <QtCharts>
 #include "gameParameters.hpp"
 #include <QLineSeries>
+#include <QValueAxis>
+#include "gameWindow.hpp"
 // class myChart :public QChart {
 //     Q_OBJECT
 // private:
@@ -30,21 +32,26 @@
 
 // }
 
-
+class gameWindow;
 
 
 class gameStatisticsWidget :public QWidget, public Ui::gameStatistics {
     Q_OBJECT
 public:
     QChart* chart;
-    gameParameters *gameParam;
+    gameParameters *gamePrmts;
     QLineSeries* points;
+    QVBoxLayout* layout;
+    QChartView* chartView;
+    QValueAxis* axis;
 
 public:
-    gameStatisticsWidget(gameParameters *game=nullptr);
+    gameStatisticsWidget(gameWindow *parent=nullptr);
     void printChart();
+
 public slots:
     void on_returnButton_clicked();
+    void retranslate();
 signals:
     void EmitChangeWidget();
 };

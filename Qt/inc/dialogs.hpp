@@ -19,16 +19,26 @@
 #include "ui_conDialog.h"
 #include "ui_endGameDialog.h"
 #include "ui_settDialog.h"
-//#include "gameWindow.hpp"
+#include "gameSettings.hpp"
+#include "gameWindow.hpp"
+
+class gameWindow;
 
 class settDialog :public QDialog, public Ui::settDialog {
     Q_OBJECT
+private:
+    gameSettings* ptrGameSett;
 
 public:
-    settDialog();
+    settDialog(gameWindow* parent = nullptr);
+    void loadParam();
 public slots:
     void on_saveButton_clicked();
     void on_returnButton_clicked();
+    void retranslate();
+signals:
+    void EmitSettingsSaved();
+
 
 };
 
@@ -38,11 +48,12 @@ class endDialog :public QDialog, public Ui::endGameDialog {
 private:
 
 public:
-    endDialog();
+    endDialog(gameWindow* parent = nullptr);
 public slots:
     void on_statisticsButton_clicked();
     void on_restartButton_clicked();
     void on_exitButton_clicked();
+     void retranslate();
 signals:
     void EmitClosing();
     void EmitRestartGame();
@@ -52,21 +63,29 @@ signals:
 class disDialog :public QDialog, public Ui::disDialog {
     Q_OBJECT
 public:
-    disDialog(QString connectedDev = "No device connected");
+    disDialog(gameWindow* parent = nullptr);
     void StartDialog(QString connectedDev);
+public slots:
+    void on_disconnectButton_clicked();
+    void on_cancelButton_clicked();
+     void retranslate();
+signals:
+    void EmitDisconnectDevice();
+
 };
 
 class conDialog :public QDialog, public Ui::conDialog {
     Q_OBJECT
         QList<QSerialPortInfo> portList;
 public:
-    conDialog();
+    conDialog(gameWindow* parent = nullptr);
 public slots:
     //void searchDev();
     //void chooseDev();
     void on_searchDeviceButton_clicked();
     void on_cancelButton_clicked();
     void on_connectButton_clicked();
+     void retranslate();
 
 signals:
     //void EmitSearchDev();

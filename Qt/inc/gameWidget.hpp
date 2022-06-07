@@ -19,7 +19,8 @@
 #include "gameParameters.hpp"
 
 class UARTVal;
-
+class mainWidget;
+class gameWindow;
 
 class imageParameters {
 public:
@@ -46,14 +47,16 @@ private:
     QImage userPlate;
     QImage ball;
     QImage life;
-    volatile UARTVal* gameInfo;
+    UARTVal* gameInfo;
     QTimer* gameTimer;
     gameParameters* gameParame;
     double timerun;
 public:
-    mainGameWidget(QWidget* parent = nullptr, UARTVal* gameInformations = nullptr,
-        QTimer* appTimer = nullptr, gameParameters* gameParamtr = nullptr);
-    void paintEvent(QPaintEvent* ptr);
+    //  mainGameWidget(QWidget* parent = nullptr, UARTVal* gameInformations = nullptr,
+     //     QTimer* appTimer = nullptr, gameParameters* gameParamtr = nullptr);
+    mainGameWidget(mainWidget* parent = nullptr,gameWindow *gameWin=nullptr);
+
+        void paintEvent(QPaintEvent* ptr);
 
     void calculateBallPosition();
     void calculateUserPlate();

@@ -116,7 +116,7 @@
        <number>10</number>
       </property>
       <item row="4" column="1" alignment="Qt::AlignHCenter">
-       <widget class="QCheckBox" name="checkBox">
+       <widget class="QCheckBox" name="vellCheck">
         <property name="font">
          <font>
           <pointsize>15</pointsize>
@@ -164,7 +164,7 @@
        </widget>
       </item>
       <item row="3" column="1">
-       <widget class="QComboBox" name="comboBox_3">
+       <widget class="QComboBox" name="levelBox">
         <property name="font">
          <font>
           <pointsize>14</pointsize>
@@ -188,7 +188,7 @@
        </widget>
       </item>
       <item row="2" column="1">
-       <widget class="QComboBox" name="comboBox_2">
+       <widget class="QComboBox" name="lifeBox">
         <property name="font">
          <font>
           <pointsize>14</pointsize>
@@ -257,7 +257,7 @@
        </widget>
       </item>
       <item row="5" column="1" alignment="Qt::AlignHCenter">
-       <widget class="QCheckBox" name="checkBox_2">
+       <widget class="QCheckBox" name="bouncingCheck">
         <property name="font">
          <font>
           <pointsize>15</pointsize>
@@ -278,7 +278,7 @@
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QComboBox" name="comboBox">
+       <widget class="QComboBox" name="languageBox">
         <property name="font">
          <font>
           <pointsize>14</pointsize>

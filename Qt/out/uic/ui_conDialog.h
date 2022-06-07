@@ -29,8 +29,8 @@ public:
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout_2;
     QSpacerItem *horizontalSpacer;
-    QPushButton *searchDeviceButton;
     QSpacerItem *horizontalSpacer_5;
+    QPushButton *searchDeviceButton;
     QComboBox *devicesList;
     QSpacerItem *horizontalSpacer_2;
     QHBoxLayout *horizontalLayout;
@@ -52,19 +52,23 @@ public:
 
         horizontalLayout_2->addItem(horizontalSpacer);
 
-        searchDeviceButton = new QPushButton(conDialog);
-        searchDeviceButton->setObjectName(QStringLiteral("searchDeviceButton"));
-        searchDeviceButton->setMinimumSize(QSize(120, 0));
-
-        horizontalLayout_2->addWidget(searchDeviceButton);
-
         horizontalSpacer_5 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_2->addItem(horizontalSpacer_5);
 
+        searchDeviceButton = new QPushButton(conDialog);
+        searchDeviceButton->setObjectName(QStringLiteral("searchDeviceButton"));
+        searchDeviceButton->setMinimumSize(QSize(120, 0));
+        QFont font;
+        font.setPointSize(12);
+        searchDeviceButton->setFont(font);
+
+        horizontalLayout_2->addWidget(searchDeviceButton);
+
         devicesList = new QComboBox(conDialog);
         devicesList->setObjectName(QStringLiteral("devicesList"));
         devicesList->setMinimumSize(QSize(200, 0));
+        devicesList->setFont(font);
 
         horizontalLayout_2->addWidget(devicesList);
 
@@ -84,12 +88,14 @@ public:
         connectButton = new QPushButton(conDialog);
         connectButton->setObjectName(QStringLiteral("connectButton"));
         connectButton->setMinimumSize(QSize(100, 0));
+        connectButton->setFont(font);
 
         horizontalLayout->addWidget(connectButton);
 
         cancelButton = new QPushButton(conDialog);
         cancelButton->setObjectName(QStringLiteral("cancelButton"));
         cancelButton->setMinimumSize(QSize(100, 0));
+        cancelButton->setFont(font);
 
         horizontalLayout->addWidget(cancelButton);
 

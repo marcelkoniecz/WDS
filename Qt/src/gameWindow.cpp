@@ -27,39 +27,72 @@ uint16_t CalculateCRC8(char* ptr) {
 gameWindow::gameWindow(QMainWindow* parent) {
 
   setupUi(this);
-  this->CentralWidget = new mainWidget(this, &gameInfo,&gameParam);
-  this->connectionDialog = new conDialog;
+  this->CentralWidget = new mainWidget(this);
+  this->connectionDialog = new conDialog(this);
   this->device = new QSerialPort;
-  this->disconnectionDialog = new disDialog();
-  this->endGameDialog = new endDialog();
-  this->settingsDialog=new settDialog();
-  this->statsWidget = new gameStatisticsWidget(&gameParam);
+  this->disconnectionDialog = new disDialog(this);
+  this->endGameDialog = new endDialog(this);
+  this->settingsDialog = new settDialog(this);
+  this->statsWidget = new gameStatisticsWidget(this);
   this->stackWidget = new QStackedWidget();
   stackWidget->addWidget(CentralWidget);
   stackWidget->addWidget(statsWidget);
   this->setCentralWidget(stackWidget);
-  // this->setGeometry(0, 0, 620, 410);
-  // menuBar=new QMenuBar(this);
-  // menuBar->setObjectName("menuBar");
-  // menuBar->setGeometry(QRect(0, 0, 759, 22));
-  // menuUstawienia=new QMenu(menuBar);
-  // menuUstawienia->setObjectName(QStringLiteral("menu_Ustawienia"));
- // connect(gameTimer,SIGNAL(timeout()),this,callOnTimeout())
+
+
   connect(CentralWidget->statystyki, SIGNAL(EmitClosing()), this, SLOT(close()));
   connect(CentralWidget->statystyki, SIGNAL(EmitEndGame()), this, SLOT(endGame()));
   connect(CentralWidget->okienko, SIGNAL(EmitEndGame()), this, SLOT(endGame()));
   connect(statsWidget, SIGNAL(EmitChangeWidget()), this, SLOT(openGameWidget()));
-  //connect(this,SIGNAL(timeout()),CentralWidget->okienko,SLOT(CentralWidget->okienko.tak()));
-  // connect(connectionDialog, SIGNAL(EmitClosing()), this, SLOT(close()));
   connect(connectionDialog, SIGNAL(EmitChoosenDev(QString)), this, SLOT(initDevice(QString)));
   connect(endGameDialog, SIGNAL(EmitClosing()), this, SLOT(close()));
   connect(endGameDialog, SIGNAL(EmitRestartGame()), this, SLOT(restartGame()));
   connect(endGameDialog, SIGNAL(EmitOpenStatistics()), this, SLOT(openStatisticsWidget()));
+  connect(disconnectionDialog, SIGNAL(EmitDisconnectDevice()), this, SLOT(disconnectDevice()));
+  connect(settingsDialog, SIGNAL(EmitSettingsSaved()), this, SLOT(checkLanguage()));
 }
+
+void gameWindow::checkLanguage() {
+  static QTranslator* Trans = new QTranslator();
+
+  switch (gameSett.language) {
+  case english:
+    qApp->removeTranslator(Trans);
+    break;
+  case polish:
+    if (Trans->load("out/pro/gra_pl.qm", ".")) {
+      qApp->installTranslator(Trans);
+      qDebug() << "Trans zaladowany";
+    }
+    else
+      std::cerr << "Loading new lang filed";
+    break;
+
+  }
+  //retranslateUi(this);
+
+}
+
+void gameWindow::changeEvent(QEvent* event) {
+
+  if (event->type() == QEvent::LanguageChange) {
+    std::cout << "Zmiana" << endl;
+    retranslateUi(this);
+    emit EmitRetranslate();
+    return;
+  }
+  QMainWindow::changeEvent(event);
+}
+
+void gameWindow::disconnectDevice() {
+  device->close();
+
+}
+
 
 void gameWindow::openGameWidget() {
   stackWidget->setCurrentIndex(0);
-    endGameDialog->show();
+  endGameDialog->show();
 }
 
 void gameWindow::openStatisticsWidget() {
@@ -68,13 +101,19 @@ void gameWindow::openStatisticsWidget() {
 }
 
 void gameWindow::endGame() {
+  gameParam.blockButtons = true;
+  emit EmitBlockButtons();
   //gameInfo.resetPosition=true;
   endGameDialog->show();
 }
+
 void gameWindow::restartGame() {
   CentralWidget->gameTimer->start(10);
+  gameParam.blockButtons = false;
   gameInfo.isGameActive = true;
   gameInfo.resetPosition = true;
+  emit EmitRestartGame();
+  emit EmitBlockButtons();
 }
 
 
@@ -97,6 +136,7 @@ void gameWindow::initDevice(QString devName) {
   qDebug() << "Powiodla sie";
 
 }
+
 void gameWindow::ReadTransmision() {
   uint16_t CRC8;
   std::string str;
@@ -140,12 +180,13 @@ void gameWindow::on_actionConnect_triggered() {
 }
 
 void gameWindow::on_actionSettings_triggered() {
-    settingsDialog->show();
+  settingsDialog->loadParam();
+  settingsDialog->show();
 }
 void gameWindow::on_actionDisconnect_triggered() {
 
   // QDialog *disconnectionDialog=new QDialog();
-  //disconnectionDialog->StartDialog(gameInfo.devName)
+  disconnectionDialog->StartDialog(gameInfo.devName);
   disconnectionDialog->show();
 
 }

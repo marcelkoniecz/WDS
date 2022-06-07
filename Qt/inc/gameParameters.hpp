@@ -7,12 +7,15 @@
 
 class gameParameters {
 public:
-    int isGameActice = -1;
+    bool isGameActive = false;
+    bool resetPosition = true;
+    bool blockButtons = false;
+    QString gameTime;
+
+    //Statystyki koncowe
     int ballBounceNumber = 0;
     int averageBallVel = 1;
-   // QList<int> accValues;
     QLineSeries accValues;
- //   gameParameters() { accValues = new QLineSeries; }
 
 };
 
