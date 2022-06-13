@@ -1,11 +1,18 @@
 <map id="/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWidget.cpp" name="/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWidget.cpp">
-<area shape="rect" id="node2" href="$game_widget_8hpp.html" title="../../inc/gameWidget.hpp" alt="" coords="1363,109,1529,136"/>
-<area shape="rect" id="node17" href="$main_widget_8hpp.html" title="mainWidget.hpp" alt="" coords="1388,184,1504,211"/>
-<area shape="rect" id="node18" href="$game_window_8hpp.html" title="gameWindow.hpp" alt="" coords="1445,259,1572,285"/>
-<area shape="rect" id="node42" href="$statistic_widget_8hpp.html" title="statisticWidget.hpp" alt="" coords="1312,333,1447,360"/>
-<area shape="rect" id="node19" href="$dialogs_8hpp.html" title="dialogs.hpp" alt="" coords="1471,333,1559,360"/>
-<area shape="rect" id="node36" href="$ui__game_window_8h.html" title="ui_gameWindow.h" alt="" coords="2127,408,2256,435"/>
-<area shape="rect" id="node20" href="$ui__dis_dialog_8h.html" title="ui_disDialog.h" alt="" coords="1231,408,1335,435"/>
-<area shape="rect" id="node33" href="$ui__con_dialog_8h.html" title="ui_conDialog.h" alt="" coords="1507,408,1615,435"/>
-<area shape="rect" id="node43" href="$ui__game_widget_8h.html" title="ui_gameWidget.h" alt="" coords="1359,408,1482,435"/>
+<area shape="rect" id="node2" href="$game_widget_8hpp.html" title="../../inc/gameWidget.hpp" alt="" coords="1527,109,1692,136"/>
+<area shape="rect" id="node17" href="$main_widget_8hpp.html" title="mainWidget.hpp" alt="" coords="1551,184,1667,211"/>
+<area shape="rect" id="node19" href="$game_parameters_8hpp.html" title="Definicja statystyk gry. " alt="" coords="3115,483,3261,509"/>
+<area shape="rect" id="node18" href="$game_window_8hpp.html" title="gameWindow.hpp" alt="" coords="1599,333,1726,360"/>
+<area shape="rect" id="node47" href="$side_widget_8hpp.html" title="sideWidget.hpp" alt="" coords="1659,259,1771,285"/>
+<area shape="rect" id="node22" href="$game_statistics_8hpp.html" title="gameStatistics.hpp" alt="" coords="2034,408,2169,435"/>
+<area shape="rect" id="node34" href="$dialogs_8hpp.html" title="dialogs.hpp" alt="" coords="1487,408,1575,435"/>
+<area shape="rect" id="node39" href="$game_settings_8hpp.html" title="Definicja ustawień gry. " alt="" coords="1614,483,1741,509"/>
+<area shape="rect" id="node40" href="$ui__game_window_8h.html" title="ui_gameWindow.h" alt="" coords="369,483,498,509"/>
+<area shape="rect" id="node46" href="$uart_param_8hpp.html" title="uartParam.hpp" alt="" coords="1751,408,1857,435"/>
+<area shape="rect" id="node23" href="$ui__game_statistics_8h.html" title="ui_gameStatistics.h" alt="" coords="2029,483,2166,509"/>
+<area shape="rect" id="node35" href="$ui__dis_dialog_8h.html" title="ui_disDialog.h" alt="" coords="1219,483,1323,509"/>
+<area shape="rect" id="node36" href="$ui__con_dialog_8h.html" title="ui_conDialog.h" alt="" coords="1347,483,1455,509"/>
+<area shape="rect" id="node37" href="$ui__end_game_dialog_8h.html" title="ui_endGameDialog.h" alt="" coords="1051,483,1194,509"/>
+<area shape="rect" id="node38" href="$ui__sett_dialog_8h.html" title="ui_settDialog.h" alt="" coords="1480,483,1589,509"/>
+<area shape="rect" id="node48" href="$ui__side_panel_widget_8h.html" title="ui_sidePanelWidget.h" alt="" coords="1857,483,2005,509"/>
 </map>

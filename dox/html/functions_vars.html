@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Składowe klas - Zmienne</title>
+<title>Aplikacja gry: Składowe klas - Zmienne</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,27 +64,35 @@ $(function() {
 $(document).ready(function(){initNavTree('functions_vars.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 &#160;
 
 <h3><a id="index_a"></a>- a -</h3><ul>
 <li>accTime
-: <a class="el" href="classgame_widget.html#a5c7bc1eb4fd7eb6b31f6a1b23a50e2dd">gameWidget</a>
+: <a class="el" href="class_side_panel_widget.html#a7e00f2a59ece0a5b549cc5a543798b7e">SidePanelWidget</a>
 </li>
-<li>actionConnect
-: <a class="el" href="class_ui__game_window.html#a5bf92d3cb122d149b4d268d66ed0b607">Ui_gameWindow</a>
+<li>accValues
+: <a class="el" href="classgame_parameters.html#a3f50a71e2c555f587895eb5ea920635f">gameParameters</a>
 </li>
-<li>actionDisconnect
-: <a class="el" href="class_ui__game_window.html#a8ecf39c157bd52237c0c17890750f8b6">Ui_gameWindow</a>
+<li>averageBallVel
+: <a class="el" href="classgame_parameters.html#a9d46e0fb1c77949f6cc368e179ee064a">gameParameters</a>
 </li>
-<li>actionPolaczenie
-: <a class="el" href="class_ui__game_window.html#ac46dd2de70bb0cf75adc74575a81be86">Ui_gameWindow</a>
-</li>
-<li>actionSettings
-: <a class="el" href="class_ui__game_window.html#a6a48093bc310b07af282189b6bbd1fc0">Ui_gameWindow</a>
-</li>
-<li>actionUstawienia
-: <a class="el" href="class_ui__game_window.html#a5dbe7d984108a2a2859199ae807addb2">Ui_gameWindow</a>
+<li>axis
+: <a class="el" href="classgame_statistics_widget.html#a579972ae108c7f456ca35a8695ec83ce">gameStatisticsWidget</a>
 </li>
 </ul>
 
@@ -90,8 +104,17 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>ball
 : <a class="el" href="classmain_game_widget.html#a7f8a8dc61a8f49b866e23d6f61b8512a">mainGameWidget</a>
 </li>
+<li>ballAverageSpeed
+: <a class="el" href="class_u_a_r_t_val.html#ad897df3b4a1f66c8ef11a74deea69934">UARTVal</a>
+</li>
+<li>ballBounced
+: <a class="el" href="class_u_a_r_t_val.html#a96a35ed40f8818a38f30842dfb21c151">UARTVal</a>
+</li>
+<li>ballBounceNumber
+: <a class="el" href="classgame_parameters.html#ad578c8b3c4f9b3e439a21e5096f927fb">gameParameters</a>
+</li>
 <li>ballDirection
-: <a class="el" href="classgame_parameters.html#a638f919de5fe8e93a26553d233835590">gameParameters</a>
+: <a class="el" href="class_u_a_r_t_val.html#a17d08413c4b6141dd8c55a3c6a7e70d3">UARTVal</a>
 </li>
 <li>ballPos
 : <a class="el" href="classimage_parameters.html#aa8bec918c73c679621e83694e9fce019">imageParameters</a>
@@ -100,36 +123,35 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="classimage_parameters.html#aef735c9629835aeb36afb0f40989a6fe">imageParameters</a>
 </li>
 <li>ballVel
-: <a class="el" href="classgame_parameters.html#a2b843dfa32eed27e0204fc193e72f1b7">gameParameters</a>
+: <a class="el" href="class_u_a_r_t_val.html#a9610b09f309131e2f5973df5ed5112a8">UARTVal</a>
 </li>
-<li>buttonBox
-: <a class="el" href="class_ui__dis_dialog.html#ac97d5b0f2a9c16cf2481bd0a8d794988">Ui_disDialog</a>
+<li>blockButtons
+: <a class="el" href="classgame_parameters.html#ace8a4ac8552a8b3c7e027485b80ae1d5">gameParameters</a>
 </li>
 </ul>
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
-<li>cancelButton
-: <a class="el" href="class_ui__con_dialog.html#a77853535e9660ace687bfaa39e052d7d">Ui_conDialog</a>
-</li>
 <li>CentralWidget
 : <a class="el" href="classgame_window.html#a1c2abdf213ba7584a644ddd5cfe92db2">gameWindow</a>
 </li>
-<li>centralwidget
-: <a class="el" href="class_ui__game_window.html#a5d943ca5265011e98062461d84c67e71">Ui_gameWindow</a>
-, <a class="el" href="class_ui___main_window.html#a39420100bfee3ba57f137af5a3b0f8e9">Ui_MainWindow</a>
+<li>chart
+: <a class="el" href="classgame_statistics_widget.html#a224d90ba40966b27508037b9da1b78c8">gameStatisticsWidget</a>
+</li>
+<li>chartView
+: <a class="el" href="classgame_statistics_widget.html#af847217bc17d4188171c28121c06d0ee">gameStatisticsWidget</a>
 </li>
 <li>comPlateLoc
 : <a class="el" href="classimage_parameters.html#a5d7245b834f72c77008cd117508199b9">imageParameters</a>
 </li>
 <li>comPlateVel
-: <a class="el" href="classgame_parameters.html#ae71bb6e5c97fa8fd5835b22e61f89aff">gameParameters</a>
+: <a class="el" href="class_u_a_r_t_val.html#ac5de714ecaf82ff9878ea3cb06307071">UARTVal</a>
+</li>
+<li>compLives
+: <a class="el" href="classimage_parameters.html#a813685ace4633ab8456562c1e731596c">imageParameters</a>
 </li>
 <li>computerPlate
 : <a class="el" href="classmain_game_widget.html#af0e155b5961ffb6d300dcfb6da4f52e7">mainGameWidget</a>
-</li>
-<li>connectButton
-: <a class="el" href="class_ui__con_dialog.html#ad6cb0697941274edc5d086906f19fae8">Ui_conDialog</a>
 </li>
 <li>connectionDialog
 : <a class="el" href="classgame_window.html#a87e1355bb9303cf6e343a2883b61b123">gameWindow</a>
@@ -141,151 +163,91 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 
 <h3><a id="index_d"></a>- d -</h3><ul>
-<li>data
-: <a class="el" href="structqt__meta__stringdata__con_dialog__t.html#aefa0410fdc272a6645ca7e5a5b7bbdd1">qt_meta_stringdata_conDialog_t</a>
-, <a class="el" href="structqt__meta__stringdata__dis_dialog__t.html#ada90a0a88a45558f0d19d72c2b4de92d">qt_meta_stringdata_disDialog_t</a>
-, <a class="el" href="structqt__meta__stringdata__game_widget__t.html#a298f1734b9d48503602b41491d8841b9">qt_meta_stringdata_gameWidget_t</a>
-, <a class="el" href="structqt__meta__stringdata__game_window__t.html#aa1b878324bd01d59ee73c32a99a6c20f">qt_meta_stringdata_gameWindow_t</a>
-, <a class="el" href="structqt__meta__stringdata__main_game_widget__t.html#a02bc8b88279a5aae161430cf22c2c43c">qt_meta_stringdata_mainGameWidget_t</a>
-, <a class="el" href="structqt__meta__stringdata__main_widget__t.html#a7291b3d4ccc14927c2ace08f94b76757">qt_meta_stringdata_mainWidget_t</a>
-</li>
 <li>device
 : <a class="el" href="classgame_window.html#a4df52f07067d8426cab3837f584959a6">gameWindow</a>
 </li>
-<li>devicesList
-: <a class="el" href="class_ui__con_dialog.html#a9d3d313c4dc5c393b47a4ec907c9cfe5">Ui_conDialog</a>
-</li>
 <li>devName
-: <a class="el" href="classgame_parameters.html#ace9e080c79ec477050f6c19e3b9d6837">gameParameters</a>
+: <a class="el" href="class_u_a_r_t_val.html#a56d6f793e6a0a60efef027696ae78cbb">UARTVal</a>
 </li>
 <li>disconnectionDialog
-: <a class="el" href="classgame_window.html#a3edbfb40a3e0ae13438abd1fecc496b3">gameWindow</a>
+: <a class="el" href="classgame_window.html#ad26b81c005aa65ae1fce37e475b6c9ee">gameWindow</a>
 </li>
 </ul>
 
 
 <h3><a id="index_e"></a>- e -</h3><ul>
-<li>endGame
-: <a class="el" href="class_ui__game_widget.html#a9af8330102be3f95e257c8512e5ad45a">Ui_gameWidget</a>
-</li>
-<li>exitAplication
-: <a class="el" href="class_ui__game_widget.html#ae3d287ca9db7adf7e9153c6b7d47ccc2">Ui_gameWidget</a>
+<li>endGameDialog
+: <a class="el" href="classgame_window.html#ad91b44ea2405eed2406fb6fc04e04d6e">gameWindow</a>
 </li>
 </ul>
 
 
 <h3><a id="index_g"></a>- g -</h3><ul>
-<li>gameBox
-: <a class="el" href="class_ui__game_widget.html#a31220f4719abb0c6afa3129fa8ec811d">Ui_gameWidget</a>
-</li>
 <li>gameInfo
-: <a class="el" href="classgame_window.html#ae7b8358220e1e78e540416949f511daf">gameWindow</a>
-, <a class="el" href="classmain_game_widget.html#a21d468d67f6edbcf9c8b30f045d91710">mainGameWidget</a>
+: <a class="el" href="classgame_window.html#a1f6ab8415dcaecb6d5684ac9790a0e5e">gameWindow</a>
+, <a class="el" href="classmain_game_widget.html#a6f73be1ce970a199ef87b001177bdba4">mainGameWidget</a>
+</li>
+<li>gamelvl
+: <a class="el" href="classgame_settings.html#a1a94a1c4b3d0f20bb3d276f38aa12203">gameSettings</a>
+</li>
+<li>gamePar
+: <a class="el" href="class_side_panel_widget.html#af11ee156d866e6163e80cb0cbbc47195">SidePanelWidget</a>
 </li>
 <li>gameParam
-: <a class="el" href="classmain_game_widget.html#ad97227824a4d5b123c770599ea6ac21f">mainGameWidget</a>
+: <a class="el" href="classgame_window.html#a13ae0c2dc0141a4546f1f883a3e6b567">gameWindow</a>
+, <a class="el" href="classmain_game_widget.html#ad97227824a4d5b123c770599ea6ac21f">mainGameWidget</a>
 </li>
-<li>gameTimeLabel
-: <a class="el" href="class_ui__game_widget.html#ab588c16e7b1cf8ba020ab7b37b11c596">Ui_gameWidget</a>
+<li>gameParame
+: <a class="el" href="classmain_game_widget.html#aed8d26e1b1b80cc859a245825ad37fb7">mainGameWidget</a>
+</li>
+<li>gamePrmts
+: <a class="el" href="classgame_statistics_widget.html#aa0d032238ecbc131a031e8b7b3249587">gameStatisticsWidget</a>
+</li>
+<li>gameSett
+: <a class="el" href="classgame_window.html#a2573fa9c7d0613e650db056585babec5">gameWindow</a>
+</li>
+<li>gameSettgs
+: <a class="el" href="classmain_game_widget.html#acaf079fdbf929505fb59a0ad97c7e750">mainGameWidget</a>
+</li>
+<li>gameTime
+: <a class="el" href="classgame_parameters.html#aeae3515739605bbf0d86fb69f2e5498f">gameParameters</a>
 </li>
 <li>gameTimer
 : <a class="el" href="classmain_game_widget.html#a0c8dfda67b8d7ab2de886f8988f41482">mainGameWidget</a>
 , <a class="el" href="classmain_widget.html#a8553bb0be22081d78845a0fc0c749e6e">mainWidget</a>
 </li>
-</ul>
-
-
-<h3><a id="index_h"></a>- h -</h3><ul>
-<li>horizontalLayout
-: <a class="el" href="class_ui__con_dialog.html#a820f118619548784094f269833222601">Ui_conDialog</a>
-, <a class="el" href="class_ui__dis_dialog.html#ab44c6b5ce5063916e8cf25ea2bdfb4bd">Ui_disDialog</a>
-</li>
-<li>horizontalLayout_2
-: <a class="el" href="class_ui__con_dialog.html#a1ce02126b7e19b8c471c4224ceee6eac">Ui_conDialog</a>
-, <a class="el" href="class_ui__dis_dialog.html#ac66ffef8bbc9c2479704a06dcc5c67ef">Ui_disDialog</a>
-, <a class="el" href="class_ui__game_widget.html#a395985b4f39f076964df089dfce9d6dd">Ui_gameWidget</a>
-, <a class="el" href="class_ui___main_window.html#a9ee21d2c2bc000e7a8ba931bacfc5a69">Ui_MainWindow</a>
-</li>
-<li>horizontalLayout_3
-: <a class="el" href="class_ui__game_widget.html#a1616cd9d25cf3a57c2339d5537b854ac">Ui_gameWidget</a>
-, <a class="el" href="class_ui___main_window.html#ae4fc4a01984f4958d08903a46ce7509a">Ui_MainWindow</a>
-</li>
-<li>horizontalSpacer
-: <a class="el" href="class_ui__con_dialog.html#a3078012538599fc7b0d83dc3e7ee3f5b">Ui_conDialog</a>
-, <a class="el" href="class_ui__dis_dialog.html#ae27beb00a139b58e7cddf09b53ee9719">Ui_disDialog</a>
-, <a class="el" href="class_ui__game_widget.html#ac91071ff75ec2bb28451c6905721be82">Ui_gameWidget</a>
-, <a class="el" href="class_ui___main_window.html#ae189b5a48fa6e6f4b6775f1f832afe9c">Ui_MainWindow</a>
-</li>
-<li>horizontalSpacer_2
-: <a class="el" href="class_ui__con_dialog.html#adec8cb69688167e63b7cf07396639e3e">Ui_conDialog</a>
-, <a class="el" href="class_ui__dis_dialog.html#a8a0b5da07d0332fd391fde7dac7302ae">Ui_disDialog</a>
-, <a class="el" href="class_ui__game_widget.html#ace2aab0ce0b3d9ae3f587c816764060c">Ui_gameWidget</a>
-, <a class="el" href="class_ui___main_window.html#a1662d5e0a54ac7f38c5ab5d991f4ce14">Ui_MainWindow</a>
-</li>
-<li>horizontalSpacer_3
-: <a class="el" href="class_ui__con_dialog.html#af436e76771b4a7a29e326ddbaec08a0f">Ui_conDialog</a>
-, <a class="el" href="class_ui__game_widget.html#a90a95e960f6262771d0637318d7d4a1d">Ui_gameWidget</a>
-, <a class="el" href="class_ui___main_window.html#ab8441da46ea0343bc6ad8f05e2e1c270">Ui_MainWindow</a>
-</li>
-<li>horizontalSpacer_4
-: <a class="el" href="class_ui__con_dialog.html#a6a0bfed97a91d795bf2e2a17fe2d5029">Ui_conDialog</a>
-, <a class="el" href="class_ui__game_widget.html#a5aea8d1c92ae20daed39cf5e670f80d7">Ui_gameWidget</a>
-, <a class="el" href="class_ui___main_window.html#ac4a217e81b9707b402a58b7e55ed81e2">Ui_MainWindow</a>
-</li>
-<li>horizontalSpacer_5
-: <a class="el" href="class_ui__con_dialog.html#ab058ff935a1f3d58522fb66c5bd737ab">Ui_conDialog</a>
+<li>gameUART
+: <a class="el" href="class_side_panel_widget.html#a422e5ae9c5be708e0de0051fd8bd5639">SidePanelWidget</a>
 </li>
 </ul>
 
 
 <h3><a id="index_i"></a>- i -</h3><ul>
-<li>imageInfo
-: <a class="el" href="classmain_game_widget.html#a1ca7a83137b298d03bda9ef9b366a51c">mainGameWidget</a>
-</li>
-<li>infoBox
-: <a class="el" href="class_ui__game_widget.html#a0c0520bbf345d623b77cbcdda39c5e8a">Ui_gameWidget</a>
-</li>
 <li>isConnected
-: <a class="el" href="classgame_parameters.html#af009248b9add05eb19321d0d343f8e52">gameParameters</a>
+: <a class="el" href="class_u_a_r_t_val.html#a736d9e1305e9862f45dbfb0ecfc98cd1">UARTVal</a>
 </li>
 <li>isGameActive
 : <a class="el" href="classgame_parameters.html#a7dc725144c1e5d4f0e6e62030dcfe53d">gameParameters</a>
+, <a class="el" href="class_u_a_r_t_val.html#a5c8274898389d4e94f98f7153e0f5c4d">UARTVal</a>
 </li>
 <li>isStarted
-: <a class="el" href="classgame_widget.html#a477eec1933658531eac828fdba70eb99">gameWidget</a>
-</li>
-</ul>
-
-
-<h3><a id="index_k"></a>- k -</h3><ul>
-<li>keySequenceEdit
-: <a class="el" href="class_ui___main_window.html#aa86bcc02e6abbff03cede169ae502a7b">Ui_MainWindow</a>
+: <a class="el" href="class_side_panel_widget.html#a1919cc31a3bec198b10e5d42eba789d2">SidePanelWidget</a>
 </li>
 </ul>
 
 
 <h3><a id="index_l"></a>- l -</h3><ul>
-<li>label
-: <a class="el" href="class_ui__dis_dialog.html#ab45ac4fba177ec77824d5371fc851b18">Ui_disDialog</a>
-, <a class="el" href="class_ui___main_window.html#a78edcdd12ea78c06d7e80f322c8882f9">Ui_MainWindow</a>
+<li>language
+: <a class="el" href="classgame_settings.html#adf10445a8745b184ead59cd03f010f6b">gameSettings</a>
 </li>
-<li>lineEdit
-: <a class="el" href="class_ui__dis_dialog.html#ac7acc692b1864fdd7b01434c8465416f">Ui_disDialog</a>
-, <a class="el" href="class_ui__game_widget.html#a3ecc293c9d66a30687297f1f6234191b">Ui_gameWidget</a>
+<li>layout
+: <a class="el" href="classgame_statistics_widget.html#a1d3f42f2cb749e10ce19f17e98eb0e39">gameStatisticsWidget</a>
 </li>
-</ul>
-
-
-<h3><a id="index_m"></a>- m -</h3><ul>
-<li>menubar
-: <a class="el" href="class_ui__game_window.html#a12b56ff3745e538f3f89b0e3563b6d24">Ui_gameWindow</a>
-, <a class="el" href="class_ui___main_window.html#a734b1d3bb71c1b8e1ea01b7fa4344fce">Ui_MainWindow</a>
+<li>life
+: <a class="el" href="classmain_game_widget.html#a9869b06d940be6a878833145c7bb5611">mainGameWidget</a>
 </li>
-<li>menuPolaczenie
-: <a class="el" href="class_ui__game_window.html#ab4913d283fea8c9193d71f237eccdea8">Ui_gameWindow</a>
-</li>
-<li>menuUstawienia_gry
-: <a class="el" href="class_ui__game_window.html#a5c21c635652f6d05a5dee4c3df88dcb0">Ui_gameWindow</a>
+<li>lifes
+: <a class="el" href="classgame_settings.html#ae47350e814260c140916c5d892879cbc">gameSettings</a>
 </li>
 </ul>
 
@@ -301,64 +263,69 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>okienko
 : <a class="el" href="classmain_widget.html#aae01eae37459760d2c8a56daa8a71e42">mainWidget</a>
 </li>
-<li>oknogry
-: <a class="el" href="classgame_widget.html#acb53789da5809f2df460e4e5ace9f91b">gameWidget</a>
-</li>
 </ul>
 
 
 <h3><a id="index_p"></a>- p -</h3><ul>
-<li>pauzeGame
-: <a class="el" href="class_ui__game_widget.html#ab8ad1dbd5d72cb28fd36f6de2cdaeaea">Ui_gameWidget</a>
-</li>
 <li>plateSpeed
 : <a class="el" href="classimage_parameters.html#a6a768b67a42ac63a43201ce4740f651a">imageParameters</a>
+</li>
+<li>points
+: <a class="el" href="classgame_statistics_widget.html#a98e4bc098778843fbcdd01ee44f2a6fe">gameStatisticsWidget</a>
 </li>
 <li>portList
 : <a class="el" href="classcon_dialog.html#af095d5589b6d86576b1413a355ae9edd">conDialog</a>
 </li>
-<li>pushButton
-: <a class="el" href="class_ui___main_window.html#aa2f2c48d459c5b5eda62071b8d750fed">Ui_MainWindow</a>
+<li>ptrGameSett
+: <a class="el" href="classsett_dialog.html#a798fba3368d6c426b2f596ec426df67c">settDialog</a>
 </li>
-<li>pushButton_2
-: <a class="el" href="class_ui___main_window.html#aabbfd4b71da5cff6bf630124589f6e6a">Ui_MainWindow</a>
+</ul>
+
+
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>randomBallSpeed
+: <a class="el" href="classgame_settings.html#a3e6d49fff195f9fe99c734c73c0907f1">gameSettings</a>
 </li>
-<li>pushButton_3
-: <a class="el" href="class_ui___main_window.html#a6641ad20f506cf9158e8019e3eb9f2e0">Ui_MainWindow</a>
+<li>resetPosition
+: <a class="el" href="classgame_parameters.html#a58ebe54c71acf35ffcb9ea2fdf0b8d81">gameParameters</a>
+, <a class="el" href="class_u_a_r_t_val.html#a84230c53e73cec9ef9a22bf2c7d0eb8c">UARTVal</a>
+</li>
+<li>rndBcnPlts
+: <a class="el" href="classgame_settings.html#ad9d5b375e9a1dfbcdf8d7de16183d4f1">gameSettings</a>
 </li>
 </ul>
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
-<li>searchDeviceButton
-: <a class="el" href="class_ui__con_dialog.html#a3e7c668961423c395ab1c6989d18a92d">Ui_conDialog</a>
+<li>settingsDialog
+: <a class="el" href="classgame_window.html#a9758e7135bf4cfd0faa6c786f581edf0">gameWindow</a>
 </li>
-<li>statusbar
-: <a class="el" href="class_ui__game_window.html#ae102d8a9cfd0deb82d19680ac58715f7">Ui_gameWindow</a>
-, <a class="el" href="class_ui___main_window.html#a07519bbb9a350befd6feb4e84ef299fd">Ui_MainWindow</a>
+<li>stackWidget
+: <a class="el" href="classgame_window.html#abc73ca35fe3bf35111f52e8173762772">gameWindow</a>
+</li>
+<li>statsWidget
+: <a class="el" href="classgame_window.html#ad775484a1b4deec86d1ecd851818d435">gameWindow</a>
 </li>
 <li>statystyki
-: <a class="el" href="classmain_widget.html#a3550300face1cfb9371db1a710181537">mainWidget</a>
-</li>
-<li>stringdata0
-: <a class="el" href="structqt__meta__stringdata__con_dialog__t.html#ac3ddb2dc02fe68593014344e3cf959d6">qt_meta_stringdata_conDialog_t</a>
-, <a class="el" href="structqt__meta__stringdata__dis_dialog__t.html#aea8fe0148348cdeff152fc2141275d1b">qt_meta_stringdata_disDialog_t</a>
-, <a class="el" href="structqt__meta__stringdata__game_widget__t.html#a8cda5f2239a073b9c9f79ccd8b947b19">qt_meta_stringdata_gameWidget_t</a>
-, <a class="el" href="structqt__meta__stringdata__game_window__t.html#a55498339d7f6f23e98ddbe805cafaad5">qt_meta_stringdata_gameWindow_t</a>
-, <a class="el" href="structqt__meta__stringdata__main_game_widget__t.html#a7995bf2e29d45d42a268af18fc7511e5">qt_meta_stringdata_mainGameWidget_t</a>
-, <a class="el" href="structqt__meta__stringdata__main_widget__t.html#a5f1dd353a62d9c2fe3bf73fdd91aaf16">qt_meta_stringdata_mainWidget_t</a>
+: <a class="el" href="classmain_widget.html#a26900a873d5b1782df1eebf8d11394a0">mainWidget</a>
 </li>
 </ul>
 
 
 <h3><a id="index_t"></a>- t -</h3><ul>
 <li>timer
-: <a class="el" href="classgame_widget.html#ab334004a2061a74ffda193d0080380ff">gameWidget</a>
+: <a class="el" href="class_side_panel_widget.html#aace5d3b5b4319cbb91f6cfbba0e716bb">SidePanelWidget</a>
+</li>
+<li>timerun
+: <a class="el" href="classmain_game_widget.html#a218998300d8db8e060d322bc3193d8ca">mainGameWidget</a>
 </li>
 </ul>
 
 
 <h3><a id="index_u"></a>- u -</h3><ul>
+<li>userLives
+: <a class="el" href="classimage_parameters.html#afc149318e44e9ec8326fd7248eae27dc">imageParameters</a>
+</li>
 <li>userPlate
 : <a class="el" href="classmain_game_widget.html#accf95079dcecfa8455770743fe05c080">mainGameWidget</a>
 </li>
@@ -366,54 +333,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="classimage_parameters.html#ad1123f0b0507fdd3d59d4bc0efee6b29">imageParameters</a>
 </li>
 <li>userPlateVel
-: <a class="el" href="classgame_parameters.html#afade991ffc87f358350638b362d1b0aa">gameParameters</a>
-</li>
-</ul>
-
-
-<h3><a id="index_v"></a>- v -</h3><ul>
-<li>verticalLayout
-: <a class="el" href="class_ui__con_dialog.html#a4d2c4ddb1672eac2fe2d38d06ba578a1">Ui_conDialog</a>
-, <a class="el" href="class_ui__dis_dialog.html#ae28930e0724fcd0598faa2d12db6530c">Ui_disDialog</a>
-, <a class="el" href="class_ui__game_widget.html#a3999afc8033582cb9234a262a5b2c509">Ui_gameWidget</a>
-, <a class="el" href="class_ui___main_window.html#a649287f742c9a33b8444116dccb1b72b">Ui_MainWindow</a>
-</li>
-<li>verticalLayout_2
-: <a class="el" href="class_ui__dis_dialog.html#a2c373bf7a32c4765077836f1d79e9131">Ui_disDialog</a>
-, <a class="el" href="class_ui___main_window.html#afbe60c634b3214ee76ff9e1fa70c7801">Ui_MainWindow</a>
-</li>
-<li>verticalLayoutWidget
-: <a class="el" href="class_ui__game_widget.html#a26d4148681775096051683530d8373bc">Ui_gameWidget</a>
-, <a class="el" href="class_ui___main_window.html#a09dd64182e7897287cfa8ef83f32f29e">Ui_MainWindow</a>
-</li>
-<li>verticalLayoutWidget_2
-: <a class="el" href="class_ui__game_widget.html#a8e3ece73d1ff6c72c10514223d2b7e2d">Ui_gameWidget</a>
-, <a class="el" href="class_ui___main_window.html#a7066c0dc4d56abac815596640236ddf9">Ui_MainWindow</a>
-</li>
-<li>verticalSpacer
-: <a class="el" href="class_ui__game_widget.html#a0f3f0bafcca01779d220ac81e815a269">Ui_gameWidget</a>
-, <a class="el" href="class_ui___main_window.html#a2c53f7f2e3106a4225d5be295e1315ae">Ui_MainWindow</a>
-</li>
-<li>verticalSpacer_2
-: <a class="el" href="class_ui__game_widget.html#ac2e944c409004f53a4d45999879a64b1">Ui_gameWidget</a>
-, <a class="el" href="class_ui___main_window.html#af7b3fe6a3f100795153cd504ce0b86bf">Ui_MainWindow</a>
-</li>
-<li>verticalSpacer_3
-: <a class="el" href="class_ui__game_widget.html#a5eb078b813684e6830c3de0251756b75">Ui_gameWidget</a>
-, <a class="el" href="class_ui___main_window.html#a986c0329937b0114c287180b96a6ff6b">Ui_MainWindow</a>
-</li>
-<li>verticalSpacer_4
-: <a class="el" href="class_ui__game_widget.html#acfaeba1fb4d27fb6784472e0a7cf4db9">Ui_gameWidget</a>
-</li>
-<li>verticalSpacer_5
-: <a class="el" href="class_ui__game_widget.html#a484a7467cc17effffce03f19dc210d9b">Ui_gameWidget</a>
-</li>
-</ul>
-
-
-<h3><a id="index_w"></a>- w -</h3><ul>
-<li>widget
-: <a class="el" href="class_ui___main_window.html#a78b00a5bdda86ec7892a7d1e2e5ee87b">Ui_MainWindow</a>
+: <a class="el" href="class_u_a_r_t_val.html#a766ed3375284912ce7f8e4e86ed3cc49">UARTVal</a>
 </li>
 </ul>
 
@@ -423,21 +343,21 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="classimage_parameters.html#a64220f2a679179c4551489f615de25ed">imageParameters</a>
 </li>
 <li>XVal
-: <a class="el" href="classgame_parameters.html#ad5fb2477b7cc6f3d7df68a33ef25e1b7">gameParameters</a>
+: <a class="el" href="class_u_a_r_t_val.html#a5c377109024eed923d4ea26141cff53f">UARTVal</a>
 </li>
 </ul>
 
 
 <h3><a id="index_y"></a>- y -</h3><ul>
 <li>YVal
-: <a class="el" href="classgame_parameters.html#afc98815d09866cb39628fdcf726d020d">gameParameters</a>
+: <a class="el" href="class_u_a_r_t_val.html#a9bf2b52a382925585b5e2f300d195eb1">UARTVal</a>
 </li>
 </ul>
 
 
 <h3><a id="index_z"></a>- z -</h3><ul>
 <li>ZVal
-: <a class="el" href="classgame_parameters.html#afd7504dc098fce677e7ec699ee874f3f">gameParameters</a>
+: <a class="el" href="class_u_a_r_t_val.html#ab53e75d8b6f3edeb679f526a59d41d4a">UARTVal</a>
 </li>
 </ul>
 </div><!-- contents -->

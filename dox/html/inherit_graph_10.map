@@ -1,5 +1,3 @@
 <map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
-<area shape="rect" id="node2" href="$classgame_window.html" title="Klasa reprezentujaca glowne okno. " alt="" coords="345,31,447,57"/>
-<area shape="rect" id="node3" href="$class_ui__game_window.html" title="Ui_gameWindow" alt="" coords="5,56,127,83"/>
-<area shape="rect" id="node4" href="$class_ui_1_1game_window.html" title="Ui::gameWindow" alt="" coords="175,56,297,83"/>
+<area shape="rect" id="node1" href="$structqt__meta__stringdata__main_widget__t.html" title="qt_meta_stringdata\l_mainWidget_t" alt="" coords="5,5,139,47"/>
 </map>

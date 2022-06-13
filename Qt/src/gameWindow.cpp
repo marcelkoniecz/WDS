@@ -112,6 +112,7 @@ void gameWindow::restartGame() {
   gameParam.blockButtons = false;
   gameInfo.isGameActive = true;
   gameInfo.resetPosition = true;
+  statsWidget->points->clear();
   emit EmitRestartGame();
   emit EmitBlockButtons();
 }
@@ -168,8 +169,18 @@ void gameWindow::ReadTransmision() {
     ostatni = lineWOHex.lastIndexOf(terminator);
     gameInfo.XVal = (lineWOHex.mid(ostatni + 1, lineWOHex.length()).toDouble()) * 0.0625 * 9.81;
     lineWOHex = lineWOHex.left(ostatni);
-    //qDebug() << gameInfo.XVal << gameInfo.YVal << gameInfo.ZVal << "to sie wczytalo";
-    gameInfo.calculateVel();
+
+    // qDebug() << gameInfo.XVal;
+    if (gameInfo.XVal > 5 && gameParam.setBallSpeed == 0) {
+      gameParam.setBallSpeed = -1; //Ustawienie zwolnienie piłki przy odbiciu od platformy gracza
+
+    }
+    else if (gameInfo.XVal < -5 && gameParam.setBallSpeed == 0)
+      gameParam.setBallSpeed = 1; //Ustawienie przyśpieszenia piłki przy odbiciu od platformy gracza
+
+  //qDebug() << gameInfo.XVal << gameInfo.YVal << gameInfo.ZVal << "to sie wczytalo";
+   // gameInfo.calculateVel();
+
   }
 
 }

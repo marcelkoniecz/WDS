@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Dokumentacja klasy Ui::gameWindow</title>
+<title>Aplikacja gry: Dokumentacja klasy Ui::gameWindow</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,6 +64,20 @@ $(function() {
 $(document).ready(function(){initNavTree('class_ui_1_1game_window.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="summary">
 <a href="class_ui_1_1game_window-members.html">Lista wszystkich składowych</a>  </div>
@@ -103,8 +123,8 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 <tr class="separator:a5bf92d3cb122d149b4d268d66ed0b607 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ecf39c157bd52237c0c17890750f8b6 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a8ecf39c157bd52237c0c17890750f8b6">actionDisconnect</a></td></tr>
 <tr class="separator:a8ecf39c157bd52237c0c17890750f8b6 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d943ca5265011e98062461d84c67e71 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a5d943ca5265011e98062461d84c67e71">centralwidget</a></td></tr>
-<tr class="separator:a5d943ca5265011e98062461d84c67e71 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00eda2bc135dd125143f3f10cd6a98c5 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a00eda2bc135dd125143f3f10cd6a98c5">mainwidget</a></td></tr>
+<tr class="separator:a00eda2bc135dd125143f3f10cd6a98c5 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12b56ff3745e538f3f89b0e3563b6d24 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QMenuBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a12b56ff3745e538f3f89b0e3563b6d24">menubar</a></td></tr>
 <tr class="separator:a12b56ff3745e538f3f89b0e3563b6d24 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c21c635652f6d05a5dee4c3df88dcb0 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QMenu *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a5c21c635652f6d05a5dee4c3df88dcb0">menuUstawienia_gry</a></td></tr>
@@ -113,8 +133,15 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 <tr class="separator:ab4913d283fea8c9193d71f237eccdea8 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae102d8a9cfd0deb82d19680ac58715f7 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QStatusBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#ae102d8a9cfd0deb82d19680ac58715f7">statusbar</a></td></tr>
 <tr class="separator:ae102d8a9cfd0deb82d19680ac58715f7 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f660c37aa26a57d505e64e17fddd7b inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QToolBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a98f660c37aa26a57d505e64e17fddd7b">toolBar</a></td></tr>
+<tr class="separator:a98f660c37aa26a57d505e64e17fddd7b inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8e97fcc6cee92c2001e72d5bad45a4 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QToolBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#abc8e97fcc6cee92c2001e72d5bad45a4">toolBar_2</a></td></tr>
+<tr class="separator:abc8e97fcc6cee92c2001e72d5bad45a4 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="ui__game_window_8h_source.html#l00107">107</a> pliku <a class="el" href="ui__game_window_8h_source.html">ui_gameWindow.h</a>.</p>
+</div><hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
 <li>/home/marcel/Documents/semestrVI/WDS/Qt/out/uic/<a class="el" href="ui__game_window_8h_source.html">ui_gameWindow.h</a></li>
 </ul>
 </div><!-- contents -->

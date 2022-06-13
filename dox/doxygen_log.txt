@@ -1,0 +1,95 @@
+warning: The selected output language "polish" has not been updated
+since release 1.8.2.  As a result some sentences may appear in English.
+
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:80: warning: documented symbol `void settDialog::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:105: warning: documented symbol `const QMetaObject settDialog::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:111: warning: documented symbol `const QMetaObject * settDialog::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:116: warning: documented symbol `void * settDialog::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:126: warning: documented symbol `int settDialog::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:215: warning: documented symbol `void endDialog::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:257: warning: documented symbol `const QMetaObject endDialog::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:263: warning: documented symbol `const QMetaObject * endDialog::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:268: warning: documented symbol `void * endDialog::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:278: warning: documented symbol `int endDialog::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:369: warning: documented symbol `void disDialog::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:394: warning: documented symbol `const QMetaObject disDialog::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:400: warning: documented symbol `const QMetaObject * disDialog::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:405: warning: documented symbol `void * disDialog::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:415: warning: documented symbol `int disDialog::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:501: warning: documented symbol `void conDialog::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:534: warning: documented symbol `const QMetaObject conDialog::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:540: warning: documented symbol `const QMetaObject * conDialog::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:545: warning: documented symbol `void * conDialog::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_dialogs.cpp:555: warning: documented symbol `int conDialog::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameStatistics.cpp:76: warning: documented symbol `void gameStatisticsWidget::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameStatistics.cpp:100: warning: documented symbol `const QMetaObject gameStatisticsWidget::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameStatistics.cpp:106: warning: documented symbol `const QMetaObject * gameStatisticsWidget::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameStatistics.cpp:111: warning: documented symbol `void * gameStatisticsWidget::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameStatistics.cpp:121: warning: documented symbol `int gameStatisticsWidget::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWidget.cpp:72: warning: documented symbol `void mainGameWidget::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWidget.cpp:95: warning: documented symbol `const QMetaObject mainGameWidget::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWidget.cpp:101: warning: documented symbol `const QMetaObject * mainGameWidget::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWidget.cpp:106: warning: documented symbol `void * mainGameWidget::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWidget.cpp:114: warning: documented symbol `int mainGameWidget::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWindow.cpp:116: warning: documented symbol `void gameWindow::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWindow.cpp:164: warning: documented symbol `const QMetaObject gameWindow::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWindow.cpp:170: warning: documented symbol `const QMetaObject * gameWindow::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWindow.cpp:175: warning: documented symbol `void * gameWindow::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWindow.cpp:185: warning: documented symbol `int gameWindow::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_mainWidget.cpp:65: warning: documented symbol `void mainWidget::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_mainWidget.cpp:78: warning: documented symbol `const QMetaObject mainWidget::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_mainWidget.cpp:84: warning: documented symbol `const QMetaObject * mainWidget::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_mainWidget.cpp:89: warning: documented symbol `void * mainWidget::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_mainWidget.cpp:97: warning: documented symbol `int mainWidget::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_sideWidget.cpp:96: warning: documented symbol `void SidePanelWidget::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_sideWidget.cpp:133: warning: documented symbol `const QMetaObject SidePanelWidget::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_sideWidget.cpp:139: warning: documented symbol `const QMetaObject * SidePanelWidget::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_sideWidget.cpp:144: warning: documented symbol `void * SidePanelWidget::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_sideWidget.cpp:154: warning: documented symbol `int SidePanelWidget::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:57: warning: documented symbol `void disDialog::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:65: warning: documented symbol `const QMetaObject disDialog::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:71: warning: documented symbol `const QMetaObject * disDialog::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:76: warning: documented symbol `void * disDialog::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:86: warning: documented symbol `int disDialog::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:152: warning: documented symbol `void conDialog::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:184: warning: documented symbol `const QMetaObject conDialog::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:190: warning: documented symbol `const QMetaObject * conDialog::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:195: warning: documented symbol `void * conDialog::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:205: warning: documented symbol `int conDialog::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:276: warning: documented symbol `void mainGameWidget::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:289: warning: documented symbol `const QMetaObject mainGameWidget::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:295: warning: documented symbol `const QMetaObject * mainGameWidget::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:300: warning: documented symbol `void * mainGameWidget::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:308: warning: documented symbol `int mainGameWidget::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:383: warning: documented symbol `void gameWidget::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:409: warning: documented symbol `const QMetaObject gameWidget::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:415: warning: documented symbol `const QMetaObject * gameWidget::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:420: warning: documented symbol `void * gameWidget::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:430: warning: documented symbol `int gameWidget::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:448: warning: no uniquely matching class member found for 
+  void gameWidget::EmitClosing()
+
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:486: warning: documented symbol `void mainWidget::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:494: warning: documented symbol `const QMetaObject mainWidget::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:500: warning: documented symbol `const QMetaObject * mainWidget::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:505: warning: documented symbol `void * mainWidget::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:513: warning: documented symbol `int mainWidget::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:576: warning: documented symbol `void gameWindow::qt_static_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:592: warning: documented symbol `const QMetaObject gameWindow::staticMetaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:598: warning: documented symbol `const QMetaObject * gameWindow::metaObject' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:603: warning: documented symbol `void * gameWindow::qt_metacast' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_widgetgry.cpp:613: warning: documented symbol `int gameWindow::qt_metacall' was not declared or defined.
+/home/marcel/Documents/semestrVI/WDS/Qt/out/rcc/qrc_zasoby.cpp:608: warning: no matching file member found for 
+int QT_RCC_MANGLE_NAMESPACE()
+Possible candidates:
+ '#define QT_RCC_MANGLE_NAMESPACE(name)' at line 592 of file/home/marcel/Documents/semestrVI/WDS/Qt/out/rcc/qrc_zasoby.cpp
+
+/home/marcel/Documents/semestrVI/WDS/Qt/out/rcc/qrc_zasoby.cpp:616: warning: no matching file member found for 
+int QT_RCC_MANGLE_NAMESPACE()
+Possible candidates:
+ '#define QT_RCC_MANGLE_NAMESPACE(name)' at line 592 of file/home/marcel/Documents/semestrVI/WDS/Qt/out/rcc/qrc_zasoby.cpp
+
+/home/marcel/Documents/semestrVI/WDS/Qt/src/dialogs.cpp:282: warning: argument 'ndash' of command @param is not found in the argument list of disDialog::StartDialog(QString connectedDev)
+/home/marcel/Documents/semestrVI/WDS/Qt/inc/mainWidget.hpp:58: warning: argument 'gameInfo' of command @param is not found in the argument list of mainWidget::mainWidget(gameWindow *parent=nullptr)
+/home/marcel/Documents/semestrVI/WDS/Qt/src/sideWidget.cpp:4: warning: argument 'applTimer' of command @param is not found in the argument list of SidePanelWidget::SidePanelWidget(mainWidget *parent=nullptr, gameWindow *gameWin=nullptr)
+*** Doxygen has finished

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Dokumentacja klasy gameWindow</title>
+<title>Aplikacja gry: Dokumentacja klasy gameWindow</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,11 +64,27 @@ $(function() {
 $(document).ready(function(){initNavTree('classgame_window.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Sloty publiczne</a> &#124;
+<a href="#signals">Sygnały</a> &#124;
 <a href="#pub-methods">Metody publiczne</a> &#124;
 <a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="#friends">Przyjaciele</a> &#124;
 <a href="classgame_window-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
 <div class="title">Dokumentacja klasy gameWindow</div>  </div>
@@ -77,28 +99,24 @@ $(document).ready(function(){initNavTree('classgame_window.html','');});
 Diagram dziedziczenia dla gameWindow</div>
 <div class="dyncontent">
 <div class="center"><img src="classgame_window__inherit__graph.png" border="0" usemap="#game_window_inherit__map" alt="Inheritance graph"/></div>
-<map name="game_window_inherit__map" id="game_window_inherit__map">
-<area shape="rect" id="node3" href="class_ui_1_1game_window.html" title="Ui::gameWindow" alt="" coords="136,80,259,107"/>
-<area shape="rect" id="node4" href="class_ui__game_window.html" title="Ui_gameWindow" alt="" coords="137,5,258,32"/>
-</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <div class="dynheader">
 Diagram współpracy dla gameWindow:</div>
 <div class="dyncontent">
 <div class="center"><img src="classgame_window__coll__graph.png" border="0" usemap="#game_window_coll__map" alt="Collaboration graph"/></div>
 <map name="game_window_coll__map" id="game_window_coll__map">
-<area shape="rect" id="node3" href="class_ui_1_1game_window.html" title="Ui::gameWindow" alt="" coords="136,288,259,315"/>
-<area shape="rect" id="node4" href="class_ui__game_window.html" title="Ui_gameWindow" alt="" coords="126,199,247,225"/>
-<area shape="rect" id="node5" href="classgame_parameters.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="225,5,346,32"/>
-<area shape="rect" id="node15" href="classmain_game_widget.html" title="mainGameWidget" alt="" coords="373,109,499,136"/>
-<area shape="rect" id="node6" href="classcon_dialog.html" title="conDialog" alt="" coords="691,288,771,315"/>
-<area shape="rect" id="node8" href="class_ui_1_1con_dialog.html" title="Ui::conDialog" alt="" coords="789,199,891,225"/>
-<area shape="rect" id="node9" href="class_ui__con_dialog.html" title="Ui_conDialog" alt="" coords="790,109,890,136"/>
-<area shape="rect" id="node10" href="classmain_widget.html" title="Klasa reprezentujaca widget glowny Klasa jest odpowiedzialna za stworzenie w widgecie glownym widgetu..." alt="" coords="443,288,533,315"/>
-<area shape="rect" id="node12" href="classgame_widget.html" title="Klasa panelu bocznego. " alt="" coords="577,199,671,225"/>
-<area shape="rect" id="node13" href="class_ui_1_1game_widget.html" title="Ui::gameWidget" alt="" coords="639,109,755,136"/>
-<area shape="rect" id="node14" href="class_ui__game_widget.html" title="Ui_gameWidget" alt="" coords="640,5,755,32"/>
-<area shape="rect" id="node16" href="classimage_parameters.html" title="imageParameters" alt="" coords="370,5,494,32"/>
+<area shape="rect" id="node4" href="classgame_statistics_widget.html" title="gameStatisticsWidget" alt="" coords="276,108,427,135"/>
+<area shape="rect" id="node11" href="classmain_widget.html" title="Klasa reprezentujaca widget glowny Klasa jest odpowiedzialna za stworzenie w widgecie glownym widgetu..." alt="" coords="565,393,656,420"/>
+<area shape="rect" id="node12" href="class_side_panel_widget.html" title="Klasa reprezentująca panel boczny aplikacji. " alt="" coords="290,325,413,352"/>
+<area shape="rect" id="node15" href="classmain_game_widget.html" title="mainGameWidget" alt="" coords="288,435,415,461"/>
+<area shape="rect" id="node7" href="classgame_parameters.html" title="Klasa zawierająca informacje na temat statystyk gry. " alt="" coords="15,169,137,196"/>
+<area shape="rect" id="node8" href="classcon_dialog.html" title="Klasa reprezentująca dialog połączenia. " alt="" coords="571,765,651,792"/>
+<area shape="rect" id="node18" href="classdis_dialog.html" title="Klasa reprezentująca dialog rozłączenia. " alt="" coords="573,856,649,883"/>
+<area shape="rect" id="node20" href="classend_dialog.html" title="Klasa reprezentująca dialog końca gry. " alt="" coords="571,907,651,933"/>
+<area shape="rect" id="node22" href="classsett_dialog.html" title="Klasa reprezentująca dialog ustawień " alt="" coords="570,697,651,724"/>
+<area shape="rect" id="node14" href="class_u_a_r_t_val.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="37,535,115,561"/>
+<area shape="rect" id="node16" href="classgame_settings.html" title="Klasa zawierająca informacje na temat ustawień gry. " alt="" coords="25,657,127,684"/>
+<area shape="rect" id="node17" href="classimage_parameters.html" title="imageParameters" alt="" coords="14,444,138,471"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <table class="memberdecls">
@@ -119,17 +137,35 @@ Sloty publiczne</h2></td></tr>
 <tr class="memitem:a44cb04704f8f9d1faec12e0669abb45d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a44cb04704f8f9d1faec12e0669abb45d">ReadTransmision</a> ()</td></tr>
 <tr class="memdesc:a44cb04704f8f9d1faec12e0669abb45d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot do odczytywania danych z UART Za pomocą tej funkcji odczytywane oraz zapisywane są dane w jaki sposób porusza się akcelerometr.  <a href="#a44cb04704f8f9d1faec12e0669abb45d">Więcej...</a><br /></td></tr>
 <tr class="separator:a44cb04704f8f9d1faec12e0669abb45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a15df2489db0c157146e90d75cfd1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a33a15df2489db0c157146e90d75cfd1a">restartGame</a> ()</td></tr>
+<tr class="separator:a33a15df2489db0c157146e90d75cfd1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5ca19ad1471927e274470746db35d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a5d5ca19ad1471927e274470746db35d7">endGame</a> ()</td></tr>
+<tr class="separator:a5d5ca19ad1471927e274470746db35d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd54e8cb424a0c92cbb16f5fcbbc5680"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#abd54e8cb424a0c92cbb16f5fcbbc5680">openStatisticsWidget</a> ()</td></tr>
+<tr class="separator:abd54e8cb424a0c92cbb16f5fcbbc5680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377f34bb955c10d0239a1c751386629e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a377f34bb955c10d0239a1c751386629e">openGameWidget</a> ()</td></tr>
+<tr class="separator:a377f34bb955c10d0239a1c751386629e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e0bc9288b7c6e78bc8f0c682ffe81a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a0e0bc9288b7c6e78bc8f0c682ffe81a2">disconnectDevice</a> ()</td></tr>
+<tr class="separator:a0e0bc9288b7c6e78bc8f0c682ffe81a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4115287f0438436e17b2a15a55db1fe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a4115287f0438436e17b2a15a55db1fe6">checkLanguage</a> ()</td></tr>
+<tr class="separator:a4115287f0438436e17b2a15a55db1fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Sygnały</h2></td></tr>
+<tr class="memitem:a999d830fdc70a0b871695f39bfcc3c1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a999d830fdc70a0b871695f39bfcc3c1c">EmitRestartGame</a> ()</td></tr>
+<tr class="separator:a999d830fdc70a0b871695f39bfcc3c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9725bc29f7f025807cac02498085d1a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a9725bc29f7f025807cac02498085d1a2">EmitRetranslate</a> ()</td></tr>
+<tr class="separator:a9725bc29f7f025807cac02498085d1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432aa40c8402ef2ddebb2fc01c767082"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a432aa40c8402ef2ddebb2fc01c767082">EmitBlockButtons</a> ()</td></tr>
+<tr class="separator:a432aa40c8402ef2ddebb2fc01c767082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:aa7c1120c524be0249920baf1c4db650f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f">gameWindow</a> (QMainWindow *parent=nullptr)</td></tr>
 <tr class="memdesc:aa7c1120c524be0249920baf1c4db650f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor nowego okna gry.  <a href="#aa7c1120c524be0249920baf1c4db650f">Więcej...</a><br /></td></tr>
 <tr class="separator:aa7c1120c524be0249920baf1c4db650f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_ui__game_window"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_ui__game_window')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td></tr>
-<tr class="memitem:a637645510fc77b70e4a97d62c8fd7ee4 inherit pub_methods_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a637645510fc77b70e4a97d62c8fd7ee4">setupUi</a> (QMainWindow *<a class="el" href="classgame_window.html">gameWindow</a>)</td></tr>
-<tr class="separator:a637645510fc77b70e4a97d62c8fd7ee4 inherit pub_methods_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab33b34e5e3eca29c0c69b0aa8ae4de06 inherit pub_methods_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#ab33b34e5e3eca29c0c69b0aa8ae4de06">retranslateUi</a> (QMainWindow *<a class="el" href="classgame_window.html">gameWindow</a>)</td></tr>
-<tr class="separator:ab33b34e5e3eca29c0c69b0aa8ae4de06 inherit pub_methods_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0823cff17d7249bccd3ede894b29f432"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a0823cff17d7249bccd3ede894b29f432">changeEvent</a> (QEvent *event) override</td></tr>
+<tr class="separator:a0823cff17d7249bccd3ede894b29f432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atrybuty prywatne</h2></td></tr>
@@ -139,43 +175,46 @@ Atrybuty prywatne</h2></td></tr>
 <tr class="memitem:a87e1355bb9303cf6e343a2883b61b123"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcon_dialog.html">conDialog</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a87e1355bb9303cf6e343a2883b61b123">connectionDialog</a></td></tr>
 <tr class="memdesc:a87e1355bb9303cf6e343a2883b61b123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole dialog polaczenia.  <a href="#a87e1355bb9303cf6e343a2883b61b123">Więcej...</a><br /></td></tr>
 <tr class="separator:a87e1355bb9303cf6e343a2883b61b123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3edbfb40a3e0ae13438abd1fecc496b3"><td class="memItemLeft" align="right" valign="top">QDialog *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a3edbfb40a3e0ae13438abd1fecc496b3">disconnectionDialog</a></td></tr>
-<tr class="memdesc:a3edbfb40a3e0ae13438abd1fecc496b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole dialog rozlaczenia.  <a href="#a3edbfb40a3e0ae13438abd1fecc496b3">Więcej...</a><br /></td></tr>
-<tr class="separator:a3edbfb40a3e0ae13438abd1fecc496b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7b8358220e1e78e540416949f511daf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_parameters.html">gameParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#ae7b8358220e1e78e540416949f511daf">gameInfo</a></td></tr>
-<tr class="memdesc:ae7b8358220e1e78e540416949f511daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole struktury z odczytami.  <a href="#ae7b8358220e1e78e540416949f511daf">Więcej...</a><br /></td></tr>
-<tr class="separator:ae7b8358220e1e78e540416949f511daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad26b81c005aa65ae1fce37e475b6c9ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdis_dialog.html">disDialog</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#ad26b81c005aa65ae1fce37e475b6c9ee">disconnectionDialog</a></td></tr>
+<tr class="memdesc:ad26b81c005aa65ae1fce37e475b6c9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole dialog rozlaczenia.  <a href="#ad26b81c005aa65ae1fce37e475b6c9ee">Więcej...</a><br /></td></tr>
+<tr class="separator:ad26b81c005aa65ae1fce37e475b6c9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91b44ea2405eed2406fb6fc04e04d6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classend_dialog.html">endDialog</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#ad91b44ea2405eed2406fb6fc04e04d6e">endGameDialog</a></td></tr>
+<tr class="memdesc:ad91b44ea2405eed2406fb6fc04e04d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole struktury z odczytami.  <a href="#ad91b44ea2405eed2406fb6fc04e04d6e">Więcej...</a><br /></td></tr>
+<tr class="separator:ad91b44ea2405eed2406fb6fc04e04d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9758e7135bf4cfd0faa6c786f581edf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsett_dialog.html">settDialog</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a9758e7135bf4cfd0faa6c786f581edf0">settingsDialog</a></td></tr>
+<tr class="separator:a9758e7135bf4cfd0faa6c786f581edf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f6ab8415dcaecb6d5684ac9790a0e5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_a_r_t_val.html">UARTVal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a1f6ab8415dcaecb6d5684ac9790a0e5e">gameInfo</a></td></tr>
+<tr class="separator:a1f6ab8415dcaecb6d5684ac9790a0e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2573fa9c7d0613e650db056585babec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_settings.html">gameSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a2573fa9c7d0613e650db056585babec5">gameSett</a></td></tr>
+<tr class="separator:a2573fa9c7d0613e650db056585babec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c2abdf213ba7584a644ddd5cfe92db2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmain_widget.html">mainWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a1c2abdf213ba7584a644ddd5cfe92db2">CentralWidget</a></td></tr>
 <tr class="memdesc:a1c2abdf213ba7584a644ddd5cfe92db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole widgetu gry.  <a href="#a1c2abdf213ba7584a644ddd5cfe92db2">Więcej...</a><br /></td></tr>
 <tr class="separator:a1c2abdf213ba7584a644ddd5cfe92db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc73ca35fe3bf35111f52e8173762772"><td class="memItemLeft" align="right" valign="top">QStackedWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#abc73ca35fe3bf35111f52e8173762772">stackWidget</a></td></tr>
+<tr class="separator:abc73ca35fe3bf35111f52e8173762772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad775484a1b4deec86d1ecd851818d435"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_statistics_widget.html">gameStatisticsWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#ad775484a1b4deec86d1ecd851818d435">statsWidget</a></td></tr>
+<tr class="separator:ad775484a1b4deec86d1ecd851818d435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ae0c2dc0141a4546f1f883a3e6b567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_parameters.html">gameParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a13ae0c2dc0141a4546f1f883a3e6b567">gameParam</a></td></tr>
+<tr class="separator:a13ae0c2dc0141a4546f1f883a3e6b567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Dodatkowe Dziedziczone Składowe</h2></td></tr>
-<tr class="inherit_header pub_attribs_class_ui__game_window"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_ui__game_window')"><img src="closed.png" alt="-"/>&#160;Atrybuty publiczne dziedziczone z <a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td></tr>
-<tr class="memitem:a5dbe7d984108a2a2859199ae807addb2 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a5dbe7d984108a2a2859199ae807addb2">actionUstawienia</a></td></tr>
-<tr class="separator:a5dbe7d984108a2a2859199ae807addb2 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac46dd2de70bb0cf75adc74575a81be86 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#ac46dd2de70bb0cf75adc74575a81be86">actionPolaczenie</a></td></tr>
-<tr class="separator:ac46dd2de70bb0cf75adc74575a81be86 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a48093bc310b07af282189b6bbd1fc0 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a6a48093bc310b07af282189b6bbd1fc0">actionSettings</a></td></tr>
-<tr class="separator:a6a48093bc310b07af282189b6bbd1fc0 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bf92d3cb122d149b4d268d66ed0b607 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a5bf92d3cb122d149b4d268d66ed0b607">actionConnect</a></td></tr>
-<tr class="separator:a5bf92d3cb122d149b4d268d66ed0b607 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ecf39c157bd52237c0c17890750f8b6 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a8ecf39c157bd52237c0c17890750f8b6">actionDisconnect</a></td></tr>
-<tr class="separator:a8ecf39c157bd52237c0c17890750f8b6 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d943ca5265011e98062461d84c67e71 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a5d943ca5265011e98062461d84c67e71">centralwidget</a></td></tr>
-<tr class="separator:a5d943ca5265011e98062461d84c67e71 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12b56ff3745e538f3f89b0e3563b6d24 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QMenuBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a12b56ff3745e538f3f89b0e3563b6d24">menubar</a></td></tr>
-<tr class="separator:a12b56ff3745e538f3f89b0e3563b6d24 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c21c635652f6d05a5dee4c3df88dcb0 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QMenu *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#a5c21c635652f6d05a5dee4c3df88dcb0">menuUstawienia_gry</a></td></tr>
-<tr class="separator:a5c21c635652f6d05a5dee4c3df88dcb0 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4913d283fea8c9193d71f237eccdea8 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QMenu *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#ab4913d283fea8c9193d71f237eccdea8">menuPolaczenie</a></td></tr>
-<tr class="separator:ab4913d283fea8c9193d71f237eccdea8 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae102d8a9cfd0deb82d19680ac58715f7 inherit pub_attribs_class_ui__game_window"><td class="memItemLeft" align="right" valign="top">QStatusBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__game_window.html#ae102d8a9cfd0deb82d19680ac58715f7">statusbar</a></td></tr>
-<tr class="separator:ae102d8a9cfd0deb82d19680ac58715f7 inherit pub_attribs_class_ui__game_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Przyjaciele</h2></td></tr>
+<tr class="memitem:a62dd0a5163b2d7e542376e91ec4c97ee"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a62dd0a5163b2d7e542376e91ec4c97ee">SidePanelWidget</a></td></tr>
+<tr class="separator:a62dd0a5163b2d7e542376e91ec4c97ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16034386f0937a8321dc8b5e1dfa6d74"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a16034386f0937a8321dc8b5e1dfa6d74">settDialog</a></td></tr>
+<tr class="separator:a16034386f0937a8321dc8b5e1dfa6d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5efe93a61b1ad96e729dec8b42787d"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#a5f5efe93a61b1ad96e729dec8b42787d">mainWidget</a></td></tr>
+<tr class="separator:a5f5efe93a61b1ad96e729dec8b42787d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af95002632c0e4912829103fbb6c30551"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#af95002632c0e4912829103fbb6c30551">mainGameWidget</a></td></tr>
+<tr class="separator:af95002632c0e4912829103fbb6c30551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af192ab8d0b36301294a408b3d0a30ab2"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_window.html#af192ab8d0b36301294a408b3d0a30ab2">gameStatisticsWidget</a></td></tr>
+<tr class="separator:af192ab8d0b36301294a408b3d0a30ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>Klasa reprezentujaca glowne okno. </p>
 <p>Klasa ta jest glownym elementem aplikacji, </p>
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00040">40</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="aa7c1120c524be0249920baf1c4db650f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7c1120c524be0249920baf1c4db650f">&#9670;&nbsp;</a></span>gameWindow()</h2>
@@ -201,9 +240,287 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00027">27</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_window_8hpp_source.html#l00066">CentralWidget</a>, <a class="el" href="game_window_8cpp_source.html#l00055">checkLanguage()</a>, <a class="el" href="game_window_8hpp_source.html#l00050">connectionDialog</a>, <a class="el" href="game_window_8hpp_source.html#l00046">device</a>, <a class="el" href="game_window_8cpp_source.html#l00087">disconnectDevice()</a>, <a class="el" href="game_window_8hpp_source.html#l00054">disconnectionDialog</a>, <a class="el" href="classgame_window.html#a999d830fdc70a0b871695f39bfcc3c1c">EmitRestartGame()</a>, <a class="el" href="game_window_8cpp_source.html#l00103">endGame()</a>, <a class="el" href="game_window_8hpp_source.html#l00058">endGameDialog</a>, <a class="el" href="game_window_8hpp_source.html#l00076">gameStatisticsWidget</a>, <a class="el" href="game_window_8cpp_source.html#l00120">initDevice()</a>, <a class="el" href="game_window_8hpp_source.html#l00074">mainWidget</a>, <a class="el" href="main_widget_8hpp_source.html#l00050">mainWidget::okienko</a>, <a class="el" href="game_window_8cpp_source.html#l00093">openGameWidget()</a>, <a class="el" href="game_window_8cpp_source.html#l00098">openStatisticsWidget()</a>, <a class="el" href="game_window_8cpp_source.html#l00110">restartGame()</a>, <a class="el" href="game_window_8hpp_source.html#l00073">settDialog</a>, <a class="el" href="game_window_8hpp_source.html#l00059">settingsDialog</a>, <a class="el" href="game_window_8hpp_source.html#l00067">stackWidget</a>, <a class="el" href="game_window_8hpp_source.html#l00068">statsWidget</a> i <a class="el" href="main_widget_8hpp_source.html#l00055">mainWidget::statystyki</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_aa7c1120c524be0249920baf1c4db650f_cgraph.png" border="0" usemap="#classgame_window_aa7c1120c524be0249920baf1c4db650f_cgraph" alt=""/></div>
+<map name="classgame_window_aa7c1120c524be0249920baf1c4db650f_cgraph" id="classgame_window_aa7c1120c524be0249920baf1c4db650f_cgraph">
+<area shape="rect" id="node2" href="classgame_window.html#a4115287f0438436e17b2a15a55db1fe6" title="gameWindow::checkLanguage" alt="" coords="248,5,448,32"/>
+<area shape="rect" id="node3" href="classgame_window.html#a0e0bc9288b7c6e78bc8f0c682ffe81a2" title="gameWindow::disconnectDevice" alt="" coords="241,56,455,83"/>
+<area shape="rect" id="node4" href="classgame_window.html#a5d5ca19ad1471927e274470746db35d7" title="gameWindow::endGame" alt="" coords="265,107,431,133"/>
+<area shape="rect" id="node5" href="classgame_window.html#a787dbecae715feb56d9ac0a1cb8f9ce7" title="Slot inicjalizujacy polaczenie z mikrokontrolerem. " alt="" coords="265,157,431,184"/>
+<area shape="rect" id="node10" href="classgame_window.html#a377f34bb955c10d0239a1c751386629e" title="gameWindow::openGameWidget" alt="" coords="241,208,455,235"/>
+<area shape="rect" id="node11" href="classgame_window.html#abd54e8cb424a0c92cbb16f5fcbbc5680" title="gameWindow::openStatistics\lWidget" alt="" coords="252,259,444,301"/>
+<area shape="rect" id="node13" href="classgame_window.html#a33a15df2489db0c157146e90d75cfd1a" title="gameWindow::restartGame" alt="" coords="257,325,439,352"/>
+<area shape="rect" id="node6" href="classgame_window.html#a44cb04704f8f9d1faec12e0669abb45d" title="Slot do odczytywania danych z UART Za pomocą tej funkcji odczytywane oraz zapisywane są dane w jaki s..." alt="" coords="503,157,713,184"/>
+<area shape="rect" id="node7" href="game_window_8cpp.html#ac4cc9a0feb0fb183343f20837d50ca88" title="CalculateCRC8" alt="" coords="783,132,897,159"/>
+<area shape="rect" id="node9" href="class_u_a_r_t_val.html#add53548eecd3058675c9076d902372ee" title="UARTVal::calculateVel" alt="" coords="761,183,919,209"/>
+<area shape="rect" id="node8" href="game_window_8cpp.html#afce33dbfd29f5c283d83012be051c5c9" title="CRCSingleByte" alt="" coords="967,132,1081,159"/>
+<area shape="rect" id="node12" href="classgame_statistics_widget.html#a73c073668d915eeadee9481a7a166148" title="gameStatisticsWidget\l::printChart" alt="" coords="533,259,683,301"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a0823cff17d7249bccd3ede894b29f432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0823cff17d7249bccd3ede894b29f432">&#9670;&nbsp;</a></span>changeEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gameWindow::changeEvent </td>
+          <td>(</td>
+          <td class="paramtype">QEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00076">76</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="classgame_window.html#a9725bc29f7f025807cac02498085d1a2">EmitRetranslate()</a>.</p>
+
+</div>
+</div>
+<a id="a4115287f0438436e17b2a15a55db1fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4115287f0438436e17b2a15a55db1fe6">&#9670;&nbsp;</a></span>checkLanguage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gameWindow::checkLanguage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00055">55</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_settings_8hpp_source.html#l00029">english</a>, <a class="el" href="game_window_8hpp_source.html#l00062">gameSett</a>, <a class="el" href="game_settings_8hpp_source.html#l00051">gameSettings::language</a> i <a class="el" href="game_settings_8hpp_source.html#l00030">polish</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_a4115287f0438436e17b2a15a55db1fe6_icgraph.png" border="0" usemap="#classgame_window_a4115287f0438436e17b2a15a55db1fe6_icgraph" alt=""/></div>
+<map name="classgame_window_a4115287f0438436e17b2a15a55db1fe6_icgraph" id="classgame_window_a4115287f0438436e17b2a15a55db1fe6_icgraph">
+<area shape="rect" id="node2" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="253,5,441,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0e0bc9288b7c6e78bc8f0c682ffe81a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e0bc9288b7c6e78bc8f0c682ffe81a2">&#9670;&nbsp;</a></span>disconnectDevice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gameWindow::disconnectDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00087">87</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_window_8hpp_source.html#l00046">device</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_a0e0bc9288b7c6e78bc8f0c682ffe81a2_icgraph.png" border="0" usemap="#classgame_window_a0e0bc9288b7c6e78bc8f0c682ffe81a2_icgraph" alt=""/></div>
+<map name="classgame_window_a0e0bc9288b7c6e78bc8f0c682ffe81a2_icgraph" id="classgame_window_a0e0bc9288b7c6e78bc8f0c682ffe81a2_icgraph">
+<area shape="rect" id="node2" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="267,5,455,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a432aa40c8402ef2ddebb2fc01c767082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432aa40c8402ef2ddebb2fc01c767082">&#9670;&nbsp;</a></span>EmitBlockButtons</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gameWindow::EmitBlockButtons </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00103">endGame()</a> i <a class="el" href="game_window_8cpp_source.html#l00110">restartGame()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_a432aa40c8402ef2ddebb2fc01c767082_icgraph.png" border="0" usemap="#classgame_window_a432aa40c8402ef2ddebb2fc01c767082_icgraph" alt=""/></div>
+<map name="classgame_window_a432aa40c8402ef2ddebb2fc01c767082_icgraph" id="classgame_window_a432aa40c8402ef2ddebb2fc01c767082_icgraph">
+<area shape="rect" id="node2" href="classgame_window.html#a5d5ca19ad1471927e274470746db35d7" title="gameWindow::endGame" alt="" coords="276,5,441,32"/>
+<area shape="rect" id="node4" href="classgame_window.html#a33a15df2489db0c157146e90d75cfd1a" title="gameWindow::restartGame" alt="" coords="268,56,449,83"/>
+<area shape="rect" id="node3" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="497,31,685,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a999d830fdc70a0b871695f39bfcc3c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a999d830fdc70a0b871695f39bfcc3c1c">&#9670;&nbsp;</a></span>EmitRestartGame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gameWindow::EmitRestartGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a> i <a class="el" href="game_window_8cpp_source.html#l00110">restartGame()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_a999d830fdc70a0b871695f39bfcc3c1c_icgraph.png" border="0" usemap="#classgame_window_a999d830fdc70a0b871695f39bfcc3c1c_icgraph" alt=""/></div>
+<map name="classgame_window_a999d830fdc70a0b871695f39bfcc3c1c_icgraph" id="classgame_window_a999d830fdc70a0b871695f39bfcc3c1c_icgraph">
+<area shape="rect" id="node2" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="497,5,685,32"/>
+<area shape="rect" id="node3" href="classgame_window.html#a33a15df2489db0c157146e90d75cfd1a" title="gameWindow::restartGame" alt="" coords="268,31,449,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9725bc29f7f025807cac02498085d1a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9725bc29f7f025807cac02498085d1a2">&#9670;&nbsp;</a></span>EmitRetranslate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gameWindow::EmitRetranslate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00076">changeEvent()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_a9725bc29f7f025807cac02498085d1a2_icgraph.png" border="0" usemap="#classgame_window_a9725bc29f7f025807cac02498085d1a2_icgraph" alt=""/></div>
+<map name="classgame_window_a9725bc29f7f025807cac02498085d1a2_icgraph" id="classgame_window_a9725bc29f7f025807cac02498085d1a2_icgraph">
+<area shape="rect" id="node2" href="classgame_window.html#a0823cff17d7249bccd3ede894b29f432" title="gameWindow::changeEvent" alt="" coords="256,5,441,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5d5ca19ad1471927e274470746db35d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d5ca19ad1471927e274470746db35d7">&#9670;&nbsp;</a></span>endGame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gameWindow::endGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00103">103</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00054">gameParameters::blockButtons</a>, <a class="el" href="classgame_window.html#a432aa40c8402ef2ddebb2fc01c767082">EmitBlockButtons()</a>, <a class="el" href="game_window_8hpp_source.html#l00058">endGameDialog</a> i <a class="el" href="game_window_8hpp_source.html#l00070">gameParam</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_a5d5ca19ad1471927e274470746db35d7_icgraph.png" border="0" usemap="#classgame_window_a5d5ca19ad1471927e274470746db35d7_icgraph" alt=""/></div>
+<map name="classgame_window_a5d5ca19ad1471927e274470746db35d7_icgraph" id="classgame_window_a5d5ca19ad1471927e274470746db35d7_icgraph">
+<area shape="rect" id="node2" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="219,5,407,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a787dbecae715feb56d9ac0a1cb8f9ce7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a787dbecae715feb56d9ac0a1cb8f9ce7">&#9670;&nbsp;</a></span>initDevice</h2>
 
@@ -236,6 +553,31 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00120">120</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_window_8hpp_source.html#l00046">device</a>, <a class="el" href="uart_param_8hpp_source.html#l00020">UARTVal::devName</a>, <a class="el" href="game_window_8hpp_source.html#l00061">gameInfo</a> i <a class="el" href="game_window_8cpp_source.html#l00140">ReadTransmision()</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_a787dbecae715feb56d9ac0a1cb8f9ce7_cgraph.png" border="0" usemap="#classgame_window_a787dbecae715feb56d9ac0a1cb8f9ce7_cgraph" alt=""/></div>
+<map name="classgame_window_a787dbecae715feb56d9ac0a1cb8f9ce7_cgraph" id="classgame_window_a787dbecae715feb56d9ac0a1cb8f9ce7_cgraph">
+<area shape="rect" id="node2" href="classgame_window.html#a44cb04704f8f9d1faec12e0669abb45d" title="Slot do odczytywania danych z UART Za pomocą tej funkcji odczytywane oraz zapisywane są dane w jaki s..." alt="" coords="220,31,431,57"/>
+<area shape="rect" id="node3" href="game_window_8cpp.html#ac4cc9a0feb0fb183343f20837d50ca88" title="CalculateCRC8" alt="" coords="500,5,615,32"/>
+<area shape="rect" id="node5" href="class_u_a_r_t_val.html#add53548eecd3058675c9076d902372ee" title="UARTVal::calculateVel" alt="" coords="479,56,636,83"/>
+<area shape="rect" id="node4" href="game_window_8cpp.html#afce33dbfd29f5c283d83012be051c5c9" title="CRCSingleByte" alt="" coords="684,5,799,32"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_a787dbecae715feb56d9ac0a1cb8f9ce7_icgraph.png" border="0" usemap="#classgame_window_a787dbecae715feb56d9ac0a1cb8f9ce7_icgraph" alt=""/></div>
+<map name="classgame_window_a787dbecae715feb56d9ac0a1cb8f9ce7_icgraph" id="classgame_window_a787dbecae715feb56d9ac0a1cb8f9ce7_icgraph">
+<area shape="rect" id="node2" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="220,5,408,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a1242b76b21db9945b85eba69e4a4cfa7"></a>
@@ -262,6 +604,10 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Slot wywołujacy dialog z polaczeniem. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00176">176</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_window_8hpp_source.html#l00050">connectionDialog</a>.</p>
 
 </div>
 </div>
@@ -290,6 +636,18 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 
 <p>Slot dla wcisnietego przycisku rozlaczenia Po wcisnieciu przycisku aktualne polaczone urzadzenie jest rozlacznie. </p>
 
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00186">186</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="uart_param_8hpp_source.html#l00020">UARTVal::devName</a>, <a class="el" href="game_window_8hpp_source.html#l00054">disconnectionDialog</a>, <a class="el" href="game_window_8hpp_source.html#l00061">gameInfo</a> i <a class="el" href="dialogs_8cpp_source.html#l00292">disDialog::StartDialog()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_a0f823f176110c41d9bbaca00928b1644_cgraph.png" border="0" usemap="#classgame_window_a0f823f176110c41d9bbaca00928b1644_cgraph" alt=""/></div>
+<map name="classgame_window_a0f823f176110c41d9bbaca00928b1644_cgraph" id="classgame_window_a0f823f176110c41d9bbaca00928b1644_cgraph">
+<area shape="rect" id="node2" href="classdis_dialog.html#a31a157181a0a70ef13226c7cdded31d8" title="Metoda wyświetlająca dany stan połączenia. " alt="" coords="284,13,433,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="af74f33347d724dcffd28ebfd5d27252c"></a>
@@ -317,6 +675,104 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 
 <p>Slot wywowujacy dialog z ustawieniami. </p>
 
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00182">182</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="dialogs_8cpp_source.html#l00036">settDialog::loadParam()</a> i <a class="el" href="game_window_8hpp_source.html#l00059">settingsDialog</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_af74f33347d724dcffd28ebfd5d27252c_cgraph.png" border="0" usemap="#classgame_window_af74f33347d724dcffd28ebfd5d27252c_cgraph" alt=""/></div>
+<map name="classgame_window_af74f33347d724dcffd28ebfd5d27252c_cgraph" id="classgame_window_af74f33347d724dcffd28ebfd5d27252c_cgraph">
+<area shape="rect" id="node2" href="classsett_dialog.html#ad6357881da1c31f9ddf7576b0076bf03" title="Metoda ładowania parametrów ustawień " alt="" coords="267,13,417,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a377f34bb955c10d0239a1c751386629e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a377f34bb955c10d0239a1c751386629e">&#9670;&nbsp;</a></span>openGameWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gameWindow::openGameWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00093">93</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_window_8hpp_source.html#l00058">endGameDialog</a> i <a class="el" href="game_window_8hpp_source.html#l00067">stackWidget</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_a377f34bb955c10d0239a1c751386629e_icgraph.png" border="0" usemap="#classgame_window_a377f34bb955c10d0239a1c751386629e_icgraph" alt=""/></div>
+<map name="classgame_window_a377f34bb955c10d0239a1c751386629e_icgraph" id="classgame_window_a377f34bb955c10d0239a1c751386629e_icgraph">
+<area shape="rect" id="node2" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="267,5,455,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abd54e8cb424a0c92cbb16f5fcbbc5680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd54e8cb424a0c92cbb16f5fcbbc5680">&#9670;&nbsp;</a></span>openStatisticsWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gameWindow::openStatisticsWidget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00098">98</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_statistics_8cpp_source.html#l00023">gameStatisticsWidget::printChart()</a>, <a class="el" href="game_window_8hpp_source.html#l00067">stackWidget</a> i <a class="el" href="game_window_8hpp_source.html#l00068">statsWidget</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_abd54e8cb424a0c92cbb16f5fcbbc5680_cgraph.png" border="0" usemap="#classgame_window_abd54e8cb424a0c92cbb16f5fcbbc5680_cgraph" alt=""/></div>
+<map name="classgame_window_abd54e8cb424a0c92cbb16f5fcbbc5680_cgraph" id="classgame_window_abd54e8cb424a0c92cbb16f5fcbbc5680_cgraph">
+<area shape="rect" id="node2" href="classgame_statistics_widget.html#a73c073668d915eeadee9481a7a166148" title="gameStatisticsWidget\l::printChart" alt="" coords="245,5,396,47"/>
+</map>
+</div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_abd54e8cb424a0c92cbb16f5fcbbc5680_icgraph.png" border="0" usemap="#classgame_window_abd54e8cb424a0c92cbb16f5fcbbc5680_icgraph" alt=""/></div>
+<map name="classgame_window_abd54e8cb424a0c92cbb16f5fcbbc5680_icgraph" id="classgame_window_abd54e8cb424a0c92cbb16f5fcbbc5680_icgraph">
+<area shape="rect" id="node2" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="245,13,433,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a44cb04704f8f9d1faec12e0669abb45d"></a>
@@ -343,15 +799,197 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Slot do odczytywania danych z UART Za pomocą tej funkcji odczytywane oraz zapisywane są dane w jaki sposób porusza się akcelerometr. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00140">140</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_window_8cpp_source.html#l00014">CalculateCRC8()</a>, <a class="el" href="uart_param_8hpp_source.html#l00071">UARTVal::calculateVel()</a>, <a class="el" href="game_window_8hpp_source.html#l00046">device</a>, <a class="el" href="game_window_8hpp_source.html#l00061">gameInfo</a>, <a class="el" href="uart_param_8hpp_source.html#l00036">UARTVal::XVal</a>, <a class="el" href="uart_param_8hpp_source.html#l00040">UARTVal::YVal</a> i <a class="el" href="uart_param_8hpp_source.html#l00044">UARTVal::ZVal</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00120">initDevice()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classgame_window_a44cb04704f8f9d1faec12e0669abb45d_cgraph.png" border="0" usemap="#classgame_window_a44cb04704f8f9d1faec12e0669abb45d_cgraph" alt=""/></div>
 <map name="classgame_window_a44cb04704f8f9d1faec12e0669abb45d_cgraph" id="classgame_window_a44cb04704f8f9d1faec12e0669abb45d_cgraph">
-<area shape="rect" id="node2" href="game_window_8cpp.html#ac4cc9a0feb0fb183343f20837d50ca88" title="CalculateCRC8" alt="" coords="264,5,379,32"/>
-<area shape="rect" id="node3" href="game_window_8cpp.html#afce33dbfd29f5c283d83012be051c5c9" title="CRCSingleByte" alt="" coords="427,5,541,32"/>
+<area shape="rect" id="node2" href="game_window_8cpp.html#ac4cc9a0feb0fb183343f20837d50ca88" title="CalculateCRC8" alt="" coords="285,5,400,32"/>
+<area shape="rect" id="node4" href="class_u_a_r_t_val.html#add53548eecd3058675c9076d902372ee" title="UARTVal::calculateVel" alt="" coords="264,56,421,83"/>
+<area shape="rect" id="node3" href="game_window_8cpp.html#afce33dbfd29f5c283d83012be051c5c9" title="CRCSingleByte" alt="" coords="469,5,584,32"/>
 </map>
 </div>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_a44cb04704f8f9d1faec12e0669abb45d_icgraph.png" border="0" usemap="#classgame_window_a44cb04704f8f9d1faec12e0669abb45d_icgraph" alt=""/></div>
+<map name="classgame_window_a44cb04704f8f9d1faec12e0669abb45d_icgraph" id="classgame_window_a44cb04704f8f9d1faec12e0669abb45d_icgraph">
+<area shape="rect" id="node2" href="classgame_window.html#a787dbecae715feb56d9ac0a1cb8f9ce7" title="Slot inicjalizujacy polaczenie z mikrokontrolerem. " alt="" coords="264,5,431,32"/>
+<area shape="rect" id="node3" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="479,5,667,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a33a15df2489db0c157146e90d75cfd1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33a15df2489db0c157146e90d75cfd1a">&#9670;&nbsp;</a></span>restartGame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gameWindow::restartGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00110">110</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00054">gameParameters::blockButtons</a>, <a class="el" href="game_window_8hpp_source.html#l00066">CentralWidget</a>, <a class="el" href="classgame_window.html#a432aa40c8402ef2ddebb2fc01c767082">EmitBlockButtons()</a>, <a class="el" href="classgame_window.html#a999d830fdc70a0b871695f39bfcc3c1c">EmitRestartGame()</a>, <a class="el" href="game_window_8hpp_source.html#l00061">gameInfo</a>, <a class="el" href="game_window_8hpp_source.html#l00070">gameParam</a>, <a class="el" href="main_widget_8hpp_source.html#l00045">mainWidget::gameTimer</a>, <a class="el" href="uart_param_8hpp_source.html#l00058">UARTVal::isGameActive</a> i <a class="el" href="uart_param_8hpp_source.html#l00069">UARTVal::resetPosition</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgame_window_a33a15df2489db0c157146e90d75cfd1a_icgraph.png" border="0" usemap="#classgame_window_a33a15df2489db0c157146e90d75cfd1a_icgraph" alt=""/></div>
+<map name="classgame_window_a33a15df2489db0c157146e90d75cfd1a_icgraph" id="classgame_window_a33a15df2489db0c157146e90d75cfd1a_icgraph">
+<area shape="rect" id="node2" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="235,5,423,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja przyjaciół i funkcji związanych</h2>
+<a id="af192ab8d0b36301294a408b3d0a30ab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af192ab8d0b36301294a408b3d0a30ab2">&#9670;&nbsp;</a></span>gameStatisticsWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classgame_statistics_widget.html">gameStatisticsWidget</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00076">76</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a>.</p>
+
+</div>
+</div>
+<a id="af95002632c0e4912829103fbb6c30551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af95002632c0e4912829103fbb6c30551">&#9670;&nbsp;</a></span>mainGameWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classmain_game_widget.html">mainGameWidget</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00075">75</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5f5efe93a61b1ad96e729dec8b42787d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f5efe93a61b1ad96e729dec8b42787d">&#9670;&nbsp;</a></span>mainWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classmain_widget.html">mainWidget</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00074">74</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a>.</p>
+
+</div>
+</div>
+<a id="a16034386f0937a8321dc8b5e1dfa6d74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16034386f0937a8321dc8b5e1dfa6d74">&#9670;&nbsp;</a></span>settDialog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classsett_dialog.html">settDialog</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00073">73</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a>.</p>
+
+</div>
+</div>
+<a id="a62dd0a5163b2d7e542376e91ec4c97ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62dd0a5163b2d7e542376e91ec4c97ee">&#9670;&nbsp;</a></span>SidePanelWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_side_panel_widget.html">SidePanelWidget</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00072">72</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
 
 </div>
 </div>
@@ -378,6 +1016,10 @@ Oto graf wywołań dla tej funkcji:</div>
 
 <p>Pole widgetu gry. </p>
 
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00066">66</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a> i <a class="el" href="game_window_8cpp_source.html#l00110">restartGame()</a>.</p>
+
 </div>
 </div>
 <a id="a87e1355bb9303cf6e343a2883b61b123"></a>
@@ -401,6 +1043,10 @@ Oto graf wywołań dla tej funkcji:</div>
 </div><div class="memdoc">
 
 <p>Pole dialog polaczenia. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00050">50</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a> i <a class="el" href="game_window_8cpp_source.html#l00176">on_actionConnect_triggered()</a>.</p>
 
 </div>
 </div>
@@ -426,10 +1072,14 @@ Oto graf wywołań dla tej funkcji:</div>
 
 <p>Pole Urzadzenia podlaczonego do gry. </p>
 
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00046">46</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00087">disconnectDevice()</a>, <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a>, <a class="el" href="game_window_8cpp_source.html#l00120">initDevice()</a> i <a class="el" href="game_window_8cpp_source.html#l00140">ReadTransmision()</a>.</p>
+
 </div>
 </div>
-<a id="a3edbfb40a3e0ae13438abd1fecc496b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3edbfb40a3e0ae13438abd1fecc496b3">&#9670;&nbsp;</a></span>disconnectionDialog</h2>
+<a id="ad26b81c005aa65ae1fce37e475b6c9ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad26b81c005aa65ae1fce37e475b6c9ee">&#9670;&nbsp;</a></span>disconnectionDialog</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -438,7 +1088,7 @@ Oto graf wywołań dla tej funkcji:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QDialog* gameWindow::disconnectionDialog</td>
+          <td class="memname"><a class="el" href="classdis_dialog.html">disDialog</a>* gameWindow::disconnectionDialog</td>
         </tr>
       </table>
   </td>
@@ -450,10 +1100,14 @@ Oto graf wywołań dla tej funkcji:</div>
 
 <p>Pole dialog rozlaczenia. </p>
 
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00054">54</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a> i <a class="el" href="game_window_8cpp_source.html#l00186">on_actionDisconnect_triggered()</a>.</p>
+
 </div>
 </div>
-<a id="ae7b8358220e1e78e540416949f511daf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7b8358220e1e78e540416949f511daf">&#9670;&nbsp;</a></span>gameInfo</h2>
+<a id="ad91b44ea2405eed2406fb6fc04e04d6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad91b44ea2405eed2406fb6fc04e04d6e">&#9670;&nbsp;</a></span>endGameDialog</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -462,7 +1116,7 @@ Oto graf wywołań dla tej funkcji:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgame_parameters.html">gameParameters</a> gameWindow::gameInfo</td>
+          <td class="memname"><a class="el" href="classend_dialog.html">endDialog</a>* gameWindow::endGameDialog</td>
         </tr>
       </table>
   </td>
@@ -474,11 +1128,171 @@ Oto graf wywołań dla tej funkcji:</div>
 
 <p>Pole struktury z odczytami. </p>
 
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00058">58</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00103">endGame()</a>, <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a> i <a class="el" href="game_window_8cpp_source.html#l00093">openGameWidget()</a>.</p>
+
+</div>
+</div>
+<a id="a1f6ab8415dcaecb6d5684ac9790a0e5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f6ab8415dcaecb6d5684ac9790a0e5e">&#9670;&nbsp;</a></span>gameInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_u_a_r_t_val.html">UARTVal</a> gameWindow::gameInfo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00061">61</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00120">initDevice()</a>, <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget::mainGameWidget()</a>, <a class="el" href="game_window_8cpp_source.html#l00186">on_actionDisconnect_triggered()</a>, <a class="el" href="game_window_8cpp_source.html#l00140">ReadTransmision()</a>, <a class="el" href="game_window_8cpp_source.html#l00110">restartGame()</a> i <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget::SidePanelWidget()</a>.</p>
+
+</div>
+</div>
+<a id="a13ae0c2dc0141a4546f1f883a3e6b567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ae0c2dc0141a4546f1f883a3e6b567">&#9670;&nbsp;</a></span>gameParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgame_parameters.html">gameParameters</a> gameWindow::gameParam</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00070">70</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00103">endGame()</a>, <a class="el" href="game_statistics_8cpp_source.html#l00003">gameStatisticsWidget::gameStatisticsWidget()</a>, <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget::mainGameWidget()</a>, <a class="el" href="game_window_8cpp_source.html#l00110">restartGame()</a> i <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget::SidePanelWidget()</a>.</p>
+
+</div>
+</div>
+<a id="a2573fa9c7d0613e650db056585babec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2573fa9c7d0613e650db056585babec5">&#9670;&nbsp;</a></span>gameSett</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgame_settings.html">gameSettings</a> gameWindow::gameSett</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00062">62</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00055">checkLanguage()</a>, <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget::mainGameWidget()</a> i <a class="el" href="dialogs_8cpp_source.html#l00013">settDialog::settDialog()</a>.</p>
+
+</div>
+</div>
+<a id="a9758e7135bf4cfd0faa6c786f581edf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9758e7135bf4cfd0faa6c786f581edf0">&#9670;&nbsp;</a></span>settingsDialog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsett_dialog.html">settDialog</a>* gameWindow::settingsDialog</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00059">59</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a> i <a class="el" href="game_window_8cpp_source.html#l00182">on_actionSettings_triggered()</a>.</p>
+
+</div>
+</div>
+<a id="abc73ca35fe3bf35111f52e8173762772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc73ca35fe3bf35111f52e8173762772">&#9670;&nbsp;</a></span>stackWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStackedWidget* gameWindow::stackWidget</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00067">67</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a>, <a class="el" href="game_window_8cpp_source.html#l00093">openGameWidget()</a> i <a class="el" href="game_window_8cpp_source.html#l00098">openStatisticsWidget()</a>.</p>
+
+</div>
+</div>
+<a id="ad775484a1b4deec86d1ecd851818d435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad775484a1b4deec86d1ecd851818d435">&#9670;&nbsp;</a></span>statsWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgame_statistics_widget.html">gameStatisticsWidget</a>* gameWindow::statsWidget</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8hpp_source.html#l00068">68</a> pliku <a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow()</a> i <a class="el" href="game_window_8cpp_source.html#l00098">openStatisticsWidget()</a>.</p>
+
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
 <li>/home/marcel/Documents/semestrVI/WDS/Qt/inc/<a class="el" href="game_window_8hpp_source.html">gameWindow.hpp</a></li>
-<li>/home/marcel/Documents/semestrVI/WDS/Qt/src/<a class="el" href="game_window_8cpp.html">gameWindow.cpp</a></li>
+<li>/home/marcel/Documents/semestrVI/WDS/Qt/src/<a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

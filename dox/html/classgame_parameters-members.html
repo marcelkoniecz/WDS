@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Lista składowych</title>
+<title>Aplikacja gry: Lista składowych</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,6 +64,20 @@ $(function() {
 $(document).ready(function(){initNavTree('classgame_parameters.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="headertitle">
 <div class="title">gameParameters Lista składowych</div>  </div>
@@ -66,17 +86,13 @@ $(document).ready(function(){initNavTree('classgame_parameters.html','');});
 
 <p>To jest kompletna lista składowych dla <a class="el" href="classgame_parameters.html">gameParameters</a>, uwzględniająca wszystkie dziedziczone składowe.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classgame_parameters.html#a638f919de5fe8e93a26553d233835590">ballDirection</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classgame_parameters.html#a2b843dfa32eed27e0204fc193e72f1b7">ballVel</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classgame_parameters.html#a82e852a21ef87db9072b50db66cfc16c">calculateVel</a>()</td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classgame_parameters.html#ae71bb6e5c97fa8fd5835b22e61f89aff">comPlateVel</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classgame_parameters.html#ace9e080c79ec477050f6c19e3b9d6837">devName</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classgame_parameters.html#af009248b9add05eb19321d0d343f8e52">isConnected</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classgame_parameters.html#a7dc725144c1e5d4f0e6e62030dcfe53d">isGameActive</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classgame_parameters.html#afade991ffc87f358350638b362d1b0aa">userPlateVel</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classgame_parameters.html#ad5fb2477b7cc6f3d7df68a33ef25e1b7">XVal</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classgame_parameters.html#afc98815d09866cb39628fdcf726d020d">YVal</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classgame_parameters.html#afd7504dc098fce677e7ec699ee874f3f">ZVal</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_parameters.html#a3f50a71e2c555f587895eb5ea920635f">accValues</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_parameters.html#a9d46e0fb1c77949f6cc368e179ee064a">averageBallVel</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_parameters.html#ad578c8b3c4f9b3e439a21e5096f927fb">ballBounceNumber</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_parameters.html#ace8a4ac8552a8b3c7e027485b80ae1d5">blockButtons</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_parameters.html#aeae3515739605bbf0d86fb69f2e5498f">gameTime</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_parameters.html#a7dc725144c1e5d4f0e6e62030dcfe53d">isGameActive</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_parameters.html#a58ebe54c71acf35ffcb9ea2fdf0b8d81">resetPosition</a></td><td class="entry"><a class="el" href="classgame_parameters.html">gameParameters</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

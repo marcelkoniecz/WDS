@@ -1,10 +1,10 @@
 <map id="/home/marcel/Documents/semestrVI/WDS/Qt/inc/mainWidget.hpp" name="/home/marcel/Documents/semestrVI/WDS/Qt/inc/mainWidget.hpp">
-<area shape="rect" id="node16" href="$game_window_8hpp.html" title="gameWindow.hpp" alt="" coords="2009,109,2135,136"/>
-<area shape="rect" id="node40" href="$game_widget_8hpp.html" title="gameWidget.hpp" alt="" coords="1915,184,2035,211"/>
-<area shape="rect" id="node41" href="$statistic_widget_8hpp.html" title="statisticWidget.hpp" alt="" coords="1755,184,1890,211"/>
-<area shape="rect" id="node17" href="$dialogs_8hpp.html" title="dialogs.hpp" alt="" coords="1592,184,1680,211"/>
-<area shape="rect" id="node34" href="$ui__game_window_8h.html" title="ui_gameWindow.h" alt="" coords="2705,259,2834,285"/>
-<area shape="rect" id="node18" href="$ui__dis_dialog_8h.html" title="ui_disDialog.h" alt="" coords="1261,259,1365,285"/>
-<area shape="rect" id="node31" href="$ui__con_dialog_8h.html" title="ui_conDialog.h" alt="" coords="841,259,949,285"/>
-<area shape="rect" id="node42" href="$ui__game_widget_8h.html" title="ui_gameWidget.h" alt="" coords="1768,259,1891,285"/>
+<area shape="rect" id="node16" href="$game_window_8hpp.html" title="gameWindow.hpp" alt="" coords="1548,184,1675,211"/>
+<area shape="rect" id="node32" href="$game_widget_8hpp.html" title="gameWidget.hpp" alt="" coords="1750,259,1870,285"/>
+<area shape="rect" id="node33" href="$side_widget_8hpp.html" title="sideWidget.hpp" alt="" coords="1910,109,2022,136"/>
+<area shape="rect" id="node17" href="$game_parameters_8hpp.html" title="Definicja statystyk gry. " alt="" coords="1850,333,1997,360"/>
+<area shape="rect" id="node20" href="$game_statistics_8hpp.html" title="gameStatistics.hpp" alt="" coords="1439,259,1573,285"/>
+<area shape="rect" id="node24" href="$dialogs_8hpp.html" title="Plik nagłówkowy zawierający okna dialogowe. " alt="" coords="918,259,1006,285"/>
+<area shape="rect" id="node29" href="$game_settings_8hpp.html" title="Definicja ustawień gry. " alt="" coords="1085,333,1212,360"/>
+<area shape="rect" id="node31" href="$uart_param_8hpp.html" title="Plik nagłówkowy z strukturą na temat UART. " alt="" coords="2046,259,2153,285"/>
 </map>

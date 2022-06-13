@@ -1,0 +1,6 @@
+<map id="gameWindow::initDevice" name="gameWindow::initDevice">
+<area shape="rect" id="node2" href="$classgame_window.html#a44cb04704f8f9d1faec12e0669abb45d" title="Slot do odczytywania danych z UART Za pomocą tej funkcji odczytywane oraz zapisywane są dane w jaki s..." alt="" coords="220,31,431,57"/>
+<area shape="rect" id="node3" href="$game_window_8cpp.html#ac4cc9a0feb0fb183343f20837d50ca88" title="CalculateCRC8" alt="" coords="500,5,615,32"/>
+<area shape="rect" id="node5" href="$class_u_a_r_t_val.html#add53548eecd3058675c9076d902372ee" title="UARTVal::calculateVel" alt="" coords="479,56,636,83"/>
+<area shape="rect" id="node4" href="$game_window_8cpp.html#afce33dbfd29f5c283d83012be051c5c9" title="CRCSingleByte" alt="" coords="684,5,799,32"/>
+</map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Składowe klas - Funkcje</title>
+<title>Aplikacja gry: Składowe klas - Funkcje</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,6 +64,20 @@ $(function() {
 $(document).ready(function(){initNavTree('functions_func.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 &#160;
 
@@ -87,34 +107,81 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd">mainGameWidget</a>
 </li>
 <li>calculateVel()
-: <a class="el" href="classgame_parameters.html#a82e852a21ef87db9072b50db66cfc16c">gameParameters</a>
+: <a class="el" href="class_u_a_r_t_val.html#add53548eecd3058675c9076d902372ee">UARTVal</a>
+</li>
+<li>changeEvent()
+: <a class="el" href="classgame_window.html#a0823cff17d7249bccd3ede894b29f432">gameWindow</a>
+</li>
+<li>checkBlockButtons()
+: <a class="el" href="class_side_panel_widget.html#aa24c83e3d9febfd47e810563458a8926">SidePanelWidget</a>
+</li>
+<li>checkConnection()
+: <a class="el" href="class_side_panel_widget.html#a1e50e08924724bf47728fc5e6d3a3c24">SidePanelWidget</a>
+</li>
+<li>checkLanguage()
+: <a class="el" href="classgame_window.html#a4115287f0438436e17b2a15a55db1fe6">gameWindow</a>
 </li>
 <li>conDialog()
-: <a class="el" href="classcon_dialog.html#a223e952fca89973a8f8dc5d64bf73855">conDialog</a>
+: <a class="el" href="classcon_dialog.html#a0af1be1f3765e78fa56d7003821d1f7b">conDialog</a>
 </li>
 </ul>
 
 
 <h3><a id="index_d"></a>- d -</h3><ul>
+<li>disconnectDevice()
+: <a class="el" href="classgame_window.html#a0e0bc9288b7c6e78bc8f0c682ffe81a2">gameWindow</a>
+</li>
 <li>disDialog()
-: <a class="el" href="classdis_dialog.html#a643207279456bc1a809f5203564d2e61">disDialog</a>
+: <a class="el" href="classdis_dialog.html#ae7369038843ff197ef07eb69b4d0f9ac">disDialog</a>
 </li>
 </ul>
 
 
 <h3><a id="index_e"></a>- e -</h3><ul>
+<li>EmitBlockButtons()
+: <a class="el" href="classgame_window.html#a432aa40c8402ef2ddebb2fc01c767082">gameWindow</a>
+</li>
+<li>EmitChangeWidget()
+: <a class="el" href="classgame_statistics_widget.html#aac2a8d0313ec8694f9fb7a3c75e0b0ac">gameStatisticsWidget</a>
+</li>
 <li>EmitChoosenDev()
 : <a class="el" href="classcon_dialog.html#af1b2b107cc5dd0ac57347da11df852c3">conDialog</a>
 </li>
 <li>EmitClosing()
-: <a class="el" href="classcon_dialog.html#a0c0bbc4292d61892240da578ae4356f6">conDialog</a>
-, <a class="el" href="classgame_widget.html#af7356b121664cf9f0afec0e0a8a9dd5c">gameWidget</a>
+: <a class="el" href="classend_dialog.html#ad2cf1e4096bd34351761c3398e984820">endDialog</a>
+, <a class="el" href="class_side_panel_widget.html#aa7e88a7eeff40a9995802fabc297a549">SidePanelWidget</a>
+</li>
+<li>EmitDisconnectDevice()
+: <a class="el" href="classdis_dialog.html#a3bc2d5d3e693006b4c91fccf57ef72ab">disDialog</a>
+</li>
+<li>EmitEndGame()
+: <a class="el" href="classmain_game_widget.html#a56c3a3a188113fc62127f75f5b3dacb2">mainGameWidget</a>
+, <a class="el" href="class_side_panel_widget.html#ae78f63432a769825f6f6578172d4e115">SidePanelWidget</a>
+</li>
+<li>EmitOpenStatistics()
+: <a class="el" href="classend_dialog.html#a5ec0ea8b3f521d1f68620fe0e9f4753b">endDialog</a>
+</li>
+<li>EmitRestartGame()
+: <a class="el" href="classend_dialog.html#ae2e0b838ef3df5ce525de7527d187e84">endDialog</a>
+, <a class="el" href="classgame_window.html#a999d830fdc70a0b871695f39bfcc3c1c">gameWindow</a>
+</li>
+<li>EmitRetranslate()
+: <a class="el" href="classgame_window.html#a9725bc29f7f025807cac02498085d1a2">gameWindow</a>
+</li>
+<li>EmitSettingsSaved()
+: <a class="el" href="classsett_dialog.html#a05f0d6456dca488e706aff5197202d34">settDialog</a>
+</li>
+<li>endDialog()
+: <a class="el" href="classend_dialog.html#a13e02a02173434cf726a3add8e3b1fb4">endDialog</a>
+</li>
+<li>endGame()
+: <a class="el" href="classgame_window.html#a5d5ca19ad1471927e274470746db35d7">gameWindow</a>
 </li>
 <li>EndGame()
-: <a class="el" href="classgame_widget.html#a852c527b8c0bf342c1b299bffb6eb9dc">gameWidget</a>
+: <a class="el" href="class_side_panel_widget.html#a0667394b67fa642b05a37d8087fbe3c3">SidePanelWidget</a>
 </li>
 <li>EndProgram()
-: <a class="el" href="classgame_widget.html#afb9c8622ff0ad402e1244a7bf4737c7a">gameWidget</a>
+: <a class="el" href="class_side_panel_widget.html#a016153e76b4b75567913496a966cf890">SidePanelWidget</a>
 </li>
 </ul>
 
@@ -123,8 +190,8 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>gameEnd()
 : <a class="el" href="classmain_game_widget.html#a0491f01e616420d95bc042c2a3132c83">mainGameWidget</a>
 </li>
-<li>gameWidget()
-: <a class="el" href="classgame_widget.html#ad68564096c6690711b5b8fd5c38686e5">gameWidget</a>
+<li>gameStatisticsWidget()
+: <a class="el" href="classgame_statistics_widget.html#a5351156315f4359449dd833a658af89f">gameStatisticsWidget</a>
 </li>
 <li>gameWindow()
 : <a class="el" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f">gameWindow</a>
@@ -137,17 +204,24 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="classgame_window.html#a787dbecae715feb56d9ac0a1cb8f9ce7">gameWindow</a>
 </li>
 <li>initValues()
-: <a class="el" href="classmain_game_widget.html#acdfe13d8f3cede8fdf22f0cbe8a51d4d">mainGameWidget</a>
+: <a class="el" href="classmain_game_widget.html#a9e85cde6eb0ae703e3420bbb1c96a31f">mainGameWidget</a>
+</li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>loadParam()
+: <a class="el" href="classsett_dialog.html#ad6357881da1c31f9ddf7576b0076bf03">settDialog</a>
 </li>
 </ul>
 
 
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>mainGameWidget()
-: <a class="el" href="classmain_game_widget.html#a16d08bf7ad875c2155b9ca6ed765c663">mainGameWidget</a>
+: <a class="el" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd">mainGameWidget</a>
 </li>
 <li>mainWidget()
-: <a class="el" href="classmain_widget.html#a16dabb5b2e83cd4046317817f7ee522b">mainWidget</a>
+: <a class="el" href="classmain_widget.html#aed279757f12ce187179135bf44e771d1">mainWidget</a>
 </li>
 <li>makeGameStep()
 : <a class="el" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea">mainGameWidget</a>
@@ -167,12 +241,38 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>on_cancelButton_clicked()
 : <a class="el" href="classcon_dialog.html#a1e75cb803206d6f0c0e988a4d2a4edd7">conDialog</a>
+, <a class="el" href="classdis_dialog.html#ad8fd1a4a2ca88870cfc5b6d8c7bdd4f3">disDialog</a>
 </li>
 <li>on_connectButton_clicked()
 : <a class="el" href="classcon_dialog.html#a19bfe1a17f6af3d8b366ed48924b3d80">conDialog</a>
 </li>
+<li>on_disconnectButton_clicked()
+: <a class="el" href="classdis_dialog.html#a7667c6785a54c265fe4103c2cd9229a9">disDialog</a>
+</li>
+<li>on_exitButton_clicked()
+: <a class="el" href="classend_dialog.html#a314b4886c27c1c464e5892ecc55e56da">endDialog</a>
+</li>
+<li>on_restartButton_clicked()
+: <a class="el" href="classend_dialog.html#a8c1c2a0b63cefbb15ce3e9d93d48ab67">endDialog</a>
+</li>
+<li>on_returnButton_clicked()
+: <a class="el" href="classgame_statistics_widget.html#afe5d6f93b29adec1565e8862fb1d722f">gameStatisticsWidget</a>
+, <a class="el" href="classsett_dialog.html#a046f0b915412abc46a9d0cdf006b1fe6">settDialog</a>
+</li>
+<li>on_saveButton_clicked()
+: <a class="el" href="classsett_dialog.html#a9630a450add616390a8ff68c87b5758c">settDialog</a>
+</li>
 <li>on_searchDeviceButton_clicked()
 : <a class="el" href="classcon_dialog.html#ab8e062b1184e2c7e98c7b9afe0a639dc">conDialog</a>
+</li>
+<li>on_statisticsButton_clicked()
+: <a class="el" href="classend_dialog.html#ae48aa473f3c6d84ae453f186d95e78b1">endDialog</a>
+</li>
+<li>openGameWidget()
+: <a class="el" href="classgame_window.html#a377f34bb955c10d0239a1c751386629e">gameWindow</a>
+</li>
+<li>openStatisticsWidget()
+: <a class="el" href="classgame_window.html#abd54e8cb424a0c92cbb16f5fcbbc5680">gameWindow</a>
 </li>
 </ul>
 
@@ -181,6 +281,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>paintEvent()
 : <a class="el" href="classmain_game_widget.html#a2a2292016b7b2c03682f754024bcca62">mainGameWidget</a>
 </li>
+<li>printChart()
+: <a class="el" href="classgame_statistics_widget.html#a73c073668d915eeadee9481a7a166148">gameStatisticsWidget</a>
+</li>
 </ul>
 
 
@@ -188,23 +291,31 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>ReadTransmision()
 : <a class="el" href="classgame_window.html#a44cb04704f8f9d1faec12e0669abb45d">gameWindow</a>
 </li>
-<li>retranslateUi()
-: <a class="el" href="class_ui__con_dialog.html#afbc32f159ce9f609c2492bf30d08c2cf">Ui_conDialog</a>
-, <a class="el" href="class_ui__dis_dialog.html#ac1e1b27dad914847ddaf84baed7eb49a">Ui_disDialog</a>
-, <a class="el" href="class_ui__game_widget.html#abadfc0fefa7fb0d675599c70a32ff817">Ui_gameWidget</a>
-, <a class="el" href="class_ui__game_window.html#ab33b34e5e3eca29c0c69b0aa8ae4de06">Ui_gameWindow</a>
-, <a class="el" href="class_ui___main_window.html#a097dd160c3534a204904cb374412c618">Ui_MainWindow</a>
+<li>restartGame()
+: <a class="el" href="classgame_window.html#a33a15df2489db0c157146e90d75cfd1a">gameWindow</a>
+</li>
+<li>retranslate()
+: <a class="el" href="classcon_dialog.html#ab3fde33b3a3bf72b15636bd10d4e9531">conDialog</a>
+, <a class="el" href="classdis_dialog.html#a32811a648bdc5d52eeb395a8edb264e8">disDialog</a>
+, <a class="el" href="classend_dialog.html#a8aef52b995b8fad2b9c76040458d6e05">endDialog</a>
+, <a class="el" href="classgame_statistics_widget.html#a20abb1f53436507455add51cf55c229e">gameStatisticsWidget</a>
+, <a class="el" href="classsett_dialog.html#a721b6a0a268a7244d6d6a70ec04ff28f">settDialog</a>
+</li>
+<li>retranslatePanel()
+: <a class="el" href="class_side_panel_widget.html#aa2d4f3edb024980d4799b4d96d4c6b9c">SidePanelWidget</a>
 </li>
 </ul>
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
-<li>setupUi()
-: <a class="el" href="class_ui__con_dialog.html#ab19498d47af2201348bf2ef2008d6694">Ui_conDialog</a>
-, <a class="el" href="class_ui__dis_dialog.html#a6c15cdd94fb64359acb14acb13ac4f98">Ui_disDialog</a>
-, <a class="el" href="class_ui__game_widget.html#ac330b43117ca60561518b386c8987653">Ui_gameWidget</a>
-, <a class="el" href="class_ui__game_window.html#a637645510fc77b70e4a97d62c8fd7ee4">Ui_gameWindow</a>
-, <a class="el" href="class_ui___main_window.html#acf4a0872c4c77d8f43a2ec66ed849b58">Ui_MainWindow</a>
+<li>settDialog()
+: <a class="el" href="classsett_dialog.html#a4d8399f4367364867affaab61fa830a0">settDialog</a>
+</li>
+<li>setTimerNull()
+: <a class="el" href="class_side_panel_widget.html#a2e732225cd6430685c65211e4f5ffc75">SidePanelWidget</a>
+</li>
+<li>SidePanelWidget()
+: <a class="el" href="class_side_panel_widget.html#a17713943b4dc399c3e2fe12f6bd37225">SidePanelWidget</a>
 </li>
 <li>StartDialog()
 : <a class="el" href="classdis_dialog.html#a31a157181a0a70ef13226c7cdded31d8">disDialog</a>
@@ -214,16 +325,16 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <h3><a id="index_u"></a>- u -</h3><ul>
 <li>updateTime()
-: <a class="el" href="classgame_widget.html#aed11e7dc011e62a989ce1d045209244d">gameWidget</a>
-, <a class="el" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6">mainGameWidget</a>
+: <a class="el" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6">mainGameWidget</a>
 , <a class="el" href="classmain_widget.html#a9235834692a5b16879cae38123528bdd">mainWidget</a>
+, <a class="el" href="class_side_panel_widget.html#ad8a1275cd30793be9ac0f34ebd26309c">SidePanelWidget</a>
 </li>
 </ul>
 
 
 <h3><a id="index_w"></a>- w -</h3><ul>
 <li>writeTime()
-: <a class="el" href="classgame_widget.html#a2f4d8ccae8c5e80aa7f017868242d3b4">gameWidget</a>
+: <a class="el" href="class_side_panel_widget.html#a5b022971e5298e57262dae3d526343e2">SidePanelWidget</a>
 </li>
 </ul>
 </div><!-- contents -->

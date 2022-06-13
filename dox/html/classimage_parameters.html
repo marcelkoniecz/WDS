@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Dokumentacja klasy imageParameters</title>
+<title>Aplikacja gry: Dokumentacja klasy imageParameters</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,6 +64,20 @@ $(function() {
 $(document).ready(function(){initNavTree('classimage_parameters.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Atrybuty publiczne</a> &#124;
@@ -71,24 +91,31 @@ $(document).ready(function(){initNavTree('classimage_parameters.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Atrybuty publiczne</h2></td></tr>
-<tr class="memitem:aef735c9629835aeb36afb0f40989a6fe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage_parameters.html#aef735c9629835aeb36afb0f40989a6fe">ballSpeed</a> =5</td></tr>
+<tr class="memitem:aef735c9629835aeb36afb0f40989a6fe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage_parameters.html#aef735c9629835aeb36afb0f40989a6fe">ballSpeed</a></td></tr>
 <tr class="separator:aef735c9629835aeb36afb0f40989a6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a768b67a42ac63a43201ce4740f651a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage_parameters.html#a6a768b67a42ac63a43201ce4740f651a">plateSpeed</a></td></tr>
+<tr class="memitem:a6a768b67a42ac63a43201ce4740f651a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage_parameters.html#a6a768b67a42ac63a43201ce4740f651a">plateSpeed</a> =0.25</td></tr>
 <tr class="separator:a6a768b67a42ac63a43201ce4740f651a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64220f2a679179c4551489f615de25ed"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage_parameters.html#a64220f2a679179c4551489f615de25ed">XtargetComPlate</a></td></tr>
 <tr class="separator:a64220f2a679179c4551489f615de25ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc149318e44e9ec8326fd7248eae27dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage_parameters.html#afc149318e44e9ec8326fd7248eae27dc">userLives</a></td></tr>
+<tr class="separator:afc149318e44e9ec8326fd7248eae27dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a813685ace4633ab8456562c1e731596c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage_parameters.html#a813685ace4633ab8456562c1e731596c">compLives</a></td></tr>
+<tr class="separator:a813685ace4633ab8456562c1e731596c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1123f0b0507fdd3d59d4bc0efee6b29"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage_parameters.html#ad1123f0b0507fdd3d59d4bc0efee6b29">userPlateLoc</a> [2][2]</td></tr>
 <tr class="separator:ad1123f0b0507fdd3d59d4bc0efee6b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d7245b834f72c77008cd117508199b9"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage_parameters.html#a5d7245b834f72c77008cd117508199b9">comPlateLoc</a> [2][2]</td></tr>
 <tr class="separator:a5d7245b834f72c77008cd117508199b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8bec918c73c679621e83694e9fce019"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage_parameters.html#aa8bec918c73c679621e83694e9fce019">ballPos</a> [2] ={200,200}</td></tr>
+<tr class="memitem:aa8bec918c73c679621e83694e9fce019"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage_parameters.html#aa8bec918c73c679621e83694e9fce019">ballPos</a> [2]</td></tr>
 <tr class="separator:aa8bec918c73c679621e83694e9fce019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae11f99471937184b36e880ee8fe38ecb"><td class="memItemLeft" align="right" valign="top">volatile double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage_parameters.html#ae11f99471937184b36e880ee8fe38ecb">currentAngle</a></td></tr>
 <tr class="separator:ae11f99471937184b36e880ee8fe38ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b86222d64489b30b08c6d8bc898425"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage_parameters.html#a01b86222d64489b30b08c6d8bc898425">newScala</a></td></tr>
 <tr class="separator:a01b86222d64489b30b08c6d8bc898425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00026">26</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+</div><h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
 <a id="aa8bec918c73c679621e83694e9fce019"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8bec918c73c679621e83694e9fce019">&#9670;&nbsp;</a></span>ballPos</h2>
 
@@ -96,10 +123,14 @@ Atrybuty publiczne</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile double imageParameters::ballPos[2] ={200,200}</td>
+          <td class="memname">volatile double imageParameters::ballPos[2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00035">35</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00084">mainGameWidget::calculateBallPosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00161">mainGameWidget::calculateComPlatePosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00133">mainGameWidget::calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00112">mainGameWidget::calculateIfBouncedWall()</a>, <a class="el" href="game_widget_8cpp_source.html#l00093">mainGameWidget::calculateIfEndGame()</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">mainGameWidget::initValues()</a> i <a class="el" href="game_widget_8cpp_source.html#l00201">mainGameWidget::paintEvent()</a>.</p>
 
 </div>
 </div>
@@ -110,10 +141,14 @@ Atrybuty publiczne</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double imageParameters::ballSpeed =5</td>
+          <td class="memname">double imageParameters::ballSpeed</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00028">28</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00084">mainGameWidget::calculateBallPosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">mainGameWidget::initValues()</a> i <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget::mainGameWidget()</a>.</p>
 
 </div>
 </div>
@@ -129,6 +164,28 @@ Atrybuty publiczne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00034">34</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00161">mainGameWidget::calculateComPlatePosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00133">mainGameWidget::calculateIfBouncedPlate()</a> i <a class="el" href="game_widget_8cpp_source.html#l00201">mainGameWidget::paintEvent()</a>.</p>
+
+</div>
+</div>
+<a id="a813685ace4633ab8456562c1e731596c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a813685ace4633ab8456562c1e731596c">&#9670;&nbsp;</a></span>compLives</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int imageParameters::compLives</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00032">32</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00030">mainGameWidget::initValues()</a>.</p>
+
 </div>
 </div>
 <a id="ae11f99471937184b36e880ee8fe38ecb"></a>
@@ -142,6 +199,10 @@ Atrybuty publiczne</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00036">36</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00084">mainGameWidget::calculateBallPosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00133">mainGameWidget::calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00112">mainGameWidget::calculateIfBouncedWall()</a>, <a class="el" href="game_widget_8cpp_source.html#l00093">mainGameWidget::calculateIfEndGame()</a> i <a class="el" href="game_widget_8cpp_source.html#l00030">mainGameWidget::initValues()</a>.</p>
 
 </div>
 </div>
@@ -157,6 +218,10 @@ Atrybuty publiczne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00037">37</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00201">mainGameWidget::paintEvent()</a>.</p>
+
 </div>
 </div>
 <a id="a6a768b67a42ac63a43201ce4740f651a"></a>
@@ -166,10 +231,32 @@ Atrybuty publiczne</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double imageParameters::plateSpeed</td>
+          <td class="memname">double imageParameters::plateSpeed =0.25</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00029">29</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00161">mainGameWidget::calculateComPlatePosition()</a> i <a class="el" href="game_widget_8cpp_source.html#l00030">mainGameWidget::initValues()</a>.</p>
+
+</div>
+</div>
+<a id="afc149318e44e9ec8326fd7248eae27dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc149318e44e9ec8326fd7248eae27dc">&#9670;&nbsp;</a></span>userLives</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int imageParameters::userLives</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00031">31</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00030">mainGameWidget::initValues()</a>.</p>
 
 </div>
 </div>
@@ -185,6 +272,10 @@ Atrybuty publiczne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00033">33</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00133">mainGameWidget::calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00066">mainGameWidget::calculateUserPlate()</a> i <a class="el" href="game_widget_8cpp_source.html#l00201">mainGameWidget::paintEvent()</a>.</p>
+
 </div>
 </div>
 <a id="a64220f2a679179c4551489f615de25ed"></a>
@@ -198,6 +289,10 @@ Atrybuty publiczne</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00030">30</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00161">mainGameWidget::calculateComPlatePosition()</a>.</p>
 
 </div>
 </div>

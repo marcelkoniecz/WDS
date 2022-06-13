@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Dokumentacja klasy mainGameWidget</title>
+<title>Aplikacja gry: Dokumentacja klasy mainGameWidget</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,9 +64,24 @@ $(function() {
 $(document).ready(function(){initNavTree('classmain_game_widget.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Sloty publiczne</a> &#124;
+<a href="#signals">Sygnały</a> &#124;
 <a href="#pub-methods">Metody publiczne</a> &#124;
 <a href="#pri-attribs">Atrybuty prywatne</a> &#124;
 <a href="classmain_game_widget-members.html">Lista wszystkich składowych</a>  </div>
@@ -74,16 +95,16 @@ $(document).ready(function(){initNavTree('classmain_game_widget.html','');});
 Diagram dziedziczenia dla mainGameWidget</div>
 <div class="dyncontent">
 <div class="center"><img src="classmain_game_widget__inherit__graph.png" border="0" usemap="#main_game_widget_inherit__map" alt="Inheritance graph"/></div>
-<map name="main_game_widget_inherit__map" id="main_game_widget_inherit__map">
-</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <div class="dynheader">
 Diagram współpracy dla mainGameWidget:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmain_game_widget__coll__graph.png" border="0" usemap="#main_game_widget_coll__map" alt="Collaboration graph"/></div>
 <map name="main_game_widget_coll__map" id="main_game_widget_coll__map">
-<area shape="rect" id="node3" href="classgame_parameters.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="103,5,224,32"/>
-<area shape="rect" id="node4" href="classimage_parameters.html" title="imageParameters" alt="" coords="248,5,372,32"/>
+<area shape="rect" id="node3" href="classgame_parameters.html" title="Klasa zawierająca informacje na temat statystyk gry. " alt="" coords="103,5,224,32"/>
+<area shape="rect" id="node4" href="classgame_settings.html" title="Klasa zawierająca informacje na temat ustawień gry. " alt="" coords="248,5,351,32"/>
+<area shape="rect" id="node5" href="classimage_parameters.html" title="imageParameters" alt="" coords="375,5,499,32"/>
+<area shape="rect" id="node6" href="class_u_a_r_t_val.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="523,5,601,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <table class="memberdecls">
@@ -92,10 +113,15 @@ Sloty publiczne</h2></td></tr>
 <tr class="memitem:a9b6aaf75182714cb27c46e020b2c76f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6">updateTime</a> ()</td></tr>
 <tr class="separator:a9b6aaf75182714cb27c46e020b2c76f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Sygnały</h2></td></tr>
+<tr class="memitem:a56c3a3a188113fc62127f75f5b3dacb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a56c3a3a188113fc62127f75f5b3dacb2">EmitEndGame</a> ()</td></tr>
+<tr class="separator:a56c3a3a188113fc62127f75f5b3dacb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
-<tr class="memitem:a16d08bf7ad875c2155b9ca6ed765c663"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a16d08bf7ad875c2155b9ca6ed765c663">mainGameWidget</a> (QWidget *parent=nullptr, <a class="el" href="classgame_parameters.html">gameParameters</a> *gameInformations=nullptr, QTimer *appTimer=nullptr)</td></tr>
-<tr class="separator:a16d08bf7ad875c2155b9ca6ed765c663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b4e7bc28a44195752370bbb56915bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd">mainGameWidget</a> (<a class="el" href="classmain_widget.html">mainWidget</a> *parent=nullptr, <a class="el" href="classgame_window.html">gameWindow</a> *gameWin=nullptr)</td></tr>
+<tr class="separator:ad0b4e7bc28a44195752370bbb56915bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a2292016b7b2c03682f754024bcca62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a2a2292016b7b2c03682f754024bcca62">paintEvent</a> (QPaintEvent *ptr)</td></tr>
 <tr class="separator:a2a2292016b7b2c03682f754024bcca62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83d515786f15b067391b2c1efa68ebeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb">calculateBallPosition</a> ()</td></tr>
@@ -110,8 +136,8 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:a41e4bae20eccedb8474e66930b5ac38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9bb1a8308fe76950982af3474be4a0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f">calculateIfEndGame</a> ()</td></tr>
 <tr class="separator:ae9bb1a8308fe76950982af3474be4a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdfe13d8f3cede8fdf22f0cbe8a51d4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#acdfe13d8f3cede8fdf22f0cbe8a51d4d">initValues</a> ()</td></tr>
-<tr class="separator:acdfe13d8f3cede8fdf22f0cbe8a51d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e85cde6eb0ae703e3420bbb1c96a31f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a9e85cde6eb0ae703e3420bbb1c96a31f">initValues</a> (int comLives, int userLives)</td></tr>
+<tr class="separator:a9e85cde6eb0ae703e3420bbb1c96a31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3421df966b8c06767ac28e3c39ee05ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea">makeGameStep</a> ()</td></tr>
 <tr class="separator:a3421df966b8c06767ac28e3c39ee05ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0491f01e616420d95bc042c2a3132c83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a0491f01e616420d95bc042c2a3132c83">gameEnd</a> ()</td></tr>
@@ -127,22 +153,31 @@ Atrybuty prywatne</h2></td></tr>
 <tr class="separator:a04522513412c99b88a2187aa30e7ed94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e155b5961ffb6d300dcfb6da4f52e7"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#af0e155b5961ffb6d300dcfb6da4f52e7">computerPlate</a></td></tr>
 <tr class="separator:af0e155b5961ffb6d300dcfb6da4f52e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ca7a83137b298d03bda9ef9b366a51c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classimage_parameters.html">imageParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a1ca7a83137b298d03bda9ef9b366a51c">imageInfo</a></td></tr>
-<tr class="separator:a1ca7a83137b298d03bda9ef9b366a51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad97227824a4d5b123c770599ea6ac21f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classimage_parameters.html">imageParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#ad97227824a4d5b123c770599ea6ac21f">gameParam</a></td></tr>
 <tr class="separator:ad97227824a4d5b123c770599ea6ac21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accf95079dcecfa8455770743fe05c080"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#accf95079dcecfa8455770743fe05c080">userPlate</a></td></tr>
 <tr class="separator:accf95079dcecfa8455770743fe05c080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f8a8dc61a8f49b866e23d6f61b8512a"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a7f8a8dc61a8f49b866e23d6f61b8512a">ball</a></td></tr>
 <tr class="separator:a7f8a8dc61a8f49b866e23d6f61b8512a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d468d67f6edbcf9c8b30f045d91710"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="classgame_parameters.html">gameParameters</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a21d468d67f6edbcf9c8b30f045d91710">gameInfo</a></td></tr>
-<tr class="separator:a21d468d67f6edbcf9c8b30f045d91710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9869b06d940be6a878833145c7bb5611"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a9869b06d940be6a878833145c7bb5611">life</a></td></tr>
+<tr class="separator:a9869b06d940be6a878833145c7bb5611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f73be1ce970a199ef87b001177bdba4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_a_r_t_val.html">UARTVal</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a6f73be1ce970a199ef87b001177bdba4">gameInfo</a></td></tr>
+<tr class="separator:a6f73be1ce970a199ef87b001177bdba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c8dfda67b8d7ab2de886f8988f41482"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a0c8dfda67b8d7ab2de886f8988f41482">gameTimer</a></td></tr>
 <tr class="separator:a0c8dfda67b8d7ab2de886f8988f41482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed8d26e1b1b80cc859a245825ad37fb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_parameters.html">gameParameters</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#aed8d26e1b1b80cc859a245825ad37fb7">gameParame</a></td></tr>
+<tr class="separator:aed8d26e1b1b80cc859a245825ad37fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf079fdbf929505fb59a0ad97c7e750"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_settings.html">gameSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#acaf079fdbf929505fb59a0ad97c7e750">gameSettgs</a></td></tr>
+<tr class="separator:acaf079fdbf929505fb59a0ad97c7e750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218998300d8db8e060d322bc3193d8ca"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a218998300d8db8e060d322bc3193d8ca">timerun</a></td></tr>
+<tr class="separator:a218998300d8db8e060d322bc3193d8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
-<a id="a16d08bf7ad875c2155b9ca6ed765c663"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16d08bf7ad875c2155b9ca6ed765c663">&#9670;&nbsp;</a></span>mainGameWidget()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00041">41</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="ad0b4e7bc28a44195752370bbb56915bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b4e7bc28a44195752370bbb56915bd">&#9670;&nbsp;</a></span>mainGameWidget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,20 +185,14 @@ Atrybuty prywatne</h2></td></tr>
         <tr>
           <td class="memname">mainGameWidget::mainGameWidget </td>
           <td>(</td>
-          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramtype"><a class="el" href="classmain_widget.html">mainWidget</a> *&#160;</td>
           <td class="paramname"><em>parent</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classgame_parameters.html">gameParameters</a> *&#160;</td>
-          <td class="paramname"><em>gameInformations</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">QTimer *&#160;</td>
-          <td class="paramname"><em>appTimer</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classgame_window.html">gameWindow</a> *&#160;</td>
+          <td class="paramname"><em>gameWin</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -172,20 +201,25 @@ Atrybuty prywatne</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00011">11</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00079">gameParameters::averageBallVel</a>, <a class="el" href="game_widget_8hpp_source.html#l00044">background</a>, <a class="el" href="game_widget_8hpp_source.html#l00049">ball</a>, <a class="el" href="game_widget_8hpp_source.html#l00028">imageParameters::ballSpeed</a>, <a class="el" href="game_widget_8hpp_source.html#l00045">computerPlate</a>, <a class="el" href="game_widget_8hpp_source.html#l00051">gameInfo</a>, <a class="el" href="game_window_8hpp_source.html#l00061">gameWindow::gameInfo</a>, <a class="el" href="game_widget_8hpp_source.html#l00047">gameParam</a>, <a class="el" href="game_window_8hpp_source.html#l00070">gameWindow::gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00053">gameParame</a>, <a class="el" href="game_window_8hpp_source.html#l00062">gameWindow::gameSett</a>, <a class="el" href="game_widget_8hpp_source.html#l00054">gameSettgs</a>, <a class="el" href="main_widget_8hpp_source.html#l00045">mainWidget::gameTimer</a>, <a class="el" href="game_widget_8hpp_source.html#l00052">gameTimer</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">initValues()</a>, <a class="el" href="game_widget_8hpp_source.html#l00055">timerun</a>, <a class="el" href="game_widget_8cpp_source.html#l00047">updateTime()</a> i <a class="el" href="game_widget_8hpp_source.html#l00048">userPlate</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
-<div class="center"><img src="classmain_game_widget_a16d08bf7ad875c2155b9ca6ed765c663_cgraph.png" border="0" usemap="#classmain_game_widget_a16d08bf7ad875c2155b9ca6ed765c663_cgraph" alt=""/></div>
-<map name="classmain_game_widget_a16d08bf7ad875c2155b9ca6ed765c663_cgraph" id="classmain_game_widget_a16d08bf7ad875c2155b9ca6ed765c663_cgraph">
-<area shape="rect" id="node2" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="mainGameWidget::updateTime" alt="" coords="251,177,453,203"/>
-<area shape="rect" id="node3" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="mainGameWidget::makeGameStep" alt="" coords="501,177,729,203"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="mainGameWidget::calculate\lUserPlate" alt="" coords="777,5,964,47"/>
-<area shape="rect" id="node5" href="classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb" title="mainGameWidget::calculate\lBallPosition" alt="" coords="777,71,964,112"/>
-<area shape="rect" id="node7" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="mainGameWidget::calculate\lIfEndGame" alt="" coords="777,136,964,177"/>
-<area shape="rect" id="node8" href="classmain_game_widget.html#a41e4bae20eccedb8474e66930b5ac38c" title="mainGameWidget::calculate\lIfBouncedWall" alt="" coords="777,201,964,243"/>
-<area shape="rect" id="node9" href="classmain_game_widget.html#aeb03489f2c85a9156b4af4c1b157f540" title="mainGameWidget::calculate\lIfBouncedPlate" alt="" coords="777,267,964,308"/>
-<area shape="rect" id="node10" href="classmain_game_widget.html#a60c69addd15b1b7f8536d2a436f8e354" title="mainGameWidget::calculate\lComPlatePosition" alt="" coords="777,332,964,373"/>
-<area shape="rect" id="node6" href="game_widget_8cpp.html#a6d97a9fc5c5a6a82f80aaf1bc10f195a" title="Deg2Rad" alt="" coords="1012,78,1089,105"/>
+<div class="center"><img src="classmain_game_widget_ad0b4e7bc28a44195752370bbb56915bd_cgraph.png" border="0" usemap="#classmain_game_widget_ad0b4e7bc28a44195752370bbb56915bd_cgraph" alt=""/></div>
+<map name="classmain_game_widget_ad0b4e7bc28a44195752370bbb56915bd_cgraph" id="classmain_game_widget_ad0b4e7bc28a44195752370bbb56915bd_cgraph">
+<area shape="rect" id="node2" href="classmain_game_widget.html#a9e85cde6eb0ae703e3420bbb1c96a31f" title="mainGameWidget::initValues" alt="" coords="520,126,711,153"/>
+<area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="mainGameWidget::updateTime" alt="" coords="251,177,453,203"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="mainGameWidget::makeGameStep" alt="" coords="501,177,729,203"/>
+<area shape="rect" id="node5" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="mainGameWidget::calculate\lUserPlate" alt="" coords="777,5,964,47"/>
+<area shape="rect" id="node6" href="classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb" title="mainGameWidget::calculate\lBallPosition" alt="" coords="777,71,964,112"/>
+<area shape="rect" id="node8" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="mainGameWidget::calculate\lIfEndGame" alt="" coords="777,136,964,177"/>
+<area shape="rect" id="node9" href="classmain_game_widget.html#a41e4bae20eccedb8474e66930b5ac38c" title="mainGameWidget::calculate\lIfBouncedWall" alt="" coords="777,201,964,243"/>
+<area shape="rect" id="node10" href="classmain_game_widget.html#aeb03489f2c85a9156b4af4c1b157f540" title="mainGameWidget::calculate\lIfBouncedPlate" alt="" coords="777,267,964,308"/>
+<area shape="rect" id="node11" href="classmain_game_widget.html#a60c69addd15b1b7f8536d2a436f8e354" title="mainGameWidget::calculate\lComPlatePosition" alt="" coords="777,332,964,373"/>
+<area shape="rect" id="node7" href="game_widget_8cpp.html#a6d97a9fc5c5a6a82f80aaf1bc10f195a" title="Deg2Rad" alt="" coords="1012,78,1089,105"/>
 </map>
 </div>
 
@@ -240,6 +274,12 @@ Oto graf wywołań dla tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00084">84</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_widget_8hpp_source.html#l00035">imageParameters::ballPos</a>, <a class="el" href="game_widget_8hpp_source.html#l00028">imageParameters::ballSpeed</a>, <a class="el" href="game_widget_8hpp_source.html#l00036">imageParameters::currentAngle</a>, <a class="el" href="game_widget_8cpp_source.html#l00005">Deg2Rad()</a> i <a class="el" href="game_widget_8hpp_source.html#l00047">gameParam</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
@@ -255,7 +295,7 @@ Oto graf wywoływań tej funkcji:</div>
 <map name="classmain_game_widget_a83d515786f15b067391b2c1efa68ebeb_icgraph" id="classmain_game_widget_a83d515786f15b067391b2c1efa68ebeb_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="mainGameWidget::makeGameStep" alt="" coords="240,13,468,39"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="mainGameWidget::updateTime" alt="" coords="516,13,719,39"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#a16d08bf7ad875c2155b9ca6ed765c663" title="mainGameWidget::mainGame\lWidget" alt="" coords="767,5,964,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="mainGameWidget::mainGame\lWidget" alt="" coords="767,5,964,47"/>
 </map>
 </div>
 
@@ -275,6 +315,12 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00161">161</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_widget_8hpp_source.html#l00035">imageParameters::ballPos</a>, <a class="el" href="game_widget_8hpp_source.html#l00034">imageParameters::comPlateLoc</a>, <a class="el" href="game_settings_8hpp_source.html#l00018">easy</a>, <a class="el" href="game_settings_8hpp_source.html#l00045">gameSettings::gamelvl</a>, <a class="el" href="game_widget_8hpp_source.html#l00047">gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00054">gameSettgs</a>, <a class="el" href="game_settings_8hpp_source.html#l00020">hard</a>, <a class="el" href="game_settings_8hpp_source.html#l00019">medium</a>, <a class="el" href="game_widget_8hpp_source.html#l00029">imageParameters::plateSpeed</a> i <a class="el" href="game_widget_8hpp_source.html#l00030">imageParameters::XtargetComPlate</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -282,7 +328,7 @@ Oto graf wywoływań tej funkcji:</div>
 <map name="classmain_game_widget_a60c69addd15b1b7f8536d2a436f8e354_icgraph" id="classmain_game_widget_a60c69addd15b1b7f8536d2a436f8e354_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="mainGameWidget::makeGameStep" alt="" coords="240,13,468,39"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="mainGameWidget::updateTime" alt="" coords="516,13,719,39"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#a16d08bf7ad875c2155b9ca6ed765c663" title="mainGameWidget::mainGame\lWidget" alt="" coords="767,5,964,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="mainGameWidget::mainGame\lWidget" alt="" coords="767,5,964,47"/>
 </map>
 </div>
 
@@ -302,6 +348,12 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00133">133</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00071">gameParameters::ballBounceNumber</a>, <a class="el" href="game_widget_8hpp_source.html#l00035">imageParameters::ballPos</a>, <a class="el" href="game_widget_8hpp_source.html#l00034">imageParameters::comPlateLoc</a>, <a class="el" href="game_widget_8hpp_source.html#l00036">imageParameters::currentAngle</a>, <a class="el" href="game_widget_8hpp_source.html#l00047">gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00053">gameParame</a> i <a class="el" href="game_widget_8hpp_source.html#l00033">imageParameters::userPlateLoc</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -309,7 +361,7 @@ Oto graf wywoływań tej funkcji:</div>
 <map name="classmain_game_widget_aeb03489f2c85a9156b4af4c1b157f540_icgraph" id="classmain_game_widget_aeb03489f2c85a9156b4af4c1b157f540_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="mainGameWidget::makeGameStep" alt="" coords="240,13,468,39"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="mainGameWidget::updateTime" alt="" coords="516,13,719,39"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#a16d08bf7ad875c2155b9ca6ed765c663" title="mainGameWidget::mainGame\lWidget" alt="" coords="767,5,964,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="mainGameWidget::mainGame\lWidget" alt="" coords="767,5,964,47"/>
 </map>
 </div>
 
@@ -329,6 +381,12 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00112">112</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_widget_8hpp_source.html#l00035">imageParameters::ballPos</a>, <a class="el" href="game_widget_8hpp_source.html#l00036">imageParameters::currentAngle</a> i <a class="el" href="game_widget_8hpp_source.html#l00047">gameParam</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -336,7 +394,7 @@ Oto graf wywoływań tej funkcji:</div>
 <map name="classmain_game_widget_a41e4bae20eccedb8474e66930b5ac38c_icgraph" id="classmain_game_widget_a41e4bae20eccedb8474e66930b5ac38c_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="mainGameWidget::makeGameStep" alt="" coords="240,13,468,39"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="mainGameWidget::updateTime" alt="" coords="516,13,719,39"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#a16d08bf7ad875c2155b9ca6ed765c663" title="mainGameWidget::mainGame\lWidget" alt="" coords="767,5,964,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="mainGameWidget::mainGame\lWidget" alt="" coords="767,5,964,47"/>
 </map>
 </div>
 
@@ -356,6 +414,12 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00093">93</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_widget_8hpp_source.html#l00035">imageParameters::ballPos</a>, <a class="el" href="game_widget_8hpp_source.html#l00036">imageParameters::currentAngle</a>, <a class="el" href="classmain_game_widget.html#a56c3a3a188113fc62127f75f5b3dacb2">EmitEndGame()</a>, <a class="el" href="game_widget_8hpp_source.html#l00051">gameInfo</a>, <a class="el" href="game_widget_8hpp_source.html#l00047">gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00052">gameTimer</a> i <a class="el" href="uart_param_8hpp_source.html#l00058">UARTVal::isGameActive</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -363,7 +427,7 @@ Oto graf wywoływań tej funkcji:</div>
 <map name="classmain_game_widget_ae9bb1a8308fe76950982af3474be4a0f_icgraph" id="classmain_game_widget_ae9bb1a8308fe76950982af3474be4a0f_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="mainGameWidget::makeGameStep" alt="" coords="240,13,468,39"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="mainGameWidget::updateTime" alt="" coords="516,13,719,39"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#a16d08bf7ad875c2155b9ca6ed765c663" title="mainGameWidget::mainGame\lWidget" alt="" coords="767,5,964,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="mainGameWidget::mainGame\lWidget" alt="" coords="767,5,964,47"/>
 </map>
 </div>
 
@@ -383,6 +447,12 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00066">66</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00088">gameParameters::accValues</a>, <a class="el" href="game_widget_8hpp_source.html#l00051">gameInfo</a>, <a class="el" href="game_widget_8hpp_source.html#l00047">gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00053">gameParame</a>, <a class="el" href="uart_param_8hpp_source.html#l00058">UARTVal::isGameActive</a>, <a class="el" href="game_widget_8hpp_source.html#l00055">timerun</a>, <a class="el" href="game_widget_8hpp_source.html#l00033">imageParameters::userPlateLoc</a> i <a class="el" href="uart_param_8hpp_source.html#l00040">UARTVal::YVal</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -390,7 +460,45 @@ Oto graf wywoływań tej funkcji:</div>
 <map name="classmain_game_widget_a6c34a3766550dc719df5b52ae02962cd_icgraph" id="classmain_game_widget_a6c34a3766550dc719df5b52ae02962cd_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="mainGameWidget::makeGameStep" alt="" coords="240,13,468,39"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="mainGameWidget::updateTime" alt="" coords="516,13,719,39"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#a16d08bf7ad875c2155b9ca6ed765c663" title="mainGameWidget::mainGame\lWidget" alt="" coords="767,5,964,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="mainGameWidget::mainGame\lWidget" alt="" coords="767,5,964,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a56c3a3a188113fc62127f75f5b3dacb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c3a3a188113fc62127f75f5b3dacb2">&#9670;&nbsp;</a></span>EmitEndGame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mainGameWidget::EmitEndGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00093">calculateIfEndGame()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmain_game_widget_a56c3a3a188113fc62127f75f5b3dacb2_icgraph.png" border="0" usemap="#classmain_game_widget_a56c3a3a188113fc62127f75f5b3dacb2_icgraph" alt=""/></div>
+<map name="classmain_game_widget_a56c3a3a188113fc62127f75f5b3dacb2_icgraph" id="classmain_game_widget_a56c3a3a188113fc62127f75f5b3dacb2_icgraph">
+<area shape="rect" id="node2" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="mainGameWidget::calculate\lIfEndGame" alt="" coords="272,5,459,47"/>
+<area shape="rect" id="node3" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="mainGameWidget::makeGameStep" alt="" coords="507,13,735,39"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="mainGameWidget::updateTime" alt="" coords="783,13,985,39"/>
+<area shape="rect" id="node5" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="mainGameWidget::mainGame\lWidget" alt="" coords="1033,5,1231,47"/>
 </map>
 </div>
 
@@ -413,8 +521,8 @@ Oto graf wywoływań tej funkcji:</div>
 
 </div>
 </div>
-<a id="acdfe13d8f3cede8fdf22f0cbe8a51d4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdfe13d8f3cede8fdf22f0cbe8a51d4d">&#9670;&nbsp;</a></span>initValues()</h2>
+<a id="a9e85cde6eb0ae703e3420bbb1c96a31f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e85cde6eb0ae703e3420bbb1c96a31f">&#9670;&nbsp;</a></span>initValues()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,11 +530,37 @@ Oto graf wywoływań tej funkcji:</div>
         <tr>
           <td class="memname">void mainGameWidget::initValues </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>comLives</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>userLives</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00030">30</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00071">gameParameters::ballBounceNumber</a>, <a class="el" href="game_widget_8hpp_source.html#l00035">imageParameters::ballPos</a>, <a class="el" href="game_widget_8hpp_source.html#l00028">imageParameters::ballSpeed</a>, <a class="el" href="game_widget_8hpp_source.html#l00032">imageParameters::compLives</a>, <a class="el" href="game_widget_8hpp_source.html#l00036">imageParameters::currentAngle</a>, <a class="el" href="game_widget_8hpp_source.html#l00051">gameInfo</a>, <a class="el" href="game_widget_8hpp_source.html#l00047">gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00053">gameParame</a>, <a class="el" href="uart_param_8hpp_source.html#l00058">UARTVal::isGameActive</a>, <a class="el" href="game_widget_8hpp_source.html#l00029">imageParameters::plateSpeed</a>, <a class="el" href="game_widget_8hpp_source.html#l00055">timerun</a> i <a class="el" href="game_widget_8hpp_source.html#l00031">imageParameters::userLives</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00047">updateTime()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmain_game_widget_a9e85cde6eb0ae703e3420bbb1c96a31f_icgraph.png" border="0" usemap="#classmain_game_widget_a9e85cde6eb0ae703e3420bbb1c96a31f_icgraph" alt=""/></div>
+<map name="classmain_game_widget_a9e85cde6eb0ae703e3420bbb1c96a31f_icgraph" id="classmain_game_widget_a9e85cde6eb0ae703e3420bbb1c96a31f_icgraph">
+<area shape="rect" id="node2" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="mainGameWidget::mainGame\lWidget" alt="" coords="495,5,692,47"/>
+<area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="mainGameWidget::updateTime" alt="" coords="244,38,447,65"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -444,18 +578,24 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00057">57</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_widget_8cpp_source.html#l00084">calculateBallPosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00161">calculateComPlatePosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00133">calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00112">calculateIfBouncedWall()</a>, <a class="el" href="game_widget_8cpp_source.html#l00093">calculateIfEndGame()</a> i <a class="el" href="game_widget_8cpp_source.html#l00066">calculateUserPlate()</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00047">updateTime()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmain_game_widget_a3421df966b8c06767ac28e3c39ee05ea_cgraph.png" border="0" usemap="#classmain_game_widget_a3421df966b8c06767ac28e3c39ee05ea_cgraph" alt=""/></div>
 <map name="classmain_game_widget_a3421df966b8c06767ac28e3c39ee05ea_cgraph" id="classmain_game_widget_a3421df966b8c06767ac28e3c39ee05ea_cgraph">
-<area shape="rect" id="node2" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="mainGameWidget::calculate\lUserPlate" alt="" coords="281,5,468,47"/>
-<area shape="rect" id="node3" href="classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb" title="mainGameWidget::calculate\lBallPosition" alt="" coords="281,71,468,112"/>
-<area shape="rect" id="node5" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="mainGameWidget::calculate\lIfEndGame" alt="" coords="281,136,468,177"/>
+<area shape="rect" id="node2" href="classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb" title="mainGameWidget::calculate\lBallPosition" alt="" coords="281,5,468,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#a60c69addd15b1b7f8536d2a436f8e354" title="mainGameWidget::calculate\lComPlatePosition" alt="" coords="281,71,468,112"/>
+<area shape="rect" id="node5" href="classmain_game_widget.html#aeb03489f2c85a9156b4af4c1b157f540" title="mainGameWidget::calculate\lIfBouncedPlate" alt="" coords="281,136,468,177"/>
 <area shape="rect" id="node6" href="classmain_game_widget.html#a41e4bae20eccedb8474e66930b5ac38c" title="mainGameWidget::calculate\lIfBouncedWall" alt="" coords="281,201,468,243"/>
-<area shape="rect" id="node7" href="classmain_game_widget.html#aeb03489f2c85a9156b4af4c1b157f540" title="mainGameWidget::calculate\lIfBouncedPlate" alt="" coords="281,267,468,308"/>
-<area shape="rect" id="node8" href="classmain_game_widget.html#a60c69addd15b1b7f8536d2a436f8e354" title="mainGameWidget::calculate\lComPlatePosition" alt="" coords="281,332,468,373"/>
-<area shape="rect" id="node4" href="game_widget_8cpp.html#a6d97a9fc5c5a6a82f80aaf1bc10f195a" title="Deg2Rad" alt="" coords="516,78,593,105"/>
+<area shape="rect" id="node7" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="mainGameWidget::calculate\lIfEndGame" alt="" coords="281,267,468,308"/>
+<area shape="rect" id="node8" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="mainGameWidget::calculate\lUserPlate" alt="" coords="281,332,468,373"/>
+<area shape="rect" id="node3" href="game_widget_8cpp.html#a6d97a9fc5c5a6a82f80aaf1bc10f195a" title="Deg2Rad" alt="" coords="516,13,593,39"/>
 </map>
 </div>
 <div class="dynheader">
@@ -464,7 +604,7 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="center"><img src="classmain_game_widget_a3421df966b8c06767ac28e3c39ee05ea_icgraph.png" border="0" usemap="#classmain_game_widget_a3421df966b8c06767ac28e3c39ee05ea_icgraph" alt=""/></div>
 <map name="classmain_game_widget_a3421df966b8c06767ac28e3c39ee05ea_icgraph" id="classmain_game_widget_a3421df966b8c06767ac28e3c39ee05ea_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="mainGameWidget::updateTime" alt="" coords="281,13,484,39"/>
-<area shape="rect" id="node3" href="classmain_game_widget.html#a16d08bf7ad875c2155b9ca6ed765c663" title="mainGameWidget::mainGame\lWidget" alt="" coords="532,5,729,47"/>
+<area shape="rect" id="node3" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="mainGameWidget::mainGame\lWidget" alt="" coords="532,5,729,47"/>
 </map>
 </div>
 
@@ -485,6 +625,10 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00201">201</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_widget_8hpp_source.html#l00044">background</a>, <a class="el" href="game_widget_8hpp_source.html#l00049">ball</a>, <a class="el" href="game_widget_8hpp_source.html#l00035">imageParameters::ballPos</a>, <a class="el" href="game_widget_8hpp_source.html#l00034">imageParameters::comPlateLoc</a>, <a class="el" href="game_widget_8hpp_source.html#l00045">computerPlate</a>, <a class="el" href="game_widget_8hpp_source.html#l00047">gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00050">life</a>, <a class="el" href="game_widget_8hpp_source.html#l00037">imageParameters::newScala</a>, <a class="el" href="game_widget_8hpp_source.html#l00048">userPlate</a> i <a class="el" href="game_widget_8hpp_source.html#l00033">imageParameters::userPlateLoc</a>.</p>
 
 </div>
 </div>
@@ -510,19 +654,26 @@ Oto graf wywoływań tej funkcji:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00047">47</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_widget_8hpp_source.html#l00051">gameInfo</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">initValues()</a>, <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a> i <a class="el" href="uart_param_8hpp_source.html#l00069">UARTVal::resetPosition</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_cgraph.png" border="0" usemap="#classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_cgraph" alt=""/></div>
 <map name="classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_cgraph" id="classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_cgraph">
-<area shape="rect" id="node2" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="mainGameWidget::makeGameStep" alt="" coords="256,177,484,203"/>
-<area shape="rect" id="node3" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="mainGameWidget::calculate\lUserPlate" alt="" coords="532,5,719,47"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb" title="mainGameWidget::calculate\lBallPosition" alt="" coords="532,71,719,112"/>
-<area shape="rect" id="node6" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="mainGameWidget::calculate\lIfEndGame" alt="" coords="532,136,719,177"/>
-<area shape="rect" id="node7" href="classmain_game_widget.html#a41e4bae20eccedb8474e66930b5ac38c" title="mainGameWidget::calculate\lIfBouncedWall" alt="" coords="532,201,719,243"/>
-<area shape="rect" id="node8" href="classmain_game_widget.html#aeb03489f2c85a9156b4af4c1b157f540" title="mainGameWidget::calculate\lIfBouncedPlate" alt="" coords="532,267,719,308"/>
-<area shape="rect" id="node9" href="classmain_game_widget.html#a60c69addd15b1b7f8536d2a436f8e354" title="mainGameWidget::calculate\lComPlatePosition" alt="" coords="532,332,719,373"/>
-<area shape="rect" id="node5" href="game_widget_8cpp.html#a6d97a9fc5c5a6a82f80aaf1bc10f195a" title="Deg2Rad" alt="" coords="767,78,844,105"/>
+<area shape="rect" id="node2" href="classmain_game_widget.html#a9e85cde6eb0ae703e3420bbb1c96a31f" title="mainGameWidget::initValues" alt="" coords="275,126,465,153"/>
+<area shape="rect" id="node3" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="mainGameWidget::makeGameStep" alt="" coords="256,177,484,203"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb" title="mainGameWidget::calculate\lBallPosition" alt="" coords="532,5,719,47"/>
+<area shape="rect" id="node6" href="classmain_game_widget.html#a60c69addd15b1b7f8536d2a436f8e354" title="mainGameWidget::calculate\lComPlatePosition" alt="" coords="532,71,719,112"/>
+<area shape="rect" id="node7" href="classmain_game_widget.html#aeb03489f2c85a9156b4af4c1b157f540" title="mainGameWidget::calculate\lIfBouncedPlate" alt="" coords="532,136,719,177"/>
+<area shape="rect" id="node8" href="classmain_game_widget.html#a41e4bae20eccedb8474e66930b5ac38c" title="mainGameWidget::calculate\lIfBouncedWall" alt="" coords="532,201,719,243"/>
+<area shape="rect" id="node9" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="mainGameWidget::calculate\lIfEndGame" alt="" coords="532,267,719,308"/>
+<area shape="rect" id="node10" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="mainGameWidget::calculate\lUserPlate" alt="" coords="532,332,719,373"/>
+<area shape="rect" id="node5" href="game_widget_8cpp.html#a6d97a9fc5c5a6a82f80aaf1bc10f195a" title="Deg2Rad" alt="" coords="767,13,844,39"/>
 </map>
 </div>
 <div class="dynheader">
@@ -530,7 +681,7 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_icgraph.png" border="0" usemap="#classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_icgraph" alt=""/></div>
 <map name="classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_icgraph" id="classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_icgraph">
-<area shape="rect" id="node2" href="classmain_game_widget.html#a16d08bf7ad875c2155b9ca6ed765c663" title="mainGameWidget::mainGame\lWidget" alt="" coords="256,5,453,47"/>
+<area shape="rect" id="node2" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="mainGameWidget::mainGame\lWidget" alt="" coords="256,5,453,47"/>
 </map>
 </div>
 
@@ -557,6 +708,10 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00044">44</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00201">paintEvent()</a>.</p>
+
 </div>
 </div>
 <a id="a7f8a8dc61a8f49b866e23d6f61b8512a"></a>
@@ -578,6 +733,10 @@ Oto graf wywoływań tej funkcji:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00049">49</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00201">paintEvent()</a>.</p>
 
 </div>
 </div>
@@ -601,10 +760,14 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00045">45</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00201">paintEvent()</a>.</p>
+
 </div>
 </div>
-<a id="a21d468d67f6edbcf9c8b30f045d91710"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21d468d67f6edbcf9c8b30f045d91710">&#9670;&nbsp;</a></span>gameInfo</h2>
+<a id="a6f73be1ce970a199ef87b001177bdba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f73be1ce970a199ef87b001177bdba4">&#9670;&nbsp;</a></span>gameInfo</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -613,7 +776,7 @@ Oto graf wywoływań tej funkcji:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="classgame_parameters.html">gameParameters</a>* mainGameWidget::gameInfo</td>
+          <td class="memname"><a class="el" href="class_u_a_r_t_val.html">UARTVal</a>* mainGameWidget::gameInfo</td>
         </tr>
       </table>
   </td>
@@ -622,6 +785,10 @@ Oto graf wywoływań tej funkcji:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00051">51</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00093">calculateIfEndGame()</a>, <a class="el" href="game_widget_8cpp_source.html#l00066">calculateUserPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">initValues()</a>, <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00047">updateTime()</a>.</p>
 
 </div>
 </div>
@@ -645,6 +812,62 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00047">47</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00084">calculateBallPosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00161">calculateComPlatePosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00133">calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00112">calculateIfBouncedWall()</a>, <a class="el" href="game_widget_8cpp_source.html#l00093">calculateIfEndGame()</a>, <a class="el" href="game_widget_8cpp_source.html#l00066">calculateUserPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">initValues()</a>, <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00201">paintEvent()</a>.</p>
+
+</div>
+</div>
+<a id="aed8d26e1b1b80cc859a245825ad37fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed8d26e1b1b80cc859a245825ad37fb7">&#9670;&nbsp;</a></span>gameParame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgame_parameters.html">gameParameters</a>* mainGameWidget::gameParame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00053">53</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00133">calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00066">calculateUserPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">initValues()</a> i <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a>.</p>
+
+</div>
+</div>
+<a id="acaf079fdbf929505fb59a0ad97c7e750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaf079fdbf929505fb59a0ad97c7e750">&#9670;&nbsp;</a></span>gameSettgs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgame_settings.html">gameSettings</a>* mainGameWidget::gameSettgs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00054">54</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00161">calculateComPlatePosition()</a> i <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a>.</p>
+
 </div>
 </div>
 <a id="a0c8dfda67b8d7ab2de886f8988f41482"></a>
@@ -667,10 +890,14 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00052">52</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00093">calculateIfEndGame()</a> i <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a>.</p>
+
 </div>
 </div>
-<a id="a1ca7a83137b298d03bda9ef9b366a51c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ca7a83137b298d03bda9ef9b366a51c">&#9670;&nbsp;</a></span>imageInfo</h2>
+<a id="a9869b06d940be6a878833145c7bb5611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9869b06d940be6a878833145c7bb5611">&#9670;&nbsp;</a></span>life</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -679,7 +906,7 @@ Oto graf wywoływań tej funkcji:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classimage_parameters.html">imageParameters</a> mainGameWidget::imageInfo</td>
+          <td class="memname">QImage mainGameWidget::life</td>
         </tr>
       </table>
   </td>
@@ -688,6 +915,36 @@ Oto graf wywoływań tej funkcji:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00050">50</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00201">paintEvent()</a>.</p>
+
+</div>
+</div>
+<a id="a218998300d8db8e060d322bc3193d8ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218998300d8db8e060d322bc3193d8ca">&#9670;&nbsp;</a></span>timerun</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double mainGameWidget::timerun</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00055">55</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00066">calculateUserPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">initValues()</a> i <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a>.</p>
 
 </div>
 </div>
@@ -711,11 +968,15 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00048">48</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00201">paintEvent()</a>.</p>
+
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
 <li>/home/marcel/Documents/semestrVI/WDS/Qt/inc/<a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a></li>
-<li>/home/marcel/Documents/semestrVI/WDS/Qt/src/<a class="el" href="game_widget_8cpp.html">gameWidget.cpp</a></li>
+<li>/home/marcel/Documents/semestrVI/WDS/Qt/src/<a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,4 +1,6 @@
 <map id="CRCSingleByte" name="CRCSingleByte">
 <area shape="rect" id="node2" href="$game_window_8cpp.html#ac4cc9a0feb0fb183343f20837d50ca88" title="CalculateCRC8" alt="" coords="168,5,283,32"/>
 <area shape="rect" id="node3" href="$classgame_window.html#a44cb04704f8f9d1faec12e0669abb45d" title="Slot do odczytywania danych z UART Za pomocą tej funkcji odczytywane oraz zapisywane są dane w jaki s..." alt="" coords="331,5,541,32"/>
+<area shape="rect" id="node4" href="$classgame_window.html#a787dbecae715feb56d9ac0a1cb8f9ce7" title="Slot inicjalizujacy polaczenie z mikrokontrolerem. " alt="" coords="589,5,756,32"/>
+<area shape="rect" id="node5" href="$classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="804,5,992,32"/>
 </map>

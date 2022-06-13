@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Aplikacja gry: Plik źródłowy /home/marcel/Documents/semestrVI/WDS/Qt/inc/sideWidget.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Aplikacja gry
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('side_widget_8hpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">sideWidget.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="side_widget_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SIDEWIDGET_HPP</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SIDEWIDGET_HPP</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QtSerialPort/QtSerialPort&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QSerialPortInfo&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QtWidgets&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QLabel&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QList&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QTextEdit&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QImage&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="main_widget_8hpp.html">mainWidget.hpp</a>&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="game_window_8hpp.html">gameWindow.hpp</a>&quot;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="game_parameters_8hpp.html">gameParameters.hpp</a>&quot;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;ui_sidePanelWidget.h&quot;</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span><a class="code" href="classmain_game_widget.html">mainGameWidget</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span><a class="code" href="classgame_window.html">gameWindow</a>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_side_panel_widget.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_side_panel_widget.html">SidePanelWidget</a> :<span class="keyword">public</span> QWidget, <span class="keyword">public</span> Ui::sidePanelWidget {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_side_panel_widget.html#af11ee156d866e6163e80cb0cbbc47195">   50</a></span>&#160;    <a class="code" href="classgame_parameters.html">gameParameters</a>* <a class="code" href="class_side_panel_widget.html#af11ee156d866e6163e80cb0cbbc47195">gamePar</a>;</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_side_panel_widget.html#a422e5ae9c5be708e0de0051fd8bd5639">   57</a></span>&#160;    <a class="code" href="class_u_a_r_t_val.html">UARTVal</a>* <a class="code" href="class_side_panel_widget.html#a422e5ae9c5be708e0de0051fd8bd5639">gameUART</a>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_side_panel_widget.html#aace5d3b5b4319cbb91f6cfbba0e716bb">   64</a></span>&#160;    QTimer* <a class="code" href="class_side_panel_widget.html#aace5d3b5b4319cbb91f6cfbba0e716bb">timer</a>;</div><div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_side_panel_widget.html#a7e00f2a59ece0a5b549cc5a543798b7e">   70</a></span>&#160;    QTime <a class="code" href="class_side_panel_widget.html#a7e00f2a59ece0a5b549cc5a543798b7e">accTime</a>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_side_panel_widget.html#a1919cc31a3bec198b10e5d42eba789d2">   78</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_side_panel_widget.html#a1919cc31a3bec198b10e5d42eba789d2">isStarted</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_side_panel_widget.html#a17713943b4dc399c3e2fe12f6bd37225">SidePanelWidget</a>(<a class="code" href="classmain_widget.html">mainWidget</a>* parent = <span class="keyword">nullptr</span>, <a class="code" href="classgame_window.html">gameWindow</a>* gameWin = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_side_panel_widget.html#a1e50e08924724bf47728fc5e6d3a3c24">checkConnection</a>();</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_side_panel_widget.html#a016153e76b4b75567913496a966cf890">EndProgram</a>();</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_side_panel_widget.html#ad8a1275cd30793be9ac0f34ebd26309c">updateTime</a>();</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_side_panel_widget.html#a5b022971e5298e57262dae3d526343e2">writeTime</a>();</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_side_panel_widget.html#a0667394b67fa642b05a37d8087fbe3c3">EndGame</a>();</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_side_panel_widget.html#a2e732225cd6430685c65211e4f5ffc75">setTimerNull</a>();</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_side_panel_widget.html#aa2d4f3edb024980d4799b4d96d4c6b9c">retranslatePanel</a>();</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_side_panel_widget.html#aa24c83e3d9febfd47e810563458a8926">checkBlockButtons</a>();</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;signals:</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_side_panel_widget.html#aa7e88a7eeff40a9995802fabc297a549">EmitClosing</a>();</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_side_panel_widget.html#ae78f63432a769825f6f6578172d4e115">EmitEndGame</a>();</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_side_panel_widget_html_a7e00f2a59ece0a5b549cc5a543798b7e"><div class="ttname"><a href="class_side_panel_widget.html#a7e00f2a59ece0a5b549cc5a543798b7e">SidePanelWidget::accTime</a></div><div class="ttdeci">QTime accTime</div><div class="ttdoc">Pole odmierząjące aktualny czas aplikacji w sekundach. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8hpp_source.html#l00070">sideWidget.hpp:70</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html_af11ee156d866e6163e80cb0cbbc47195"><div class="ttname"><a href="class_side_panel_widget.html#af11ee156d866e6163e80cb0cbbc47195">SidePanelWidget::gamePar</a></div><div class="ttdeci">gameParameters * gamePar</div><div class="ttdoc">Wskaźnik na klasę gameParameters. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8hpp_source.html#l00050">sideWidget.hpp:50</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html_aace5d3b5b4319cbb91f6cfbba0e716bb"><div class="ttname"><a href="class_side_panel_widget.html#aace5d3b5b4319cbb91f6cfbba0e716bb">SidePanelWidget::timer</a></div><div class="ttdeci">QTimer * timer</div><div class="ttdoc">Wskaźnik na zegar aplikacji. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8hpp_source.html#l00064">sideWidget.hpp:64</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html_a5b022971e5298e57262dae3d526343e2"><div class="ttname"><a href="class_side_panel_widget.html#a5b022971e5298e57262dae3d526343e2">SidePanelWidget::writeTime</a></div><div class="ttdeci">void writeTime()</div><div class="ttdoc">Slot obługi przycisku Resume. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8cpp_source.html#l00111">sideWidget.cpp:111</a></div></div>
+<div class="ttc" id="classmain_widget_html"><div class="ttname"><a href="classmain_widget.html">mainWidget</a></div><div class="ttdoc">Klasa reprezentujaca widget glowny Klasa jest odpowiedzialna za stworzenie w widgecie glownym widgetu...</div><div class="ttdef"><b>Definition:</b> <a href="main_widget_8hpp_source.html#l00037">mainWidget.hpp:37</a></div></div>
+<div class="ttc" id="classgame_window_html"><div class="ttname"><a href="classgame_window.html">gameWindow</a></div><div class="ttdoc">Klasa reprezentujaca glowne okno. </div><div class="ttdef"><b>Definition:</b> <a href="game_window_8hpp_source.html#l00040">gameWindow.hpp:40</a></div></div>
+<div class="ttc" id="classgame_parameters_html"><div class="ttname"><a href="classgame_parameters.html">gameParameters</a></div><div class="ttdoc">Klasa zawierająca informacje na temat statystyk gry. </div><div class="ttdef"><b>Definition:</b> <a href="game_parameters_8hpp_source.html#l00022">gameParameters.hpp:22</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html_aa24c83e3d9febfd47e810563458a8926"><div class="ttname"><a href="class_side_panel_widget.html#aa24c83e3d9febfd47e810563458a8926">SidePanelWidget::checkBlockButtons</a></div><div class="ttdeci">void checkBlockButtons()</div><div class="ttdoc">Slot blokowania przycisków. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8cpp_source.html#l00043">sideWidget.cpp:43</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html_ae78f63432a769825f6f6578172d4e115"><div class="ttname"><a href="class_side_panel_widget.html#ae78f63432a769825f6f6578172d4e115">SidePanelWidget::EmitEndGame</a></div><div class="ttdeci">void EmitEndGame()</div><div class="ttdoc">Sygnał końca gry. </div></div>
+<div class="ttc" id="class_side_panel_widget_html_a1e50e08924724bf47728fc5e6d3a3c24"><div class="ttname"><a href="class_side_panel_widget.html#a1e50e08924724bf47728fc5e6d3a3c24">SidePanelWidget::checkConnection</a></div><div class="ttdeci">void checkConnection()</div><div class="ttdoc">Slot sprawdzania połączenia z urządzeniem. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8cpp_source.html#l00097">sideWidget.cpp:97</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html_ad8a1275cd30793be9ac0f34ebd26309c"><div class="ttname"><a href="class_side_panel_widget.html#ad8a1275cd30793be9ac0f34ebd26309c">SidePanelWidget::updateTime</a></div><div class="ttdeci">void updateTime()</div><div class="ttdoc">Slot aktualizacji czasu. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8cpp_source.html#l00082">sideWidget.cpp:82</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html_a2e732225cd6430685c65211e4f5ffc75"><div class="ttname"><a href="class_side_panel_widget.html#a2e732225cd6430685c65211e4f5ffc75">SidePanelWidget::setTimerNull</a></div><div class="ttdeci">void setTimerNull()</div><div class="ttdoc">Slot odpowiedzialny za wyzerowanie czasu zegara. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8cpp_source.html#l00133">sideWidget.cpp:133</a></div></div>
+<div class="ttc" id="game_parameters_8hpp_html"><div class="ttname"><a href="game_parameters_8hpp.html">gameParameters.hpp</a></div><div class="ttdoc">Definicja statystyk gry. </div></div>
+<div class="ttc" id="class_side_panel_widget_html_aa7e88a7eeff40a9995802fabc297a549"><div class="ttname"><a href="class_side_panel_widget.html#aa7e88a7eeff40a9995802fabc297a549">SidePanelWidget::EmitClosing</a></div><div class="ttdeci">void EmitClosing()</div><div class="ttdoc">Sygnał zamknięcia aplikacji. </div></div>
+<div class="ttc" id="game_window_8hpp_html"><div class="ttname"><a href="game_window_8hpp.html">gameWindow.hpp</a></div></div>
+<div class="ttc" id="main_widget_8hpp_html"><div class="ttname"><a href="main_widget_8hpp.html">mainWidget.hpp</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html_a17713943b4dc399c3e2fe12f6bd37225"><div class="ttname"><a href="class_side_panel_widget.html#a17713943b4dc399c3e2fe12f6bd37225">SidePanelWidget::SidePanelWidget</a></div><div class="ttdeci">SidePanelWidget(mainWidget *parent=nullptr, gameWindow *gameWin=nullptr)</div><div class="ttdoc">Konstruktor panela bocznego aplikacji. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8cpp_source.html#l00019">sideWidget.cpp:19</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html_a422e5ae9c5be708e0de0051fd8bd5639"><div class="ttname"><a href="class_side_panel_widget.html#a422e5ae9c5be708e0de0051fd8bd5639">SidePanelWidget::gameUART</a></div><div class="ttdeci">UARTVal * gameUART</div><div class="ttdoc">Wzkażnik na klasę UARTVal. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8hpp_source.html#l00057">sideWidget.hpp:57</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html_a0667394b67fa642b05a37d8087fbe3c3"><div class="ttname"><a href="class_side_panel_widget.html#a0667394b67fa642b05a37d8087fbe3c3">SidePanelWidget::EndGame</a></div><div class="ttdeci">void EndGame()</div><div class="ttdoc">Slot końca gry. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8cpp_source.html#l00145">sideWidget.cpp:145</a></div></div>
+<div class="ttc" id="class_u_a_r_t_val_html"><div class="ttname"><a href="class_u_a_r_t_val.html">UARTVal</a></div><div class="ttdoc">Klasa zawierajaca informacje na temat gry. </div><div class="ttdef"><b>Definition:</b> <a href="uart_param_8hpp_source.html#l00015">uartParam.hpp:15</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html_a016153e76b4b75567913496a966cf890"><div class="ttname"><a href="class_side_panel_widget.html#a016153e76b4b75567913496a966cf890">SidePanelWidget::EndProgram</a></div><div class="ttdeci">void EndProgram()</div><div class="ttdoc">Slot zakończenia programu. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8cpp_source.html#l00071">sideWidget.cpp:71</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html_a1919cc31a3bec198b10e5d42eba789d2"><div class="ttname"><a href="class_side_panel_widget.html#a1919cc31a3bec198b10e5d42eba789d2">SidePanelWidget::isStarted</a></div><div class="ttdeci">bool isStarted</div><div class="ttdoc">Pole odpowiedzialne za sterowniem odmierzaniem czasu. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8hpp_source.html#l00078">sideWidget.hpp:78</a></div></div>
+<div class="ttc" id="classmain_game_widget_html"><div class="ttname"><a href="classmain_game_widget.html">mainGameWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="game_widget_8hpp_source.html#l00041">gameWidget.hpp:41</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html"><div class="ttname"><a href="class_side_panel_widget.html">SidePanelWidget</a></div><div class="ttdoc">Klasa reprezentująca panel boczny aplikacji. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8hpp_source.html#l00039">sideWidget.hpp:39</a></div></div>
+<div class="ttc" id="class_side_panel_widget_html_aa2d4f3edb024980d4799b4d96d4c6b9c"><div class="ttname"><a href="class_side_panel_widget.html#aa2d4f3edb024980d4799b4d96d4c6b9c">SidePanelWidget::retranslatePanel</a></div><div class="ttdeci">void retranslatePanel()</div><div class="ttdoc">Slot przetłumaczenia widgeta. </div><div class="ttdef"><b>Definition:</b> <a href="side_widget_8cpp_source.html#l00061">sideWidget.cpp:61</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ecc0daaf6d1858b41148c21ca78b7518.html">Qt</a></li><li class="navelem"><a class="el" href="dir_e66ffa1a9f55984ff20f7eed752fc664.html">inc</a></li><li class="navelem"><a class="el" href="side_widget_8hpp.html">sideWidget.hpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

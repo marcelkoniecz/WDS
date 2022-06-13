@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Lista składowych</title>
+<title>Aplikacja gry: Lista składowych</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,6 +64,20 @@ $(function() {
 $(document).ready(function(){initNavTree('classgame_window.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="headertitle">
 <div class="title">gameWindow Lista składowych</div>  </div>
@@ -66,29 +86,38 @@ $(document).ready(function(){initNavTree('classgame_window.html','');});
 
 <p>To jest kompletna lista składowych dla <a class="el" href="classgame_window.html">gameWindow</a>, uwzględniająca wszystkie dziedziczone składowe.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_ui__game_window.html#a5bf92d3cb122d149b4d268d66ed0b607">actionConnect</a></td><td class="entry"><a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_ui__game_window.html#a8ecf39c157bd52237c0c17890750f8b6">actionDisconnect</a></td><td class="entry"><a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_ui__game_window.html#ac46dd2de70bb0cf75adc74575a81be86">actionPolaczenie</a></td><td class="entry"><a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_ui__game_window.html#a6a48093bc310b07af282189b6bbd1fc0">actionSettings</a></td><td class="entry"><a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_ui__game_window.html#a5dbe7d984108a2a2859199ae807addb2">actionUstawienia</a></td><td class="entry"><a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_ui__game_window.html#a5d943ca5265011e98062461d84c67e71">centralwidget</a></td><td class="entry"><a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#a1c2abdf213ba7584a644ddd5cfe92db2">CentralWidget</a></td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_window.html#a0823cff17d7249bccd3ede894b29f432">changeEvent</a>(QEvent *event) override</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#a4115287f0438436e17b2a15a55db1fe6">checkLanguage</a>()</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr><td class="entry"><a class="el" href="classgame_window.html#a87e1355bb9303cf6e343a2883b61b123">connectionDialog</a></td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#a4df52f07067d8426cab3837f584959a6">device</a></td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classgame_window.html#a3edbfb40a3e0ae13438abd1fecc496b3">disconnectionDialog</a></td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#ae7b8358220e1e78e540416949f511daf">gameInfo</a></td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f">gameWindow</a>(QMainWindow *parent=nullptr)</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#a787dbecae715feb56d9ac0a1cb8f9ce7">initDevice</a>(QString devName)</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_ui__game_window.html#a12b56ff3745e538f3f89b0e3563b6d24">menubar</a></td><td class="entry"><a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_ui__game_window.html#ab4913d283fea8c9193d71f237eccdea8">menuPolaczenie</a></td><td class="entry"><a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_ui__game_window.html#a5c21c635652f6d05a5dee4c3df88dcb0">menuUstawienia_gry</a></td><td class="entry"><a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_window.html#a0e0bc9288b7c6e78bc8f0c682ffe81a2">disconnectDevice</a>()</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#ad26b81c005aa65ae1fce37e475b6c9ee">disconnectionDialog</a></td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_window.html#a432aa40c8402ef2ddebb2fc01c767082">EmitBlockButtons</a>()</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">signal</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#a999d830fdc70a0b871695f39bfcc3c1c">EmitRestartGame</a>()</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">signal</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_window.html#a9725bc29f7f025807cac02498085d1a2">EmitRetranslate</a>()</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">signal</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#a5d5ca19ad1471927e274470746db35d7">endGame</a>()</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_window.html#ad91b44ea2405eed2406fb6fc04e04d6e">endGameDialog</a></td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#a1f6ab8415dcaecb6d5684ac9790a0e5e">gameInfo</a></td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_window.html#a13ae0c2dc0141a4546f1f883a3e6b567">gameParam</a></td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#a2573fa9c7d0613e650db056585babec5">gameSett</a></td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_window.html#af192ab8d0b36301294a408b3d0a30ab2">gameStatisticsWidget</a> class</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f">gameWindow</a>(QMainWindow *parent=nullptr)</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_window.html#a787dbecae715feb56d9ac0a1cb8f9ce7">initDevice</a>(QString devName)</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#af95002632c0e4912829103fbb6c30551">mainGameWidget</a> class</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_window.html#a5f5efe93a61b1ad96e729dec8b42787d">mainWidget</a> class</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#a1242b76b21db9945b85eba69e4a4cfa7">on_actionConnect_triggered</a>()</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr><td class="entry"><a class="el" href="classgame_window.html#a0f823f176110c41d9bbaca00928b1644">on_actionDisconnect_triggered</a>()</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#af74f33347d724dcffd28ebfd5d27252c">on_actionSettings_triggered</a>()</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_window.html#a377f34bb955c10d0239a1c751386629e">openGameWidget</a>()</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#abd54e8cb424a0c92cbb16f5fcbbc5680">openStatisticsWidget</a>()</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr><td class="entry"><a class="el" href="classgame_window.html#a44cb04704f8f9d1faec12e0669abb45d">ReadTransmision</a>()</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_ui__game_window.html#ab33b34e5e3eca29c0c69b0aa8ae4de06">retranslateUi</a>(QMainWindow *gameWindow)</td><td class="entry"><a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_ui__game_window.html#a637645510fc77b70e4a97d62c8fd7ee4">setupUi</a>(QMainWindow *gameWindow)</td><td class="entry"><a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_ui__game_window.html#ae102d8a9cfd0deb82d19680ac58715f7">statusbar</a></td><td class="entry"><a class="el" href="class_ui__game_window.html">Ui_gameWindow</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#a33a15df2489db0c157146e90d75cfd1a">restartGame</a>()</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_window.html#a16034386f0937a8321dc8b5e1dfa6d74">settDialog</a> class</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#a9758e7135bf4cfd0faa6c786f581edf0">settingsDialog</a></td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_window.html#a62dd0a5163b2d7e542376e91ec4c97ee">SidePanelWidget</a> class</td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classgame_window.html#abc73ca35fe3bf35111f52e8173762772">stackWidget</a></td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classgame_window.html#ad775484a1b4deec86d1ecd851818d435">statsWidget</a></td><td class="entry"><a class="el" href="classgame_window.html">gameWindow</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

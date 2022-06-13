@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Lista składowych</title>
+<title>Aplikacja gry: Lista składowych</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,6 +64,20 @@ $(function() {
 $(document).ready(function(){initNavTree('classmain_widget.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="headertitle">
 <div class="title">mainWidget Lista składowych</div>  </div>
@@ -66,10 +86,10 @@ $(document).ready(function(){initNavTree('classmain_widget.html','');});
 
 <p>To jest kompletna lista składowych dla <a class="el" href="classmain_widget.html">mainWidget</a>, uwzględniająca wszystkie dziedziczone składowe.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classmain_widget.html#a8553bb0be22081d78845a0fc0c749e6e">gameTimer</a></td><td class="entry"><a class="el" href="classmain_widget.html">mainWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classmain_widget.html#a16dabb5b2e83cd4046317817f7ee522b">mainWidget</a>(gameWindow *parent=nullptr, gameParameters *gameInfo=nullptr)</td><td class="entry"><a class="el" href="classmain_widget.html">mainWidget</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmain_widget.html#a8553bb0be22081d78845a0fc0c749e6e">gameTimer</a></td><td class="entry"><a class="el" href="classmain_widget.html">mainWidget</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmain_widget.html#aed279757f12ce187179135bf44e771d1">mainWidget</a>(gameWindow *parent=nullptr)</td><td class="entry"><a class="el" href="classmain_widget.html">mainWidget</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmain_widget.html#aae01eae37459760d2c8a56daa8a71e42">okienko</a></td><td class="entry"><a class="el" href="classmain_widget.html">mainWidget</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classmain_widget.html#a3550300face1cfb9371db1a710181537">statystyki</a></td><td class="entry"><a class="el" href="classmain_widget.html">mainWidget</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmain_widget.html#a26900a873d5b1782df1eebf8d11394a0">statystyki</a></td><td class="entry"><a class="el" href="classmain_widget.html">mainWidget</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmain_widget.html#a9235834692a5b16879cae38123528bdd">updateTime</a>()</td><td class="entry"><a class="el" href="classmain_widget.html">mainWidget</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->

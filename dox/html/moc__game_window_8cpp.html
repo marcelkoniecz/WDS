@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Dokumentacja pliku /home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWindow.cpp</title>
+<title>Aplikacja gry: Dokumentacja pliku /home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameWindow.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,6 +64,20 @@ $(function() {
 $(document).ready(function(){initNavTree('moc__game_window_8cpp.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Komponenty</a> &#124;
@@ -74,18 +94,27 @@ Wykres zależności załączania dla moc_gameWindow.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="moc__game_window_8cpp__incl.png" border="0" usemap="#_2home_2marcel_2_documents_2semestr_v_i_2_w_d_s_2_qt_2out_2moc_2moc__game_window_8cpp" alt=""/></div>
 <map name="_2home_2marcel_2_documents_2semestr_v_i_2_w_d_s_2_qt_2out_2moc_2moc__game_window_8cpp" id="_2home_2marcel_2_documents_2semestr_v_i_2_w_d_s_2_qt_2out_2moc_2moc__game_window_8cpp">
-<area shape="rect" id="node2" href="game_window_8hpp.html" title="../../inc/gameWindow.hpp" alt="" coords="1282,109,1453,136"/>
-<area shape="rect" id="node17" href="main_widget_8hpp.html" title="mainWidget.hpp" alt="" coords="1236,184,1352,211"/>
-<area shape="rect" id="node33" href="dialogs_8hpp.html" title="dialogs.hpp" alt="" coords="1479,259,1567,285"/>
-<area shape="rect" id="node39" href="ui__game_window_8h.html" title="ui_gameWindow.h" alt="" coords="2268,333,2397,360"/>
-<area shape="rect" id="node18" href="game_widget_8hpp.html" title="gameWidget.hpp" alt="" coords="1234,259,1354,285"/>
-<area shape="rect" id="node19" href="statistic_widget_8hpp.html" title="statisticWidget.hpp" alt="" coords="1024,259,1159,285"/>
-<area shape="rect" id="node20" href="ui__game_widget_8h.html" title="ui_gameWidget.h" alt="" coords="658,333,781,360"/>
-<area shape="rect" id="node34" href="ui__dis_dialog_8h.html" title="ui_disDialog.h" alt="" coords="1334,333,1438,360"/>
-<area shape="rect" id="node37" href="ui__con_dialog_8h.html" title="ui_conDialog.h" alt="" coords="2136,333,2244,360"/>
+<area shape="rect" id="node2" href="game_window_8hpp.html" title="../../inc/gameWindow.hpp" alt="" coords="1144,109,1315,136"/>
+<area shape="rect" id="node17" href="game_parameters_8hpp.html" title="Definicja statystyk gry. " alt="" coords="1252,333,1399,360"/>
+<area shape="rect" id="node20" href="main_widget_8hpp.html" title="mainWidget.hpp" alt="" coords="785,184,901,211"/>
+<area shape="rect" id="node32" href="game_statistics_8hpp.html" title="gameStatistics.hpp" alt="" coords="1268,259,1402,285"/>
+<area shape="rect" id="node36" href="dialogs_8hpp.html" title="dialogs.hpp" alt="" coords="1427,259,1515,285"/>
+<area shape="rect" id="node41" href="game_settings_8hpp.html" title="Definicja ustawień gry. " alt="" coords="2954,333,3081,360"/>
+<area shape="rect" id="node42" href="ui__game_window_8h.html" title="ui_gameWindow.h" alt="" coords="3105,333,3234,360"/>
+<area shape="rect" id="node48" href="uart_param_8hpp.html" title="uartParam.hpp" alt="" coords="2402,184,2508,211"/>
+<area shape="rect" id="node21" href="game_widget_8hpp.html" title="gameWidget.hpp" alt="" coords="734,259,854,285"/>
+<area shape="rect" id="node22" href="side_widget_8hpp.html" title="sideWidget.hpp" alt="" coords="928,259,1040,285"/>
+<area shape="rect" id="node23" href="ui__side_panel_widget_8h.html" title="ui_sidePanelWidget.h" alt="" coords="1874,333,2022,360"/>
+<area shape="rect" id="node33" href="ui__game_statistics_8h.html" title="ui_gameStatistics.h" alt="" coords="2046,333,2184,360"/>
+<area shape="rect" id="node37" href="ui__dis_dialog_8h.html" title="ui_disDialog.h" alt="" coords="2735,333,2839,360"/>
+<area shape="rect" id="node38" href="ui__con_dialog_8h.html" title="ui_conDialog.h" alt="" coords="2436,333,2544,360"/>
+<area shape="rect" id="node39" href="ui__end_game_dialog_8h.html" title="ui_endGameDialog.h" alt="" coords="2568,333,2710,360"/>
+<area shape="rect" id="node40" href="ui__sett_dialog_8h.html" title="ui_settDialog.h" alt="" coords="2302,333,2411,360"/>
 </map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="moc__game_window_8cpp_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Komponenty</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqt__meta__stringdata__game_window__t.html">qt_meta_stringdata_gameWindow_t</a></td></tr>
@@ -128,8 +157,10 @@ Definicje</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Wartość:</b><div class="fragment"><div class="line">Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \</div><div class="line">    qptrdiff(offsetof(<a class="code" href="structqt__meta__stringdata__game_window__t.html">qt_meta_stringdata_gameWindow_t</a>, stringdata0) + ofs \</div><div class="line">        - idx * <span class="keyword">sizeof</span>(QByteArrayData)) \</div><div class="line">    )</div><div class="ttc" id="structqt__meta__stringdata__game_window__t_html"><div class="ttname"><a href="structqt__meta__stringdata__game_window__t.html">qt_meta_stringdata_gameWindow_t</a></div><div class="ttdef"><b>Definition:</b> moc_gameWindow.cpp:23</div></div>
+<b>Wartość:</b><div class="fragment"><div class="line">Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \</div><div class="line">    qptrdiff(offsetof(<a class="code" href="structqt__meta__stringdata__game_window__t.html">qt_meta_stringdata_gameWindow_t</a>, stringdata0) + ofs \</div><div class="line">        - idx * <span class="keyword">sizeof</span>(QByteArrayData)) \</div><div class="line">    )</div><div class="ttc" id="structqt__meta__stringdata__game_window__t_html"><div class="ttname"><a href="structqt__meta__stringdata__game_window__t.html">qt_meta_stringdata_gameWindow_t</a></div><div class="ttdef"><b>Definition:</b> <a href="moc__game_window_8cpp_source.html#l00023">moc_gameWindow.cpp:23</a></div></div>
 </div><!-- fragment -->
+<p class="definition">Definicja w linii <a class="el" href="moc__game_window_8cpp_source.html#l00027">27</a> pliku <a class="el" href="moc__game_window_8cpp_source.html">moc_gameWindow.cpp</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->

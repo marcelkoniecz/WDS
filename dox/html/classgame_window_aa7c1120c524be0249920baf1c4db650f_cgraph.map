@@ -1,0 +1,14 @@
+<map id="gameWindow::gameWindow" name="gameWindow::gameWindow">
+<area shape="rect" id="node2" href="$classgame_window.html#a4115287f0438436e17b2a15a55db1fe6" title="gameWindow::checkLanguage" alt="" coords="248,5,448,32"/>
+<area shape="rect" id="node3" href="$classgame_window.html#a0e0bc9288b7c6e78bc8f0c682ffe81a2" title="gameWindow::disconnectDevice" alt="" coords="241,56,455,83"/>
+<area shape="rect" id="node4" href="$classgame_window.html#a5d5ca19ad1471927e274470746db35d7" title="gameWindow::endGame" alt="" coords="265,107,431,133"/>
+<area shape="rect" id="node5" href="$classgame_window.html#a787dbecae715feb56d9ac0a1cb8f9ce7" title="Slot inicjalizujacy polaczenie z mikrokontrolerem. " alt="" coords="265,157,431,184"/>
+<area shape="rect" id="node10" href="$classgame_window.html#a377f34bb955c10d0239a1c751386629e" title="gameWindow::openGameWidget" alt="" coords="241,208,455,235"/>
+<area shape="rect" id="node11" href="$classgame_window.html#abd54e8cb424a0c92cbb16f5fcbbc5680" title="gameWindow::openStatistics\lWidget" alt="" coords="252,259,444,301"/>
+<area shape="rect" id="node13" href="$classgame_window.html#a33a15df2489db0c157146e90d75cfd1a" title="gameWindow::restartGame" alt="" coords="257,325,439,352"/>
+<area shape="rect" id="node6" href="$classgame_window.html#a44cb04704f8f9d1faec12e0669abb45d" title="Slot do odczytywania danych z UART Za pomocą tej funkcji odczytywane oraz zapisywane są dane w jaki s..." alt="" coords="503,157,713,184"/>
+<area shape="rect" id="node7" href="$game_window_8cpp.html#ac4cc9a0feb0fb183343f20837d50ca88" title="CalculateCRC8" alt="" coords="783,132,897,159"/>
+<area shape="rect" id="node9" href="$class_u_a_r_t_val.html#add53548eecd3058675c9076d902372ee" title="UARTVal::calculateVel" alt="" coords="761,183,919,209"/>
+<area shape="rect" id="node8" href="$game_window_8cpp.html#afce33dbfd29f5c283d83012be051c5c9" title="CRCSingleByte" alt="" coords="967,132,1081,159"/>
+<area shape="rect" id="node12" href="$classgame_statistics_widget.html#a73c073668d915eeadee9481a7a166148" title="gameStatisticsWidget\l::printChart" alt="" coords="533,259,683,301"/>
+</map>

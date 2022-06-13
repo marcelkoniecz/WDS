@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Lista składowych</title>
+<title>Aplikacja gry: Lista składowych</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,6 +64,20 @@ $(function() {
 $(document).ready(function(){initNavTree('classimage_parameters.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="headertitle">
 <div class="title">imageParameters Lista składowych</div>  </div>
@@ -69,9 +89,11 @@ $(document).ready(function(){initNavTree('classimage_parameters.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classimage_parameters.html#aa8bec918c73c679621e83694e9fce019">ballPos</a></td><td class="entry"><a class="el" href="classimage_parameters.html">imageParameters</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classimage_parameters.html#aef735c9629835aeb36afb0f40989a6fe">ballSpeed</a></td><td class="entry"><a class="el" href="classimage_parameters.html">imageParameters</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classimage_parameters.html#a5d7245b834f72c77008cd117508199b9">comPlateLoc</a></td><td class="entry"><a class="el" href="classimage_parameters.html">imageParameters</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classimage_parameters.html#ae11f99471937184b36e880ee8fe38ecb">currentAngle</a></td><td class="entry"><a class="el" href="classimage_parameters.html">imageParameters</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classimage_parameters.html#a01b86222d64489b30b08c6d8bc898425">newScala</a></td><td class="entry"><a class="el" href="classimage_parameters.html">imageParameters</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classimage_parameters.html#a6a768b67a42ac63a43201ce4740f651a">plateSpeed</a></td><td class="entry"><a class="el" href="classimage_parameters.html">imageParameters</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classimage_parameters.html#a813685ace4633ab8456562c1e731596c">compLives</a></td><td class="entry"><a class="el" href="classimage_parameters.html">imageParameters</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classimage_parameters.html#ae11f99471937184b36e880ee8fe38ecb">currentAngle</a></td><td class="entry"><a class="el" href="classimage_parameters.html">imageParameters</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classimage_parameters.html#a01b86222d64489b30b08c6d8bc898425">newScala</a></td><td class="entry"><a class="el" href="classimage_parameters.html">imageParameters</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classimage_parameters.html#a6a768b67a42ac63a43201ce4740f651a">plateSpeed</a></td><td class="entry"><a class="el" href="classimage_parameters.html">imageParameters</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classimage_parameters.html#afc149318e44e9ec8326fd7248eae27dc">userLives</a></td><td class="entry"><a class="el" href="classimage_parameters.html">imageParameters</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classimage_parameters.html#ad1123f0b0507fdd3d59d4bc0efee6b29">userPlateLoc</a></td><td class="entry"><a class="el" href="classimage_parameters.html">imageParameters</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classimage_parameters.html#a64220f2a679179c4551489f615de25ed">XtargetComPlate</a></td><td class="entry"><a class="el" href="classimage_parameters.html">imageParameters</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->

@@ -1,0 +1,28 @@
+var class_ui__sett_dialog =
+[
+    [ "retranslateUi", "class_ui__sett_dialog.html#a1dd3cf7ad9adff17be965e727bdf8e42", null ],
+    [ "setupUi", "class_ui__sett_dialog.html#a0e2c8e0c186452177928b0dcad534698", null ],
+    [ "bouncingCheck", "class_ui__sett_dialog.html#af61d2e3b25d1ed3312c7b566f7e39b3f", null ],
+    [ "frame", "class_ui__sett_dialog.html#a704d30a1a98286875833970af4efaab6", null ],
+    [ "frame_2", "class_ui__sett_dialog.html#a4fbb7d622b685708bc052075ea9d28e6", null ],
+    [ "gridFrame", "class_ui__sett_dialog.html#aae227bf4d95b9460b31337ce521662f1", null ],
+    [ "gridLayout", "class_ui__sett_dialog.html#aaafcd4a8f9ac5c5d45fb879c0af3df99", null ],
+    [ "horizontalLayout", "class_ui__sett_dialog.html#ac04994b254b2834b9a33d951a8584998", null ],
+    [ "horizontalLayout_3", "class_ui__sett_dialog.html#a1d9b0ff2be24ee9acc6634f2bb46049b", null ],
+    [ "horizontalSpacer", "class_ui__sett_dialog.html#a388f6786d57272d220c1e10bc1fa8dea", null ],
+    [ "horizontalSpacer_2", "class_ui__sett_dialog.html#a73797f4af327664e3e55d31595256a48", null ],
+    [ "horizontalSpacer_3", "class_ui__sett_dialog.html#a66aecfce9b8919652cc8491de3c02dde", null ],
+    [ "label", "class_ui__sett_dialog.html#a4b4ebe9f92978c7b2b3f6b795c1f3d29", null ],
+    [ "label_2", "class_ui__sett_dialog.html#ad8cba6815e3c73f5eb80013e7125f6d8", null ],
+    [ "label_3", "class_ui__sett_dialog.html#a3b16b590be5f3276b6c3bc3f261e2127", null ],
+    [ "label_4", "class_ui__sett_dialog.html#a65272ebf8169426f90c6a170d3bc4e2f", null ],
+    [ "label_5", "class_ui__sett_dialog.html#a9713417e274e4c1baa78bc73ce409728", null ],
+    [ "languageBox", "class_ui__sett_dialog.html#a83d5b9c0fb4a7523a4ab394d1025824f", null ],
+    [ "levelBox", "class_ui__sett_dialog.html#a48e591e1c6608ac4ea333171cab05551", null ],
+    [ "lifeBox", "class_ui__sett_dialog.html#a175eb8eca62092050b7078da73b2b591", null ],
+    [ "returnButton", "class_ui__sett_dialog.html#a5377daed0c9c204daa5cc12041c9ab26", null ],
+    [ "saveButton", "class_ui__sett_dialog.html#a75f152fcf612e59388ea8f2ab92446bc", null ],
+    [ "setings", "class_ui__sett_dialog.html#a0e846bb787d683a8706c6e517d69a3d2", null ],
+    [ "vellCheck", "class_ui__sett_dialog.html#a1a73cc3447d0dbb0f0e7084eb309d2bc", null ],
+    [ "verticalLayout", "class_ui__sett_dialog.html#a553ef3c2ca95100fee5dac8a89d9b466", null ]
+];

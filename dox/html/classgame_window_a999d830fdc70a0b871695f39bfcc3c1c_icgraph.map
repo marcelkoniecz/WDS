@@ -1,0 +1,4 @@
+<map id="gameWindow::EmitRestartGame" name="gameWindow::EmitRestartGame">
+<area shape="rect" id="node2" href="$classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="497,5,685,32"/>
+<area shape="rect" id="node3" href="$classgame_window.html#a33a15df2489db0c157146e90d75cfd1a" title="gameWindow::restartGame" alt="" coords="268,31,449,57"/>
+</map>

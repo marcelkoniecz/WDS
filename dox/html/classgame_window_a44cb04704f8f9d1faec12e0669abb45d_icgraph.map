@@ -1,0 +1,4 @@
+<map id="gameWindow::ReadTransmision" name="gameWindow::ReadTransmision">
+<area shape="rect" id="node2" href="$classgame_window.html#a787dbecae715feb56d9ac0a1cb8f9ce7" title="Slot inicjalizujacy polaczenie z mikrokontrolerem. " alt="" coords="264,5,431,32"/>
+<area shape="rect" id="node3" href="$classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="479,5,667,32"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node2" href="$classcon_dialog.html" title="conDialog" alt="" coords="373,12,453,39"/>
+<area shape="rect" id="node3" href="$classdis_dialog.html" title="disDialog" alt="" coords="375,69,451,96"/>
+<area shape="rect" id="node4" href="$classend_dialog.html" title="endDialog" alt="" coords="373,132,453,159"/>
+<area shape="rect" id="node5" href="$classsett_dialog.html" title="settDialog" alt="" coords="372,183,453,209"/>
+<area shape="rect" id="node6" href="$class_ui__con_dialog.html" title="Ui_conDialog" alt="" coords="23,5,123,32"/>
+<area shape="rect" id="node7" href="$class_ui_1_1con_dialog.html" title="Ui::conDialog" alt="" coords="205,5,307,32"/>
+<area shape="rect" id="node8" href="$class_ui__dis_dialog.html" title="Ui_disDialog" alt="" coords="25,56,121,83"/>
+<area shape="rect" id="node9" href="$class_ui_1_1dis_dialog.html" title="Ui::disDialog" alt="" coords="207,56,305,83"/>
+<area shape="rect" id="node10" href="$class_ui__end_game_dialog.html" title="Ui_endGameDialog" alt="" coords="5,157,140,184"/>
+<area shape="rect" id="node11" href="$class_ui_1_1end_game_dialog.html" title="Ui::endGameDialog" alt="" coords="188,157,324,184"/>
+<area shape="rect" id="node12" href="$class_ui__sett_dialog.html" title="Ui_settDialog" alt="" coords="22,208,123,235"/>
+<area shape="rect" id="node13" href="$class_ui_1_1sett_dialog.html" title="Ui::settDialog" alt="" coords="205,208,307,235"/>
+</map>

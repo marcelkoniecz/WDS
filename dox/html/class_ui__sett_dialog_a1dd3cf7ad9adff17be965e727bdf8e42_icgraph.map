@@ -1,0 +1,11 @@
+<map id="Ui_settDialog::retranslateUi" name="Ui_settDialog::retranslateUi">
+<area shape="rect" id="node2" href="$classsett_dialog.html#a721b6a0a268a7244d6d6a70ec04ff28f" title="Slot zmiany języka. " alt="" coords="238,107,389,133"/>
+<area shape="rect" id="node7" href="$classend_dialog.html#a8aef52b995b8fad2b9c76040458d6e05" title="Slot zmiany języka. " alt="" coords="239,157,388,184"/>
+<area shape="rect" id="node8" href="$classdis_dialog.html#a32811a648bdc5d52eeb395a8edb264e8" title="Slot zmiany języka. " alt="" coords="241,208,386,235"/>
+<area shape="rect" id="node9" href="$classcon_dialog.html#ab3fde33b3a3bf72b15636bd10d4e9531" title="Slot zmiany języka. " alt="" coords="239,259,388,285"/>
+<area shape="rect" id="node10" href="$class_ui__sett_dialog.html#a0e2c8e0c186452177928b0dcad534698" title="Ui_settDialog::setupUi" alt="" coords="236,56,391,83"/>
+<area shape="rect" id="node3" href="$classcon_dialog.html#a0af1be1f3765e78fa56d7003821d1f7b" title="Konstruktor dialogu ustawień " alt="" coords="439,107,586,133"/>
+<area shape="rect" id="node4" href="$classdis_dialog.html#ae7369038843ff197ef07eb69b4d0f9ac" title="Konstruktor dialogu ustawień " alt="" coords="443,157,582,184"/>
+<area shape="rect" id="node5" href="$classend_dialog.html#a13e02a02173434cf726a3add8e3b1fb4" title="Konstruktor dialogu końca gry. " alt="" coords="439,5,586,32"/>
+<area shape="rect" id="node6" href="$classsett_dialog.html#a4d8399f4367364867affaab61fa830a0" title="Konstruktor dialogu ustawień " alt="" coords="439,56,587,83"/>
+</map>

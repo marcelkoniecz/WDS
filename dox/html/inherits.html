@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Hierarchia klas</title>
+<title>Aplikacja gry: Hierarchia klas</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,6 +64,20 @@ $(function() {
 $(document).ready(function(){initNavTree('hierarchy.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="headertitle">
 <div class="title">Hierarchia klas</div>  </div>
@@ -68,74 +88,43 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 </div><table border="0" cellspacing="10" cellpadding="0">
 <tr><td><img src="inherit_graph_0.png" border="0" alt="" usemap="#game_parameters"/>
 <map name="game_parameters" id="game_parameters">
-<area shape="rect" id="node1" href="classgame_parameters.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="5,5,127,32"/>
+<area shape="rect" id="node1" href="classgame_parameters.html" title="Klasa zawierająca informacje na temat statystyk gry. " alt="" coords="5,5,127,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#image_parameters"/>
+<tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#game_settings"/>
+<map name="game_settings" id="game_settings">
+<area shape="rect" id="node1" href="classgame_settings.html" title="Klasa zawierająca informacje na temat ustawień gry. " alt="" coords="5,5,108,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_2.png" border="0" alt="" usemap="#game_window"/>
+<map name="game_window" id="game_window">
+<area shape="rect" id="node2" href="classgame_window.html" title="Klasa reprezentujaca glowne okno. " alt="" coords="160,31,261,57"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#image_parameters"/>
 <map name="image_parameters" id="image_parameters">
 <area shape="rect" id="node1" href="classimage_parameters.html" title="imageParameters" alt="" coords="5,5,129,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_2.png" border="0" alt="" usemap="#qt__meta__stringdata__con_dialog__t"/>
-<map name="qt__meta__stringdata__con_dialog__t" id="qt__meta__stringdata__con_dialog__t">
-<area shape="rect" id="node1" href="structqt__meta__stringdata__con_dialog__t.html" title="qt_meta_stringdata\l_conDialog_t" alt="" coords="5,5,139,47"/>
+<tr><td><img src="inherit_graph_4.png" border="0" alt="" usemap="#sett_dialog"/>
+<map name="sett_dialog" id="sett_dialog">
+<area shape="rect" id="node2" href="classcon_dialog.html" title="Klasa reprezentująca dialog połączenia. " alt="" coords="169,12,249,39"/>
+<area shape="rect" id="node4" href="classdis_dialog.html" title="Klasa reprezentująca dialog rozłączenia. " alt="" coords="171,69,247,96"/>
+<area shape="rect" id="node6" href="classend_dialog.html" title="Klasa reprezentująca dialog końca gry. " alt="" coords="169,132,249,159"/>
+<area shape="rect" id="node8" href="classsett_dialog.html" title="Klasa reprezentująca dialog ustawień " alt="" coords="168,195,249,221"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#qt__meta__stringdata__dis_dialog__t"/>
-<map name="qt__meta__stringdata__dis_dialog__t" id="qt__meta__stringdata__dis_dialog__t">
-<area shape="rect" id="node1" href="structqt__meta__stringdata__dis_dialog__t.html" title="qt_meta_stringdata\l_disDialog_t" alt="" coords="5,5,139,47"/>
+<tr><td><img src="inherit_graph_5.png" border="0" alt="" usemap="#_side_panel_widget"/>
+<map name="_side_panel_widget" id="_side_panel_widget">
+<area shape="rect" id="node2" href="classgame_statistics_widget.html" title="gameStatisticsWidget" alt="" coords="173,5,324,32"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html" title="mainGameWidget" alt="" coords="185,56,312,83"/>
+<area shape="rect" id="node5" href="classmain_widget.html" title="Klasa reprezentujaca widget glowny Klasa jest odpowiedzialna za stworzenie w widgecie glownym widgetu..." alt="" coords="203,107,294,133"/>
+<area shape="rect" id="node6" href="class_side_panel_widget.html" title="Klasa reprezentująca panel boczny aplikacji. " alt="" coords="187,157,310,184"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_4.png" border="0" alt="" usemap="#qt__meta__stringdata__game_widget__t"/>
-<map name="qt__meta__stringdata__game_widget__t" id="qt__meta__stringdata__game_widget__t">
-<area shape="rect" id="node1" href="structqt__meta__stringdata__game_widget__t.html" title="qt_meta_stringdata\l_gameWidget_t" alt="" coords="5,5,139,47"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_5.png" border="0" alt="" usemap="#qt__meta__stringdata__game_window__t"/>
-<map name="qt__meta__stringdata__game_window__t" id="qt__meta__stringdata__game_window__t">
-<area shape="rect" id="node1" href="structqt__meta__stringdata__game_window__t.html" title="qt_meta_stringdata\l_gameWindow_t" alt="" coords="5,5,139,47"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_6.png" border="0" alt="" usemap="#qt__meta__stringdata__main_game_widget__t"/>
-<map name="qt__meta__stringdata__main_game_widget__t" id="qt__meta__stringdata__main_game_widget__t">
-<area shape="rect" id="node1" href="structqt__meta__stringdata__main_game_widget__t.html" title="qt_meta_stringdata\l_mainGameWidget_t" alt="" coords="5,5,149,47"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_7.png" border="0" alt="" usemap="#qt__meta__stringdata__main_widget__t"/>
-<map name="qt__meta__stringdata__main_widget__t" id="qt__meta__stringdata__main_widget__t">
-<area shape="rect" id="node1" href="structqt__meta__stringdata__main_widget__t.html" title="qt_meta_stringdata\l_mainWidget_t" alt="" coords="5,5,139,47"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_8.png" border="0" alt="" usemap="#_ui__dis_dialog"/>
-<map name="_ui__dis_dialog" id="_ui__dis_dialog">
-<area shape="rect" id="node2" href="classcon_dialog.html" title="conDialog" alt="" coords="303,19,383,45"/>
-<area shape="rect" id="node3" href="classdis_dialog.html" title="disDialog" alt="" coords="305,81,381,108"/>
-<area shape="rect" id="node4" href="class_ui__con_dialog.html" title="Ui_conDialog" alt="" coords="5,5,105,32"/>
-<area shape="rect" id="node5" href="class_ui_1_1con_dialog.html" title="Ui::conDialog" alt="" coords="153,5,255,32"/>
-<area shape="rect" id="node6" href="class_ui__dis_dialog.html" title="Ui_disDialog" alt="" coords="7,107,103,133"/>
-<area shape="rect" id="node7" href="class_ui_1_1dis_dialog.html" title="Ui::disDialog" alt="" coords="155,107,253,133"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_9.png" border="0" alt="" usemap="#_ui__game_widget"/>
-<map name="_ui__game_widget" id="_ui__game_widget">
-<area shape="rect" id="node2" href="classgame_widget.html" title="Klasa panelu bocznego. " alt="" coords="348,5,443,32"/>
-<area shape="rect" id="node3" href="classmain_game_widget.html" title="mainGameWidget" alt="" coords="332,56,459,83"/>
-<area shape="rect" id="node4" href="classmain_widget.html" title="Klasa reprezentujaca widget glowny Klasa jest odpowiedzialna za stworzenie w widgecie glownym widgetu..." alt="" coords="350,107,441,133"/>
-<area shape="rect" id="node5" href="class_ui__game_widget.html" title="Ui_gameWidget" alt="" coords="5,5,120,32"/>
-<area shape="rect" id="node6" href="class_ui_1_1game_widget.html" title="Ui::gameWidget" alt="" coords="168,5,284,32"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_10.png" border="0" alt="" usemap="#_ui__game_window"/>
-<map name="_ui__game_window" id="_ui__game_window">
-<area shape="rect" id="node2" href="classgame_window.html" title="Klasa reprezentujaca glowne okno. " alt="" coords="345,31,447,57"/>
-<area shape="rect" id="node3" href="class_ui__game_window.html" title="Ui_gameWindow" alt="" coords="5,56,127,83"/>
-<area shape="rect" id="node4" href="class_ui_1_1game_window.html" title="Ui::gameWindow" alt="" coords="175,56,297,83"/>
-</map>
-</td></tr>
-<tr><td><img src="inherit_graph_11.png" border="0" alt="" usemap="#_ui___main_window"/>
-<map name="_ui___main_window" id="_ui___main_window">
-<area shape="rect" id="node1" href="class_ui___main_window.html" title="Ui_MainWindow" alt="" coords="5,5,123,32"/>
-<area shape="rect" id="node2" href="class_ui_1_1_main_window.html" title="Ui::MainWindow" alt="" coords="171,5,289,32"/>
+<tr><td><img src="inherit_graph_6.png" border="0" alt="" usemap="#_u_a_r_t_val"/>
+<map name="_u_a_r_t_val" id="_u_a_r_t_val">
+<area shape="rect" id="node1" href="class_u_a_r_t_val.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="5,5,84,32"/>
 </map>
 </td></tr>
 </table>

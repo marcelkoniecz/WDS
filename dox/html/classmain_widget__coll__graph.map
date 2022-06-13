@@ -1,8 +1,8 @@
 <map id="mainWidget" name="mainWidget">
-<area shape="rect" id="node3" href="$classgame_widget.html" title="Klasa panelu bocznego. " alt="" coords="299,199,393,225"/>
-<area shape="rect" id="node6" href="$classmain_game_widget.html" title="mainGameWidget" alt="" coords="287,109,413,136"/>
-<area shape="rect" id="node4" href="$class_ui_1_1game_widget.html" title="Ui::gameWidget" alt="" coords="5,109,121,136"/>
-<area shape="rect" id="node5" href="$class_ui__game_widget.html" title="Ui_gameWidget" alt="" coords="6,5,121,32"/>
-<area shape="rect" id="node7" href="$classgame_parameters.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="145,5,267,32"/>
-<area shape="rect" id="node8" href="$classimage_parameters.html" title="imageParameters" alt="" coords="291,5,415,32"/>
+<area shape="rect" id="node3" href="$class_side_panel_widget.html" title="Klasa reprezentująca panel boczny aplikacji. " alt="" coords="168,95,291,121"/>
+<area shape="rect" id="node7" href="$classmain_game_widget.html" title="mainGameWidget" alt="" coords="398,95,525,121"/>
+<area shape="rect" id="node5" href="$classgame_parameters.html" title="Klasa zawierająca informacje na temat statystyk gry. " alt="" coords="434,5,555,32"/>
+<area shape="rect" id="node6" href="$class_u_a_r_t_val.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="287,5,366,32"/>
+<area shape="rect" id="node8" href="$classgame_settings.html" title="Klasa zawierająca informacje na temat ustawień gry. " alt="" coords="594,5,697,32"/>
+<area shape="rect" id="node9" href="$classimage_parameters.html" title="imageParameters" alt="" coords="721,5,845,32"/>
 </map>

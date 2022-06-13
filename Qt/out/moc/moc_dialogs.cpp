@@ -435,8 +435,8 @@ void disDialog::EmitDisconnectDevice()
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 struct qt_meta_stringdata_conDialog_t {
-    QByteArrayData data[8];
-    char stringdata0[129];
+    QByteArrayData data[7];
+    char stringdata0[117];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -448,14 +448,13 @@ static const qt_meta_stringdata_conDialog_t qt_meta_stringdata_conDialog = {
 QT_MOC_LITERAL(0, 0, 9), // "conDialog"
 QT_MOC_LITERAL(1, 10, 14), // "EmitChoosenDev"
 QT_MOC_LITERAL(2, 25, 0), // ""
-QT_MOC_LITERAL(3, 26, 11), // "EmitClosing"
-QT_MOC_LITERAL(4, 38, 29), // "on_searchDeviceButton_clicked"
-QT_MOC_LITERAL(5, 68, 23), // "on_cancelButton_clicked"
-QT_MOC_LITERAL(6, 92, 24), // "on_connectButton_clicked"
-QT_MOC_LITERAL(7, 117, 11) // "retranslate"
+QT_MOC_LITERAL(3, 26, 29), // "on_searchDeviceButton_clicked"
+QT_MOC_LITERAL(4, 56, 23), // "on_cancelButton_clicked"
+QT_MOC_LITERAL(5, 80, 24), // "on_connectButton_clicked"
+QT_MOC_LITERAL(6, 105, 11) // "retranslate"
 
     },
-    "conDialog\0EmitChoosenDev\0\0EmitClosing\0"
+    "conDialog\0EmitChoosenDev\0\0"
     "on_searchDeviceButton_clicked\0"
     "on_cancelButton_clicked\0"
     "on_connectButton_clicked\0retranslate"
@@ -468,26 +467,24 @@ static const uint qt_meta_data_conDialog[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       2,       // signalCount
+       1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   44,    2, 0x06 /* Public */,
-       3,    0,   47,    2, 0x06 /* Public */,
+       1,    1,   39,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       4,    0,   48,    2, 0x0a /* Public */,
-       5,    0,   49,    2, 0x0a /* Public */,
-       6,    0,   50,    2, 0x0a /* Public */,
-       7,    0,   51,    2, 0x0a /* Public */,
+       3,    0,   42,    2, 0x0a /* Public */,
+       4,    0,   43,    2, 0x0a /* Public */,
+       5,    0,   44,    2, 0x0a /* Public */,
+       6,    0,   45,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QString,    2,
-    QMetaType::Void,
 
  // slots: parameters
     QMetaType::Void,
@@ -505,11 +502,10 @@ void conDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->EmitChoosenDev((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 1: _t->EmitClosing(); break;
-        case 2: _t->on_searchDeviceButton_clicked(); break;
-        case 3: _t->on_cancelButton_clicked(); break;
-        case 4: _t->on_connectButton_clicked(); break;
-        case 5: _t->retranslate(); break;
+        case 1: _t->on_searchDeviceButton_clicked(); break;
+        case 2: _t->on_cancelButton_clicked(); break;
+        case 3: _t->on_connectButton_clicked(); break;
+        case 4: _t->retranslate(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -518,13 +514,6 @@ void conDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
             typedef void (conDialog::*_t)(QString );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&conDialog::EmitChoosenDev)) {
                 *result = 0;
-                return;
-            }
-        }
-        {
-            typedef void (conDialog::*_t)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&conDialog::EmitClosing)) {
-                *result = 1;
                 return;
             }
         }
@@ -558,13 +547,13 @@ int conDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 5)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 6;
+        _id -= 5;
     }
     return _id;
 }
@@ -574,12 +563,6 @@ void conDialog::EmitChoosenDev(QString _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
-}
-
-// SIGNAL 1
-void conDialog::EmitClosing()
-{
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE

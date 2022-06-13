@@ -17,24 +17,14 @@
 #include <QDialog>
 #include "mainWidget.hpp"
 #include "gameParameters.hpp"
+#include "gameSettings.hpp"
+#include "imageParameters.hpp"
 
 class UARTVal;
 class mainWidget;
 class gameWindow;
 
-class imageParameters {
-public:
-    double ballSpeed;
-    double plateSpeed;
-    double XtargetComPlate;
-    int userLives;
-    int compLives;
-    volatile double userPlateLoc[2][2];//
-    volatile double comPlateLoc[2][2];
-    volatile double ballPos[2];  //x y
-    volatile double currentAngle;
-    double newScala;
-};
+
 //Pole gry
 
 class mainGameWidget :public QWidget {
@@ -42,7 +32,7 @@ class mainGameWidget :public QWidget {
 private:
     QImage background;
     QImage computerPlate;
-    imageParameters imageInfo;
+    //  imageParameters imageInfo;
     imageParameters gameParam;
     QImage userPlate;
     QImage ball;
@@ -50,13 +40,14 @@ private:
     UARTVal* gameInfo;
     QTimer* gameTimer;
     gameParameters* gameParame;
+    gameSettings* gameSettgs;
     double timerun;
 public:
     //  mainGameWidget(QWidget* parent = nullptr, UARTVal* gameInformations = nullptr,
      //     QTimer* appTimer = nullptr, gameParameters* gameParamtr = nullptr);
-    mainGameWidget(mainWidget* parent = nullptr,gameWindow *gameWin=nullptr);
+    mainGameWidget(mainWidget* parent = nullptr, gameWindow* gameWin = nullptr);
 
-        void paintEvent(QPaintEvent* ptr);
+    void paintEvent(QPaintEvent* ptr);
 
     void calculateBallPosition();
     void calculateUserPlate();

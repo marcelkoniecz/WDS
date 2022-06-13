@@ -2,7 +2,8 @@ var class_ui__dis_dialog =
 [
     [ "retranslateUi", "class_ui__dis_dialog.html#ac1e1b27dad914847ddaf84baed7eb49a", null ],
     [ "setupUi", "class_ui__dis_dialog.html#a6c15cdd94fb64359acb14acb13ac4f98", null ],
-    [ "buttonBox", "class_ui__dis_dialog.html#ac97d5b0f2a9c16cf2481bd0a8d794988", null ],
+    [ "cancelButton", "class_ui__dis_dialog.html#a1d953c29296cdfd4d6de1d4a288b2825", null ],
+    [ "disconnectButton", "class_ui__dis_dialog.html#ababa088a95d5064e84615e81901ed9ec", null ],
     [ "horizontalLayout", "class_ui__dis_dialog.html#ab44c6b5ce5063916e8cf25ea2bdfb4bd", null ],
     [ "horizontalLayout_2", "class_ui__dis_dialog.html#ac66ffef8bbc9c2479704a06dcc5c67ef", null ],
     [ "horizontalSpacer", "class_ui__dis_dialog.html#ae27beb00a139b58e7cddf09b53ee9719", null ],

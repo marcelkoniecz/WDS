@@ -1,0 +1,17 @@
+<map id="/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameStatistics.cpp" name="/home/marcel/Documents/semestrVI/WDS/Qt/out/moc/moc_gameStatistics.cpp">
+<area shape="rect" id="node2" href="$game_statistics_8hpp.html" title="../../inc/gameStatistics.hpp" alt="" coords="1228,109,1407,136"/>
+<area shape="rect" id="node17" href="$ui__game_statistics_8h.html" title="ui_gameStatistics.h" alt="" coords="2909,408,3046,435"/>
+<area shape="rect" id="node34" href="$game_parameters_8hpp.html" title="Definicja statystyk gry. " alt="" coords="328,408,475,435"/>
+<area shape="rect" id="node37" href="$game_window_8hpp.html" title="gameWindow.hpp" alt="" coords="1350,184,1477,211"/>
+<area shape="rect" id="node38" href="$main_widget_8hpp.html" title="mainWidget.hpp" alt="" coords="1451,259,1567,285"/>
+<area shape="rect" id="node41" href="$dialogs_8hpp.html" title="dialogs.hpp" alt="" coords="2096,333,2184,360"/>
+<area shape="rect" id="node46" href="$game_settings_8hpp.html" title="Definicja ustawień gry. " alt="" coords="2758,408,2885,435"/>
+<area shape="rect" id="node47" href="$ui__game_window_8h.html" title="ui_gameWindow.h" alt="" coords="3070,408,3199,435"/>
+<area shape="rect" id="node48" href="$uart_param_8hpp.html" title="uartParam.hpp" alt="" coords="651,259,757,285"/>
+<area shape="rect" id="node39" href="$game_widget_8hpp.html" title="gameWidget.hpp" alt="" coords="1547,333,1667,360"/>
+<area shape="rect" id="node40" href="$side_widget_8hpp.html" title="sideWidget.hpp" alt="" coords="1360,333,1472,360"/>
+<area shape="rect" id="node42" href="$ui__dis_dialog_8h.html" title="ui_disDialog.h" alt="" coords="2212,408,2316,435"/>
+<area shape="rect" id="node43" href="$ui__con_dialog_8h.html" title="ui_conDialog.h" alt="" coords="2079,408,2187,435"/>
+<area shape="rect" id="node44" href="$ui__end_game_dialog_8h.html" title="ui_endGameDialog.h" alt="" coords="1913,408,2055,435"/>
+<area shape="rect" id="node45" href="$ui__sett_dialog_8h.html" title="ui_settDialog.h" alt="" coords="2340,408,2449,435"/>
+</map>

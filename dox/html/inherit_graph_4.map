@@ -1,3 +1,6 @@
 <map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
-<area shape="rect" id="node1" href="$structqt__meta__stringdata__game_widget__t.html" title="qt_meta_stringdata\l_gameWidget_t" alt="" coords="5,5,139,47"/>
+<area shape="rect" id="node2" href="$classcon_dialog.html" title="Klasa reprezentująca dialog połączenia. " alt="" coords="169,12,249,39"/>
+<area shape="rect" id="node4" href="$classdis_dialog.html" title="Klasa reprezentująca dialog rozłączenia. " alt="" coords="171,69,247,96"/>
+<area shape="rect" id="node6" href="$classend_dialog.html" title="Klasa reprezentująca dialog końca gry. " alt="" coords="169,132,249,159"/>
+<area shape="rect" id="node8" href="$classsett_dialog.html" title="Klasa reprezentująca dialog ustawień " alt="" coords="168,195,249,221"/>
 </map>

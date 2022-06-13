@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Dokumentacja klasy Ui_conDialog</title>
+<title>Aplikacja gry: Dokumentacja klasy Ui_conDialog</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,6 +64,20 @@ $(function() {
 $(document).ready(function(){initNavTree('class_ui__con_dialog.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Metody publiczne</a> &#124;
@@ -94,10 +114,10 @@ Atrybuty publiczne</h2></td></tr>
 <tr class="separator:a1ce02126b7e19b8c471c4224ceee6eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3078012538599fc7b0d83dc3e7ee3f5b"><td class="memItemLeft" align="right" valign="top">QSpacerItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__con_dialog.html#a3078012538599fc7b0d83dc3e7ee3f5b">horizontalSpacer</a></td></tr>
 <tr class="separator:a3078012538599fc7b0d83dc3e7ee3f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e7c668961423c395ab1c6989d18a92d"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__con_dialog.html#a3e7c668961423c395ab1c6989d18a92d">searchDeviceButton</a></td></tr>
-<tr class="separator:a3e7c668961423c395ab1c6989d18a92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab058ff935a1f3d58522fb66c5bd737ab"><td class="memItemLeft" align="right" valign="top">QSpacerItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__con_dialog.html#ab058ff935a1f3d58522fb66c5bd737ab">horizontalSpacer_5</a></td></tr>
 <tr class="separator:ab058ff935a1f3d58522fb66c5bd737ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7c668961423c395ab1c6989d18a92d"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__con_dialog.html#a3e7c668961423c395ab1c6989d18a92d">searchDeviceButton</a></td></tr>
+<tr class="separator:a3e7c668961423c395ab1c6989d18a92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d3d313c4dc5c393b47a4ec907c9cfe5"><td class="memItemLeft" align="right" valign="top">QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__con_dialog.html#a9d3d313c4dc5c393b47a4ec907c9cfe5">devicesList</a></td></tr>
 <tr class="separator:a9d3d313c4dc5c393b47a4ec907c9cfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adec8cb69688167e63b7cf07396639e3e"><td class="memItemLeft" align="right" valign="top">QSpacerItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__con_dialog.html#adec8cb69688167e63b7cf07396639e3e">horizontalSpacer_2</a></td></tr>
@@ -113,7 +133,10 @@ Atrybuty publiczne</h2></td></tr>
 <tr class="memitem:a6a0bfed97a91d795bf2e2a17fe2d5029"><td class="memItemLeft" align="right" valign="top">QSpacerItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__con_dialog.html#a6a0bfed97a91d795bf2e2a17fe2d5029">horizontalSpacer_4</a></td></tr>
 <tr class="separator:a6a0bfed97a91d795bf2e2a17fe2d5029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00026">26</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
 <a id="afbc32f159ce9f609c2492bf30d08c2cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbc32f159ce9f609c2492bf30d08c2cf">&#9670;&nbsp;</a></span>retranslateUi()</h2>
 
@@ -137,14 +160,16 @@ Atrybuty publiczne</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00115">115</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="ui__con_dialog_8h_source.html#l00042">setupUi()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_ui__con_dialog_afbc32f159ce9f609c2492bf30d08c2cf_icgraph.png" border="0" usemap="#class_ui__con_dialog_afbc32f159ce9f609c2492bf30d08c2cf_icgraph" alt=""/></div>
 <map name="class_ui__con_dialog_afbc32f159ce9f609c2492bf30d08c2cf_icgraph" id="class_ui__con_dialog_afbc32f159ce9f609c2492bf30d08c2cf_icgraph">
-<area shape="rect" id="node2" href="class_ui__con_dialog.html#ab19498d47af2201348bf2ef2008d6694" title="Ui_conDialog::setupUi" alt="" coords="236,31,389,57"/>
-<area shape="rect" id="node3" href="classcon_dialog.html#a223e952fca89973a8f8dc5d64bf73855" title="conDialog::conDialog" alt="" coords="437,5,584,32"/>
-<area shape="rect" id="node4" href="classdis_dialog.html#a643207279456bc1a809f5203564d2e61" title="disDialog::disDialog" alt="" coords="441,56,580,83"/>
+<area shape="rect" id="node2" href="class_ui__con_dialog.html#ab19498d47af2201348bf2ef2008d6694" title="Ui_conDialog::setupUi" alt="" coords="236,5,389,32"/>
 </map>
 </div>
 
@@ -173,21 +198,16 @@ Oto graf wywoływań tej funkcji:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00042">42</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="ui__con_dialog_8h_source.html#l00115">retranslateUi()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_ui__con_dialog_ab19498d47af2201348bf2ef2008d6694_cgraph.png" border="0" usemap="#class_ui__con_dialog_ab19498d47af2201348bf2ef2008d6694_cgraph" alt=""/></div>
 <map name="class_ui__con_dialog_ab19498d47af2201348bf2ef2008d6694_cgraph" id="class_ui__con_dialog_ab19498d47af2201348bf2ef2008d6694_cgraph">
 <area shape="rect" id="node2" href="class_ui__con_dialog.html#afbc32f159ce9f609c2492bf30d08c2cf" title="Ui_conDialog::retranslateUi" alt="" coords="207,5,389,32"/>
-</map>
-</div>
-<div class="dynheader">
-Oto graf wywoływań tej funkcji:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_ui__con_dialog_ab19498d47af2201348bf2ef2008d6694_icgraph.png" border="0" usemap="#class_ui__con_dialog_ab19498d47af2201348bf2ef2008d6694_icgraph" alt=""/></div>
-<map name="class_ui__con_dialog_ab19498d47af2201348bf2ef2008d6694_icgraph" id="class_ui__con_dialog_ab19498d47af2201348bf2ef2008d6694_icgraph">
-<area shape="rect" id="node2" href="classcon_dialog.html#a223e952fca89973a8f8dc5d64bf73855" title="conDialog::conDialog" alt="" coords="207,5,353,32"/>
-<area shape="rect" id="node3" href="classdis_dialog.html#a643207279456bc1a809f5203564d2e61" title="disDialog::disDialog" alt="" coords="211,56,349,83"/>
 </map>
 </div>
 
@@ -206,6 +226,8 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00039">39</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
+
 </div>
 </div>
 <a id="ad6cb0697941274edc5d086906f19fae8"></a>
@@ -219,6 +241,8 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00038">38</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
 
 </div>
 </div>
@@ -234,6 +258,8 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00034">34</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
+
 </div>
 </div>
 <a id="a820f118619548784094f269833222601"></a>
@@ -247,6 +273,8 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00036">36</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
 
 </div>
 </div>
@@ -262,6 +290,8 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00030">30</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
+
 </div>
 </div>
 <a id="a3078012538599fc7b0d83dc3e7ee3f5b"></a>
@@ -275,6 +305,8 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00031">31</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
 
 </div>
 </div>
@@ -290,6 +322,8 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00035">35</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
+
 </div>
 </div>
 <a id="af436e76771b4a7a29e326ddbaec08a0f"></a>
@@ -303,6 +337,8 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00037">37</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
 
 </div>
 </div>
@@ -318,6 +354,8 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00040">40</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
+
 </div>
 </div>
 <a id="ab058ff935a1f3d58522fb66c5bd737ab"></a>
@@ -331,6 +369,8 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00032">32</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
 
 </div>
 </div>
@@ -346,6 +386,8 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00033">33</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
+
 </div>
 </div>
 <a id="a4d2c4ddb1672eac2fe2d38d06ba578a1"></a>
@@ -359,6 +401,8 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="ui__con_dialog_8h_source.html#l00029">29</a> pliku <a class="el" href="ui__con_dialog_8h_source.html">ui_conDialog.h</a>.</p>
 
 </div>
 </div>

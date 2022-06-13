@@ -1,0 +1,5 @@
+<map id="SidePanelWidget::checkBlockButtons" name="SidePanelWidget::checkBlockButtons">
+<area shape="rect" id="node2" href="$class_side_panel_widget.html#a0667394b67fa642b05a37d8087fbe3c3" title="Slot końca gry. " alt="" coords="252,5,440,32"/>
+<area shape="rect" id="node3" href="$class_side_panel_widget.html#a17713943b4dc399c3e2fe12f6bd37225" title="Konstruktor panela bocznego aplikacji. " alt="" coords="488,49,677,90"/>
+<area shape="rect" id="node4" href="$class_side_panel_widget.html#a5b022971e5298e57262dae3d526343e2" title="Slot obługi przycisku Resume. " alt="" coords="253,107,439,133"/>
+</map>

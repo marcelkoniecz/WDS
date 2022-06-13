@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Dokumentacja pliku /home/marcel/Documents/semestrVI/WDS/Qt/src/gameWindow.cpp</title>
+<title>Aplikacja gry: Dokumentacja pliku /home/marcel/Documents/semestrVI/WDS/Qt/src/gameWindow.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,6 +64,20 @@ $(function() {
 $(document).ready(function(){initNavTree('game_window_8cpp.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="summary">
 <a href="#define-members">Definicje</a> &#124;
@@ -72,18 +92,20 @@ Wykres zależności załączania dla gameWindow.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="game_window_8cpp__incl.png" border="0" usemap="#_2home_2marcel_2_documents_2semestr_v_i_2_w_d_s_2_qt_2src_2game_window_8cpp" alt=""/></div>
 <map name="_2home_2marcel_2_documents_2semestr_v_i_2_w_d_s_2_qt_2src_2game_window_8cpp" id="_2home_2marcel_2_documents_2semestr_v_i_2_w_d_s_2_qt_2src_2game_window_8cpp">
-<area shape="rect" id="node2" href="game_window_8hpp.html" title="gameWindow.hpp" alt="" coords="1304,109,1431,136"/>
-<area shape="rect" id="node17" href="main_widget_8hpp.html" title="mainWidget.hpp" alt="" coords="1236,184,1352,211"/>
-<area shape="rect" id="node33" href="dialogs_8hpp.html" title="dialogs.hpp" alt="" coords="1479,259,1567,285"/>
-<area shape="rect" id="node39" href="ui__game_window_8h.html" title="ui_gameWindow.h" alt="" coords="2268,333,2397,360"/>
-<area shape="rect" id="node18" href="game_widget_8hpp.html" title="gameWidget.hpp" alt="" coords="1234,259,1354,285"/>
-<area shape="rect" id="node19" href="statistic_widget_8hpp.html" title="statisticWidget.hpp" alt="" coords="1024,259,1159,285"/>
-<area shape="rect" id="node20" href="ui__game_widget_8h.html" title="ui_gameWidget.h" alt="" coords="658,333,781,360"/>
-<area shape="rect" id="node34" href="ui__dis_dialog_8h.html" title="ui_disDialog.h" alt="" coords="1334,333,1438,360"/>
-<area shape="rect" id="node37" href="ui__con_dialog_8h.html" title="ui_conDialog.h" alt="" coords="2136,333,2244,360"/>
+<area shape="rect" id="node2" href="game_window_8hpp.html" title="gameWindow.hpp" alt="" coords="1285,109,1412,136"/>
+<area shape="rect" id="node17" href="game_parameters_8hpp.html" title="Definicja statystyk gry. " alt="" coords="2072,333,2219,360"/>
+<area shape="rect" id="node20" href="main_widget_8hpp.html" title="mainWidget.hpp" alt="" coords="954,184,1070,211"/>
+<area shape="rect" id="node22" href="game_settings_8hpp.html" title="Definicja ustawień gry. " alt="" coords="2433,333,2560,360"/>
+<area shape="rect" id="node25" href="game_statistics_8hpp.html" title="gameStatistics.hpp" alt="" coords="1650,259,1785,285"/>
+<area shape="rect" id="node29" href="dialogs_8hpp.html" title="Plik nagłówkowy zawierający okna dialogowe. " alt="" coords="1436,259,1524,285"/>
+<area shape="rect" id="node35" href="uart_param_8hpp.html" title="Plik nagłówkowy z strukturą na temat UART. " alt="" coords="2114,184,2220,211"/>
+<area shape="rect" id="node21" href="game_widget_8hpp.html" title="gameWidget.hpp" alt="" coords="988,259,1108,285"/>
+<area shape="rect" id="node23" href="side_widget_8hpp.html" title="sideWidget.hpp" alt="" coords="751,259,863,285"/>
 </map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="game_window_8cpp_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Definicje</h2></td></tr>
 <tr class="memitem:ae13d91fe6e514f0aa1caba701ef1ff92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game_window_8cpp.html#ae13d91fe6e514f0aa1caba701ef1ff92">POLYNOMIAL</a>&#160;&#160;&#160;0x161</td></tr>
@@ -109,6 +131,10 @@ Funkcje</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00002">2</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00004">CRCSingleByte()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja funkcji</h2>
@@ -127,6 +153,12 @@ Funkcje</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00014">14</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_window_8cpp_source.html#l00004">CRCSingleByte()</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00140">gameWindow::ReadTransmision()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
@@ -141,6 +173,8 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="center"><img src="game_window_8cpp_ac4cc9a0feb0fb183343f20837d50ca88_icgraph.png" border="0" usemap="#game_window_8cpp_ac4cc9a0feb0fb183343f20837d50ca88_icgraph" alt=""/></div>
 <map name="game_window_8cpp_ac4cc9a0feb0fb183343f20837d50ca88_icgraph" id="game_window_8cpp_ac4cc9a0feb0fb183343f20837d50ca88_icgraph">
 <area shape="rect" id="node2" href="classgame_window.html#a44cb04704f8f9d1faec12e0669abb45d" title="Slot do odczytywania danych z UART Za pomocą tej funkcji odczytywane oraz zapisywane są dane w jaki s..." alt="" coords="168,5,379,32"/>
+<area shape="rect" id="node3" href="classgame_window.html#a787dbecae715feb56d9ac0a1cb8f9ce7" title="Slot inicjalizujacy polaczenie z mikrokontrolerem. " alt="" coords="427,5,593,32"/>
+<area shape="rect" id="node4" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="641,5,829,32"/>
 </map>
 </div>
 
@@ -161,6 +195,12 @@ Oto graf wywoływań tej funkcji:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="game_window_8cpp_source.html#l00004">4</a> pliku <a class="el" href="game_window_8cpp_source.html">gameWindow.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_window_8cpp_source.html#l00002">POLYNOMIAL</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00014">CalculateCRC8()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -168,6 +208,8 @@ Oto graf wywoływań tej funkcji:</div>
 <map name="game_window_8cpp_afce33dbfd29f5c283d83012be051c5c9_icgraph" id="game_window_8cpp_afce33dbfd29f5c283d83012be051c5c9_icgraph">
 <area shape="rect" id="node2" href="game_window_8cpp.html#ac4cc9a0feb0fb183343f20837d50ca88" title="CalculateCRC8" alt="" coords="168,5,283,32"/>
 <area shape="rect" id="node3" href="classgame_window.html#a44cb04704f8f9d1faec12e0669abb45d" title="Slot do odczytywania danych z UART Za pomocą tej funkcji odczytywane oraz zapisywane są dane w jaki s..." alt="" coords="331,5,541,32"/>
+<area shape="rect" id="node4" href="classgame_window.html#a787dbecae715feb56d9ac0a1cb8f9ce7" title="Slot inicjalizujacy polaczenie z mikrokontrolerem. " alt="" coords="589,5,756,32"/>
+<area shape="rect" id="node5" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="804,5,992,32"/>
 </map>
 </div>
 

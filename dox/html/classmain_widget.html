@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Dokumentacja klasy mainWidget</title>
+<title>Aplikacja gry: Dokumentacja klasy mainWidget</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,12 +64,25 @@ $(function() {
 $(document).ready(function(){initNavTree('classmain_widget.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Sloty publiczne</a> &#124;
 <a href="#pub-methods">Metody publiczne</a> &#124;
 <a href="#pub-attribs">Atrybuty publiczne</a> &#124;
-<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
 <a href="classmain_widget-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
 <div class="title">Dokumentacja klasy mainWidget</div>  </div>
@@ -78,20 +97,18 @@ $(document).ready(function(){initNavTree('classmain_widget.html','');});
 Diagram dziedziczenia dla mainWidget</div>
 <div class="dyncontent">
 <div class="center"><img src="classmain_widget__inherit__graph.png" border="0" usemap="#main_widget_inherit__map" alt="Inheritance graph"/></div>
-<map name="main_widget_inherit__map" id="main_widget_inherit__map">
-</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <div class="dynheader">
 Diagram współpracy dla mainWidget:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmain_widget__coll__graph.png" border="0" usemap="#main_widget_coll__map" alt="Collaboration graph"/></div>
 <map name="main_widget_coll__map" id="main_widget_coll__map">
-<area shape="rect" id="node3" href="classgame_widget.html" title="Klasa panelu bocznego. " alt="" coords="299,199,393,225"/>
-<area shape="rect" id="node6" href="classmain_game_widget.html" title="mainGameWidget" alt="" coords="287,109,413,136"/>
-<area shape="rect" id="node4" href="class_ui_1_1game_widget.html" title="Ui::gameWidget" alt="" coords="5,109,121,136"/>
-<area shape="rect" id="node5" href="class_ui__game_widget.html" title="Ui_gameWidget" alt="" coords="6,5,121,32"/>
-<area shape="rect" id="node7" href="classgame_parameters.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="145,5,267,32"/>
-<area shape="rect" id="node8" href="classimage_parameters.html" title="imageParameters" alt="" coords="291,5,415,32"/>
+<area shape="rect" id="node3" href="class_side_panel_widget.html" title="Klasa reprezentująca panel boczny aplikacji. " alt="" coords="168,95,291,121"/>
+<area shape="rect" id="node7" href="classmain_game_widget.html" title="mainGameWidget" alt="" coords="398,95,525,121"/>
+<area shape="rect" id="node5" href="classgame_parameters.html" title="Klasa zawierająca informacje na temat statystyk gry. " alt="" coords="434,5,555,32"/>
+<area shape="rect" id="node6" href="class_u_a_r_t_val.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="287,5,366,32"/>
+<area shape="rect" id="node8" href="classgame_settings.html" title="Klasa zawierająca informacje na temat ustawień gry. " alt="" coords="594,5,697,32"/>
+<area shape="rect" id="node9" href="classimage_parameters.html" title="imageParameters" alt="" coords="721,5,845,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <table class="memberdecls">
@@ -103,30 +120,29 @@ Sloty publiczne</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
-<tr class="memitem:a16dabb5b2e83cd4046317817f7ee522b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_widget.html#a16dabb5b2e83cd4046317817f7ee522b">mainWidget</a> (<a class="el" href="classgame_window.html">gameWindow</a> *parent=nullptr, <a class="el" href="classgame_parameters.html">gameParameters</a> *gameInfo=nullptr)</td></tr>
-<tr class="memdesc:a16dabb5b2e83cd4046317817f7ee522b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor tworzący widget glowny aplikacji.  <a href="#a16dabb5b2e83cd4046317817f7ee522b">Więcej...</a><br /></td></tr>
-<tr class="separator:a16dabb5b2e83cd4046317817f7ee522b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed279757f12ce187179135bf44e771d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_widget.html#aed279757f12ce187179135bf44e771d1">mainWidget</a> (<a class="el" href="classgame_window.html">gameWindow</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:aed279757f12ce187179135bf44e771d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor tworzący widget glowny aplikacji.  <a href="#aed279757f12ce187179135bf44e771d1">Więcej...</a><br /></td></tr>
+<tr class="separator:aed279757f12ce187179135bf44e771d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Atrybuty publiczne</h2></td></tr>
-<tr class="memitem:aae01eae37459760d2c8a56daa8a71e42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmain_game_widget.html">mainGameWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_widget.html#aae01eae37459760d2c8a56daa8a71e42">okienko</a></td></tr>
-<tr class="memdesc:aae01eae37459760d2c8a56daa8a71e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole reprezentujace widget z gra.  <a href="#aae01eae37459760d2c8a56daa8a71e42">Więcej...</a><br /></td></tr>
-<tr class="separator:aae01eae37459760d2c8a56daa8a71e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3550300face1cfb9371db1a710181537"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_widget.html">gameWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_widget.html#a3550300face1cfb9371db1a710181537">statystyki</a></td></tr>
-<tr class="memdesc:a3550300face1cfb9371db1a710181537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole reprezentujace widget z panelem bocznym.  <a href="#a3550300face1cfb9371db1a710181537">Więcej...</a><br /></td></tr>
-<tr class="separator:a3550300face1cfb9371db1a710181537"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Atrybuty prywatne</h2></td></tr>
 <tr class="memitem:a8553bb0be22081d78845a0fc0c749e6e"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_widget.html#a8553bb0be22081d78845a0fc0c749e6e">gameTimer</a></td></tr>
 <tr class="memdesc:a8553bb0be22081d78845a0fc0c749e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole reprezentujace timer gry.  <a href="#a8553bb0be22081d78845a0fc0c749e6e">Więcej...</a><br /></td></tr>
 <tr class="separator:a8553bb0be22081d78845a0fc0c749e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae01eae37459760d2c8a56daa8a71e42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmain_game_widget.html">mainGameWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_widget.html#aae01eae37459760d2c8a56daa8a71e42">okienko</a></td></tr>
+<tr class="memdesc:aae01eae37459760d2c8a56daa8a71e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole reprezentujace widget z gra.  <a href="#aae01eae37459760d2c8a56daa8a71e42">Więcej...</a><br /></td></tr>
+<tr class="separator:aae01eae37459760d2c8a56daa8a71e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26900a873d5b1782df1eebf8d11394a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_side_panel_widget.html">SidePanelWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_widget.html#a26900a873d5b1782df1eebf8d11394a0">statystyki</a></td></tr>
+<tr class="memdesc:a26900a873d5b1782df1eebf8d11394a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole reprezentujace widget z panelem bocznym.  <a href="#a26900a873d5b1782df1eebf8d11394a0">Więcej...</a><br /></td></tr>
+<tr class="separator:a26900a873d5b1782df1eebf8d11394a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>Klasa reprezentujaca widget glowny Klasa jest odpowiedzialna za stworzenie w widgecie glownym widgetu z gra oraz widgetu panelu bocznego z opcjami. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="main_widget_8hpp_source.html#l00037">37</a> pliku <a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
-<a id="a16dabb5b2e83cd4046317817f7ee522b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16dabb5b2e83cd4046317817f7ee522b">&#9670;&nbsp;</a></span>mainWidget()</h2>
+<a id="aed279757f12ce187179135bf44e771d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed279757f12ce187179135bf44e771d1">&#9670;&nbsp;</a></span>mainWidget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,18 +151,8 @@ Atrybuty prywatne</h2></td></tr>
           <td class="memname">mainWidget::mainWidget </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classgame_window.html">gameWindow</a> *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classgame_parameters.html">gameParameters</a> *&#160;</td>
-          <td class="paramname"><em>gameInfo</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -159,11 +165,15 @@ Atrybuty prywatne</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definicja w linii <a class="el" href="main_widget_8cpp_source.html#l00003">3</a> pliku <a class="el" href="main_widget_8cpp_source.html">mainWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="main_widget_8hpp_source.html#l00045">gameTimer</a>, <a class="el" href="main_widget_8hpp_source.html#l00050">okienko</a>, <a class="el" href="main_widget_8hpp_source.html#l00055">statystyki</a> i <a class="el" href="main_widget_8cpp_source.html#l00020">updateTime()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
-<div class="center"><img src="classmain_widget_a16dabb5b2e83cd4046317817f7ee522b_cgraph.png" border="0" usemap="#classmain_widget_a16dabb5b2e83cd4046317817f7ee522b_cgraph" alt=""/></div>
-<map name="classmain_widget_a16dabb5b2e83cd4046317817f7ee522b_cgraph" id="classmain_widget_a16dabb5b2e83cd4046317817f7ee522b_cgraph">
+<div class="center"><img src="classmain_widget_aed279757f12ce187179135bf44e771d1_cgraph.png" border="0" usemap="#classmain_widget_aed279757f12ce187179135bf44e771d1_cgraph" alt=""/></div>
+<map name="classmain_widget_aed279757f12ce187179135bf44e771d1_cgraph" id="classmain_widget_aed279757f12ce187179135bf44e771d1_cgraph">
 <area shape="rect" id="node2" href="classmain_widget.html#a9235834692a5b16879cae38123528bdd" title="Slot odwiezenia czasu. " alt="" coords="221,5,388,32"/>
 </map>
 </div>
@@ -195,12 +205,16 @@ Oto graf wywołań dla tej funkcji:</div>
 </div><div class="memdoc">
 
 <p>Slot odwiezenia czasu. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="main_widget_8cpp_source.html#l00020">20</a> pliku <a class="el" href="main_widget_8cpp_source.html">mainWidget.cpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="main_widget_8cpp_source.html#l00003">mainWidget()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmain_widget_a9235834692a5b16879cae38123528bdd_icgraph.png" border="0" usemap="#classmain_widget_a9235834692a5b16879cae38123528bdd_icgraph" alt=""/></div>
 <map name="classmain_widget_a9235834692a5b16879cae38123528bdd_icgraph" id="classmain_widget_a9235834692a5b16879cae38123528bdd_icgraph">
-<area shape="rect" id="node2" href="classmain_widget.html#a16dabb5b2e83cd4046317817f7ee522b" title="Konstruktor tworzący widget glowny aplikacji. " alt="" coords="220,5,388,32"/>
+<area shape="rect" id="node2" href="classmain_widget.html#aed279757f12ce187179135bf44e771d1" title="Konstruktor tworzący widget glowny aplikacji. " alt="" coords="220,5,388,32"/>
 </map>
 </div>
 
@@ -212,22 +226,18 @@ Oto graf wywoływań tej funkcji:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QTimer* mainWidget::gameTimer</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Pole reprezentujace timer gry. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="main_widget_8hpp_source.html#l00045">45</a> pliku <a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget::mainGameWidget()</a>, <a class="el" href="main_widget_8cpp_source.html#l00003">mainWidget()</a>, <a class="el" href="game_window_8cpp_source.html#l00110">gameWindow::restartGame()</a> i <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget::SidePanelWidget()</a>.</p>
 
 </div>
 </div>
@@ -245,27 +255,35 @@ Oto graf wywoływań tej funkcji:</div>
 
 <p>Pole reprezentujace widget z gra. </p>
 
+<p class="definition">Definicja w linii <a class="el" href="main_widget_8hpp_source.html#l00050">50</a> pliku <a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow::gameWindow()</a> i <a class="el" href="main_widget_8cpp_source.html#l00003">mainWidget()</a>.</p>
+
 </div>
 </div>
-<a id="a3550300face1cfb9371db1a710181537"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3550300face1cfb9371db1a710181537">&#9670;&nbsp;</a></span>statystyki</h2>
+<a id="a26900a873d5b1782df1eebf8d11394a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26900a873d5b1782df1eebf8d11394a0">&#9670;&nbsp;</a></span>statystyki</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgame_widget.html">gameWidget</a>* mainWidget::statystyki</td>
+          <td class="memname"><a class="el" href="class_side_panel_widget.html">SidePanelWidget</a>* mainWidget::statystyki</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Pole reprezentujace widget z panelem bocznym. </p>
 
+<p class="definition">Definicja w linii <a class="el" href="main_widget_8hpp_source.html#l00055">55</a> pliku <a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow::gameWindow()</a> i <a class="el" href="main_widget_8cpp_source.html#l00003">mainWidget()</a>.</p>
+
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
 <li>/home/marcel/Documents/semestrVI/WDS/Qt/inc/<a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a></li>
-<li>/home/marcel/Documents/semestrVI/WDS/Qt/src/<a class="el" href="main_widget_8cpp.html">mainWidget.cpp</a></li>
+<li>/home/marcel/Documents/semestrVI/WDS/Qt/src/<a class="el" href="main_widget_8cpp_source.html">mainWidget.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,0 +1,21 @@
+<map id="/home/marcel/Documents/semestrVI/WDS/Qt/out/uic/ui_endGameDialog.h" name="/home/marcel/Documents/semestrVI/WDS/Qt/out/uic/ui_endGameDialog.h">
+<area shape="rect" id="node2" href="$dialogs_8hpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/inc\l/dialogs.hpp" alt="" coords="928,109,1100,165"/>
+<area shape="rect" id="node3" href="$game_window_8hpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/inc\l/gameWindow.hpp" alt="" coords="831,213,1003,269"/>
+<area shape="rect" id="node19" href="$moc__dialogs_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/out\l/moc/moc_dialogs.cpp" alt="" coords="1027,213,1199,269"/>
+<area shape="rect" id="node20" href="$dialogs_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/dialogs.cpp" alt="" coords="1223,213,1395,269"/>
+<area shape="rect" id="node4" href="$main_widget_8hpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/inc\l/mainWidget.hpp" alt="" coords="609,317,781,373"/>
+<area shape="rect" id="node8" href="$side_widget_8hpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/inc\l/sideWidget.hpp" alt="" coords="11,421,183,477"/>
+<area shape="rect" id="node12" href="$main_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/main.cpp" alt="" coords="805,421,977,477"/>
+<area shape="rect" id="node14" href="$game_statistics_8hpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/inc\l/gameStatistics.hpp" alt="" coords="893,317,1065,373"/>
+<area shape="rect" id="node17" href="$moc__game_window_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/out\l/moc/moc_gameWindow.cpp" alt="" coords="1089,317,1280,373"/>
+<area shape="rect" id="node18" href="$game_window_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/gameWindow.cpp" alt="" coords="1304,317,1476,373"/>
+<area shape="rect" id="node5" href="$game_widget_8hpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/inc\l/gameWidget.hpp" alt="" coords="609,421,781,477"/>
+<area shape="rect" id="node11" href="$moc__main_widget_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/out\l/moc/moc_mainWidget.cpp" alt="" coords="207,421,389,477"/>
+<area shape="rect" id="node13" href="$main_widget_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/mainWidget.cpp" alt="" coords="413,421,585,477"/>
+<area shape="rect" id="node6" href="$moc__game_widget_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/out\l/moc/moc_gameWidget.cpp" alt="" coords="503,525,688,581"/>
+<area shape="rect" id="node7" href="$game_widget_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/gameWidget.cpp" alt="" coords="712,525,884,581"/>
+<area shape="rect" id="node9" href="$moc__side_widget_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/out\l/moc/moc_sideWidget.cpp" alt="" coords="5,525,183,581"/>
+<area shape="rect" id="node10" href="$side_widget_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/sideWidget.cpp" alt="" coords="207,525,379,581"/>
+<area shape="rect" id="node15" href="$moc__game_statistics_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/out\l/moc/moc_gameStatistics.cpp" alt="" coords="1197,421,1396,477"/>
+<area shape="rect" id="node16" href="$game_statistics_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/gameStatistics.cpp" alt="" coords="1001,421,1173,477"/>
+</map>

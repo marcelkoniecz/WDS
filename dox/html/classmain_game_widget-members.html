@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Lista składowych</title>
+<title>Aplikacja gry: Lista składowych</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,6 +64,20 @@ $(function() {
 $(document).ready(function(){initNavTree('classmain_game_widget.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="headertitle">
 <div class="title">mainGameWidget Lista składowych</div>  </div>
@@ -77,15 +97,19 @@ $(document).ready(function(){initNavTree('classmain_game_widget.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f">calculateIfEndGame</a>()</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd">calculateUserPlate</a>()</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmain_game_widget.html#af0e155b5961ffb6d300dcfb6da4f52e7">computerPlate</a></td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classmain_game_widget.html#a0491f01e616420d95bc042c2a3132c83">gameEnd</a>()</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmain_game_widget.html#a21d468d67f6edbcf9c8b30f045d91710">gameInfo</a></td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classmain_game_widget.html#ad97227824a4d5b123c770599ea6ac21f">gameParam</a></td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmain_game_widget.html#a0c8dfda67b8d7ab2de886f8988f41482">gameTimer</a></td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classmain_game_widget.html#a1ca7a83137b298d03bda9ef9b366a51c">imageInfo</a></td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmain_game_widget.html#acdfe13d8f3cede8fdf22f0cbe8a51d4d">initValues</a>()</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classmain_game_widget.html#a16d08bf7ad875c2155b9ca6ed765c663">mainGameWidget</a>(QWidget *parent=nullptr, gameParameters *gameInformations=nullptr, QTimer *appTimer=nullptr)</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea">makeGameStep</a>()</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classmain_game_widget.html#a2a2292016b7b2c03682f754024bcca62">paintEvent</a>(QPaintEvent *ptr)</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmain_game_widget.html#a56c3a3a188113fc62127f75f5b3dacb2">EmitEndGame</a>()</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">signal</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmain_game_widget.html#a0491f01e616420d95bc042c2a3132c83">gameEnd</a>()</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmain_game_widget.html#a6f73be1ce970a199ef87b001177bdba4">gameInfo</a></td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmain_game_widget.html#ad97227824a4d5b123c770599ea6ac21f">gameParam</a></td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classmain_game_widget.html#aed8d26e1b1b80cc859a245825ad37fb7">gameParame</a></td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmain_game_widget.html#acaf079fdbf929505fb59a0ad97c7e750">gameSettgs</a></td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classmain_game_widget.html#a0c8dfda67b8d7ab2de886f8988f41482">gameTimer</a></td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmain_game_widget.html#a9e85cde6eb0ae703e3420bbb1c96a31f">initValues</a>(int comLives, int userLives)</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmain_game_widget.html#a9869b06d940be6a878833145c7bb5611">life</a></td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd">mainGameWidget</a>(mainWidget *parent=nullptr, gameWindow *gameWin=nullptr)</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea">makeGameStep</a>()</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmain_game_widget.html#a2a2292016b7b2c03682f754024bcca62">paintEvent</a>(QPaintEvent *ptr)</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmain_game_widget.html#a218998300d8db8e060d322bc3193d8ca">timerun</a></td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6">updateTime</a>()</td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr><td class="entry"><a class="el" href="classmain_game_widget.html#accf95079dcecfa8455770743fe05c080">userPlate</a></td><td class="entry"><a class="el" href="classmain_game_widget.html">mainGameWidget</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
 </table></div><!-- contents -->

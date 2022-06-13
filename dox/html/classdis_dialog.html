@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plate_Game: Dokumentacja klasy disDialog</title>
+<title>Aplikacja gry: Dokumentacja klasy disDialog</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,9 @@
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,8 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Plate_Game
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">Aplikacja gry
    </div>
   </td>
  </tr>
@@ -35,11 +37,15 @@
 </div>
 <!-- end header part -->
 <!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
-  initMenu('',false,false,'search.php','Szukaj');
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
 });
 </script>
 <div id="main-nav"></div>
@@ -58,8 +64,24 @@ $(function() {
 $(document).ready(function(){initNavTree('classdis_dialog.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="summary">
+<a href="#pub-slots">Sloty publiczne</a> &#124;
+<a href="#signals">Sygnały</a> &#124;
 <a href="#pub-methods">Metody publiczne</a> &#124;
 <a href="classdis_dialog-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
@@ -67,63 +89,56 @@ $(document).ready(function(){initNavTree('classdis_dialog.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Klasa reprezentująca dialog rozłączenia.  
+ <a href="classdis_dialog.html#details">Więcej...</a></p>
+
 <p><code>#include &lt;<a class="el" href="dialogs_8hpp_source.html">dialogs.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Diagram dziedziczenia dla disDialog</div>
 <div class="dyncontent">
 <div class="center"><img src="classdis_dialog__inherit__graph.png" border="0" usemap="#dis_dialog_inherit__map" alt="Inheritance graph"/></div>
-<map name="dis_dialog_inherit__map" id="dis_dialog_inherit__map">
-<area shape="rect" id="node3" href="class_ui_1_1dis_dialog.html" title="Ui::disDialog" alt="" coords="99,80,197,107"/>
-<area shape="rect" id="node4" href="class_ui__dis_dialog.html" title="Ui_disDialog" alt="" coords="100,5,196,32"/>
-</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <div class="dynheader">
 Diagram współpracy dla disDialog:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdis_dialog__coll__graph.png" border="0" usemap="#dis_dialog_coll__map" alt="Collaboration graph"/></div>
-<map name="dis_dialog_coll__map" id="dis_dialog_coll__map">
-<area shape="rect" id="node3" href="class_ui_1_1dis_dialog.html" title="Ui::disDialog" alt="" coords="99,80,197,107"/>
-<area shape="rect" id="node4" href="class_ui__dis_dialog.html" title="Ui_disDialog" alt="" coords="100,5,196,32"/>
-</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Sloty publiczne</h2></td></tr>
+<tr class="memitem:a7667c6785a54c265fe4103c2cd9229a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdis_dialog.html#a7667c6785a54c265fe4103c2cd9229a9">on_disconnectButton_clicked</a> ()</td></tr>
+<tr class="memdesc:a7667c6785a54c265fe4103c2cd9229a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot rozłączania podłączonego urządzenia.  <a href="#a7667c6785a54c265fe4103c2cd9229a9">Więcej...</a><br /></td></tr>
+<tr class="separator:a7667c6785a54c265fe4103c2cd9229a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8fd1a4a2ca88870cfc5b6d8c7bdd4f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdis_dialog.html#ad8fd1a4a2ca88870cfc5b6d8c7bdd4f3">on_cancelButton_clicked</a> ()</td></tr>
+<tr class="memdesc:ad8fd1a4a2ca88870cfc5b6d8c7bdd4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot powrotu.  <a href="#ad8fd1a4a2ca88870cfc5b6d8c7bdd4f3">Więcej...</a><br /></td></tr>
+<tr class="separator:ad8fd1a4a2ca88870cfc5b6d8c7bdd4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32811a648bdc5d52eeb395a8edb264e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdis_dialog.html#a32811a648bdc5d52eeb395a8edb264e8">retranslate</a> ()</td></tr>
+<tr class="memdesc:a32811a648bdc5d52eeb395a8edb264e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot zmiany języka.  <a href="#a32811a648bdc5d52eeb395a8edb264e8">Więcej...</a><br /></td></tr>
+<tr class="separator:a32811a648bdc5d52eeb395a8edb264e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Sygnały</h2></td></tr>
+<tr class="memitem:a3bc2d5d3e693006b4c91fccf57ef72ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdis_dialog.html#a3bc2d5d3e693006b4c91fccf57ef72ab">EmitDisconnectDevice</a> ()</td></tr>
+<tr class="memdesc:a3bc2d5d3e693006b4c91fccf57ef72ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał rozłączenia urządzenia.  <a href="#a3bc2d5d3e693006b4c91fccf57ef72ab">Więcej...</a><br /></td></tr>
+<tr class="separator:a3bc2d5d3e693006b4c91fccf57ef72ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
-<tr class="memitem:a643207279456bc1a809f5203564d2e61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdis_dialog.html#a643207279456bc1a809f5203564d2e61">disDialog</a> (QString connectedDev=&quot;No device connected&quot;)</td></tr>
-<tr class="separator:a643207279456bc1a809f5203564d2e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7369038843ff197ef07eb69b4d0f9ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdis_dialog.html#ae7369038843ff197ef07eb69b4d0f9ac">disDialog</a> (<a class="el" href="classgame_window.html">gameWindow</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:ae7369038843ff197ef07eb69b4d0f9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor dialogu ustawień  <a href="#ae7369038843ff197ef07eb69b4d0f9ac">Więcej...</a><br /></td></tr>
+<tr class="separator:ae7369038843ff197ef07eb69b4d0f9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31a157181a0a70ef13226c7cdded31d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdis_dialog.html#a31a157181a0a70ef13226c7cdded31d8">StartDialog</a> (QString connectedDev)</td></tr>
+<tr class="memdesc:a31a157181a0a70ef13226c7cdded31d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wyświetlająca dany stan połączenia.  <a href="#a31a157181a0a70ef13226c7cdded31d8">Więcej...</a><br /></td></tr>
 <tr class="separator:a31a157181a0a70ef13226c7cdded31d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_ui__dis_dialog"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_ui__dis_dialog')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="class_ui__dis_dialog.html">Ui_disDialog</a></td></tr>
-<tr class="memitem:a6c15cdd94fb64359acb14acb13ac4f98 inherit pub_methods_class_ui__dis_dialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__dis_dialog.html#a6c15cdd94fb64359acb14acb13ac4f98">setupUi</a> (QDialog *<a class="el" href="classdis_dialog.html">disDialog</a>)</td></tr>
-<tr class="separator:a6c15cdd94fb64359acb14acb13ac4f98 inherit pub_methods_class_ui__dis_dialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1e1b27dad914847ddaf84baed7eb49a inherit pub_methods_class_ui__dis_dialog"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__dis_dialog.html#ac1e1b27dad914847ddaf84baed7eb49a">retranslateUi</a> (QDialog *<a class="el" href="classdis_dialog.html">disDialog</a>)</td></tr>
-<tr class="separator:ac1e1b27dad914847ddaf84baed7eb49a inherit pub_methods_class_ui__dis_dialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Dodatkowe Dziedziczone Składowe</h2></td></tr>
-<tr class="inherit_header pub_attribs_class_ui__dis_dialog"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_ui__dis_dialog')"><img src="closed.png" alt="-"/>&#160;Atrybuty publiczne dziedziczone z <a class="el" href="class_ui__dis_dialog.html">Ui_disDialog</a></td></tr>
-<tr class="memitem:a2c373bf7a32c4765077836f1d79e9131 inherit pub_attribs_class_ui__dis_dialog"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__dis_dialog.html#a2c373bf7a32c4765077836f1d79e9131">verticalLayout_2</a></td></tr>
-<tr class="separator:a2c373bf7a32c4765077836f1d79e9131 inherit pub_attribs_class_ui__dis_dialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae28930e0724fcd0598faa2d12db6530c inherit pub_attribs_class_ui__dis_dialog"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__dis_dialog.html#ae28930e0724fcd0598faa2d12db6530c">verticalLayout</a></td></tr>
-<tr class="separator:ae28930e0724fcd0598faa2d12db6530c inherit pub_attribs_class_ui__dis_dialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac66ffef8bbc9c2479704a06dcc5c67ef inherit pub_attribs_class_ui__dis_dialog"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__dis_dialog.html#ac66ffef8bbc9c2479704a06dcc5c67ef">horizontalLayout_2</a></td></tr>
-<tr class="separator:ac66ffef8bbc9c2479704a06dcc5c67ef inherit pub_attribs_class_ui__dis_dialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab45ac4fba177ec77824d5371fc851b18 inherit pub_attribs_class_ui__dis_dialog"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__dis_dialog.html#ab45ac4fba177ec77824d5371fc851b18">label</a></td></tr>
-<tr class="separator:ab45ac4fba177ec77824d5371fc851b18 inherit pub_attribs_class_ui__dis_dialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7acc692b1864fdd7b01434c8465416f inherit pub_attribs_class_ui__dis_dialog"><td class="memItemLeft" align="right" valign="top">QLineEdit *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__dis_dialog.html#ac7acc692b1864fdd7b01434c8465416f">lineEdit</a></td></tr>
-<tr class="separator:ac7acc692b1864fdd7b01434c8465416f inherit pub_attribs_class_ui__dis_dialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab44c6b5ce5063916e8cf25ea2bdfb4bd inherit pub_attribs_class_ui__dis_dialog"><td class="memItemLeft" align="right" valign="top">QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__dis_dialog.html#ab44c6b5ce5063916e8cf25ea2bdfb4bd">horizontalLayout</a></td></tr>
-<tr class="separator:ab44c6b5ce5063916e8cf25ea2bdfb4bd inherit pub_attribs_class_ui__dis_dialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae27beb00a139b58e7cddf09b53ee9719 inherit pub_attribs_class_ui__dis_dialog"><td class="memItemLeft" align="right" valign="top">QSpacerItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__dis_dialog.html#ae27beb00a139b58e7cddf09b53ee9719">horizontalSpacer</a></td></tr>
-<tr class="separator:ae27beb00a139b58e7cddf09b53ee9719 inherit pub_attribs_class_ui__dis_dialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac97d5b0f2a9c16cf2481bd0a8d794988 inherit pub_attribs_class_ui__dis_dialog"><td class="memItemLeft" align="right" valign="top">QDialogButtonBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__dis_dialog.html#ac97d5b0f2a9c16cf2481bd0a8d794988">buttonBox</a></td></tr>
-<tr class="separator:ac97d5b0f2a9c16cf2481bd0a8d794988 inherit pub_attribs_class_ui__dis_dialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a0b5da07d0332fd391fde7dac7302ae inherit pub_attribs_class_ui__dis_dialog"><td class="memItemLeft" align="right" valign="top">QSpacerItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui__dis_dialog.html#a8a0b5da07d0332fd391fde7dac7302ae">horizontalSpacer_2</a></td></tr>
-<tr class="separator:a8a0b5da07d0332fd391fde7dac7302ae inherit pub_attribs_class_ui__dis_dialog"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
-<a id="a643207279456bc1a809f5203564d2e61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a643207279456bc1a809f5203564d2e61">&#9670;&nbsp;</a></span>disDialog()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa reprezentująca dialog rozłączenia. </p>
+<p>Klasa reprezentująca dialog rozłączenia, ukazuje się po wybraniu opcji z belki głównej. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="dialogs_8hpp_source.html#l00119">119</a> pliku <a class="el" href="dialogs_8hpp_source.html">dialogs.hpp</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="ae7369038843ff197ef07eb69b4d0f9ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7369038843ff197ef07eb69b4d0f9ac">&#9670;&nbsp;</a></span>disDialog()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,25 +146,155 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
         <tr>
           <td class="memname">disDialog::disDialog </td>
           <td>(</td>
-          <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>connectedDev</em> = <code>&quot;No&#160;device&#160;connected&quot;</code></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classgame_window.html">gameWindow</a> *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Konstruktor dialogu ustawień </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>&ndash; Wskaźnik na klasę okna głównego aplikacji</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Konstruktor za pomocą setupUi oraz dziediczonej klasy, tworzy dialog stworzony w qtDesignerze. Na końcu następuje połączenie sygnału przetłumaczenia z wywołaniem slotu retlasate(). </p>
+
+<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00265">265</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="dialogs_8cpp_source.html#l00025">settDialog::retranslate()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdis_dialog_a643207279456bc1a809f5203564d2e61_cgraph.png" border="0" usemap="#classdis_dialog_a643207279456bc1a809f5203564d2e61_cgraph" alt=""/></div>
-<map name="classdis_dialog_a643207279456bc1a809f5203564d2e61_cgraph" id="classdis_dialog_a643207279456bc1a809f5203564d2e61_cgraph">
-<area shape="rect" id="node2" href="class_ui__con_dialog.html#ab19498d47af2201348bf2ef2008d6694" title="Ui_conDialog::setupUi" alt="" coords="192,5,345,32"/>
-<area shape="rect" id="node3" href="class_ui__con_dialog.html#afbc32f159ce9f609c2492bf30d08c2cf" title="Ui_conDialog::retranslateUi" alt="" coords="393,5,576,32"/>
+<div class="center"><img src="classdis_dialog_ae7369038843ff197ef07eb69b4d0f9ac_cgraph.png" border="0" usemap="#classdis_dialog_ae7369038843ff197ef07eb69b4d0f9ac_cgraph" alt=""/></div>
+<map name="classdis_dialog_ae7369038843ff197ef07eb69b4d0f9ac_cgraph" id="classdis_dialog_ae7369038843ff197ef07eb69b4d0f9ac_cgraph">
+<area shape="rect" id="node2" href="classsett_dialog.html#a721b6a0a268a7244d6d6a70ec04ff28f" title="Slot zmiany języka. " alt="" coords="192,5,343,32"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a3bc2d5d3e693006b4c91fccf57ef72ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc2d5d3e693006b4c91fccf57ef72ab">&#9670;&nbsp;</a></span>EmitDisconnectDevice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void disDialog::EmitDisconnectDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sygnał rozłączenia urządzenia. </p>
+<p>Sygnał wysyłany podczas wciśnięcia przycisku rozłączenia, po wysłaniu sygnału gra rozłącza się z aktualnie połączonym mikrokontrolerem. </p>
+
+</div>
+</div>
+<a id="ad8fd1a4a2ca88870cfc5b6d8c7bdd4f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8fd1a4a2ca88870cfc5b6d8c7bdd4f3">&#9670;&nbsp;</a></span>on_cancelButton_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void disDialog::on_cancelButton_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot powrotu. </p>
+<p>W momencie klikniecia przycisku return zamykany jest dialog rozłączania. Slot nie przyjmuje żadnych argumentów i nic nie zwraca. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00320">320</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7667c6785a54c265fe4103c2cd9229a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7667c6785a54c265fe4103c2cd9229a9">&#9670;&nbsp;</a></span>on_disconnectButton_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void disDialog::on_disconnectButton_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot rozłączania podłączonego urządzenia. </p>
+<p>W momencie kliknięcia przycisku disconnect emitowany jest sygnał EmitDisconnectDevice oraz zamykany jest dialog rozłączania urządzenia. Slot nie przyjumje argumentów i nic nie zwraca. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00309">309</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a32811a648bdc5d52eeb395a8edb264e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32811a648bdc5d52eeb395a8edb264e8">&#9670;&nbsp;</a></span>retranslate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void disDialog::retranslate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot zmiany języka. </p>
+<p>Gdy klasa okna głównego wyśle sygnał że należy przeprowadzić translacje uruchomiony zostaje poniższy slot. Slot nie przyjmuje żadnych parametrów oraz nic nie zwraca. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00277">277</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a31a157181a0a70ef13226c7cdded31d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31a157181a0a70ef13226c7cdded31d8">&#9670;&nbsp;</a></span>StartDialog()</h2>
 
@@ -166,11 +311,32 @@ Oto graf wywołań dla tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Metoda wyświetlająca dany stan połączenia. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">connectedDev&amp;ndash;</td><td>Nazwa aktualnie połączonego urządzenia</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Metoda wyświetla w polu lineEdit aktualną nazwe urządzenia oraz w zależności czy jest połączone urządzenie czy nie pozwala rozłączy je. Metoda jako argument przyjmuje QString który jest nazwą aktualnie połączonego urządzenia i nic nie zwraca. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00292">292</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00186">gameWindow::on_actionDisconnect_triggered()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdis_dialog_a31a157181a0a70ef13226c7cdded31d8_icgraph.png" border="0" usemap="#classdis_dialog_a31a157181a0a70ef13226c7cdded31d8_icgraph" alt=""/></div>
+<map name="classdis_dialog_a31a157181a0a70ef13226c7cdded31d8_icgraph" id="classdis_dialog_a31a157181a0a70ef13226c7cdded31d8_icgraph">
+<area shape="rect" id="node2" href="classgame_window.html#a0f823f176110c41d9bbaca00928b1644" title="Slot dla wcisnietego przycisku rozlaczenia Po wcisnieciu przycisku aktualne polaczone urzadzenie jest..." alt="" coords="203,5,433,47"/>
+</map>
+</div>
+
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
 <li>/home/marcel/Documents/semestrVI/WDS/Qt/inc/<a class="el" href="dialogs_8hpp_source.html">dialogs.hpp</a></li>
-<li>/home/marcel/Documents/semestrVI/WDS/Qt/src/<a class="el" href="dialogs_8cpp.html">dialogs.cpp</a></li>
+<li>/home/marcel/Documents/semestrVI/WDS/Qt/src/<a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

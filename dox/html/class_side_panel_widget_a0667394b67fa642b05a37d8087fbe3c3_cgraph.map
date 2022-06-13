@@ -1,0 +1,4 @@
+<map id="SidePanelWidget::EndGame" name="SidePanelWidget::EndGame">
+<area shape="rect" id="node2" href="$class_side_panel_widget.html#aa24c83e3d9febfd47e810563458a8926" title="Slot blokowania przycisków. " alt="" coords="244,5,443,47"/>
+<area shape="rect" id="node3" href="$class_side_panel_widget.html#a2e732225cd6430685c65211e4f5ffc75" title="Slot odpowiedzialny za wyzerowanie czasu zegara. " alt="" coords="241,71,445,98"/>
+</map>

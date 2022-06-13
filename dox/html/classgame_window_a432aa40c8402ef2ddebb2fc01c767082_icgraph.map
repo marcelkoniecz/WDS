@@ -1,0 +1,5 @@
+<map id="gameWindow::EmitBlockButtons" name="gameWindow::EmitBlockButtons">
+<area shape="rect" id="node2" href="$classgame_window.html#a5d5ca19ad1471927e274470746db35d7" title="gameWindow::endGame" alt="" coords="276,5,441,32"/>
+<area shape="rect" id="node4" href="$classgame_window.html#a33a15df2489db0c157146e90d75cfd1a" title="gameWindow::restartGame" alt="" coords="268,56,449,83"/>
+<area shape="rect" id="node3" href="$classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="497,31,685,57"/>
+</map>

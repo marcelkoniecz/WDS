@@ -1,0 +1,6 @@
+<map id="Ui_settDialog::setupUi" name="Ui_settDialog::setupUi">
+<area shape="rect" id="node2" href="$classcon_dialog.html#a0af1be1f3765e78fa56d7003821d1f7b" title="Konstruktor dialogu ustawień " alt="" coords="209,5,355,32"/>
+<area shape="rect" id="node3" href="$classdis_dialog.html#ae7369038843ff197ef07eb69b4d0f9ac" title="Konstruktor dialogu ustawień " alt="" coords="213,56,351,83"/>
+<area shape="rect" id="node4" href="$classend_dialog.html#a13e02a02173434cf726a3add8e3b1fb4" title="Konstruktor dialogu końca gry. " alt="" coords="209,107,355,133"/>
+<area shape="rect" id="node5" href="$classsett_dialog.html#a4d8399f4367364867affaab61fa830a0" title="Konstruktor dialogu ustawień " alt="" coords="208,157,356,184"/>
+</map>

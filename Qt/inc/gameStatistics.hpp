@@ -23,28 +23,31 @@
 #include <QLineSeries>
 #include <QValueAxis>
 #include "gameWindow.hpp"
-// class myChart :public QChart {
-//     Q_OBJECT
-// private:
-//     QChart* chart;
-// public:
-//     myChart();
-
-// }
+ 
+ /**
+  * @file
+  * @brief Plik nagłówkowy zawierający widget statystyk
+  *  Plik nagłówkowy zawierający widget statystyk.
+  */
 
 class gameWindow;
 
-
+/**
+ * @brief Klasa reprezentująca widget statystyk końcowych
+ * 
+ * Klasa reprezentująca widget statystyk końcowych, widget ukazuje się gdy 
+ * użytkownik zechce zobaczyć statystyki właśnie skończonej gry. 
+ */
 class gameStatisticsWidget :public QWidget, public Ui::gameStatistics {
     Q_OBJECT
-public:
+private:
     QChart* chart;
     gameParameters *gamePrmts;
     QLineSeries* points;
     QVBoxLayout* layout;
     QChartView* chartView;
     QValueAxis* axis;
-
+    friend gameWindow;
 public:
     gameStatisticsWidget(gameWindow *parent=nullptr);
     void printChart();
@@ -53,6 +56,13 @@ public slots:
     void on_returnButton_clicked();
     void retranslate();
 signals:
+
+/**
+ * @brief Sygnał przejścia do głównego widgetu aplikacji
+ *  
+ * Sygnał przejścia do widgetu gry, wysyłany w chwili naciśnięcia przycisku
+ * return. Za pomocą tego sygnału zmieniany jest główny widget aplikacji. 
+ */
     void EmitChangeWidget();
 };
 
