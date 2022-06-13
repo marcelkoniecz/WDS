@@ -9,6 +9,6 @@ var classgame_statistics_widget =
     [ "chart", "classgame_statistics_widget.html#a224d90ba40966b27508037b9da1b78c8", null ],
     [ "chartView", "classgame_statistics_widget.html#af847217bc17d4188171c28121c06d0ee", null ],
     [ "gamePrmts", "classgame_statistics_widget.html#aa0d032238ecbc131a031e8b7b3249587", null ],
-    [ "layout", "classgame_statistics_widget.html#a1d3f42f2cb749e10ce19f17e98eb0e39", null ],
+    [ "gameWindow", "classgame_statistics_widget.html#ab3358a37281bd8ec247d2c1c0c6fd0d8", null ],
     [ "points", "classgame_statistics_widget.html#a98e4bc098778843fbcdd01ee44f2a6fe", null ]
 ];

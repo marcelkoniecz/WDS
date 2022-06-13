@@ -83,12 +83,15 @@ $(document).ready(function(){initNavTree('classgame_statistics_widget.html','');
 <a href="#pub-slots">Sloty publiczne</a> &#124;
 <a href="#signals">Sygnały</a> &#124;
 <a href="#pub-methods">Metody publiczne</a> &#124;
-<a href="#pub-attribs">Atrybuty publiczne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
 <a href="classgame_statistics_widget-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
 <div class="title">Dokumentacja klasy gameStatisticsWidget</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Klasa reprezentująca widget statystyk końcowych.  
+ <a href="classgame_statistics_widget.html#details">Więcej...</a></p>
 
 <p><code>#include &lt;<a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>&gt;</code></p>
 <div class="dynheader">
@@ -108,40 +111,53 @@ Diagram współpracy dla gameStatisticsWidget:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Sloty publiczne</h2></td></tr>
 <tr class="memitem:afe5d6f93b29adec1565e8862fb1d722f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_statistics_widget.html#afe5d6f93b29adec1565e8862fb1d722f">on_returnButton_clicked</a> ()</td></tr>
+<tr class="memdesc:afe5d6f93b29adec1565e8862fb1d722f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot obsługujący kliknięcie przycisku return.  <a href="#afe5d6f93b29adec1565e8862fb1d722f">Więcej...</a><br /></td></tr>
 <tr class="separator:afe5d6f93b29adec1565e8862fb1d722f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20abb1f53436507455add51cf55c229e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_statistics_widget.html#a20abb1f53436507455add51cf55c229e">retranslate</a> ()</td></tr>
+<tr class="memdesc:a20abb1f53436507455add51cf55c229e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot zmiany języka.  <a href="#a20abb1f53436507455add51cf55c229e">Więcej...</a><br /></td></tr>
 <tr class="separator:a20abb1f53436507455add51cf55c229e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Sygnały</h2></td></tr>
 <tr class="memitem:aac2a8d0313ec8694f9fb7a3c75e0b0ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_statistics_widget.html#aac2a8d0313ec8694f9fb7a3c75e0b0ac">EmitChangeWidget</a> ()</td></tr>
+<tr class="memdesc:aac2a8d0313ec8694f9fb7a3c75e0b0ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał przejścia do głównego widgetu aplikacji.  <a href="#aac2a8d0313ec8694f9fb7a3c75e0b0ac">Więcej...</a><br /></td></tr>
 <tr class="separator:aac2a8d0313ec8694f9fb7a3c75e0b0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:a5351156315f4359449dd833a658af89f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_statistics_widget.html#a5351156315f4359449dd833a658af89f">gameStatisticsWidget</a> (<a class="el" href="classgame_window.html">gameWindow</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:a5351156315f4359449dd833a658af89f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor widgetu statystyk.  <a href="#a5351156315f4359449dd833a658af89f">Więcej...</a><br /></td></tr>
 <tr class="separator:a5351156315f4359449dd833a658af89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73c073668d915eeadee9481a7a166148"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_statistics_widget.html#a73c073668d915eeadee9481a7a166148">printChart</a> ()</td></tr>
+<tr class="memdesc:a73c073668d915eeadee9481a7a166148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda odpowiedzialna za rysowanie wykresu.  <a href="#a73c073668d915eeadee9481a7a166148">Więcej...</a><br /></td></tr>
 <tr class="separator:a73c073668d915eeadee9481a7a166148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Atrybuty publiczne</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
 <tr class="memitem:a224d90ba40966b27508037b9da1b78c8"><td class="memItemLeft" align="right" valign="top">QChart *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_statistics_widget.html#a224d90ba40966b27508037b9da1b78c8">chart</a></td></tr>
+<tr class="memdesc:a224d90ba40966b27508037b9da1b78c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na wykres.  <a href="#a224d90ba40966b27508037b9da1b78c8">Więcej...</a><br /></td></tr>
 <tr class="separator:a224d90ba40966b27508037b9da1b78c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0d032238ecbc131a031e8b7b3249587"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_parameters.html">gameParameters</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_statistics_widget.html#aa0d032238ecbc131a031e8b7b3249587">gamePrmts</a></td></tr>
+<tr class="memdesc:aa0d032238ecbc131a031e8b7b3249587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na klasę statystyk gry.  <a href="#aa0d032238ecbc131a031e8b7b3249587">Więcej...</a><br /></td></tr>
 <tr class="separator:aa0d032238ecbc131a031e8b7b3249587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e4bc098778843fbcdd01ee44f2a6fe"><td class="memItemLeft" align="right" valign="top">QLineSeries *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_statistics_widget.html#a98e4bc098778843fbcdd01ee44f2a6fe">points</a></td></tr>
+<tr class="memdesc:a98e4bc098778843fbcdd01ee44f2a6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na punkty wykresu.  <a href="#a98e4bc098778843fbcdd01ee44f2a6fe">Więcej...</a><br /></td></tr>
 <tr class="separator:a98e4bc098778843fbcdd01ee44f2a6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d3f42f2cb749e10ce19f17e98eb0e39"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_statistics_widget.html#a1d3f42f2cb749e10ce19f17e98eb0e39">layout</a></td></tr>
-<tr class="separator:a1d3f42f2cb749e10ce19f17e98eb0e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af847217bc17d4188171c28121c06d0ee"><td class="memItemLeft" align="right" valign="top">QChartView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_statistics_widget.html#af847217bc17d4188171c28121c06d0ee">chartView</a></td></tr>
+<tr class="memdesc:af847217bc17d4188171c28121c06d0ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na widget wyświetlający wykres.  <a href="#af847217bc17d4188171c28121c06d0ee">Więcej...</a><br /></td></tr>
 <tr class="separator:af847217bc17d4188171c28121c06d0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a579972ae108c7f456ca35a8695ec83ce"><td class="memItemLeft" align="right" valign="top">QValueAxis *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_statistics_widget.html#a579972ae108c7f456ca35a8695ec83ce">axis</a></td></tr>
+<tr class="memdesc:a579972ae108c7f456ca35a8695ec83ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na osie wykresu.  <a href="#a579972ae108c7f456ca35a8695ec83ce">Więcej...</a><br /></td></tr>
 <tr class="separator:a579972ae108c7f456ca35a8695ec83ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3358a37281bd8ec247d2c1c0c6fd0d8"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgame_statistics_widget.html#ab3358a37281bd8ec247d2c1c0c6fd0d8">gameWindow</a></td></tr>
+<tr class="memdesc:ab3358a37281bd8ec247d2c1c0c6fd0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zaprzyjaźniona klasa okna głównego.  <a href="#ab3358a37281bd8ec247d2c1c0c6fd0d8">Więcej...</a><br /></td></tr>
+<tr class="separator:ab3358a37281bd8ec247d2c1c0c6fd0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
-<div class="textblock">
-<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00038">38</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
+<div class="textblock"><p>Klasa reprezentująca widget statystyk końcowych. </p>
+<p>Klasa reprezentująca widget statystyk końcowych, widget ukazuje siędy użytkownik zechce zobaczyć statystyki właśnie skończongry. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00041">41</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a5351156315f4359449dd833a658af89f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5351156315f4359449dd833a658af89f">&#9670;&nbsp;</a></span>gameStatisticsWidget()</h2>
@@ -159,15 +175,24 @@ Atrybuty publiczne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_statistics_8cpp_source.html#l00003">3</a> pliku <a class="el" href="game_statistics_8cpp_source.html">gameStatistics.cpp</a>.</p>
+<p>Konstruktor widgetu statystyk. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>&ndash;Wskaźnik na klasę okna głównego aplikacji</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Konstruktor kopiuje adres wskaźnika statystyk gry do pola klasy - gamePrmts oraz za pomocą setupUi tworzy widget stworzony w qtDesignerze. Zostaje także dodany wykres wraz z ustawieniem odpowiedniego layouta oraz konfiguracjć osi. Na końcu następuje połączenie sygnału przetłumaczenia z wywołaniem slotu retlasate(). </p>
 
-<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00088">gameParameters::accValues</a>, <a class="el" href="game_statistics_8hpp_source.html#l00046">axis</a>, <a class="el" href="game_statistics_8hpp_source.html#l00041">chart</a>, <a class="el" href="game_statistics_8hpp_source.html#l00045">chartView</a>, <a class="el" href="game_window_8hpp_source.html#l00070">gameWindow::gameParam</a>, <a class="el" href="game_statistics_8hpp_source.html#l00042">gamePrmts</a>, <a class="el" href="game_statistics_8hpp_source.html#l00044">layout</a>, <a class="el" href="game_statistics_8hpp_source.html#l00043">points</a> i <a class="el" href="game_statistics_8cpp_source.html#l00019">retranslate()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_statistics_8cpp_source.html#l00013">13</a> pliku <a class="el" href="game_statistics_8cpp_source.html">gameStatistics.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00099">gameParameters::accValues</a>, <a class="el" href="game_statistics_8hpp_source.html#l00076">axis</a>, <a class="el" href="game_statistics_8hpp_source.html#l00049">chart</a>, <a class="el" href="game_statistics_8hpp_source.html#l00069">chartView</a>, <a class="el" href="game_window_8hpp_source.html#l00125">gameWindow::gameParam</a>, <a class="el" href="game_statistics_8hpp_source.html#l00056">gamePrmts</a>, <a class="el" href="game_statistics_8hpp_source.html#l00063">points</a> i <a class="el" href="game_statistics_8cpp_source.html#l00032">retranslate()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classgame_statistics_widget_a5351156315f4359449dd833a658af89f_cgraph.png" border="0" usemap="#classgame_statistics_widget_a5351156315f4359449dd833a658af89f_cgraph" alt=""/></div>
 <map name="classgame_statistics_widget_a5351156315f4359449dd833a658af89f_cgraph" id="classgame_statistics_widget_a5351156315f4359449dd833a658af89f_cgraph">
-<area shape="rect" id="node2" href="classgame_statistics_widget.html#a20abb1f53436507455add51cf55c229e" title="gameStatisticsWidget\l::retranslate" alt="" coords="212,5,363,47"/>
+<area shape="rect" id="node2" href="classgame_statistics_widget.html#a20abb1f53436507455add51cf55c229e" title="Slot zmiany języka. " alt="" coords="212,5,363,47"/>
 </map>
 </div>
 
@@ -197,13 +222,16 @@ Oto graf wywołań dla tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00038">on_returnButton_clicked()</a>.</p>
+<p>Sygnał przejścia do głównego widgetu aplikacji. </p>
+<p>Sygnał przejścia do widgetu gry, wysyłany w chwili naciśnięcia przycisku return. Za pomocą tego sygnału zmieniany jest główny widget apliji. </p>
+
+<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00063">on_returnButton_clicked()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classgame_statistics_widget_aac2a8d0313ec8694f9fb7a3c75e0b0ac_icgraph.png" border="0" usemap="#classgame_statistics_widget_aac2a8d0313ec8694f9fb7a3c75e0b0ac_icgraph" alt=""/></div>
 <map name="classgame_statistics_widget_aac2a8d0313ec8694f9fb7a3c75e0b0ac_icgraph" id="classgame_statistics_widget_aac2a8d0313ec8694f9fb7a3c75e0b0ac_icgraph">
-<area shape="rect" id="node2" href="classgame_statistics_widget.html#afe5d6f93b29adec1565e8862fb1d722f" title="gameStatisticsWidget\l::on_returnButton_clicked" alt="" coords="204,5,375,47"/>
+<area shape="rect" id="node2" href="classgame_statistics_widget.html#afe5d6f93b29adec1565e8862fb1d722f" title="Slot obsługujący kliknięcie przycisku return. " alt="" coords="204,5,375,47"/>
 </map>
 </div>
 
@@ -232,9 +260,12 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_statistics_8cpp_source.html#l00038">38</a> pliku <a class="el" href="game_statistics_8cpp_source.html">gameStatistics.cpp</a>.</p>
+<p>Slot obsługujący kliknięcie przycisku return. </p>
+<p>Slot jest wywoływany podczas naciśnięcia przycisku return, wysyła się wtedy sygnał do okna głównego aby wrócić do widgeta gry </p>
 
-<p class="reference">Odwołuje się do <a class="el" href="game_statistics_8hpp_source.html#l00041">chart</a>, <a class="el" href="classgame_statistics_widget.html#aac2a8d0313ec8694f9fb7a3c75e0b0ac">EmitChangeWidget()</a> i <a class="el" href="game_statistics_8hpp_source.html#l00043">points</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_statistics_8cpp_source.html#l00063">63</a> pliku <a class="el" href="game_statistics_8cpp_source.html">gameStatistics.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_statistics_8hpp_source.html#l00049">chart</a>, <a class="el" href="classgame_statistics_widget.html#aac2a8d0313ec8694f9fb7a3c75e0b0ac">EmitChangeWidget()</a> i <a class="el" href="game_statistics_8hpp_source.html#l00063">points</a>.</p>
 
 </div>
 </div>
@@ -253,9 +284,12 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_statistics_8cpp_source.html#l00023">23</a> pliku <a class="el" href="game_statistics_8cpp_source.html">gameStatistics.cpp</a>.</p>
+<p>Metoda odpowiedzialna za rysowanie wykresu. </p>
+<p>Metoda klasy <a class="el" href="classgame_statistics_widget.html" title="Klasa reprezentująca widget statystyk końcowych. ">gameStatisticsWidget</a> odpowiedzialna za rysowanie wykresu, jest wywoływana za każdym razem kiedy następuje zmiana widgetu głownego na widget statystyk Rysuje na wykresie dane z poprzedniej gry. Metoda nie przyjmuje argumentów i nic nie zwraca. </p>
 
-<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00079">gameParameters::averageBallVel</a>, <a class="el" href="game_parameters_8hpp_source.html#l00071">gameParameters::ballBounceNumber</a>, <a class="el" href="game_statistics_8hpp_source.html#l00041">chart</a>, <a class="el" href="game_statistics_8hpp_source.html#l00045">chartView</a>, <a class="el" href="game_statistics_8hpp_source.html#l00042">gamePrmts</a>, <a class="el" href="game_parameters_8hpp_source.html#l00063">gameParameters::gameTime</a> i <a class="el" href="game_statistics_8hpp_source.html#l00043">points</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_statistics_8cpp_source.html#l00043">43</a> pliku <a class="el" href="game_statistics_8cpp_source.html">gameStatistics.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00090">gameParameters::averageBallVel</a>, <a class="el" href="game_parameters_8hpp_source.html#l00082">gameParameters::ballBounceNumber</a>, <a class="el" href="game_statistics_8hpp_source.html#l00049">chart</a>, <a class="el" href="game_statistics_8hpp_source.html#l00069">chartView</a>, <a class="el" href="game_statistics_8hpp_source.html#l00056">gamePrmts</a>, <a class="el" href="game_parameters_8hpp_source.html#l00074">gameParameters::gameTime</a> i <a class="el" href="game_statistics_8hpp_source.html#l00063">points</a>.</p>
 
 <p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00098">gameWindow::openStatisticsWidget()</a>.</p>
 <div class="dynheader">
@@ -263,7 +297,7 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classgame_statistics_widget_a73c073668d915eeadee9481a7a166148_icgraph.png" border="0" usemap="#classgame_statistics_widget_a73c073668d915eeadee9481a7a166148_icgraph" alt=""/></div>
 <map name="classgame_statistics_widget_a73c073668d915eeadee9481a7a166148_icgraph" id="classgame_statistics_widget_a73c073668d915eeadee9481a7a166148_icgraph">
-<area shape="rect" id="node2" href="classgame_window.html#abd54e8cb424a0c92cbb16f5fcbbc5680" title="gameWindow::openStatistics\lWidget" alt="" coords="204,5,396,47"/>
+<area shape="rect" id="node2" href="classgame_window.html#abd54e8cb424a0c92cbb16f5fcbbc5680" title="Slot odpowiedzialny za zmianę stackwidgeta na widget z statystykami. " alt="" coords="204,5,396,47"/>
 <area shape="rect" id="node3" href="classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="444,13,632,39"/>
 </map>
 </div>
@@ -293,15 +327,18 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_statistics_8cpp_source.html#l00019">19</a> pliku <a class="el" href="game_statistics_8cpp_source.html">gameStatistics.cpp</a>.</p>
+<p>Slot zmiany języka. </p>
+<p>Gdy klasa okna głównego wyśle sygnał że należy przeprowadzić translacje uruchomiony zostaje poniższy slot. Slot nie przyjmuje żadnych parametrów oraz nic nie zwraca. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00003">gameStatisticsWidget()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_statistics_8cpp_source.html#l00032">32</a> pliku <a class="el" href="game_statistics_8cpp_source.html">gameStatistics.cpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00013">gameStatisticsWidget()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classgame_statistics_widget_a20abb1f53436507455add51cf55c229e_icgraph.png" border="0" usemap="#classgame_statistics_widget_a20abb1f53436507455add51cf55c229e_icgraph" alt=""/></div>
 <map name="classgame_statistics_widget_a20abb1f53436507455add51cf55c229e_icgraph" id="classgame_statistics_widget_a20abb1f53436507455add51cf55c229e_icgraph">
-<area shape="rect" id="node2" href="classgame_statistics_widget.html#a5351156315f4359449dd833a658af89f" title="gameStatisticsWidget\l::gameStatisticsWidget" alt="" coords="204,5,363,47"/>
+<area shape="rect" id="node2" href="classgame_statistics_widget.html#a5351156315f4359449dd833a658af89f" title="Konstruktor widgetu statystyk. " alt="" coords="204,5,363,47"/>
 </map>
 </div>
 
@@ -313,16 +350,27 @@ Oto graf wywoływań tej funkcji:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QValueAxis* gameStatisticsWidget::axis</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00046">46</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
+<p>Wskaźnik na osie wykresu. </p>
+<p>Wskaźnik na osie wykresu, za pomocą tego wskaźnika są ustawiane wartości poszczególych osi na wykresie. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00003">gameStatisticsWidget()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00076">76</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00013">gameStatisticsWidget()</a>.</p>
 
 </div>
 </div>
@@ -331,16 +379,27 @@ Oto graf wywoływań tej funkcji:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QChart* gameStatisticsWidget::chart</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00041">41</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
+<p>Wskaźnik na wykres. </p>
+<p>Wskaźnik na wykres, używany w celu generowania wykresu. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00003">gameStatisticsWidget()</a>, <a class="el" href="game_statistics_8cpp_source.html#l00038">on_returnButton_clicked()</a> i <a class="el" href="game_statistics_8cpp_source.html#l00023">printChart()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00049">49</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00013">gameStatisticsWidget()</a>, <a class="el" href="game_statistics_8cpp_source.html#l00063">on_returnButton_clicked()</a> i <a class="el" href="game_statistics_8cpp_source.html#l00043">printChart()</a>.</p>
 
 </div>
 </div>
@@ -349,16 +408,27 @@ Oto graf wywoływań tej funkcji:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QChartView* gameStatisticsWidget::chartView</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00045">45</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
+<p>Wskaźnik na widget wyświetlający wykres. </p>
+<p>Wskaźnik na widget wyświetlający wykres, dodajemy do niego wykres. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00003">gameStatisticsWidget()</a> i <a class="el" href="game_statistics_8cpp_source.html#l00023">printChart()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00069">69</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00013">gameStatisticsWidget()</a> i <a class="el" href="game_statistics_8cpp_source.html#l00043">printChart()</a>.</p>
 
 </div>
 </div>
@@ -367,34 +437,54 @@ Oto graf wywoływań tej funkcji:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classgame_parameters.html">gameParameters</a>* gameStatisticsWidget::gamePrmts</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00042">42</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
+<p>Wskaźnik na klasę statystyk gry. </p>
+<p>Wskaźnik na klasę statystyk gry, zostanie do niego przypisany adres z okna głównego aplikacji, wykorzystywany w celu wyświetlenia statystyk końcowych gry. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00003">gameStatisticsWidget()</a> i <a class="el" href="game_statistics_8cpp_source.html#l00023">printChart()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00056">56</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00013">gameStatisticsWidget()</a> i <a class="el" href="game_statistics_8cpp_source.html#l00043">printChart()</a>.</p>
 
 </div>
 </div>
-<a id="a1d3f42f2cb749e10ce19f17e98eb0e39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d3f42f2cb749e10ce19f17e98eb0e39">&#9670;&nbsp;</a></span>layout</h2>
+<a id="ab3358a37281bd8ec247d2c1c0c6fd0d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3358a37281bd8ec247d2c1c0c6fd0d8">&#9670;&nbsp;</a></span>gameWindow</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QVBoxLayout* gameStatisticsWidget::layout</td>
+          <td class="memname">friend gameStatisticsWidget::gameWindow</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00044">44</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
+<p>Zaprzyjaźniona klasa okna głównego. </p>
+<p>Zaprzyjaźniona klasa okna głównego w celu skorzystania z prywatnego pola - <a class="el" href="classgame_parameters.html" title="Klasa zawierająca informacje na temat statystyk gry. ">gameParameters</a>. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00003">gameStatisticsWidget()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00082">82</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
 
 </div>
 </div>
@@ -403,16 +493,27 @@ Oto graf wywoływań tej funkcji:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QLineSeries* gameStatisticsWidget::points</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00043">43</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
+<p>Wskaźnik na punkty wykresu. </p>
+<p>Wskaźnik na punkty wykresu, za pomcą tych punktów jest generowany wykres przyśpieszenia akkcelerometru. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00003">gameStatisticsWidget()</a>, <a class="el" href="game_statistics_8cpp_source.html#l00038">on_returnButton_clicked()</a> i <a class="el" href="game_statistics_8cpp_source.html#l00023">printChart()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_statistics_8hpp_source.html#l00063">63</a> pliku <a class="el" href="game_statistics_8hpp_source.html">gameStatistics.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_statistics_8cpp_source.html#l00013">gameStatisticsWidget()</a>, <a class="el" href="game_statistics_8cpp_source.html#l00063">on_returnButton_clicked()</a>, <a class="el" href="game_statistics_8cpp_source.html#l00043">printChart()</a> i <a class="el" href="game_window_8cpp_source.html#l00110">gameWindow::restartGame()</a>.</p>
 
 </div>
 </div>

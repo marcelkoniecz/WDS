@@ -1,5 +1,4 @@
 <map id="gameWindow::ReadTransmision" name="gameWindow::ReadTransmision">
-<area shape="rect" id="node2" href="$game_window_8cpp.html#ac4cc9a0feb0fb183343f20837d50ca88" title="CalculateCRC8" alt="" coords="285,5,400,32"/>
-<area shape="rect" id="node4" href="$class_u_a_r_t_val.html#add53548eecd3058675c9076d902372ee" title="UARTVal::calculateVel" alt="" coords="264,56,421,83"/>
-<area shape="rect" id="node3" href="$game_window_8cpp.html#afce33dbfd29f5c283d83012be051c5c9" title="CRCSingleByte" alt="" coords="469,5,584,32"/>
+<area shape="rect" id="node2" href="$game_window_8cpp.html#ac4cc9a0feb0fb183343f20837d50ca88" title="CalculateCRC8" alt="" coords="264,5,379,32"/>
+<area shape="rect" id="node3" href="$game_window_8cpp.html#afce33dbfd29f5c283d83012be051c5c9" title="CRCSingleByte" alt="" coords="427,5,541,32"/>
 </map>

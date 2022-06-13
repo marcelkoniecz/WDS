@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_mainGameWidget_t {
-    QByteArrayData data[4];
-    char stringdata0[39];
+    QByteArrayData data[5];
+    char stringdata0[53];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,10 +34,12 @@ static const qt_meta_stringdata_mainGameWidget_t qt_meta_stringdata_mainGameWidg
 QT_MOC_LITERAL(0, 0, 14), // "mainGameWidget"
 QT_MOC_LITERAL(1, 15, 11), // "EmitEndGame"
 QT_MOC_LITERAL(2, 27, 0), // ""
-QT_MOC_LITERAL(3, 28, 10) // "updateTime"
+QT_MOC_LITERAL(3, 28, 13), // "EmitPauzeGame"
+QT_MOC_LITERAL(4, 42, 10) // "updateTime"
 
     },
-    "mainGameWidget\0EmitEndGame\0\0updateTime"
+    "mainGameWidget\0EmitEndGame\0\0EmitPauzeGame\0"
+    "updateTime"
 };
 #undef QT_MOC_LITERAL
 
@@ -47,20 +49,22 @@ static const uint qt_meta_data_mainGameWidget[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       1,       // signalCount
+       2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   24,    2, 0x06 /* Public */,
+       1,    0,   29,    2, 0x06 /* Public */,
+       3,    0,   30,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       3,    0,   25,    2, 0x0a /* Public */,
+       4,    0,   31,    2, 0x0a /* Public */,
 
  // signals: parameters
+    QMetaType::Void,
     QMetaType::Void,
 
  // slots: parameters
@@ -76,7 +80,8 @@ void mainGameWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->EmitEndGame(); break;
-        case 1: _t->updateTime(); break;
+        case 1: _t->EmitPauzeGame(); break;
+        case 2: _t->updateTime(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -85,6 +90,13 @@ void mainGameWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
             typedef void (mainGameWidget::*_t)();
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&mainGameWidget::EmitEndGame)) {
                 *result = 0;
+                return;
+            }
+        }
+        {
+            typedef void (mainGameWidget::*_t)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&mainGameWidget::EmitPauzeGame)) {
+                *result = 1;
                 return;
             }
         }
@@ -117,13 +129,13 @@ int mainGameWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }
@@ -132,6 +144,12 @@ int mainGameWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void mainGameWidget::EmitEndGame()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void mainGameWidget::EmitPauzeGame()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE

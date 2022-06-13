@@ -23,33 +23,65 @@
 #include <QLineSeries>
 #include <QValueAxis>
 #include "gameWindow.hpp"
- 
- /**
-  * @file
-  * @brief Plik nagłówkowy zawierający widget statystyk
-  *  Plik nagłówkowy zawierający widget statystyk.
-  */
+
+/**
+ * @file
+ * @brief Plik nagłówkowy zawierający widget statystyk
+ *  Plik nagłówkowy zawierający widget statystyk.
+ */
 
 class gameWindow;
 
 /**
  * @brief Klasa reprezentująca widget statystyk końcowych
- * 
- * Klasa reprezentująca widget statystyk końcowych, widget ukazuje się gdy 
- * użytkownik zechce zobaczyć statystyki właśnie skończonej gry. 
+ *
+ * Klasa reprezentująca widget statystyk końcowych, widget ukazuje siędy 
+ * użytkownik zechce zobaczyć statystyki właśnie skończongry. 
  */
 class gameStatisticsWidget :public QWidget, public Ui::gameStatistics {
     Q_OBJECT
 private:
+    /**
+     * @brief Wskaźnik na wykres
+     *
+     * Wskaźnik na wykres, używany w celu generowania wykresu.
+     */
     QChart* chart;
-    gameParameters *gamePrmts;
+    /**
+     * @brief Wskaźnik na klasę statystyk gry 
+     *
+     * Wskaźnik na klasę statystyk gry, zostanie do niego przypisany adres z okna głównego aplikacji,
+     * wykorzystywany w celu wyświetlenia statystyk końcowych gry.
+     */
+    gameParameters* gamePrmts;
+    /**
+     * @brief Wskaźnik na punkty wykresu
+     *
+     * Wskaźnik na punkty wykresu, za pomcą tych punktów jest generowany wykres przyśpieszenia
+     * akkcelerometru.
+     */
     QLineSeries* points;
-    QVBoxLayout* layout;
+    /**
+     * @brief Wskaźnik na widget wyświetlający wykres
+     *
+     * Wskaźnik na widget wyświetlający wykres, dodajemy do niego wykres.
+     */
     QChartView* chartView;
+    /**
+     * @brief Wskaźnik na osie wykresu
+     *
+     * Wskaźnik na osie wykresu, za pomocą tego wskaźnika są ustawiane wartości poszczególych
+     * osi na wykresie.
+     */
     QValueAxis* axis;
+    /**
+     * @brief Zaprzyjaźniona klasa okna głównego 
+     * 
+     * Zaprzyjaźniona klasa okna głównego w celu skorzystania z prywatnego pola - gameParameters.
+     */
     friend gameWindow;
 public:
-    gameStatisticsWidget(gameWindow *parent=nullptr);
+    gameStatisticsWidget(gameWindow* parent = nullptr);
     void printChart();
 
 public slots:
@@ -57,12 +89,12 @@ public slots:
     void retranslate();
 signals:
 
-/**
- * @brief Sygnał przejścia do głównego widgetu aplikacji
- *  
- * Sygnał przejścia do widgetu gry, wysyłany w chwili naciśnięcia przycisku
- * return. Za pomocą tego sygnału zmieniany jest główny widget aplikacji. 
- */
+    /**
+     * @brief Sygnał przejścia do głównego widgetu aplikacji
+     *
+     * Sygnał przejścia do widgetu gry, wysyłany w chwili naciśnięcia przycisku
+     * return. Za pomocą tego sygnału zmieniany jest główny widget apliji. 
+     */
     void EmitChangeWidget();
 };
 

@@ -139,6 +139,20 @@
     </message>
 </context>
 <context>
+    <name>SidePanelWidget</name>
+    <message>
+        <location filename="../../src/sideWidget.cpp" line="46"/>
+        <location filename="../../src/sideWidget.cpp" line="128"/>
+        <source>Resume</source>
+        <translation>Kontynuuj</translation>
+    </message>
+    <message>
+        <location filename="../../src/sideWidget.cpp" line="133"/>
+        <source>Pauze</source>
+        <translation>Pauza</translation>
+    </message>
+</context>
+<context>
     <name>conDialog</name>
     <message>
         <location filename="../../ui/conDialog.ui" line="14"/>
@@ -159,6 +173,12 @@
         <location filename="../../ui/conDialog.ui" line="140"/>
         <source>Cancel</source>
         <translation>Anuluj</translation>
+    </message>
+    <message>
+        <location filename="../../src/dialogs.cpp" line="231"/>
+        <location filename="../../src/dialogs.cpp" line="252"/>
+        <source>No devices to connect</source>
+        <translation>Brak urządzeń do połączenia</translation>
     </message>
 </context>
 <context>
@@ -182,6 +202,12 @@
         <location filename="../../ui/disDialog.ui" line="99"/>
         <source>Cancel</source>
         <translation>Anuluj</translation>
+    </message>
+    <message>
+        <location filename="../../src/dialogs.cpp" line="302"/>
+        <location filename="../../src/dialogs.cpp" line="303"/>
+        <source>No device to connect</source>
+        <translation>Brak urządzeń do połączenia</translation>
     </message>
 </context>
 <context>
@@ -243,6 +269,24 @@
         <location filename="../../ui/gameStatistics.ui" line="246"/>
         <source>Return</source>
         <translation>Powrót</translation>
+    </message>
+</context>
+<context>
+    <name>gameStatisticsWidget</name>
+    <message>
+        <location filename="../../src/gameStatistics.cpp" line="45"/>
+        <source>Sensor acceleration</source>
+        <translation>Przyśpieszenie odczytane na akcelerometrze</translation>
+    </message>
+    <message>
+        <location filename="../../src/gameStatistics.cpp" line="49"/>
+        <source>Time [s]</source>
+        <translation>Czas [s]</translation>
+    </message>
+    <message>
+        <location filename="../../src/gameStatistics.cpp" line="50"/>
+        <source>Acceleration Y [m/s^2]</source>
+        <translation>Przyśpieszenie Y[m/s^2]</translation>
     </message>
 </context>
 <context>
@@ -461,7 +505,7 @@
     <message>
         <location filename="../../ui/sideWidget.ui" line="132"/>
         <source>End game</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Koniec gry</translation>
     </message>
     <message>
         <location filename="../../ui/sideWidget.ui" line="189"/>
@@ -471,7 +515,7 @@
     <message>
         <location filename="../../ui/sideWidget.ui" line="226"/>
         <source>Pause</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Pauza</translation>
     </message>
 </context>
 <context>

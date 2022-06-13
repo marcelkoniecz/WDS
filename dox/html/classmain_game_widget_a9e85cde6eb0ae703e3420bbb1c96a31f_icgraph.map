@@ -1,4 +1,4 @@
 <map id="mainGameWidget::initValues" name="mainGameWidget::initValues">
-<area shape="rect" id="node2" href="$classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="mainGameWidget::mainGame\lWidget" alt="" coords="495,5,692,47"/>
-<area shape="rect" id="node3" href="$classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="mainGameWidget::updateTime" alt="" coords="244,38,447,65"/>
+<area shape="rect" id="node2" href="$classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Construct a new main Game Widget object. " alt="" coords="495,5,692,47"/>
+<area shape="rect" id="node3" href="$classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="244,38,447,65"/>
 </map>

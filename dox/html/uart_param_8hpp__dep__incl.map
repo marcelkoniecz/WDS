@@ -1,11 +1,11 @@
 <map id="/home/marcel/Documents/semestrVI/WDS/Qt/inc/uartParam.hpp" name="/home/marcel/Documents/semestrVI/WDS/Qt/inc/uartParam.hpp">
-<area shape="rect" id="node2" href="$game_window_8hpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/inc\l/gameWindow.hpp" alt="" coords="593,109,765,165"/>
+<area shape="rect" id="node2" href="$game_window_8hpp.html" title="Plik nagłówkowy z klasą okna apliji. " alt="" coords="593,109,765,165"/>
 <area shape="rect" id="node3" href="$game_window_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/gameWindow.cpp" alt="" coords="149,213,321,269"/>
 <area shape="rect" id="node4" href="$main_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/main.cpp" alt="" coords="201,317,373,373"/>
 <area shape="rect" id="node5" href="$dialogs_8hpp.html" title="Plik nagłówkowy zawierający okna dialogowe. " alt="" coords="345,213,517,269"/>
-<area shape="rect" id="node7" href="$main_widget_8hpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/inc\l/mainWidget.hpp" alt="" coords="593,213,765,269"/>
+<area shape="rect" id="node7" href="$main_widget_8hpp.html" title="Plik nagłówkowy klasy mainwidget. " alt="" coords="593,213,765,269"/>
 <area shape="rect" id="node11" href="$side_widget_8hpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/inc\l/sideWidget.hpp" alt="" coords="789,317,961,373"/>
-<area shape="rect" id="node13" href="$game_statistics_8hpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/inc\l/gameStatistics.hpp" alt="" coords="841,213,1013,269"/>
+<area shape="rect" id="node13" href="$game_statistics_8hpp.html" title="Plik nagłówkowy zawierający widget statystyk Plik nagłówkowy zawierający widget statystyk. " alt="" coords="841,213,1013,269"/>
 <area shape="rect" id="node6" href="$dialogs_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/dialogs.cpp" alt="" coords="5,317,177,373"/>
 <area shape="rect" id="node8" href="$main_widget_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/mainWidget.cpp" alt="" coords="397,317,569,373"/>
 <area shape="rect" id="node9" href="$game_widget_8hpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/inc\l/gameWidget.hpp" alt="" coords="593,317,765,373"/>

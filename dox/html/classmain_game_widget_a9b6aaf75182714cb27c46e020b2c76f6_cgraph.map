@@ -1,11 +1,11 @@
 <map id="mainGameWidget::updateTime" name="mainGameWidget::updateTime">
 <area shape="rect" id="node2" href="$classmain_game_widget.html#a9e85cde6eb0ae703e3420bbb1c96a31f" title="mainGameWidget::initValues" alt="" coords="275,126,465,153"/>
-<area shape="rect" id="node3" href="$classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="mainGameWidget::makeGameStep" alt="" coords="256,177,484,203"/>
-<area shape="rect" id="node4" href="$classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb" title="mainGameWidget::calculate\lBallPosition" alt="" coords="532,5,719,47"/>
-<area shape="rect" id="node6" href="$classmain_game_widget.html#a60c69addd15b1b7f8536d2a436f8e354" title="mainGameWidget::calculate\lComPlatePosition" alt="" coords="532,71,719,112"/>
-<area shape="rect" id="node7" href="$classmain_game_widget.html#aeb03489f2c85a9156b4af4c1b157f540" title="mainGameWidget::calculate\lIfBouncedPlate" alt="" coords="532,136,719,177"/>
-<area shape="rect" id="node8" href="$classmain_game_widget.html#a41e4bae20eccedb8474e66930b5ac38c" title="mainGameWidget::calculate\lIfBouncedWall" alt="" coords="532,201,719,243"/>
-<area shape="rect" id="node9" href="$classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="mainGameWidget::calculate\lIfEndGame" alt="" coords="532,267,719,308"/>
-<area shape="rect" id="node10" href="$classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="mainGameWidget::calculate\lUserPlate" alt="" coords="532,332,719,373"/>
+<area shape="rect" id="node3" href="$classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="256,177,484,203"/>
+<area shape="rect" id="node4" href="$classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb" title="Metoda wyliczająca pozycję piłki. " alt="" coords="532,5,719,47"/>
+<area shape="rect" id="node6" href="$classmain_game_widget.html#a60c69addd15b1b7f8536d2a436f8e354" title="Metoda wyliczająca położenia płytki komputera. " alt="" coords="532,71,719,112"/>
+<area shape="rect" id="node7" href="$classmain_game_widget.html#aeb03489f2c85a9156b4af4c1b157f540" title="Metoda sprawdzająca czy nastąpiło odbicie od płytki. " alt="" coords="532,136,719,177"/>
+<area shape="rect" id="node8" href="$classmain_game_widget.html#a41e4bae20eccedb8474e66930b5ac38c" title="Metoda sprawdzająca czy nastąpiło odbicie od ściany. " alt="" coords="532,201,719,243"/>
+<area shape="rect" id="node9" href="$classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="Metoda sprawdzająca czy nastąpił koniec gry. " alt="" coords="532,267,719,308"/>
+<area shape="rect" id="node10" href="$classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="Metoda wyliczająca położenie płytki gracza. " alt="" coords="532,332,719,373"/>
 <area shape="rect" id="node5" href="$game_widget_8cpp.html#a6d97a9fc5c5a6a82f80aaf1bc10f195a" title="Deg2Rad" alt="" coords="767,13,844,39"/>
 </map>

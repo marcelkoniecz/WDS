@@ -21,7 +21,7 @@ enum gameDifficulty {
 };
 
 /**
- * @brief Wyór języku
+ * @brief Wybór języka
  *
  * Wartość tego typu służą do określenia języka gry
  */

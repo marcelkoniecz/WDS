@@ -89,6 +89,7 @@ public slots:
     void setTimerNull();
     void retranslatePanel();
     void checkBlockButtons();
+    void pauzeGameFun();
 signals:
     /**
      * @brief Sygnał zamknięcia aplikacji

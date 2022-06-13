@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['calbal',['calBal',['../classmain_game_widget.html#abdeb8f415fd11fcba10c45ba08d47e05',1,'mainGameWidget']]],
-  ['calcomplate',['calComPlate',['../classmain_game_widget.html#a3d1c3e4beac0474d8e2dd297350072c6',1,'mainGameWidget']]],
   ['calculateballposition',['calculateBallPosition',['../classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb',1,'mainGameWidget']]],
   ['calculatecomplateposition',['calculateComPlatePosition',['../classmain_game_widget.html#a60c69addd15b1b7f8536d2a436f8e354',1,'mainGameWidget']]],
   ['calculatecrc8',['CalculateCRC8',['../game_window_8cpp.html#ac4cc9a0feb0fb183343f20837d50ca88',1,'gameWindow.cpp']]],
@@ -9,7 +7,6 @@ var searchData=
   ['calculateifbouncedwall',['calculateIfBouncedWall',['../classmain_game_widget.html#a41e4bae20eccedb8474e66930b5ac38c',1,'mainGameWidget']]],
   ['calculateifendgame',['calculateIfEndGame',['../classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f',1,'mainGameWidget']]],
   ['calculateuserplate',['calculateUserPlate',['../classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd',1,'mainGameWidget']]],
-  ['calculatevel',['calculateVel',['../class_u_a_r_t_val.html#add53548eecd3058675c9076d902372ee',1,'UARTVal']]],
   ['changeevent',['changeEvent',['../classgame_window.html#a0823cff17d7249bccd3ede894b29f432',1,'gameWindow']]],
   ['checkblockbuttons',['checkBlockButtons',['../class_side_panel_widget.html#aa24c83e3d9febfd47e810563458a8926',1,'SidePanelWidget']]],
   ['checkconnection',['checkConnection',['../class_side_panel_widget.html#a1e50e08924724bf47728fc5e6d3a3c24',1,'SidePanelWidget']]],

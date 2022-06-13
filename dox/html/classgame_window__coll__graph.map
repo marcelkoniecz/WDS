@@ -1,14 +1,14 @@
 <map id="gameWindow" name="gameWindow">
-<area shape="rect" id="node4" href="$classgame_statistics_widget.html" title="gameStatisticsWidget" alt="" coords="276,108,427,135"/>
-<area shape="rect" id="node11" href="$classmain_widget.html" title="Klasa reprezentujaca widget glowny Klasa jest odpowiedzialna za stworzenie w widgecie glownym widgetu..." alt="" coords="565,393,656,420"/>
-<area shape="rect" id="node12" href="$class_side_panel_widget.html" title="Klasa reprezentująca panel boczny aplikacji. " alt="" coords="290,325,413,352"/>
-<area shape="rect" id="node15" href="$classmain_game_widget.html" title="mainGameWidget" alt="" coords="288,435,415,461"/>
+<area shape="rect" id="node4" href="$classgame_statistics_widget.html" title="Klasa reprezentująca widget statystyk końcowych. " alt="" coords="269,108,420,135"/>
+<area shape="rect" id="node11" href="$classmain_widget.html" title="Klasa reprezentujaca widget glowny. " alt="" coords="559,393,649,420"/>
+<area shape="rect" id="node12" href="$class_side_panel_widget.html" title="Klasa reprezentująca panel boczny aplikacji. " alt="" coords="283,325,406,352"/>
+<area shape="rect" id="node15" href="$classmain_game_widget.html" title="Klasa reprezentująca widget gry. " alt="" coords="281,435,408,461"/>
 <area shape="rect" id="node7" href="$classgame_parameters.html" title="Klasa zawierająca informacje na temat statystyk gry. " alt="" coords="15,169,137,196"/>
-<area shape="rect" id="node8" href="$classcon_dialog.html" title="Klasa reprezentująca dialog połączenia. " alt="" coords="571,765,651,792"/>
-<area shape="rect" id="node18" href="$classdis_dialog.html" title="Klasa reprezentująca dialog rozłączenia. " alt="" coords="573,856,649,883"/>
-<area shape="rect" id="node20" href="$classend_dialog.html" title="Klasa reprezentująca dialog końca gry. " alt="" coords="571,907,651,933"/>
-<area shape="rect" id="node22" href="$classsett_dialog.html" title="Klasa reprezentująca dialog ustawień " alt="" coords="570,697,651,724"/>
+<area shape="rect" id="node8" href="$classcon_dialog.html" title="Klasa reprezentująca dialog połączenia. " alt="" coords="564,765,644,792"/>
+<area shape="rect" id="node18" href="$classdis_dialog.html" title="Klasa reprezentująca dialog rozłączenia. " alt="" coords="566,856,642,883"/>
+<area shape="rect" id="node20" href="$classend_dialog.html" title="Klasa reprezentująca dialog końca gry. " alt="" coords="564,907,644,933"/>
+<area shape="rect" id="node22" href="$classsett_dialog.html" title="Klasa reprezentująca dialog ustawień " alt="" coords="563,697,645,724"/>
 <area shape="rect" id="node14" href="$class_u_a_r_t_val.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="37,535,115,561"/>
 <area shape="rect" id="node16" href="$classgame_settings.html" title="Klasa zawierająca informacje na temat ustawień gry. " alt="" coords="25,657,127,684"/>
-<area shape="rect" id="node17" href="$classimage_parameters.html" title="imageParameters" alt="" coords="14,444,138,471"/>
+<area shape="rect" id="node17" href="$classimage_parameters.html" title="Klasa zawierająca parametry obrazów gry. " alt="" coords="14,444,138,471"/>
 </map>

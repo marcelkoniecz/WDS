@@ -6,7 +6,7 @@
  *
  * @param[in] parent -- Wskaźnik na klasę okna głównego aplikacji
  *
- * Konstruktor kopiuje adres wskaźnika do ustawień gry do pola klasy ptrGameSett
+ * Konstruktor kopiuje adres wskaźnika ustawień gry okna głównego do pola klasy ptrGameSett
  *  oraz za pomocą setupUi tworzy dialog stworzony w qtDesignerze. Na końcu następuje
  * połączenie sygnału przetłumaczenia z wywołaniem slotu retlasate().
  */
@@ -228,7 +228,7 @@ void conDialog::on_searchDeviceButton_clicked() {
   devicesList->clear();
   portList = QSerialPortInfo::availablePorts();
   if (portList.count() == 0) {
-    devicesList->addItem("No devices to connect");
+    devicesList->addItem(tr("No devices to connect"));
     connectButton->setEnabled(false);
     return;
   }
@@ -249,7 +249,7 @@ void conDialog::on_searchDeviceButton_clicked() {
  * Slot nie przyjmuje żadnych argumentów i nic nie zwra 
  */
 void conDialog::on_connectButton_clicked() {
-  if (devicesList->itemText(devicesList->currentIndex()) == "No devices to connect") {
+  if (devicesList->itemText(devicesList->currentIndex()) == tr("No devices to connect")) {
     this->close();
     return;
   }
@@ -299,8 +299,8 @@ void disDialog::retranslate() {
  */
 void disDialog::StartDialog(QString connectedDev) {
   lineEdit->setText(connectedDev);
-  if (connectedDev == "No device to connect" || connectedDev == "") {
-    lineEdit->setText("No device to connect");
+  if (connectedDev == tr("No device to connect") || connectedDev == "") {
+    lineEdit->setText(tr("No device to connect"));
     disconnectButton->setEnabled(false);
   }
   else

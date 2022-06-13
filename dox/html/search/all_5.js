@@ -1,12 +1,10 @@
 var searchData=
 [
   ['gamedifficulty',['gameDifficulty',['../game_settings_8hpp.html#afc86247eca5b9201379e554060504339',1,'gameSettings.hpp']]],
-  ['gameend',['gameEnd',['../classmain_game_widget.html#a0491f01e616420d95bc042c2a3132c83',1,'mainGameWidget']]],
   ['gameinfo',['gameInfo',['../classmain_game_widget.html#a6f73be1ce970a199ef87b001177bdba4',1,'mainGameWidget::gameInfo()'],['../classgame_window.html#a1f6ab8415dcaecb6d5684ac9790a0e5e',1,'gameWindow::gameInfo()']]],
-  ['gamelvl',['gamelvl',['../classgame_settings.html#a1a94a1c4b3d0f20bb3d276f38aa12203',1,'gameSettings']]],
+  ['gamelvl',['gamelvl',['../classgame_settings.html#a6706fd2162d64fea410959523e23538f',1,'gameSettings']]],
   ['gamepar',['gamePar',['../class_side_panel_widget.html#af11ee156d866e6163e80cb0cbbc47195',1,'SidePanelWidget']]],
-  ['gameparam',['gameParam',['../classmain_game_widget.html#ad97227824a4d5b123c770599ea6ac21f',1,'mainGameWidget::gameParam()'],['../classgame_window.html#a13ae0c2dc0141a4546f1f883a3e6b567',1,'gameWindow::gameParam()']]],
-  ['gameparame',['gameParame',['../classmain_game_widget.html#aed8d26e1b1b80cc859a245825ad37fb7',1,'mainGameWidget']]],
+  ['gameparam',['gameParam',['../classmain_game_widget.html#a61f928bead5641c7e3af02ea34e18f0c',1,'mainGameWidget::gameParam()'],['../classgame_window.html#a13ae0c2dc0141a4546f1f883a3e6b567',1,'gameWindow::gameParam()']]],
   ['gameparameters',['gameParameters',['../classgame_parameters.html',1,'']]],
   ['gameparameters_2ehpp',['gameParameters.hpp',['../game_parameters_8hpp.html',1,'']]],
   ['gameprmts',['gamePrmts',['../classgame_statistics_widget.html#aa0d032238ecbc131a031e8b7b3249587',1,'gameStatisticsWidget']]],
@@ -22,7 +20,7 @@ var searchData=
   ['gameuart',['gameUART',['../class_side_panel_widget.html#a422e5ae9c5be708e0de0051fd8bd5639',1,'SidePanelWidget']]],
   ['gamewidget_2ecpp',['gameWidget.cpp',['../game_widget_8cpp.html',1,'']]],
   ['gamewidget_2ehpp',['gameWidget.hpp',['../game_widget_8hpp.html',1,'']]],
-  ['gamewindow',['gameWindow',['../classgame_window.html',1,'gameWindow'],['../classgame_window.html#aa7c1120c524be0249920baf1c4db650f',1,'gameWindow::gameWindow()']]],
+  ['gamewindow',['gameWindow',['../classgame_window.html',1,'gameWindow'],['../classgame_statistics_widget.html#ab3358a37281bd8ec247d2c1c0c6fd0d8',1,'gameStatisticsWidget::gameWindow()'],['../classgame_window.html#aa7c1120c524be0249920baf1c4db650f',1,'gameWindow::gameWindow()']]],
   ['gamewindow_2ecpp',['gameWindow.cpp',['../game_window_8cpp.html',1,'']]],
   ['gamewindow_2ehpp',['gameWindow.hpp',['../game_window_8hpp.html',1,'']]]
 ];

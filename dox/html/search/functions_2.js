@@ -11,6 +11,6 @@ var searchData=
   ['emitretranslate',['EmitRetranslate',['../classgame_window.html#a9725bc29f7f025807cac02498085d1a2',1,'gameWindow']]],
   ['emitsettingssaved',['EmitSettingsSaved',['../classsett_dialog.html#a05f0d6456dca488e706aff5197202d34',1,'settDialog']]],
   ['enddialog',['endDialog',['../classend_dialog.html#a13e02a02173434cf726a3add8e3b1fb4',1,'endDialog']]],
-  ['endgame',['EndGame',['../class_side_panel_widget.html#a0667394b67fa642b05a37d8087fbe3c3',1,'SidePanelWidget::EndGame()'],['../classgame_window.html#a5d5ca19ad1471927e274470746db35d7',1,'gameWindow::endGame()']]],
+  ['endgame',['endGame',['../classgame_window.html#a5d5ca19ad1471927e274470746db35d7',1,'gameWindow::endGame()'],['../class_side_panel_widget.html#a0667394b67fa642b05a37d8087fbe3c3',1,'SidePanelWidget::EndGame()']]],
   ['endprogram',['EndProgram',['../class_side_panel_widget.html#a016153e76b4b75567913496a966cf890',1,'SidePanelWidget']]]
 ];

@@ -1,6 +1,6 @@
 <map id="mainGameWidget" name="mainGameWidget">
 <area shape="rect" id="node3" href="$classgame_parameters.html" title="Klasa zawierająca informacje na temat statystyk gry. " alt="" coords="103,5,224,32"/>
 <area shape="rect" id="node4" href="$classgame_settings.html" title="Klasa zawierająca informacje na temat ustawień gry. " alt="" coords="248,5,351,32"/>
-<area shape="rect" id="node5" href="$classimage_parameters.html" title="imageParameters" alt="" coords="375,5,499,32"/>
+<area shape="rect" id="node5" href="$classimage_parameters.html" title="Klasa zawierająca parametry obrazów gry. " alt="" coords="375,5,499,32"/>
 <area shape="rect" id="node6" href="$class_u_a_r_t_val.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="523,5,601,32"/>
 </map>

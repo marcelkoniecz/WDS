@@ -1,10 +1,11 @@
 <map id="/home/marcel/Documents/semestrVI/WDS/Qt/inc/gameWindow.hpp" name="/home/marcel/Documents/semestrVI/WDS/Qt/inc/gameWindow.hpp">
-<area shape="rect" id="node16" href="$game_parameters_8hpp.html" title="Definicja statystyk gry. " alt="" coords="2072,259,2219,285"/>
-<area shape="rect" id="node19" href="$main_widget_8hpp.html" title="mainWidget.hpp" alt="" coords="954,109,1070,136"/>
-<area shape="rect" id="node21" href="$game_settings_8hpp.html" title="Definicja ustawień gry. " alt="" coords="2433,259,2560,285"/>
-<area shape="rect" id="node24" href="$game_statistics_8hpp.html" title="gameStatistics.hpp" alt="" coords="1650,184,1785,211"/>
-<area shape="rect" id="node28" href="$dialogs_8hpp.html" title="Plik nagłówkowy zawierający okna dialogowe. " alt="" coords="1436,184,1524,211"/>
-<area shape="rect" id="node34" href="$uart_param_8hpp.html" title="Plik nagłówkowy z strukturą na temat UART. " alt="" coords="2114,109,2220,136"/>
-<area shape="rect" id="node20" href="$game_widget_8hpp.html" title="gameWidget.hpp" alt="" coords="988,184,1108,211"/>
-<area shape="rect" id="node22" href="$side_widget_8hpp.html" title="sideWidget.hpp" alt="" coords="751,184,863,211"/>
+<area shape="rect" id="node16" href="$game_parameters_8hpp.html" title="Definicja statystyk gry. " alt="" coords="2397,259,2543,285"/>
+<area shape="rect" id="node19" href="$main_widget_8hpp.html" title="Plik nagłówkowy klasy mainwidget. " alt="" coords="972,109,1088,136"/>
+<area shape="rect" id="node21" href="$game_settings_8hpp.html" title="Definicja ustawień gry. " alt="" coords="2151,259,2277,285"/>
+<area shape="rect" id="node25" href="$game_statistics_8hpp.html" title="Plik nagłówkowy zawierający widget statystyk Plik nagłówkowy zawierający widget statystyk. " alt="" coords="1767,184,1901,211"/>
+<area shape="rect" id="node29" href="$dialogs_8hpp.html" title="Plik nagłówkowy zawierający okna dialogowe. " alt="" coords="1553,184,1641,211"/>
+<area shape="rect" id="node35" href="$uart_param_8hpp.html" title="Plik nagłówkowy z strukturą na temat UART. " alt="" coords="2281,109,2387,136"/>
+<area shape="rect" id="node20" href="$game_widget_8hpp.html" title="gameWidget.hpp" alt="" coords="918,184,1038,211"/>
+<area shape="rect" id="node23" href="$side_widget_8hpp.html" title="sideWidget.hpp" alt="" coords="1163,184,1275,211"/>
+<area shape="rect" id="node22" href="$image_parameters_8hpp.html" title="Plik nagłówkowy zawierający klasę imageParameters. " alt="" coords="45,259,194,285"/>
 </map>

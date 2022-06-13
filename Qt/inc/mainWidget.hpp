@@ -25,14 +25,19 @@ class gameWidget;
 class gameWindow;
 class UARTVal;
 
-
+/**
+ * @file 
+ * @brief Plik nagłówkowy klasy mainwidget
+ * 
+ * Plik nagłówkowy zawierający klasę mainWidget
+ */
 
 //Widget zawierajacy pole gry oraz panel boczny
 /**
  * @brief Klasa reprezentujaca widget glowny
+ * 
  * Klasa jest odpowiedzialna za stworzenie w widgecie glownym widgetu z gra
- * oraz widgetu panelu bocznego z opcjami
- *
+ * oraz widgetu panelu bocznego
  */
 class mainWidget :public QWidget {
     Q_OBJECT
@@ -40,32 +45,38 @@ private:
 
 public:
     /**
-     * @brief Pole reprezentujace timer gry
+     * @brief Wskaźnik na timer gry
+     * 
+     * Wskaźnik na timer gry, pole zostaje zaalokowany w konstruktorze, 
+     * odpowiada za odmierzanie czasu gry.
      */
     QTimer* gameTimer;
     /**
-     * @brief Pole reprezentujace widget z gra
+     * @brief Pole reprezentujące widget gry
      *
+     * Pole reprezentujące widget gry, zostaje zaalokowane w konstruktorze.
      */
     mainGameWidget* okienko;
     /**
      * @brief Pole reprezentujace widget z panelem bocznym
      *
+     * Pole reprezentujace widget z panelem bocznym, zostaje zaalokowane w konstruktorze.
      */
     SidePanelWidget* statystyki;
-    //mainWidget(gameWindow* parent = nullptr);
     /**
      * @brief Konstruktor tworzący widget glowny aplikacji
      *
-     * @param parent Wskaznik do rodzica
-     * @param gameInfo Wskaznik do struktury z danymi odczytanymi z akcelerometru
+     * @param[in] parent -- Wskaznik na klasę okna głównego aplikacji
+     * 
+     * KOnstruktor tworzący widget główny aplikacji, alokuje: timer gry, widget gry
+     * oraz widget panelu bocznego. 
      */
-   // mainWidget(gameWindow* parent = nullptr, UARTVal* gameInfo = nullptr, gameParameters* gameParam = nullptr);
     mainWidget(gameWindow* parent=nullptr);
 public slots:
     /**
-     * @brief Slot odwiezenia czasu
+     * @brief Slot obsługujacy timeout() zegara
      *
+     * Slot obsługujący timeout zegara, timeout występuje z interwałem 10 mil. sec.
      */
     void updateTime();
 };

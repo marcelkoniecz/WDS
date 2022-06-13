@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['setballspeed',['setBallSpeed',['../classgame_parameters.html#a6a37ec71b2500362a14429fa88de14a7',1,'gameParameters']]],
   ['settdialog',['settDialog',['../classsett_dialog.html',1,'settDialog'],['../classgame_window.html#a16034386f0937a8321dc8b5e1dfa6d74',1,'gameWindow::settDialog()'],['../classsett_dialog.html#a4d8399f4367364867affaab61fa830a0',1,'settDialog::settDialog()']]],
   ['settimernull',['setTimerNull',['../class_side_panel_widget.html#a2e732225cd6430685c65211e4f5ffc75',1,'SidePanelWidget']]],
   ['settingsdialog',['settingsDialog',['../classgame_window.html#a9758e7135bf4cfd0faa6c786f581edf0',1,'gameWindow']]],

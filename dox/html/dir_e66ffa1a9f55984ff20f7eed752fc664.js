@@ -14,11 +14,13 @@ var dir_e66ffa1a9f55984ff20f7eed752fc664 =
       [ "gameStatisticsWidget", "classgame_statistics_widget.html", "classgame_statistics_widget" ]
     ] ],
     [ "gameWidget.hpp", "game_widget_8hpp.html", [
-      [ "imageParameters", "classimage_parameters.html", "classimage_parameters" ],
       [ "mainGameWidget", "classmain_game_widget.html", "classmain_game_widget" ]
     ] ],
     [ "gameWindow.hpp", "game_window_8hpp.html", [
       [ "gameWindow", "classgame_window.html", "classgame_window" ]
+    ] ],
+    [ "imageParameters.hpp", "image_parameters_8hpp.html", [
+      [ "imageParameters", "classimage_parameters.html", "classimage_parameters" ]
     ] ],
     [ "mainWidget.hpp", "main_widget_8hpp.html", [
       [ "mainWidget", "classmain_widget.html", "classmain_widget" ]

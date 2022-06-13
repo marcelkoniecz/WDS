@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('classmain_widget.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Klasa reprezentujaca widget glowny Klasa jest odpowiedzialna za stworzenie w widgecie glownym widgetu z gra oraz widgetu panelu bocznego z opcjami.  
+<p>Klasa reprezentujaca widget glowny.  
  <a href="classmain_widget.html#details">Więcej...</a></p>
 
 <p><code>#include &lt;<a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a>&gt;</code></p>
@@ -104,18 +104,18 @@ Diagram współpracy dla mainWidget:</div>
 <div class="center"><img src="classmain_widget__coll__graph.png" border="0" usemap="#main_widget_coll__map" alt="Collaboration graph"/></div>
 <map name="main_widget_coll__map" id="main_widget_coll__map">
 <area shape="rect" id="node3" href="class_side_panel_widget.html" title="Klasa reprezentująca panel boczny aplikacji. " alt="" coords="168,95,291,121"/>
-<area shape="rect" id="node7" href="classmain_game_widget.html" title="mainGameWidget" alt="" coords="398,95,525,121"/>
-<area shape="rect" id="node5" href="classgame_parameters.html" title="Klasa zawierająca informacje na temat statystyk gry. " alt="" coords="434,5,555,32"/>
+<area shape="rect" id="node7" href="classmain_game_widget.html" title="Klasa reprezentująca widget gry. " alt="" coords="398,95,525,121"/>
+<area shape="rect" id="node5" href="classgame_parameters.html" title="Klasa zawierająca informacje na temat statystyk gry. " alt="" coords="431,5,553,32"/>
 <area shape="rect" id="node6" href="class_u_a_r_t_val.html" title="Klasa zawierajaca informacje na temat gry. " alt="" coords="287,5,366,32"/>
-<area shape="rect" id="node8" href="classgame_settings.html" title="Klasa zawierająca informacje na temat ustawień gry. " alt="" coords="594,5,697,32"/>
-<area shape="rect" id="node9" href="classimage_parameters.html" title="imageParameters" alt="" coords="721,5,845,32"/>
+<area shape="rect" id="node8" href="classgame_settings.html" title="Klasa zawierająca informacje na temat ustawień gry. " alt="" coords="587,5,690,32"/>
+<area shape="rect" id="node9" href="classimage_parameters.html" title="Klasa zawierająca parametry obrazów gry. " alt="" coords="714,5,838,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Sloty publiczne</h2></td></tr>
 <tr class="memitem:a9235834692a5b16879cae38123528bdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_widget.html#a9235834692a5b16879cae38123528bdd">updateTime</a> ()</td></tr>
-<tr class="memdesc:a9235834692a5b16879cae38123528bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot odwiezenia czasu.  <a href="#a9235834692a5b16879cae38123528bdd">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a9235834692a5b16879cae38123528bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot obsługujacy timeout() zegara.  <a href="#a9235834692a5b16879cae38123528bdd">Więcej...</a><br /></td></tr>
 <tr class="separator:a9235834692a5b16879cae38123528bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -127,19 +127,20 @@ Metody publiczne</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Atrybuty publiczne</h2></td></tr>
 <tr class="memitem:a8553bb0be22081d78845a0fc0c749e6e"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_widget.html#a8553bb0be22081d78845a0fc0c749e6e">gameTimer</a></td></tr>
-<tr class="memdesc:a8553bb0be22081d78845a0fc0c749e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole reprezentujace timer gry.  <a href="#a8553bb0be22081d78845a0fc0c749e6e">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a8553bb0be22081d78845a0fc0c749e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na timer gry.  <a href="#a8553bb0be22081d78845a0fc0c749e6e">Więcej...</a><br /></td></tr>
 <tr class="separator:a8553bb0be22081d78845a0fc0c749e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae01eae37459760d2c8a56daa8a71e42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmain_game_widget.html">mainGameWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_widget.html#aae01eae37459760d2c8a56daa8a71e42">okienko</a></td></tr>
-<tr class="memdesc:aae01eae37459760d2c8a56daa8a71e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole reprezentujace widget z gra.  <a href="#aae01eae37459760d2c8a56daa8a71e42">Więcej...</a><br /></td></tr>
+<tr class="memdesc:aae01eae37459760d2c8a56daa8a71e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole reprezentujące widget gry.  <a href="#aae01eae37459760d2c8a56daa8a71e42">Więcej...</a><br /></td></tr>
 <tr class="separator:aae01eae37459760d2c8a56daa8a71e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26900a873d5b1782df1eebf8d11394a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_side_panel_widget.html">SidePanelWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_widget.html#a26900a873d5b1782df1eebf8d11394a0">statystyki</a></td></tr>
 <tr class="memdesc:a26900a873d5b1782df1eebf8d11394a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole reprezentujace widget z panelem bocznym.  <a href="#a26900a873d5b1782df1eebf8d11394a0">Więcej...</a><br /></td></tr>
 <tr class="separator:a26900a873d5b1782df1eebf8d11394a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
-<div class="textblock"><p>Klasa reprezentujaca widget glowny Klasa jest odpowiedzialna za stworzenie w widgecie glownym widgetu z gra oraz widgetu panelu bocznego z opcjami. </p>
+<div class="textblock"><p>Klasa reprezentujaca widget glowny. </p>
+<p>Klasa jest odpowiedzialna za stworzenie w widgecie glownym widgetu z gra oraz widgetu panelu bocznego </p>
 
-<p class="definition">Definicja w linii <a class="el" href="main_widget_8hpp_source.html#l00037">37</a> pliku <a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="main_widget_8hpp_source.html#l00042">42</a> pliku <a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="aed279757f12ce187179135bf44e771d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed279757f12ce187179135bf44e771d1">&#9670;&nbsp;</a></span>mainWidget()</h2>
@@ -160,21 +161,21 @@ Atrybuty publiczne</h2></td></tr>
 <p>Konstruktor tworzący widget glowny aplikacji. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>Wskaznik do rodzica </td></tr>
-    <tr><td class="paramname">gameInfo</td><td>Wskaznik do struktury z danymi odczytanymi z akcelerometru </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>&ndash; Wskaznik na klasę okna głównego aplikacji</td></tr>
   </table>
   </dd>
 </dl>
+<p>KOnstruktor tworzący widget główny aplikacji, alokuje: timer gry, widget gry oraz widget panelu bocznego. </p>
 
 <p class="definition">Definicja w linii <a class="el" href="main_widget_8cpp_source.html#l00003">3</a> pliku <a class="el" href="main_widget_8cpp_source.html">mainWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="main_widget_8hpp_source.html#l00045">gameTimer</a>, <a class="el" href="main_widget_8hpp_source.html#l00050">okienko</a>, <a class="el" href="main_widget_8hpp_source.html#l00055">statystyki</a> i <a class="el" href="main_widget_8cpp_source.html#l00020">updateTime()</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="main_widget_8hpp_source.html#l00053">gameTimer</a>, <a class="el" href="main_widget_8hpp_source.html#l00059">okienko</a>, <a class="el" href="main_widget_8hpp_source.html#l00065">statystyki</a> i <a class="el" href="main_widget_8cpp_source.html#l00020">updateTime()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmain_widget_aed279757f12ce187179135bf44e771d1_cgraph.png" border="0" usemap="#classmain_widget_aed279757f12ce187179135bf44e771d1_cgraph" alt=""/></div>
 <map name="classmain_widget_aed279757f12ce187179135bf44e771d1_cgraph" id="classmain_widget_aed279757f12ce187179135bf44e771d1_cgraph">
-<area shape="rect" id="node2" href="classmain_widget.html#a9235834692a5b16879cae38123528bdd" title="Slot odwiezenia czasu. " alt="" coords="221,5,388,32"/>
+<area shape="rect" id="node2" href="classmain_widget.html#a9235834692a5b16879cae38123528bdd" title="Slot obsługujacy timeout() zegara. " alt="" coords="221,5,388,32"/>
 </map>
 </div>
 
@@ -204,7 +205,8 @@ Oto graf wywołań dla tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Slot odwiezenia czasu. </p>
+<p>Slot obsługujacy timeout() zegara. </p>
+<p>Slot obsługujący timeout zegara, timeout występuje z interwałem 10 mil. sec. </p>
 
 <p class="definition">Definicja w linii <a class="el" href="main_widget_8cpp_source.html#l00020">20</a> pliku <a class="el" href="main_widget_8cpp_source.html">mainWidget.cpp</a>.</p>
 
@@ -233,9 +235,10 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Pole reprezentujace timer gry. </p>
+<p>Wskaźnik na timer gry. </p>
+<p>Wskaźnik na timer gry, pole zostaje zaalokowany w konstruktorze, odpowiada za odmierzanie czasu gry. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="main_widget_8hpp_source.html#l00045">45</a> pliku <a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="main_widget_8hpp_source.html#l00053">53</a> pliku <a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a>.</p>
 
 <p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget::mainGameWidget()</a>, <a class="el" href="main_widget_8cpp_source.html#l00003">mainWidget()</a>, <a class="el" href="game_window_8cpp_source.html#l00110">gameWindow::restartGame()</a> i <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget::SidePanelWidget()</a>.</p>
 
@@ -253,9 +256,10 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Pole reprezentujace widget z gra. </p>
+<p>Pole reprezentujące widget gry. </p>
+<p>Pole reprezentujące widget gry, zostaje zaalokowane w konstruktorze. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="main_widget_8hpp_source.html#l00050">50</a> pliku <a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="main_widget_8hpp_source.html#l00059">59</a> pliku <a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a>.</p>
 
 <p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow::gameWindow()</a> i <a class="el" href="main_widget_8cpp_source.html#l00003">mainWidget()</a>.</p>
 
@@ -274,8 +278,9 @@ Oto graf wywoływań tej funkcji:</div>
 </div><div class="memdoc">
 
 <p>Pole reprezentujace widget z panelem bocznym. </p>
+<p>Pole reprezentujace widget z panelem bocznym, zostaje zaalokowane w konstruktorze. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="main_widget_8hpp_source.html#l00055">55</a> pliku <a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="main_widget_8hpp_source.html#l00065">65</a> pliku <a class="el" href="main_widget_8hpp_source.html">mainWidget.hpp</a>.</p>
 
 <p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00027">gameWindow::gameWindow()</a> i <a class="el" href="main_widget_8cpp_source.html#l00003">mainWidget()</a>.</p>
 

@@ -1,5 +1,5 @@
 <map id="CalculateCRC8" name="CalculateCRC8">
-<area shape="rect" id="node2" href="$classgame_window.html#a44cb04704f8f9d1faec12e0669abb45d" title="Slot do odczytywania danych z UART Za pomocą tej funkcji odczytywane oraz zapisywane są dane w jaki s..." alt="" coords="168,5,379,32"/>
-<area shape="rect" id="node3" href="$classgame_window.html#a787dbecae715feb56d9ac0a1cb8f9ce7" title="Slot inicjalizujacy polaczenie z mikrokontrolerem. " alt="" coords="427,5,593,32"/>
+<area shape="rect" id="node2" href="$classgame_window.html#a44cb04704f8f9d1faec12e0669abb45d" title="Slot odpowiedzialny za odczytywanie danych z UART. " alt="" coords="168,5,379,32"/>
+<area shape="rect" id="node3" href="$classgame_window.html#a787dbecae715feb56d9ac0a1cb8f9ce7" title="Slot inicjalizujacy połączenie z mikrokontrolerem. " alt="" coords="427,5,593,32"/>
 <area shape="rect" id="node4" href="$classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="641,5,829,32"/>
 </map>

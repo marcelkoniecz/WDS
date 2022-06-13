@@ -76,7 +76,7 @@ void gameWindow::checkLanguage() {
 void gameWindow::changeEvent(QEvent* event) {
 
   if (event->type() == QEvent::LanguageChange) {
-    std::cout << "Zmiana" << endl;
+    // std::cout << "Zmiana" << endl;
     retranslateUi(this);
     emit EmitRetranslate();
     return;
@@ -92,6 +92,7 @@ void gameWindow::disconnectDevice() {
 
 void gameWindow::openGameWidget() {
   stackWidget->setCurrentIndex(0);
+  emit EmitPauzeGame();
   endGameDialog->show();
 }
 
@@ -110,8 +111,8 @@ void gameWindow::endGame() {
 void gameWindow::restartGame() {
   CentralWidget->gameTimer->start(10);
   gameParam.blockButtons = false;
-  gameInfo.isGameActive = true;
-  gameInfo.resetPosition = true;
+  gameParam.isGameActive = true;
+  gameParam.resetPosition = true;
   statsWidget->points->clear();
   emit EmitRestartGame();
   emit EmitBlockButtons();
@@ -187,17 +188,19 @@ void gameWindow::ReadTransmision() {
 void gameWindow::on_actionConnect_triggered() {
 
   connectionDialog->show();
-
+  emit EmitPauzeGame();
 }
 
 void gameWindow::on_actionSettings_triggered() {
   settingsDialog->loadParam();
   settingsDialog->show();
+  emit EmitPauzeGame();
 }
 void gameWindow::on_actionDisconnect_triggered() {
 
   // QDialog *disconnectionDialog=new QDialog();
   disconnectionDialog->StartDialog(gameInfo.devName);
   disconnectionDialog->show();
+  emit EmitPauzeGame();
 
 }

@@ -1,8 +1,6 @@
 var classmain_game_widget =
 [
     [ "mainGameWidget", "classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd", null ],
-    [ "calBal", "classmain_game_widget.html#abdeb8f415fd11fcba10c45ba08d47e05", null ],
-    [ "calComPlate", "classmain_game_widget.html#a3d1c3e4beac0474d8e2dd297350072c6", null ],
     [ "calculateBallPosition", "classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb", null ],
     [ "calculateComPlatePosition", "classmain_game_widget.html#a60c69addd15b1b7f8536d2a436f8e354", null ],
     [ "calculateIfBouncedPlate", "classmain_game_widget.html#aeb03489f2c85a9156b4af4c1b157f540", null ],
@@ -10,7 +8,6 @@ var classmain_game_widget =
     [ "calculateIfEndGame", "classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f", null ],
     [ "calculateUserPlate", "classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd", null ],
     [ "EmitEndGame", "classmain_game_widget.html#a56c3a3a188113fc62127f75f5b3dacb2", null ],
-    [ "gameEnd", "classmain_game_widget.html#a0491f01e616420d95bc042c2a3132c83", null ],
     [ "initValues", "classmain_game_widget.html#a9e85cde6eb0ae703e3420bbb1c96a31f", null ],
     [ "makeGameStep", "classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea", null ],
     [ "paintEvent", "classmain_game_widget.html#a2a2292016b7b2c03682f754024bcca62", null ],
@@ -19,10 +16,10 @@ var classmain_game_widget =
     [ "ball", "classmain_game_widget.html#a7f8a8dc61a8f49b866e23d6f61b8512a", null ],
     [ "computerPlate", "classmain_game_widget.html#af0e155b5961ffb6d300dcfb6da4f52e7", null ],
     [ "gameInfo", "classmain_game_widget.html#a6f73be1ce970a199ef87b001177bdba4", null ],
-    [ "gameParam", "classmain_game_widget.html#ad97227824a4d5b123c770599ea6ac21f", null ],
-    [ "gameParame", "classmain_game_widget.html#aed8d26e1b1b80cc859a245825ad37fb7", null ],
+    [ "gameParam", "classmain_game_widget.html#a61f928bead5641c7e3af02ea34e18f0c", null ],
     [ "gameSettgs", "classmain_game_widget.html#acaf079fdbf929505fb59a0ad97c7e750", null ],
     [ "gameTimer", "classmain_game_widget.html#a0c8dfda67b8d7ab2de886f8988f41482", null ],
+    [ "imgParam", "classmain_game_widget.html#a726cb3b3f23e67f07a30f5c2a7a13e03", null ],
     [ "life", "classmain_game_widget.html#a9869b06d940be6a878833145c7bb5611", null ],
     [ "timerun", "classmain_game_widget.html#a218998300d8db8e060d322bc3193d8ca", null ],
     [ "userPlate", "classmain_game_widget.html#accf95079dcecfa8455770743fe05c080", null ]
