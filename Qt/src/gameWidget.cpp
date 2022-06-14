@@ -1,19 +1,36 @@
 #include "gameWidget.hpp"
 #include <cmath>
 
+/**
+ * @file
+ *  @brief Definicje metod klasy mainGameWidget
+ *
+ * Definicje metod  klasy mainGameWidget. Klasy mainGameWidget jest
+ * klasą pochodą QWidgeta.
+ */
+
+
+
 inline
 double Deg2Rad(double Ang_deg)
 {
   return Ang_deg * M_PI / 180;
 }
 
-//mainGameWidget::mainGameWidget(QWidget* parent, UARTVal* gameInformations, QTimer* appTimer, gameParameters* gameParamtr) :QWidget(parent) {
+/**
+  *
+  * @param[in] parent wskaźnik na widget główny aplikacji
+  * @param[in] gameWin Wskaźnik na okno główne aplikacji
+  *
+  *Konstruktor klasy widget'u gry, odpowiada za przypisanie odpowiednich adresów okna głównego
+  * do odpowiednich wskaźników klasy mainGameWidget. W konstruktorze zostają także dane 
+  * obrazy znajdujące się w folderze res/img/
+  */
 mainGameWidget::mainGameWidget(mainWidget* parent, gameWindow* gameWin) {
-  background.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/tlo.png");
-  computerPlate.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/plytka.png");
-  userPlate.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/plytka.png");
-  ball.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/circle.png");
-  //life.load("/home/marcel/Documents/semestrVI/WDS/Qt/res/img/zyciebez.png");
+  background.load("./res/img/tlo.png");
+  computerPlate.load("./res/img/plytka.png");
+  userPlate.load("./res/img/plytka.png");
+  ball.load("./res/img/circle.png");
   gameTimer = parent->gameTimer;
   gameInfo = &(gameWin->gameInfo);
   gameParam = &(gameWin->gameParam);
@@ -22,11 +39,11 @@ mainGameWidget::mainGameWidget(mainWidget* parent, gameWindow* gameWin) {
   initValues();
   timerun = 0;
   gameParam->averageBallVel = imgParam.ballSpeed;
-
-  //gameInfo->isGameActive = 1;
-  //imgParam.currentAngle = 90;
 }
 
+/**
+ * Metoda inicjalizująca grę, wywoływana w czasie uruchomienia nowej gry.
+ */
 void mainGameWidget::initValues() {
   gameParam->isGameActive = true;
   imgParam.ballSpeed = 5;
@@ -37,7 +54,11 @@ void mainGameWidget::initValues() {
   gameParam->averageBallVel = imgParam.ballSpeed;
   timerun = 0;
 }
-
+/**
+ *
+ * Metoda resetująca pozycję obiektów, wywoływana np w czasie utracenia życia 
+ * przez jednego z graczy.
+ */
 void mainGameWidget::resetPosition() {
   imgParam.currentAngle = 90;
   imgParam.ballPos[0] = (width() / 2 - 50);
@@ -51,7 +72,11 @@ void mainGameWidget::resetPosition() {
   imgParam.comPlateLoc[0][1] = (width() / 2 - 100) + 180;
   imgParam.comPlateLoc[1][1] = 30;
 }
-
+/**
+ *
+ * Slot wywoływany za pomocą timeout() pochodzących od timera. W slocie wywołana 
+ * jest metoda makeGameStep().
+ */
 void mainGameWidget::updateTime() {
 
   if (gameParam->resetPosition) {
@@ -62,7 +87,12 @@ void mainGameWidget::updateTime() {
   this->makeGameStep();
   update();
 }
-
+/**
+ *
+ * Metoda odpowiedzialna za wywołanie wszystkich odpowiednich metod pozwalających
+ * na poruszanie się piłki, platform. Wywołuje metody sprawdzające czy występuje odbicie,
+ * koniec gry.
+ */
 void mainGameWidget::makeGameStep() {
   calculateUserPlate();
   calculateBallPosition();
@@ -71,7 +101,11 @@ void mainGameWidget::makeGameStep() {
   calculateIfBouncedPlate();
   calculateComPlatePosition();
 }
-
+/**
+  *
+  * Metoda odpowiedzialna za wyliczenie położenia płytki gracza, przemieszczenie płytki
+  * jest obliczone na podstawie danych otrzymanych z akcelerometru (pole gameInfo).
+  */
 void mainGameWidget::calculateUserPlate() {
   if (gameParam->isGameActive) {
     if (imgParam.userPlateLoc[0][0] + gameInfo->YVal + 120 < width() - 60 &&
@@ -85,7 +119,11 @@ void mainGameWidget::calculateUserPlate() {
 }
 
 
-
+/**
+  *
+  * Metoda odpowiedzialna za wyliczenie pozycji piłki, parametry (np. prędkość), są pobierane
+  * z pola informacji o obrazach.
+  */
 void mainGameWidget::calculateBallPosition() {
 
   double angRad = Deg2Rad(imgParam.currentAngle);
@@ -94,7 +132,11 @@ void mainGameWidget::calculateBallPosition() {
   imgParam.ballPos[0] = imgParam.ballPos[0] + imgParam.ballSpeed * cs;
 
 }
-
+/**
+ *
+ * Metoda odpowiedzialna za sprawdzenie czy nastąpił koniec gry, jeżeli wystąpił koniec gry
+ * metoda wysyłą sygnał o końcu gry.
+ */
 void mainGameWidget::calculateIfEndGame() {
   //Sprawdzenie czy na gorze
   if (imgParam.currentAngle > 0) {
@@ -124,6 +166,13 @@ void mainGameWidget::calculateIfEndGame() {
     }
   }
 }
+
+/**
+  *
+ * Metoda odpowiedzialna za sprawdzenie czy wystąpiło odbicie od jednej z ścian.
+  * Jeśli wystąpiło odbicie obliczna jest wartość kąta w jakim powinna się poruszać piłka
+  * po odbiciu (pole currentAngle klasy imageParameters).
+  */
 void mainGameWidget::calculateIfBouncedWall() {
   // Sprawdzenie Odbicie lewa sciana
   if (imgParam.ballPos[0] < 0 && imgParam.currentAngle < 0) {//Do gory
@@ -144,7 +193,12 @@ void mainGameWidget::calculateIfBouncedWall() {
     imgParam.currentAngle = 180 - imgParam.currentAngle;
   }
 }
-
+/**
+ *
+ * Metoda odpowiedzialna za sprawdzenie czy wystąpiło odbicie od jednej z płytek.
+ * Jeśli wystąpiło odbicie obliczna jest wartość kąta w jakim powinna się poruszać piłka
+ * po odbiciu (pole currentAngle klasy imageParameters).
+ */
 void mainGameWidget::calculateIfBouncedPlate() {
   //Sprawdzenie czy od od dolnej plytki
 
@@ -189,9 +243,9 @@ void mainGameWidget::calculateIfBouncedPlate() {
       }
       gameParam->ballBounceNumber++;
       //  qDebug()<<"Przed "<<gameParam->averageBallVel;
-      gameParam->averageBallVel = (gameParam->averageBallVel * gameParam->ballBounceNumber + imgParam.ballSpeed) / (gameParam->ballBounceNumber+1);
-    //  qDebug()<<gameParam->averageBallVel;
-      //      qDebug()<<"Po "<<gameParam->averageBallVel;
+      gameParam->averageBallVel = (gameParam->averageBallVel * gameParam->ballBounceNumber + imgParam.ballSpeed) / (gameParam->ballBounceNumber + 1);
+      //  qDebug()<<gameParam->averageBallVel;
+        //      qDebug()<<"Po "<<gameParam->averageBallVel;
     }
   }
   //Sprawdzenie czy od gornej plytki
@@ -209,10 +263,8 @@ void mainGameWidget::calculateIfBouncedPlate() {
       if (gameSettgs->randomBallSpeed) {
         imgParam.ballSpeed = (rand() % 7 + 3);
       }
-    //  qDebug()<<(gameParam->ballBounceNumber);
-      qDebug()<<gameParam->averageBallVel ;
-      gameParam->averageBallVel = (gameParam->averageBallVel * gameParam->ballBounceNumber + imgParam.ballSpeed) / (gameParam->ballBounceNumber+1);
-      qDebug()<<gameParam->averageBallVel ;
+      //  qDebug()<<(gameParam->ballBounceNumber);
+      gameParam->averageBallVel = (gameParam->averageBallVel * gameParam->ballBounceNumber + imgParam.ballSpeed) / (gameParam->ballBounceNumber + 1);
 
     }
 
@@ -220,7 +272,12 @@ void mainGameWidget::calculateIfBouncedPlate() {
 }
 
 
-
+/**
+    *
+    * Metoda odpowiedzialna za wyliczenie położenie płytki komputera. Początkowo wyznaczana jest pozycja docelowa platformy
+    * ,następnie uwzględniając poziom trudności wybrany przez gracza w ustawieniach następuje
+    * przemieszczenie płytki z odpowiednią prędkością.
+    */
 void mainGameWidget::calculateComPlatePosition() {
   //Obliczenie gdzie bedzie w przyszlosci pilka
 
@@ -243,9 +300,9 @@ void mainGameWidget::calculateComPlatePosition() {
   imgParam.XtargetComPlate = imgParam.ballPos[0] - 70;
   // qDebug() << imgParam.ballPos[0] - 30;
   if (abs(imgParam.XtargetComPlate - imgParam.comPlateLoc[0][0]) < imgParam.plateSpeed &&
-    imgParam.comPlateLoc[0][1] < width() && imgParam.comPlateLoc[0][0]>0){
-  imgParam.comPlateLoc[0][0] = imgParam.XtargetComPlate;
-  imgParam.comPlateLoc[0][1] = imgParam.XtargetComPlate + 180;
+    imgParam.comPlateLoc[0][1] < width() && imgParam.comPlateLoc[0][0]>0) {
+    imgParam.comPlateLoc[0][0] = imgParam.XtargetComPlate;
+    imgParam.comPlateLoc[0][1] = imgParam.XtargetComPlate + 180;
   }
 
   if (imgParam.XtargetComPlate > imgParam.comPlateLoc[0][0] &&
@@ -264,7 +321,12 @@ void mainGameWidget::calculateComPlatePosition() {
 
 }
 
-
+  /**
+    *
+    * @param ptr QPaintEvent
+    *
+    * Metoda odpowiedzialna za aktualizację widgeta.
+    */
 void mainGameWidget::paintEvent(QPaintEvent*) {
   QPainter  Rysownik(this);
   double proporcjeWS_Obraz = background.height() / background.width();

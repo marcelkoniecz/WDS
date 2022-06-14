@@ -5,6 +5,7 @@ var classgame_window =
     [ "checkLanguage", "classgame_window.html#a4115287f0438436e17b2a15a55db1fe6", null ],
     [ "disconnectDevice", "classgame_window.html#a0e0bc9288b7c6e78bc8f0c682ffe81a2", null ],
     [ "EmitBlockButtons", "classgame_window.html#a432aa40c8402ef2ddebb2fc01c767082", null ],
+    [ "EmitPauzeGame", "classgame_window.html#ab3b27b15d519f7c7dc44af55ae1d27be", null ],
     [ "EmitRestartGame", "classgame_window.html#a999d830fdc70a0b871695f39bfcc3c1c", null ],
     [ "EmitRetranslate", "classgame_window.html#a9725bc29f7f025807cac02498085d1a2", null ],
     [ "endGame", "classgame_window.html#a5d5ca19ad1471927e274470746db35d7", null ],

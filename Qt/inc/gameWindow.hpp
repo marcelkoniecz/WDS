@@ -34,7 +34,7 @@ class gameStatisticsWidget;
 
 /**
  * @file
- * @brief Plik nagłówkowy z klasą okna apliji 
+ * @brief Definicja klasy gameWindow
  *
  * Plik nagłówkowy  klasą okna apliji 
  */
@@ -134,97 +134,53 @@ public:
 
     /**
      * @brief Konstruktor nowego okna gry
-     *
-     * @param[in] parent -- Wskaźnik na klasę QMainWindow
-     *
-     * Konstruktor alokuje pamięć dla wszystkich wskaźników oraz dodaje do stackWidgeta
-     * widget główny oraz widget statystyk. Na koniec łączy przychodzące sygnały z odpowiednimi
-     * slotami.
      */
     gameWindow(QMainWindow* parent = nullptr);
-    //  virtual ~gameWindow() = default;
     virtual void changeEvent(QEvent* event) override;
 
 public slots:
     /**
      * @brief Slot obsługujący wybranie opcji ustawień
-     *
-     * Slot obsługujący wybrania opcji ustawień, wywołuje dialog ustawień.
      */
     void on_actionSettings_triggered();
     /**
      * @brief Slot obsługujący wybranie opcji połąnia 
-     *
-     * Slot obsługujący wybrania opcji połączenia, wywołujacy dialog z polaczeniem.
      */
     void on_actionConnect_triggered();
     /**
      * @brief  Slot obsługujący wybranie opcji rozłączenia
-     *
-     *  Slot obsługujący wybrania opcji rozłączenia, wywołujacy dialog z rozłączeniem bierzącego urządzenia.
      */
     void on_actionDisconnect_triggered();
     /**
      * @brief Slot inicjalizujacy połączenie z mikrokontrolerem
-     *
-     * @param[in] devName -- Nazwa polaczonego urzadzenia
-     *
-     * Slot inicjalizujący połączenie z mikrokontrolerem, uruchamiany przez sał 
-     * o możliwości połączenia z wybranym przez urzytkownika urządzeniem.
      */
     void initDevice(QString devName);
     /**
      * @brief Slot  odpowiedzialny za odczytywanie danych z UART
-     *
-     * Slot odpowiedzialny za odczytywanie danych z UART, wywoływany jest podczas
-     * otrzymywania danych za pomocą UART-a.
-     *
      */
     void ReadTransmision();
     /**
      * @brief Slot odpowiedzialny za obsługę restartu gry
-     *
-     * Slot odpowiedzialny za obsługę restartu gry, wywoływany przez sygnał EmitRestartGame()
-     * emitowany przez dialog końcowy. Odpowida za ponowne uruchomienie gry.
      */
     void restartGame();
     /**
      * @brief Slot odpowiedzialny za obsługę końca gry
-     *
-     * Slot odpowiedzialny za obsługę końca gry, wywoływany przez sygnał EmitEndGame() emitowany
-     * przez widget gry (w momencie gdy jeden z graczy przegra), lub przez widget panelu bocznego
-     * (podczas wciśniecia przycisku End Game). Slot wyświetla dialog końca y. 
      */
     void endGame();
     /**
      * @brief Slot odpowiedzialny za zmianę stackwidgeta na widget z statystykami
-     *
-     * Slot odpowiedzialny za zmianę stackwidgeta na widget z statystykami, wywoływany jest przez
-     * sygnał EmitOpenStatistics() przez dialog końca gry, podczas naciśnięcia przycisku
-     * Statistics.
      */
     void openStatisticsWidget();
     /**
      * @brief Slot odpowiedzialny za zmianę stackwidgeta na widget z g 
-     *
-     * Slot odpowiedzialny za zmianę wyświetlanego widgeta na widget z grą oraz panelem boczm, 
-     * wywoływany przez sygnał EmitChangeWidget() przez widget statystyk (podczas naciśnięcia 
-     * przycisku return).
      */
     void openGameWidget();
     /**
      * @brief Slot rozłączający połączone urządzenie
-     *
-     * Slot odpowiedzialny za rozłączenie aktualnie połączonego urządzenia. Wywoływany przez
-     * sygnał EmitDisconnectDevice() przez dialog rozłaczenia.
      */
     void disconnectDevice();
     /**
      * @brief Slot sprawdzający czy wystąpiła zmiana języka
-     *
-     *Slot sprawdzający czy wystąpiłą zmiana języka, jest wywoływany podczas wystąpienia sygnału
-     * EmitSettingsSaved() który informuje że zostały zapisane nowe ustawienia gry. Slot jest odpowiedziny 
-     * za sprawdzenie oraz jeśli istnieje potrzeba - załadowaniu nowego języka aplikacji.
      */
     void checkLanguage();
 signals:

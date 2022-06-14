@@ -26,7 +26,8 @@
 
 /**
  * @file
- * @brief Plik nagłówkowy zawierający widget statystyk
+ * @brief  Definicja klasy gameStatisticsWidget
+ *
  *  Plik nagłówkowy zawierający widget statystyk.
  */
 
@@ -36,7 +37,7 @@ class gameWindow;
  * @brief Klasa reprezentująca widget statystyk końcowych
  *
  * Klasa reprezentująca widget statystyk końcowych, widget ukazuje siędy 
- * użytkownik zechce zobaczyć statystyki właśnie skończongry. 
+ * użytkownik zechce zobaczyć statystyki właśnie skończogry. 
  */
 class gameStatisticsWidget :public QWidget, public Ui::gameStatistics {
     Q_OBJECT
@@ -48,7 +49,7 @@ private:
      */
     QChart* chart;
     /**
-     * @brief Wskaźnik na klasę statystyk gry 
+     * @brief Wskaźnik na klasę statystyk gy 
      *
      * Wskaźnik na klasę statystyk gry, zostanie do niego przypisany adres z okna głównego aplikacji,
      * wykorzystywany w celu wyświetlenia statystyk końcowych gry.
@@ -75,17 +76,30 @@ private:
      */
     QValueAxis* axis;
     /**
-     * @brief Zaprzyjaźniona klasa okna głównego 
-     * 
+     * @brief Zaprzyjaźniona klasa okna główngo 
+     *
      * Zaprzyjaźniona klasa okna głównego w celu skorzystania z prywatnego pola - gameParameters.
      */
     friend gameWindow;
 public:
+    /**
+     * @brief Konstruktor widgetu statystyk
+
+     */
     gameStatisticsWidget(gameWindow* parent = nullptr);
+    /**
+     * @brief Metoda odpowiedzialna za rysowanie wykresu
+     */
     void printChart();
 
 public slots:
+    /**
+     * @brief Slot obsługujący kliknięcie przycisku return
+     */
     void on_returnButton_clicked();
+    /**
+     * @brief Slot zmiany języka
+     */
     void retranslate();
 signals:
 
@@ -93,7 +107,7 @@ signals:
      * @brief Sygnał przejścia do głównego widgetu aplikacji
      *
      * Sygnał przejścia do widgetu gry, wysyłany w chwili naciśnięcia przycisku
-     * return. Za pomocą tego sygnału zmieniany jest główny widget apliji. 
+     * return. Za pomocą tego sygnału zmieniany jest główny widget aplji. 
      */
     void EmitChangeWidget();
 };

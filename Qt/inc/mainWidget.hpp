@@ -27,10 +27,11 @@ class UARTVal;
 
 /**
  * @file 
- * @brief Plik nagłówkowy klasy mainwidget
+ * @brief Definicja klasy  mainWidget
  * 
  * Plik nagłówkowy zawierający klasę mainWidget
  */
+
 
 //Widget zawierajacy pole gry oraz panel boczny
 /**
@@ -65,11 +66,6 @@ public:
     SidePanelWidget* statystyki;
     /**
      * @brief Konstruktor tworzący widget glowny aplikacji
-     *
-     * @param[in] parent -- Wskaznik na klasę okna głównego aplikacji
-     * 
-     * KOnstruktor tworzący widget główny aplikacji, alokuje: timer gry, widget gry
-     * oraz widget panelu bocznego. 
      */
     mainWidget(gameWindow* parent=nullptr);
 public slots:

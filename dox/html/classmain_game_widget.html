@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Aplikacja gry: Dokumentacja klasy mainGameWidget</title>
+<title>Płytki odbijające piłkę: Dokumentacja klasy mainGameWidget</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Aplikacja gry
+   <div id="projectname">Płytki odbijające piłkę
    </div>
   </td>
  </tr>
@@ -122,14 +122,17 @@ Sygnały</h2></td></tr>
 <tr class="memitem:a56c3a3a188113fc62127f75f5b3dacb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a56c3a3a188113fc62127f75f5b3dacb2">EmitEndGame</a> ()</td></tr>
 <tr class="memdesc:a56c3a3a188113fc62127f75f5b3dacb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał końca gry.  <a href="#a56c3a3a188113fc62127f75f5b3dacb2">Więcej...</a><br /></td></tr>
 <tr class="separator:a56c3a3a188113fc62127f75f5b3dacb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb71b0028361972589838335dd7832fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#adb71b0028361972589838335dd7832fc">EmitPauzeGame</a> ()</td></tr>
+<tr class="memdesc:adb71b0028361972589838335dd7832fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał zatrzymania gry.  <a href="#adb71b0028361972589838335dd7832fc">Więcej...</a><br /></td></tr>
+<tr class="separator:adb71b0028361972589838335dd7832fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:ad0b4e7bc28a44195752370bbb56915bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd">mainGameWidget</a> (<a class="el" href="classmain_widget.html">mainWidget</a> *parent=nullptr, <a class="el" href="classgame_window.html">gameWindow</a> *gameWin=nullptr)</td></tr>
-<tr class="memdesc:ad0b4e7bc28a44195752370bbb56915bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new main Game Widget object.  <a href="#ad0b4e7bc28a44195752370bbb56915bd">Więcej...</a><br /></td></tr>
+<tr class="memdesc:ad0b4e7bc28a44195752370bbb56915bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy widgetu gry.  <a href="#ad0b4e7bc28a44195752370bbb56915bd">Więcej...</a><br /></td></tr>
 <tr class="separator:ad0b4e7bc28a44195752370bbb56915bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a2292016b7b2c03682f754024bcca62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a2a2292016b7b2c03682f754024bcca62">paintEvent</a> (QPaintEvent *ptr)</td></tr>
-<tr class="memdesc:a2a2292016b7b2c03682f754024bcca62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda rysują  <a href="#a2a2292016b7b2c03682f754024bcca62">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a2a2292016b7b2c03682f754024bcca62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda aktualizacji widgeta.  <a href="#a2a2292016b7b2c03682f754024bcca62">Więcej...</a><br /></td></tr>
 <tr class="separator:a2a2292016b7b2c03682f754024bcca62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3421df966b8c06767ac28e3c39ee05ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea">makeGameStep</a> ()</td></tr>
 <tr class="memdesc:a3421df966b8c06767ac28e3c39ee05ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda odpowiedzialny za "krok" gry.  <a href="#a3421df966b8c06767ac28e3c39ee05ea">Więcej...</a><br /></td></tr>
@@ -152,38 +155,54 @@ Metody publiczne</h2></td></tr>
 <tr class="memitem:ae9bb1a8308fe76950982af3474be4a0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f">calculateIfEndGame</a> ()</td></tr>
 <tr class="memdesc:ae9bb1a8308fe76950982af3474be4a0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda sprawdzająca czy nastąpił koniec gry.  <a href="#ae9bb1a8308fe76950982af3474be4a0f">Więcej...</a><br /></td></tr>
 <tr class="separator:ae9bb1a8308fe76950982af3474be4a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e85cde6eb0ae703e3420bbb1c96a31f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a9e85cde6eb0ae703e3420bbb1c96a31f">initValues</a> (int comLives, int userLives)</td></tr>
-<tr class="separator:a9e85cde6eb0ae703e3420bbb1c96a31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdfe13d8f3cede8fdf22f0cbe8a51d4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#acdfe13d8f3cede8fdf22f0cbe8a51d4d">initValues</a> ()</td></tr>
+<tr class="memdesc:acdfe13d8f3cede8fdf22f0cbe8a51d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda inicjalizująca.  <a href="#acdfe13d8f3cede8fdf22f0cbe8a51d4d">Więcej...</a><br /></td></tr>
+<tr class="separator:acdfe13d8f3cede8fdf22f0cbe8a51d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25af71b25c36e75384813abbb5981264"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a25af71b25c36e75384813abbb5981264">resetPosition</a> ()</td></tr>
+<tr class="memdesc:a25af71b25c36e75384813abbb5981264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda resetująca pozycję obiektów na ekranie.  <a href="#a25af71b25c36e75384813abbb5981264">Więcej...</a><br /></td></tr>
+<tr class="separator:a25af71b25c36e75384813abbb5981264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atrybuty prywatne</h2></td></tr>
 <tr class="memitem:a04522513412c99b88a2187aa30e7ed94"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a04522513412c99b88a2187aa30e7ed94">background</a></td></tr>
+<tr class="memdesc:a04522513412c99b88a2187aa30e7ed94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole zawierające obraz tła.  <a href="#a04522513412c99b88a2187aa30e7ed94">Więcej...</a><br /></td></tr>
 <tr class="separator:a04522513412c99b88a2187aa30e7ed94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e155b5961ffb6d300dcfb6da4f52e7"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#af0e155b5961ffb6d300dcfb6da4f52e7">computerPlate</a></td></tr>
+<tr class="memdesc:af0e155b5961ffb6d300dcfb6da4f52e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole zawierające obraz płytki komputera.  <a href="#af0e155b5961ffb6d300dcfb6da4f52e7">Więcej...</a><br /></td></tr>
 <tr class="separator:af0e155b5961ffb6d300dcfb6da4f52e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a726cb3b3f23e67f07a30f5c2a7a13e03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classimage_parameters.html">imageParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a726cb3b3f23e67f07a30f5c2a7a13e03">imgParam</a></td></tr>
+<tr class="memdesc:a726cb3b3f23e67f07a30f5c2a7a13e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Klasa zawierająca informacje na temat gry.  <a href="#a726cb3b3f23e67f07a30f5c2a7a13e03">Więcej...</a><br /></td></tr>
 <tr class="separator:a726cb3b3f23e67f07a30f5c2a7a13e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accf95079dcecfa8455770743fe05c080"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#accf95079dcecfa8455770743fe05c080">userPlate</a></td></tr>
+<tr class="memdesc:accf95079dcecfa8455770743fe05c080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole zawierające obraz płytki gracza.  <a href="#accf95079dcecfa8455770743fe05c080">Więcej...</a><br /></td></tr>
 <tr class="separator:accf95079dcecfa8455770743fe05c080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f8a8dc61a8f49b866e23d6f61b8512a"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a7f8a8dc61a8f49b866e23d6f61b8512a">ball</a></td></tr>
+<tr class="memdesc:a7f8a8dc61a8f49b866e23d6f61b8512a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole zawierające obraz piłkii.  <a href="#a7f8a8dc61a8f49b866e23d6f61b8512a">Więcej...</a><br /></td></tr>
 <tr class="separator:a7f8a8dc61a8f49b866e23d6f61b8512a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9869b06d940be6a878833145c7bb5611"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a9869b06d940be6a878833145c7bb5611">life</a></td></tr>
+<tr class="memdesc:a9869b06d940be6a878833145c7bb5611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole zawierające obraz serca.  <a href="#a9869b06d940be6a878833145c7bb5611">Więcej...</a><br /></td></tr>
 <tr class="separator:a9869b06d940be6a878833145c7bb5611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f73be1ce970a199ef87b001177bdba4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_a_r_t_val.html">UARTVal</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a6f73be1ce970a199ef87b001177bdba4">gameInfo</a></td></tr>
+<tr class="memdesc:a6f73be1ce970a199ef87b001177bdba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na klasę UART.  <a href="#a6f73be1ce970a199ef87b001177bdba4">Więcej...</a><br /></td></tr>
 <tr class="separator:a6f73be1ce970a199ef87b001177bdba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c8dfda67b8d7ab2de886f8988f41482"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a0c8dfda67b8d7ab2de886f8988f41482">gameTimer</a></td></tr>
+<tr class="memdesc:a0c8dfda67b8d7ab2de886f8988f41482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na zega.  <a href="#a0c8dfda67b8d7ab2de886f8988f41482">Więcej...</a><br /></td></tr>
 <tr class="separator:a0c8dfda67b8d7ab2de886f8988f41482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61f928bead5641c7e3af02ea34e18f0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_parameters.html">gameParameters</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a61f928bead5641c7e3af02ea34e18f0c">gameParam</a></td></tr>
+<tr class="memdesc:a61f928bead5641c7e3af02ea34e18f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na statystyki gry.  <a href="#a61f928bead5641c7e3af02ea34e18f0c">Więcej...</a><br /></td></tr>
 <tr class="separator:a61f928bead5641c7e3af02ea34e18f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaf079fdbf929505fb59a0ad97c7e750"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgame_settings.html">gameSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#acaf079fdbf929505fb59a0ad97c7e750">gameSettgs</a></td></tr>
+<tr class="memdesc:acaf079fdbf929505fb59a0ad97c7e750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na ustawienia gry.  <a href="#acaf079fdbf929505fb59a0ad97c7e750">Więcej...</a><br /></td></tr>
 <tr class="separator:acaf079fdbf929505fb59a0ad97c7e750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a218998300d8db8e060d322bc3193d8ca"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain_game_widget.html#a218998300d8db8e060d322bc3193d8ca">timerun</a></td></tr>
+<tr class="memdesc:a218998300d8db8e060d322bc3193d8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pole odpowiedzialne za liczenie czasu.  <a href="#a218998300d8db8e060d322bc3193d8ca">Więcej...</a><br /></td></tr>
 <tr class="separator:a218998300d8db8e060d322bc3193d8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>Klasa reprezentująca widget gry. </p>
+<p>Klasa reprezentująca widget gry. Klasa oblicza położenia oraz przemieszcza piłki oraz płytek. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00039">39</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00042">42</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="ad0b4e7bc28a44195752370bbb56915bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0b4e7bc28a44195752370bbb56915bd">&#9670;&nbsp;</a></span>mainGameWidget()</h2>
@@ -211,33 +230,35 @@ Atrybuty prywatne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Construct a new main Game Widget object. </p>
+<p>Konstruktor klasy widgetu gry. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td></td></tr>
-    <tr><td class="paramname">gameWin</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>wskaźnik na widget główny aplikacji </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gameWin</td><td>Wskaźnik na okno główne aplikacji</td></tr>
   </table>
   </dd>
 </dl>
+<p>Konstruktor klasy widget'u gry, odpowiada za przypisanie odpowiednich adresów okna głównego do odpowiednich wskaźników klasy <a class="el" href="classmain_game_widget.html" title="Klasa reprezentująca widget gry. ">mainGameWidget</a>. W konstruktorze zostają także dane obrazy znajdujące się w folderze res/img/ </p>
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00011">11</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00029">29</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00090">gameParameters::averageBallVel</a>, <a class="el" href="game_widget_8hpp_source.html#l00046">background</a>, <a class="el" href="game_widget_8hpp_source.html#l00066">ball</a>, <a class="el" href="image_parameters_8hpp_source.html#l00025">imageParameters::ballSpeed</a>, <a class="el" href="game_widget_8hpp_source.html#l00051">computerPlate</a>, <a class="el" href="game_widget_8hpp_source.html#l00076">gameInfo</a>, <a class="el" href="game_window_8hpp_source.html#l00092">gameWindow::gameInfo</a>, <a class="el" href="game_widget_8hpp_source.html#l00086">gameParam</a>, <a class="el" href="game_window_8hpp_source.html#l00125">gameWindow::gameParam</a>, <a class="el" href="game_window_8hpp_source.html#l00098">gameWindow::gameSett</a>, <a class="el" href="game_widget_8hpp_source.html#l00091">gameSettgs</a>, <a class="el" href="main_widget_8hpp_source.html#l00053">mainWidget::gameTimer</a>, <a class="el" href="game_widget_8hpp_source.html#l00081">gameTimer</a>, <a class="el" href="game_widget_8hpp_source.html#l00056">imgParam</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">initValues()</a>, <a class="el" href="game_widget_8hpp_source.html#l00096">timerun</a>, <a class="el" href="game_widget_8cpp_source.html#l00047">updateTime()</a> i <a class="el" href="game_widget_8hpp_source.html#l00061">userPlate</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00090">gameParameters::averageBallVel</a>, <a class="el" href="game_widget_8hpp_source.html#l00050">background</a>, <a class="el" href="game_widget_8hpp_source.html#l00075">ball</a>, <a class="el" href="image_parameters_8hpp_source.html#l00025">imageParameters::ballSpeed</a>, <a class="el" href="game_widget_8hpp_source.html#l00056">computerPlate</a>, <a class="el" href="game_widget_8hpp_source.html#l00089">gameInfo</a>, <a class="el" href="game_window_8hpp_source.html#l00092">gameWindow::gameInfo</a>, <a class="el" href="game_widget_8hpp_source.html#l00103">gameParam</a>, <a class="el" href="game_window_8hpp_source.html#l00125">gameWindow::gameParam</a>, <a class="el" href="game_window_8hpp_source.html#l00098">gameWindow::gameSett</a>, <a class="el" href="game_widget_8hpp_source.html#l00110">gameSettgs</a>, <a class="el" href="main_widget_8hpp_source.html#l00054">mainWidget::gameTimer</a>, <a class="el" href="game_widget_8hpp_source.html#l00096">gameTimer</a>, <a class="el" href="game_widget_8hpp_source.html#l00063">imgParam</a>, <a class="el" href="game_widget_8cpp_source.html#l00047">initValues()</a>, <a class="el" href="game_widget_8hpp_source.html#l00117">timerun</a>, <a class="el" href="game_widget_8cpp_source.html#l00080">updateTime()</a> i <a class="el" href="game_widget_8hpp_source.html#l00069">userPlate</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmain_game_widget_ad0b4e7bc28a44195752370bbb56915bd_cgraph.png" border="0" usemap="#classmain_game_widget_ad0b4e7bc28a44195752370bbb56915bd_cgraph" alt=""/></div>
 <map name="classmain_game_widget_ad0b4e7bc28a44195752370bbb56915bd_cgraph" id="classmain_game_widget_ad0b4e7bc28a44195752370bbb56915bd_cgraph">
-<area shape="rect" id="node2" href="classmain_game_widget.html#a9e85cde6eb0ae703e3420bbb1c96a31f" title="mainGameWidget::initValues" alt="" coords="520,126,711,153"/>
-<area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="251,177,453,203"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="501,177,729,203"/>
-<area shape="rect" id="node5" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="Metoda wyliczająca położenie płytki gracza. " alt="" coords="777,5,964,47"/>
-<area shape="rect" id="node6" href="classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb" title="Metoda wyliczająca pozycję piłki. " alt="" coords="777,71,964,112"/>
-<area shape="rect" id="node8" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="Metoda sprawdzająca czy nastąpił koniec gry. " alt="" coords="777,136,964,177"/>
-<area shape="rect" id="node9" href="classmain_game_widget.html#a41e4bae20eccedb8474e66930b5ac38c" title="Metoda sprawdzająca czy nastąpiło odbicie od ściany. " alt="" coords="777,201,964,243"/>
-<area shape="rect" id="node10" href="classmain_game_widget.html#aeb03489f2c85a9156b4af4c1b157f540" title="Metoda sprawdzająca czy nastąpiło odbicie od płytki. " alt="" coords="777,267,964,308"/>
-<area shape="rect" id="node11" href="classmain_game_widget.html#a60c69addd15b1b7f8536d2a436f8e354" title="Metoda wyliczająca położenia płytki komputera. " alt="" coords="777,332,964,373"/>
-<area shape="rect" id="node7" href="game_widget_8cpp.html#a6d97a9fc5c5a6a82f80aaf1bc10f195a" title="Deg2Rad" alt="" coords="1012,78,1089,105"/>
+<area shape="rect" id="node2" href="classmain_game_widget.html#acdfe13d8f3cede8fdf22f0cbe8a51d4d" title="Metoda inicjalizująca. " alt="" coords="520,5,711,32"/>
+<area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="251,56,453,83"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#a25af71b25c36e75384813abbb5981264" title="Metoda resetująca pozycję obiektów na ekranie. " alt="" coords="1012,119,1223,145"/>
+<area shape="rect" id="node5" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="501,245,729,272"/>
+<area shape="rect" id="node6" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="Metoda wyliczająca położenie płytki gracza. " alt="" coords="777,107,964,149"/>
+<area shape="rect" id="node7" href="classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb" title="Metoda wyliczająca pozycję piłki. " alt="" coords="777,238,964,279"/>
+<area shape="rect" id="node9" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="Metoda sprawdzająca czy nastąpił koniec gry. " alt="" coords="777,173,964,214"/>
+<area shape="rect" id="node10" href="classmain_game_widget.html#a41e4bae20eccedb8474e66930b5ac38c" title="Metoda sprawdzająca czy nastąpiło odbicie od ściany. " alt="" coords="777,303,964,345"/>
+<area shape="rect" id="node11" href="classmain_game_widget.html#aeb03489f2c85a9156b4af4c1b157f540" title="Metoda sprawdzająca czy nastąpiło odbicie od płytki. " alt="" coords="777,369,964,410"/>
+<area shape="rect" id="node12" href="classmain_game_widget.html#a60c69addd15b1b7f8536d2a436f8e354" title="Metoda wyliczająca położenia płytki komputera. " alt="" coords="777,434,964,475"/>
+<area shape="rect" id="node8" href="game_widget_8cpp.html#a6d97a9fc5c5a6a82f80aaf1bc10f195a" title="Deg2Rad" alt="" coords="1079,245,1156,272"/>
 </map>
 </div>
 
@@ -262,11 +283,11 @@ Oto graf wywołań dla tej funkcji:</div>
 <p>Metoda wyliczająca pozycję piłki. </p>
 <p>Metoda odpowiedzialna za wyliczenie pozycji piłki, parametry (np. prędkość), są pobierane z pola informacji o obrazach. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00080">80</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00127">127</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00025">imageParameters::ballSpeed</a>, <a class="el" href="image_parameters_8hpp_source.html#l00089">imageParameters::currentAngle</a>, <a class="el" href="game_widget_8cpp_source.html#l00005">Deg2Rad()</a> i <a class="el" href="game_widget_8hpp_source.html#l00056">imgParam</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00025">imageParameters::ballSpeed</a>, <a class="el" href="image_parameters_8hpp_source.html#l00089">imageParameters::currentAngle</a>, <a class="el" href="game_widget_8cpp_source.html#l00015">Deg2Rad()</a> i <a class="el" href="game_widget_8hpp_source.html#l00063">imgParam</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00096">makeGameStep()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
@@ -282,7 +303,7 @@ Oto graf wywoływań tej funkcji:</div>
 <map name="classmain_game_widget_a83d515786f15b067391b2c1efa68ebeb_icgraph" id="classmain_game_widget_a83d515786f15b067391b2c1efa68ebeb_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="240,13,468,39"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="516,13,719,39"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Construct a new main Game Widget object. " alt="" coords="767,5,964,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="767,5,964,47"/>
 </map>
 </div>
 
@@ -306,11 +327,11 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Metoda wyliczająca położenia płytki komputera. </p>
 <p>Metoda odpowiedzialna za wyliczenie położenie płytki komputera. Początkowo wyznaczana jest pozycja docelowa platformy ,następnie uwzględniając poziom trudności wybrany przez gracza w ustawieniach następuje przemieszczenie płytki z odpowiednią prędkością. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00201">201</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00281">281</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00075">imageParameters::comPlateLoc</a>, <a class="el" href="game_settings_8hpp_source.html#l00018">easy</a>, <a class="el" href="game_settings_8hpp_source.html#l00045">gameSettings::gamelvl</a>, <a class="el" href="game_widget_8hpp_source.html#l00091">gameSettgs</a>, <a class="el" href="game_settings_8hpp_source.html#l00020">hard</a>, <a class="el" href="game_widget_8hpp_source.html#l00056">imgParam</a>, <a class="el" href="game_settings_8hpp_source.html#l00019">medium</a>, <a class="el" href="image_parameters_8hpp_source.html#l00032">imageParameters::plateSpeed</a> i <a class="el" href="image_parameters_8hpp_source.html#l00055">imageParameters::XtargetComPlate</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00075">imageParameters::comPlateLoc</a>, <a class="el" href="game_settings_8hpp_source.html#l00019">easy</a>, <a class="el" href="game_settings_8hpp_source.html#l00046">gameSettings::gamelvl</a>, <a class="el" href="game_widget_8hpp_source.html#l00110">gameSettgs</a>, <a class="el" href="game_settings_8hpp_source.html#l00021">hard</a>, <a class="el" href="game_widget_8hpp_source.html#l00063">imgParam</a>, <a class="el" href="game_settings_8hpp_source.html#l00020">medium</a>, <a class="el" href="image_parameters_8hpp_source.html#l00032">imageParameters::plateSpeed</a> i <a class="el" href="image_parameters_8hpp_source.html#l00055">imageParameters::XtargetComPlate</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00096">makeGameStep()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -318,7 +339,7 @@ Oto graf wywoływań tej funkcji:</div>
 <map name="classmain_game_widget_a60c69addd15b1b7f8536d2a436f8e354_icgraph" id="classmain_game_widget_a60c69addd15b1b7f8536d2a436f8e354_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="240,13,468,39"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="516,13,719,39"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Construct a new main Game Widget object. " alt="" coords="767,5,964,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="767,5,964,47"/>
 </map>
 </div>
 
@@ -342,11 +363,11 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Metoda sprawdzająca czy nastąpiło odbicie od płytki. </p>
 <p>Metoda odpowiedzialna za sprawdzenie czy wystąpiło odbicie od jednej z płytek. Jeśli wystąpiło odbicie obliczna jest wartość kąta w jakim powinna się poruszać piłka po odbiciu (pole currentAngle klasy <a class="el" href="classimage_parameters.html" title="Klasa zawierająca parametry obrazów gry. ">imageParameters</a>). </p>
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00129">129</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00202">202</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00090">gameParameters::averageBallVel</a>, <a class="el" href="game_parameters_8hpp_source.html#l00082">gameParameters::ballBounceNumber</a>, <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00025">imageParameters::ballSpeed</a>, <a class="el" href="image_parameters_8hpp_source.html#l00075">imageParameters::comPlateLoc</a>, <a class="el" href="image_parameters_8hpp_source.html#l00089">imageParameters::currentAngle</a>, <a class="el" href="game_widget_8hpp_source.html#l00076">gameInfo</a>, <a class="el" href="game_widget_8hpp_source.html#l00086">gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00091">gameSettgs</a>, <a class="el" href="game_widget_8hpp_source.html#l00056">imgParam</a>, <a class="el" href="game_settings_8hpp_source.html#l00072">gameSettings::randomBallSpeed</a>, <a class="el" href="game_settings_8hpp_source.html#l00065">gameSettings::rndBcnPlts</a>, <a class="el" href="game_parameters_8hpp_source.html#l00065">gameParameters::setBallSpeed</a>, <a class="el" href="game_widget_8hpp_source.html#l00096">timerun</a>, <a class="el" href="image_parameters_8hpp_source.html#l00065">imageParameters::userPlateLoc</a> i <a class="el" href="uart_param_8hpp_source.html#l00026">UARTVal::YVal</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00090">gameParameters::averageBallVel</a>, <a class="el" href="game_parameters_8hpp_source.html#l00082">gameParameters::ballBounceNumber</a>, <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00025">imageParameters::ballSpeed</a>, <a class="el" href="image_parameters_8hpp_source.html#l00075">imageParameters::comPlateLoc</a>, <a class="el" href="image_parameters_8hpp_source.html#l00089">imageParameters::currentAngle</a>, <a class="el" href="game_widget_8hpp_source.html#l00089">gameInfo</a>, <a class="el" href="game_widget_8hpp_source.html#l00103">gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00110">gameSettgs</a>, <a class="el" href="game_widget_8hpp_source.html#l00063">imgParam</a>, <a class="el" href="game_settings_8hpp_source.html#l00073">gameSettings::randomBallSpeed</a>, <a class="el" href="game_settings_8hpp_source.html#l00066">gameSettings::rndBcnPlts</a>, <a class="el" href="game_parameters_8hpp_source.html#l00065">gameParameters::setBallSpeed</a>, <a class="el" href="image_parameters_8hpp_source.html#l00065">imageParameters::userPlateLoc</a> i <a class="el" href="uart_param_8hpp_source.html#l00026">UARTVal::YVal</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00096">makeGameStep()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -354,7 +375,7 @@ Oto graf wywoływań tej funkcji:</div>
 <map name="classmain_game_widget_aeb03489f2c85a9156b4af4c1b157f540_icgraph" id="classmain_game_widget_aeb03489f2c85a9156b4af4c1b157f540_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="240,13,468,39"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="516,13,719,39"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Construct a new main Game Widget object. " alt="" coords="767,5,964,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="767,5,964,47"/>
 </map>
 </div>
 
@@ -378,11 +399,11 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Metoda sprawdzająca czy nastąpiło odbicie od ściany. </p>
 <p>Metoda odpowiedzialna za sprawdzenie czy wystąpiło odbicie od jednej z ścian. Jeśli wystąpiło odbicie obliczna jest wartość kąta w jakim powinna się poruszać piłka po odbiciu (pole currentAngle klasy <a class="el" href="classimage_parameters.html" title="Klasa zawierająca parametry obrazów gry. ">imageParameters</a>). </p>
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00108">108</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00176">176</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00089">imageParameters::currentAngle</a> i <a class="el" href="game_widget_8hpp_source.html#l00056">imgParam</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00089">imageParameters::currentAngle</a> i <a class="el" href="game_widget_8hpp_source.html#l00063">imgParam</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00096">makeGameStep()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -390,7 +411,7 @@ Oto graf wywoływań tej funkcji:</div>
 <map name="classmain_game_widget_a41e4bae20eccedb8474e66930b5ac38c_icgraph" id="classmain_game_widget_a41e4bae20eccedb8474e66930b5ac38c_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="240,13,468,39"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="516,13,719,39"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Construct a new main Game Widget object. " alt="" coords="767,5,964,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="767,5,964,47"/>
 </map>
 </div>
 
@@ -414,11 +435,19 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Metoda sprawdzająca czy nastąpił koniec gry. </p>
 <p>Metoda odpowiedzialna za sprawdzenie czy nastąpił koniec gry, jeżeli wystąpił koniec gry metoda wysyłą sygnał o końcu gry. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00089">89</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00140">140</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00089">imageParameters::currentAngle</a>, <a class="el" href="classmain_game_widget.html#a56c3a3a188113fc62127f75f5b3dacb2">EmitEndGame()</a>, <a class="el" href="game_widget_8hpp_source.html#l00076">gameInfo</a>, <a class="el" href="game_widget_8hpp_source.html#l00081">gameTimer</a>, <a class="el" href="game_widget_8hpp_source.html#l00056">imgParam</a> i <a class="el" href="uart_param_8hpp_source.html#l00045">UARTVal::isGameActive</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00089">imageParameters::currentAngle</a>, <a class="el" href="classmain_game_widget.html#a56c3a3a188113fc62127f75f5b3dacb2">EmitEndGame()</a>, <a class="el" href="classmain_game_widget.html#adb71b0028361972589838335dd7832fc">EmitPauzeGame()</a>, <a class="el" href="game_widget_8hpp_source.html#l00103">gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00096">gameTimer</a>, <a class="el" href="game_widget_8hpp_source.html#l00063">imgParam</a>, <a class="el" href="game_parameters_8hpp_source.html#l00032">gameParameters::isGameActive</a>, <a class="el" href="image_parameters_8hpp_source.html#l00048">imageParameters::remainingCompLives</a>, <a class="el" href="image_parameters_8hpp_source.html#l00040">imageParameters::remainingUserLives</a> i <a class="el" href="game_widget_8cpp_source.html#l00062">resetPosition()</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00096">makeGameStep()</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmain_game_widget_ae9bb1a8308fe76950982af3474be4a0f_cgraph.png" border="0" usemap="#classmain_game_widget_ae9bb1a8308fe76950982af3474be4a0f_cgraph" alt=""/></div>
+<map name="classmain_game_widget_ae9bb1a8308fe76950982af3474be4a0f_cgraph" id="classmain_game_widget_ae9bb1a8308fe76950982af3474be4a0f_cgraph">
+<area shape="rect" id="node2" href="classmain_game_widget.html#a25af71b25c36e75384813abbb5981264" title="Metoda resetująca pozycję obiektów na ekranie. " alt="" coords="240,13,451,39"/>
+</map>
+</div>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -426,7 +455,7 @@ Oto graf wywoływań tej funkcji:</div>
 <map name="classmain_game_widget_ae9bb1a8308fe76950982af3474be4a0f_icgraph" id="classmain_game_widget_ae9bb1a8308fe76950982af3474be4a0f_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="240,13,468,39"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="516,13,719,39"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Construct a new main Game Widget object. " alt="" coords="767,5,964,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="767,5,964,47"/>
 </map>
 </div>
 
@@ -450,11 +479,11 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Metoda wyliczająca położenie płytki gracza. </p>
 <p>Metoda odpowiedzialna za wyliczenie położenia płytki gracza, przemieszczenie płytki jest obliczone na podstawie danych otrzymanych z akcelerometru (pole gameInfo). </p>
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00066">66</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00109">109</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00099">gameParameters::accValues</a>, <a class="el" href="game_widget_8hpp_source.html#l00076">gameInfo</a>, <a class="el" href="game_widget_8hpp_source.html#l00086">gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00056">imgParam</a>, <a class="el" href="uart_param_8hpp_source.html#l00045">UARTVal::isGameActive</a>, <a class="el" href="game_widget_8hpp_source.html#l00096">timerun</a>, <a class="el" href="image_parameters_8hpp_source.html#l00065">imageParameters::userPlateLoc</a> i <a class="el" href="uart_param_8hpp_source.html#l00026">UARTVal::YVal</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00099">gameParameters::accValues</a>, <a class="el" href="game_widget_8hpp_source.html#l00089">gameInfo</a>, <a class="el" href="game_widget_8hpp_source.html#l00103">gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00063">imgParam</a>, <a class="el" href="game_parameters_8hpp_source.html#l00032">gameParameters::isGameActive</a>, <a class="el" href="game_widget_8hpp_source.html#l00117">timerun</a>, <a class="el" href="image_parameters_8hpp_source.html#l00065">imageParameters::userPlateLoc</a> i <a class="el" href="uart_param_8hpp_source.html#l00026">UARTVal::YVal</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00096">makeGameStep()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -462,7 +491,7 @@ Oto graf wywoływań tej funkcji:</div>
 <map name="classmain_game_widget_a6c34a3766550dc719df5b52ae02962cd_icgraph" id="classmain_game_widget_a6c34a3766550dc719df5b52ae02962cd_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="240,13,468,39"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="516,13,719,39"/>
-<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Construct a new main Game Widget object. " alt="" coords="767,5,964,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="767,5,964,47"/>
 </map>
 </div>
 
@@ -492,9 +521,8 @@ Oto graf wywoływań tej funkcji:</div>
 </div><div class="memdoc">
 
 <p>Sygnał końca gry. </p>
-<p>Sygnał końca gry, emitowany podczas gdy jeden z graczy przegra rozgrywkę. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00089">calculateIfEndGame()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00140">calculateIfEndGame()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -503,14 +531,54 @@ Oto graf wywoływań tej funkcji:</div>
 <area shape="rect" id="node2" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="Metoda sprawdzająca czy nastąpił koniec gry. " alt="" coords="272,5,459,47"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="507,13,735,39"/>
 <area shape="rect" id="node4" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="783,13,985,39"/>
-<area shape="rect" id="node5" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Construct a new main Game Widget object. " alt="" coords="1033,5,1231,47"/>
+<area shape="rect" id="node5" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="1033,5,1231,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a9e85cde6eb0ae703e3420bbb1c96a31f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e85cde6eb0ae703e3420bbb1c96a31f">&#9670;&nbsp;</a></span>initValues()</h2>
+<a id="adb71b0028361972589838335dd7832fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb71b0028361972589838335dd7832fc">&#9670;&nbsp;</a></span>EmitPauzeGame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mainGameWidget::EmitPauzeGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sygnał zatrzymania gry. </p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00140">calculateIfEndGame()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmain_game_widget_adb71b0028361972589838335dd7832fc_icgraph.png" border="0" usemap="#classmain_game_widget_adb71b0028361972589838335dd7832fc_icgraph" alt=""/></div>
+<map name="classmain_game_widget_adb71b0028361972589838335dd7832fc_icgraph" id="classmain_game_widget_adb71b0028361972589838335dd7832fc_icgraph">
+<area shape="rect" id="node2" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="Metoda sprawdzająca czy nastąpił koniec gry. " alt="" coords="287,5,473,47"/>
+<area shape="rect" id="node3" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="521,13,749,39"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="797,13,1000,39"/>
+<area shape="rect" id="node5" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="1048,5,1245,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acdfe13d8f3cede8fdf22f0cbe8a51d4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdfe13d8f3cede8fdf22f0cbe8a51d4d">&#9670;&nbsp;</a></span>initValues()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -518,41 +586,26 @@ Oto graf wywoływań tej funkcji:</div>
         <tr>
           <td class="memname">void mainGameWidget::initValues </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>comLives</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>userLives</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parametry</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">comLives</td><td></td></tr>
-    <tr><td class="paramname">userLives</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00030">30</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+<p>Metoda inicjalizująca. </p>
+<p>Metoda inicjalizująca grę, wywoływana w czasie uruchomienia nowej gry. </p>
 
-<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00090">gameParameters::averageBallVel</a>, <a class="el" href="game_parameters_8hpp_source.html#l00082">gameParameters::ballBounceNumber</a>, <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00025">imageParameters::ballSpeed</a>, <a class="el" href="image_parameters_8hpp_source.html#l00089">imageParameters::currentAngle</a>, <a class="el" href="game_widget_8hpp_source.html#l00076">gameInfo</a>, <a class="el" href="game_widget_8hpp_source.html#l00086">gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00056">imgParam</a>, <a class="el" href="uart_param_8hpp_source.html#l00045">UARTVal::isGameActive</a>, <a class="el" href="image_parameters_8hpp_source.html#l00032">imageParameters::plateSpeed</a> i <a class="el" href="game_widget_8hpp_source.html#l00096">timerun</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00047">47</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00047">updateTime()</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00090">gameParameters::averageBallVel</a>, <a class="el" href="game_parameters_8hpp_source.html#l00082">gameParameters::ballBounceNumber</a>, <a class="el" href="image_parameters_8hpp_source.html#l00025">imageParameters::ballSpeed</a>, <a class="el" href="game_widget_8hpp_source.html#l00103">gameParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00110">gameSettgs</a>, <a class="el" href="game_widget_8hpp_source.html#l00063">imgParam</a>, <a class="el" href="game_parameters_8hpp_source.html#l00032">gameParameters::isGameActive</a>, <a class="el" href="game_settings_8hpp_source.html#l00058">gameSettings::lifes</a>, <a class="el" href="image_parameters_8hpp_source.html#l00032">imageParameters::plateSpeed</a>, <a class="el" href="image_parameters_8hpp_source.html#l00048">imageParameters::remainingCompLives</a>, <a class="el" href="image_parameters_8hpp_source.html#l00040">imageParameters::remainingUserLives</a> i <a class="el" href="game_widget_8hpp_source.html#l00117">timerun</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00029">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00080">updateTime()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
-<div class="center"><img src="classmain_game_widget_a9e85cde6eb0ae703e3420bbb1c96a31f_icgraph.png" border="0" usemap="#classmain_game_widget_a9e85cde6eb0ae703e3420bbb1c96a31f_icgraph" alt=""/></div>
-<map name="classmain_game_widget_a9e85cde6eb0ae703e3420bbb1c96a31f_icgraph" id="classmain_game_widget_a9e85cde6eb0ae703e3420bbb1c96a31f_icgraph">
-<area shape="rect" id="node2" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Construct a new main Game Widget object. " alt="" coords="495,5,692,47"/>
+<div class="center"><img src="classmain_game_widget_acdfe13d8f3cede8fdf22f0cbe8a51d4d_icgraph.png" border="0" usemap="#classmain_game_widget_acdfe13d8f3cede8fdf22f0cbe8a51d4d_icgraph" alt=""/></div>
+<map name="classmain_game_widget_acdfe13d8f3cede8fdf22f0cbe8a51d4d_icgraph" id="classmain_game_widget_acdfe13d8f3cede8fdf22f0cbe8a51d4d_icgraph">
+<area shape="rect" id="node2" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="495,5,692,47"/>
 <area shape="rect" id="node3" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="244,38,447,65"/>
 </map>
 </div>
@@ -577,11 +630,11 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Metoda odpowiedzialny za "krok" gry. </p>
 <p>Metoda odpowiedzialna za wywołanie wszystkich odpowiednich metod pozwalających na poruszanie się piłki, platform. Wywołuje metody sprawdzające czy występuje odbicie, koniec gry. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00057">57</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00096">96</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="game_widget_8cpp_source.html#l00080">calculateBallPosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00201">calculateComPlatePosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00129">calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00108">calculateIfBouncedWall()</a>, <a class="el" href="game_widget_8cpp_source.html#l00089">calculateIfEndGame()</a> i <a class="el" href="game_widget_8cpp_source.html#l00066">calculateUserPlate()</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="game_widget_8cpp_source.html#l00127">calculateBallPosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00281">calculateComPlatePosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00202">calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00176">calculateIfBouncedWall()</a>, <a class="el" href="game_widget_8cpp_source.html#l00140">calculateIfEndGame()</a> i <a class="el" href="game_widget_8cpp_source.html#l00109">calculateUserPlate()</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00047">updateTime()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00080">updateTime()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
@@ -592,8 +645,9 @@ Oto graf wywołań dla tej funkcji:</div>
 <area shape="rect" id="node5" href="classmain_game_widget.html#aeb03489f2c85a9156b4af4c1b157f540" title="Metoda sprawdzająca czy nastąpiło odbicie od płytki. " alt="" coords="281,136,468,177"/>
 <area shape="rect" id="node6" href="classmain_game_widget.html#a41e4bae20eccedb8474e66930b5ac38c" title="Metoda sprawdzająca czy nastąpiło odbicie od ściany. " alt="" coords="281,201,468,243"/>
 <area shape="rect" id="node7" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="Metoda sprawdzająca czy nastąpił koniec gry. " alt="" coords="281,267,468,308"/>
-<area shape="rect" id="node8" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="Metoda wyliczająca położenie płytki gracza. " alt="" coords="281,332,468,373"/>
-<area shape="rect" id="node3" href="game_widget_8cpp.html#a6d97a9fc5c5a6a82f80aaf1bc10f195a" title="Deg2Rad" alt="" coords="516,13,593,39"/>
+<area shape="rect" id="node9" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="Metoda wyliczająca położenie płytki gracza. " alt="" coords="281,332,468,373"/>
+<area shape="rect" id="node3" href="game_widget_8cpp.html#a6d97a9fc5c5a6a82f80aaf1bc10f195a" title="Deg2Rad" alt="" coords="583,13,660,39"/>
+<area shape="rect" id="node8" href="classmain_game_widget.html#a25af71b25c36e75384813abbb5981264" title="Metoda resetująca pozycję obiektów na ekranie. " alt="" coords="516,274,727,301"/>
 </map>
 </div>
 <div class="dynheader">
@@ -602,7 +656,7 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="center"><img src="classmain_game_widget_a3421df966b8c06767ac28e3c39ee05ea_icgraph.png" border="0" usemap="#classmain_game_widget_a3421df966b8c06767ac28e3c39ee05ea_icgraph" alt=""/></div>
 <map name="classmain_game_widget_a3421df966b8c06767ac28e3c39ee05ea_icgraph" id="classmain_game_widget_a3421df966b8c06767ac28e3c39ee05ea_icgraph">
 <area shape="rect" id="node2" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="281,13,484,39"/>
-<area shape="rect" id="node3" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Construct a new main Game Widget object. " alt="" coords="532,5,729,47"/>
+<area shape="rect" id="node3" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="532,5,729,47"/>
 </map>
 </div>
 
@@ -624,17 +678,64 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Metoda rysują </p>
+<p>Metoda aktualizacji widgeta. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ptr</td><td></td></tr>
+    <tr><td class="paramname">ptr</td><td>QPaintEvent</td></tr>
   </table>
   </dd>
 </dl>
+<p>Metoda odpowiedzialna za aktualizację widgeta. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00243">243</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00330">330</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="game_widget_8hpp_source.html#l00046">background</a>, <a class="el" href="game_widget_8hpp_source.html#l00066">ball</a>, <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00075">imageParameters::comPlateLoc</a>, <a class="el" href="game_widget_8hpp_source.html#l00051">computerPlate</a>, <a class="el" href="game_widget_8hpp_source.html#l00056">imgParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00071">life</a>, <a class="el" href="image_parameters_8hpp_source.html#l00095">imageParameters::newScala</a>, <a class="el" href="game_widget_8hpp_source.html#l00061">userPlate</a> i <a class="el" href="image_parameters_8hpp_source.html#l00065">imageParameters::userPlateLoc</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="game_widget_8hpp_source.html#l00050">background</a>, <a class="el" href="game_widget_8hpp_source.html#l00075">ball</a>, <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00075">imageParameters::comPlateLoc</a>, <a class="el" href="game_widget_8hpp_source.html#l00056">computerPlate</a>, <a class="el" href="game_widget_8hpp_source.html#l00063">imgParam</a>, <a class="el" href="game_widget_8hpp_source.html#l00081">life</a>, <a class="el" href="image_parameters_8hpp_source.html#l00095">imageParameters::newScala</a>, <a class="el" href="game_widget_8cpp_source.html#l00062">resetPosition()</a>, <a class="el" href="game_widget_8hpp_source.html#l00069">userPlate</a> i <a class="el" href="image_parameters_8hpp_source.html#l00065">imageParameters::userPlateLoc</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmain_game_widget_a2a2292016b7b2c03682f754024bcca62_cgraph.png" border="0" usemap="#classmain_game_widget_a2a2292016b7b2c03682f754024bcca62_cgraph" alt=""/></div>
+<map name="classmain_game_widget_a2a2292016b7b2c03682f754024bcca62_cgraph" id="classmain_game_widget_a2a2292016b7b2c03682f754024bcca62_cgraph">
+<area shape="rect" id="node2" href="classmain_game_widget.html#a25af71b25c36e75384813abbb5981264" title="Metoda resetująca pozycję obiektów na ekranie. " alt="" coords="249,5,460,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a25af71b25c36e75384813abbb5981264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25af71b25c36e75384813abbb5981264">&#9670;&nbsp;</a></span>resetPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mainGameWidget::resetPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda resetująca pozycję obiektów na ekranie. </p>
+<p>Metoda resetująca pozycję obiektów, wywoływana np w czasie utracenia życia przez jednego z graczy. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00062">62</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="image_parameters_8hpp_source.html#l00083">imageParameters::ballPos</a>, <a class="el" href="image_parameters_8hpp_source.html#l00075">imageParameters::comPlateLoc</a>, <a class="el" href="image_parameters_8hpp_source.html#l00089">imageParameters::currentAngle</a>, <a class="el" href="game_widget_8hpp_source.html#l00063">imgParam</a> i <a class="el" href="image_parameters_8hpp_source.html#l00065">imageParameters::userPlateLoc</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00140">calculateIfEndGame()</a>, <a class="el" href="game_widget_8cpp_source.html#l00330">paintEvent()</a> i <a class="el" href="game_widget_8cpp_source.html#l00080">updateTime()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmain_game_widget_a25af71b25c36e75384813abbb5981264_icgraph.png" border="0" usemap="#classmain_game_widget_a25af71b25c36e75384813abbb5981264_icgraph" alt=""/></div>
+<map name="classmain_game_widget_a25af71b25c36e75384813abbb5981264_icgraph" id="classmain_game_widget_a25af71b25c36e75384813abbb5981264_icgraph">
+<area shape="rect" id="node2" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="Metoda sprawdzająca czy nastąpił koniec gry. " alt="" coords="269,5,455,47"/>
+<area shape="rect" id="node4" href="classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="784,46,987,73"/>
+<area shape="rect" id="node6" href="classmain_game_widget.html#a2a2292016b7b2c03682f754024bcca62" title="Metoda aktualizacji widgeta. " alt="" coords="264,122,460,149"/>
+<area shape="rect" id="node3" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="508,17,736,43"/>
+<area shape="rect" id="node5" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="1035,39,1232,80"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -664,25 +765,26 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Slot wywoływany przez timer. </p>
 <p>Slot wywoływany za pomocą timeout() pochodzących od timera. W slocie wywołana jest metoda <a class="el" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. ">makeGameStep()</a>. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00047">47</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8cpp_source.html#l00080">80</a> pliku <a class="el" href="game_widget_8cpp_source.html">gameWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="game_widget_8hpp_source.html#l00076">gameInfo</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">initValues()</a>, <a class="el" href="game_widget_8cpp_source.html#l00057">makeGameStep()</a> i <a class="el" href="uart_param_8hpp_source.html#l00056">UARTVal::resetPosition</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="game_widget_8hpp_source.html#l00103">gameParam</a>, <a class="el" href="game_widget_8cpp_source.html#l00047">initValues()</a>, <a class="el" href="game_widget_8cpp_source.html#l00096">makeGameStep()</a>, <a class="el" href="game_parameters_8hpp_source.html#l00043">gameParameters::resetPosition</a> i <a class="el" href="game_widget_8cpp_source.html#l00062">resetPosition()</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00029">mainGameWidget()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_cgraph.png" border="0" usemap="#classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_cgraph" alt=""/></div>
 <map name="classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_cgraph" id="classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_cgraph">
-<area shape="rect" id="node2" href="classmain_game_widget.html#a9e85cde6eb0ae703e3420bbb1c96a31f" title="mainGameWidget::initValues" alt="" coords="275,126,465,153"/>
-<area shape="rect" id="node3" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="256,177,484,203"/>
+<area shape="rect" id="node2" href="classmain_game_widget.html#acdfe13d8f3cede8fdf22f0cbe8a51d4d" title="Metoda inicjalizująca. " alt="" coords="275,158,465,185"/>
+<area shape="rect" id="node3" href="classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="256,209,484,235"/>
+<area shape="rect" id="node10" href="classmain_game_widget.html#a25af71b25c36e75384813abbb5981264" title="Metoda resetująca pozycję obiektów na ekranie. " alt="" coords="767,335,977,362"/>
 <area shape="rect" id="node4" href="classmain_game_widget.html#a83d515786f15b067391b2c1efa68ebeb" title="Metoda wyliczająca pozycję piłki. " alt="" coords="532,5,719,47"/>
 <area shape="rect" id="node6" href="classmain_game_widget.html#a60c69addd15b1b7f8536d2a436f8e354" title="Metoda wyliczająca położenia płytki komputera. " alt="" coords="532,71,719,112"/>
 <area shape="rect" id="node7" href="classmain_game_widget.html#aeb03489f2c85a9156b4af4c1b157f540" title="Metoda sprawdzająca czy nastąpiło odbicie od płytki. " alt="" coords="532,136,719,177"/>
 <area shape="rect" id="node8" href="classmain_game_widget.html#a41e4bae20eccedb8474e66930b5ac38c" title="Metoda sprawdzająca czy nastąpiło odbicie od ściany. " alt="" coords="532,201,719,243"/>
 <area shape="rect" id="node9" href="classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="Metoda sprawdzająca czy nastąpił koniec gry. " alt="" coords="532,267,719,308"/>
-<area shape="rect" id="node10" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="Metoda wyliczająca położenie płytki gracza. " alt="" coords="532,332,719,373"/>
-<area shape="rect" id="node5" href="game_widget_8cpp.html#a6d97a9fc5c5a6a82f80aaf1bc10f195a" title="Deg2Rad" alt="" coords="767,13,844,39"/>
+<area shape="rect" id="node11" href="classmain_game_widget.html#a6c34a3766550dc719df5b52ae02962cd" title="Metoda wyliczająca położenie płytki gracza. " alt="" coords="532,332,719,373"/>
+<area shape="rect" id="node5" href="game_widget_8cpp.html#a6d97a9fc5c5a6a82f80aaf1bc10f195a" title="Deg2Rad" alt="" coords="833,13,911,39"/>
 </map>
 </div>
 <div class="dynheader">
@@ -690,7 +792,7 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_icgraph.png" border="0" usemap="#classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_icgraph" alt=""/></div>
 <map name="classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_icgraph" id="classmain_game_widget_a9b6aaf75182714cb27c46e020b2c76f6_icgraph">
-<area shape="rect" id="node2" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Construct a new main Game Widget object. " alt="" coords="256,5,453,47"/>
+<area shape="rect" id="node2" href="classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="256,5,453,47"/>
 </map>
 </div>
 
@@ -717,9 +819,12 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00046">46</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+<p>Pole zawierające obraz tła. </p>
+<p>Pole przedstawiające tło gry. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00243">paintEvent()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00050">50</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00029">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00330">paintEvent()</a>.</p>
 
 </div>
 </div>
@@ -743,9 +848,12 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00066">66</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+<p>Pole zawierające obraz piłkii. </p>
+<p>Pole zawierające obraz piłki, którą toczy się gra. Zostaje ona wczytana w konstruktorze. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00243">paintEvent()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00075">75</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00029">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00330">paintEvent()</a>.</p>
 
 </div>
 </div>
@@ -769,9 +877,12 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00051">51</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+<p>Pole zawierające obraz płytki komputera. </p>
+<p>Pole zawierające obraz płytki komputera. Zostaje ona wczytana w konstruktorze. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00243">paintEvent()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00056">56</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00029">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00330">paintEvent()</a>.</p>
 
 </div>
 </div>
@@ -795,9 +906,12 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00076">76</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+<p>Wskaźnik na klasę UART. </p>
+<p>Wskaźnik na klasę związaną z pobieraniem danych za pomocą UART-u, w kontruktorze zostaje przypisany adres klasy UART z klasy okna głównego. Pole jest wykorzystywane podczs poruszania platformy gracza. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00129">calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00089">calculateIfEndGame()</a>, <a class="el" href="game_widget_8cpp_source.html#l00066">calculateUserPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">initValues()</a>, <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00047">updateTime()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00089">89</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00202">calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00109">calculateUserPlate()</a> i <a class="el" href="game_widget_8cpp_source.html#l00029">mainGameWidget()</a>.</p>
 
 </div>
 </div>
@@ -821,9 +935,12 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00086">86</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+<p>Wskaźnik na statystyki gry. </p>
+<p>Wskaźnik na statystyki grym podczas inicjalizacji w konstruktorze zostaje przypisany adres statystyk z klasy okna głównego. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00129">calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00066">calculateUserPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">initValues()</a> i <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00103">103</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00202">calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00140">calculateIfEndGame()</a>, <a class="el" href="game_widget_8cpp_source.html#l00109">calculateUserPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00047">initValues()</a>, <a class="el" href="game_widget_8cpp_source.html#l00029">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00080">updateTime()</a>.</p>
 
 </div>
 </div>
@@ -847,9 +964,12 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00091">91</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+<p>Wskaźnik na ustawienia gry. </p>
+<p>Wskaźnik na ustawienia gry, podczas inicjalizacji w konstruktorze zostaje przypisane adres ustawienień gry z klasy okna głównego. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00201">calculateComPlatePosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00129">calculateIfBouncedPlate()</a> i <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00110">110</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00281">calculateComPlatePosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00202">calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00047">initValues()</a> i <a class="el" href="game_widget_8cpp_source.html#l00029">mainGameWidget()</a>.</p>
 
 </div>
 </div>
@@ -873,9 +993,12 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00081">81</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+<p>Wskaźnik na zega. </p>
+<p>Wskażnik na zegar, w kontruktorze zostaje przypisany adres zegara z widgetu głównego aplikacji. Za jego pomocą występują timeouty które aktualizują klatki gry. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00089">calculateIfEndGame()</a> i <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00096">96</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00140">calculateIfEndGame()</a> i <a class="el" href="game_widget_8cpp_source.html#l00029">mainGameWidget()</a>.</p>
 
 </div>
 </div>
@@ -899,9 +1022,12 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00056">56</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+<p>Klasa zawierająca informacje na temat gry. </p>
+<p>Klasa zawierająca informacje na temat gry. Zostają one wykorzystane podczas poruszania poszczególnych obrazów. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00080">calculateBallPosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00201">calculateComPlatePosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00129">calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00108">calculateIfBouncedWall()</a>, <a class="el" href="game_widget_8cpp_source.html#l00089">calculateIfEndGame()</a>, <a class="el" href="game_widget_8cpp_source.html#l00066">calculateUserPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">initValues()</a>, <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00243">paintEvent()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00063">63</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00127">calculateBallPosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00281">calculateComPlatePosition()</a>, <a class="el" href="game_widget_8cpp_source.html#l00202">calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00176">calculateIfBouncedWall()</a>, <a class="el" href="game_widget_8cpp_source.html#l00140">calculateIfEndGame()</a>, <a class="el" href="game_widget_8cpp_source.html#l00109">calculateUserPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00047">initValues()</a>, <a class="el" href="game_widget_8cpp_source.html#l00029">mainGameWidget()</a>, <a class="el" href="game_widget_8cpp_source.html#l00330">paintEvent()</a> i <a class="el" href="game_widget_8cpp_source.html#l00062">resetPosition()</a>.</p>
 
 </div>
 </div>
@@ -925,9 +1051,12 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00071">71</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+<p>Pole zawierające obraz serca. </p>
+<p>Pole zawierające obraz serca. Zostaje ona wczytana w konstruktorze. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00243">paintEvent()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00081">81</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00330">paintEvent()</a>.</p>
 
 </div>
 </div>
@@ -951,9 +1080,12 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00096">96</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+<p>Pole odpowiedzialne za liczenie czasu. </p>
+<p>Pole odpowiedzialne za liczenie upływającego czasu, używane w celu prezentowania punktów na wykresie. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00129">calculateIfBouncedPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00066">calculateUserPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00030">initValues()</a> i <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00117">117</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00109">calculateUserPlate()</a>, <a class="el" href="game_widget_8cpp_source.html#l00047">initValues()</a> i <a class="el" href="game_widget_8cpp_source.html#l00029">mainGameWidget()</a>.</p>
 
 </div>
 </div>
@@ -977,9 +1109,12 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00061">61</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+<p>Pole zawierające obraz płytki gracza. </p>
+<p>Pole zawierające obraz płytki gracza. Zostaje ona wczytana w konstruktorze. </p>
 
-<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00011">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00243">paintEvent()</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="game_widget_8hpp_source.html#l00069">69</a> pliku <a class="el" href="game_widget_8hpp_source.html">gameWidget.hpp</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="game_widget_8cpp_source.html#l00029">mainGameWidget()</a> i <a class="el" href="game_widget_8cpp_source.html#l00330">paintEvent()</a>.</p>
 
 </div>
 </div>

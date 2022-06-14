@@ -3,7 +3,7 @@
 #include <QString>
 /**
  * @file
- * @brief Plik nagłówkowy z strukturą na temat URT 
+ * @brief Definicja klasy UARTVal
  *
  * Plik nagłówkowy z  strukturą odpowiedzialną za zapisywanie do niej danych otrzymanych
  * poprzez połączenie UART
@@ -31,7 +31,7 @@ public:
 
   /**
    * @brief Pole typu bool reprezentujaca czy urzadzenie jest podlaczone
-   * @retval true Urządzenei jest podłączone
+   * @retval true Urządzenie jest podłączone
    * @retval false Urzadzenie nie jest podlaczone
    */
   bool isConnected = 0;  //If device is connected

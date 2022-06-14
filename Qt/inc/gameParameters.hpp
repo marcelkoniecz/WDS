@@ -6,7 +6,7 @@
 #include <QtCharts>
 /**
  *  @file
- *  @brief Definicja statystyk gry
+ *  @brief Definicja klasy gameParameters
  *
  * Plik zawierający statystyki gry oraz aktualny stan rozgrywki
  */

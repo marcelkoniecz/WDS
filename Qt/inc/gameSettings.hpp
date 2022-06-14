@@ -2,9 +2,10 @@
 #define GAMESETTINGS_HPP
 /**
  * @file 
- * @brief Definicja ustawień gry
+ * @brief Definicja klasy gameSettings
  * 
- * Plik zawierający klase z ustawieniami gry
+ * Plik zawierający klase z ustawieniami gameSettings gry oraz typy wyliczeniowe gameDifficulty
+ * i applicationLanguage. 
  */
 
 

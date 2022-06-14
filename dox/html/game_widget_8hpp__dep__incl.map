@@ -1,14 +1,14 @@
 <map id="/home/marcel/Documents/semestrVI/WDS/Qt/inc/gameWidget.hpp" name="/home/marcel/Documents/semestrVI/WDS/Qt/inc/gameWidget.hpp">
-<area shape="rect" id="node2" href="$game_widget_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/gameWidget.cpp" alt="" coords="265,109,437,165"/>
-<area shape="rect" id="node3" href="$main_widget_8hpp.html" title="Plik nagłówkowy klasy mainwidget. " alt="" coords="461,109,633,165"/>
-<area shape="rect" id="node4" href="$main_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/main.cpp" alt="" coords="5,317,177,373"/>
-<area shape="rect" id="node5" href="$main_widget_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/mainWidget.cpp" alt="" coords="265,213,437,269"/>
-<area shape="rect" id="node6" href="$game_window_8hpp.html" title="Plik nagłówkowy z klasą okna apliji. " alt="" coords="461,213,633,269"/>
-<area shape="rect" id="node10" href="$side_widget_8hpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/inc\l/sideWidget.hpp" alt="" coords="789,317,961,373"/>
-<area shape="rect" id="node7" href="$game_window_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/gameWindow.cpp" alt="" coords="201,317,373,373"/>
+<area shape="rect" id="node2" href="$game_widget_8cpp.html" title="Definicje metod klasy mainGameWidget. " alt="" coords="265,109,437,165"/>
+<area shape="rect" id="node3" href="$main_widget_8hpp.html" title="Definicja klasy mainWidget. " alt="" coords="461,109,633,165"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="Plik główny aplikacji. " alt="" coords="5,317,177,373"/>
+<area shape="rect" id="node5" href="$main_widget_8cpp.html" title="Definicje metod klasy mainWidget. " alt="" coords="265,213,437,269"/>
+<area shape="rect" id="node6" href="$game_window_8hpp.html" title="Definicja klasy gameWindow. " alt="" coords="461,213,633,269"/>
+<area shape="rect" id="node10" href="$side_widget_8hpp.html" title="Definicja klasy SidePanelWidget. " alt="" coords="789,317,961,373"/>
+<area shape="rect" id="node7" href="$game_window_8cpp.html" title="Definicje metod klasy gameWindow. " alt="" coords="201,317,373,373"/>
 <area shape="rect" id="node8" href="$dialogs_8hpp.html" title="Plik nagłówkowy zawierający okna dialogowe. " alt="" coords="397,317,569,373"/>
-<area shape="rect" id="node12" href="$game_statistics_8hpp.html" title="Plik nagłówkowy zawierający widget statystyk Plik nagłówkowy zawierający widget statystyk. " alt="" coords="593,317,765,373"/>
-<area shape="rect" id="node9" href="$dialogs_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/dialogs.cpp" alt="" coords="397,421,569,477"/>
-<area shape="rect" id="node11" href="$side_widget_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/sideWidget.cpp" alt="" coords="789,421,961,477"/>
-<area shape="rect" id="node13" href="$game_statistics_8cpp.html" title="/home/marcel/Documents\l/semestrVI/WDS/Qt/src\l/gameStatistics.cpp" alt="" coords="593,421,765,477"/>
+<area shape="rect" id="node12" href="$game_statistics_8hpp.html" title="Definicja klasy gameStatisticsWidget. " alt="" coords="593,317,765,373"/>
+<area shape="rect" id="node9" href="$dialogs_8cpp.html" title="Definicje metod dialogów. " alt="" coords="397,421,569,477"/>
+<area shape="rect" id="node11" href="$side_widget_8cpp.html" title="Definicje metod klasy SidePanelWidget. " alt="" coords="789,421,961,477"/>
+<area shape="rect" id="node13" href="$game_statistics_8cpp.html" title="Definicje metod klasy gameStatisticsWidget. " alt="" coords="593,421,765,477"/>
 </map>

@@ -1,11 +1,11 @@
 <map id="/home/marcel/Documents/semestrVI/WDS/Qt/inc/dialogs.hpp" name="/home/marcel/Documents/semestrVI/WDS/Qt/inc/dialogs.hpp">
-<area shape="rect" id="node20" href="$game_settings_8hpp.html" title="Definicja ustawień gry. " alt="" coords="2659,333,2786,360"/>
-<area shape="rect" id="node21" href="$game_window_8hpp.html" title="Plik nagłówkowy z klasą okna apliji. " alt="" coords="1453,109,1579,136"/>
-<area shape="rect" id="node22" href="$game_parameters_8hpp.html" title="Definicja statystyk gry. " alt="" coords="944,333,1091,360"/>
-<area shape="rect" id="node25" href="$main_widget_8hpp.html" title="Plik nagłówkowy klasy mainwidget. " alt="" coords="1458,184,1574,211"/>
-<area shape="rect" id="node30" href="$game_statistics_8hpp.html" title="Plik nagłówkowy zawierający widget statystyk Plik nagłówkowy zawierający widget statystyk. " alt="" coords="902,259,1037,285"/>
-<area shape="rect" id="node35" href="$uart_param_8hpp.html" title="Plik nagłówkowy z strukturą na temat UART. " alt="" coords="213,184,320,211"/>
-<area shape="rect" id="node26" href="$game_widget_8hpp.html" title="gameWidget.hpp" alt="" coords="1603,259,1723,285"/>
-<area shape="rect" id="node28" href="$side_widget_8hpp.html" title="sideWidget.hpp" alt="" coords="1365,259,1477,285"/>
-<area shape="rect" id="node27" href="$image_parameters_8hpp.html" title="Plik nagłówkowy zawierający klasę imageParameters. " alt="" coords="1765,333,1915,360"/>
+<area shape="rect" id="node20" href="$game_settings_8hpp.html" title="Definicja klasy gameSettings. " alt="" coords="2659,333,2786,360"/>
+<area shape="rect" id="node21" href="$game_window_8hpp.html" title="Definicja klasy gameWindow. " alt="" coords="1453,109,1579,136"/>
+<area shape="rect" id="node22" href="$game_parameters_8hpp.html" title="Definicja klasy gameParameters. " alt="" coords="944,333,1091,360"/>
+<area shape="rect" id="node25" href="$main_widget_8hpp.html" title="Definicja klasy mainWidget. " alt="" coords="1458,184,1574,211"/>
+<area shape="rect" id="node30" href="$game_statistics_8hpp.html" title="Definicja klasy gameStatisticsWidget. " alt="" coords="902,259,1037,285"/>
+<area shape="rect" id="node35" href="$uart_param_8hpp.html" title="Definicja klasy UARTVal. " alt="" coords="213,184,320,211"/>
+<area shape="rect" id="node26" href="$game_widget_8hpp.html" title="Definicja klasy mainGameWidget. " alt="" coords="1603,259,1723,285"/>
+<area shape="rect" id="node28" href="$side_widget_8hpp.html" title="Definicja klasy SidePanelWidget. " alt="" coords="1365,259,1477,285"/>
+<area shape="rect" id="node27" href="$image_parameters_8hpp.html" title="Definicja klasy imageParameters. " alt="" coords="1765,333,1915,360"/>
 </map>

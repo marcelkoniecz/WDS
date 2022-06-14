@@ -1,0 +1,6 @@
+<map id="mainGameWidget::EmitPauzeGame" name="mainGameWidget::EmitPauzeGame">
+<area shape="rect" id="node2" href="$classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="Metoda sprawdzająca czy nastąpił koniec gry. " alt="" coords="287,5,473,47"/>
+<area shape="rect" id="node3" href="$classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="521,13,749,39"/>
+<area shape="rect" id="node4" href="$classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="797,13,1000,39"/>
+<area shape="rect" id="node5" href="$classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="1048,5,1245,47"/>
+</map>

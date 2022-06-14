@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Aplikacja gry: Dokumentacja klasy SidePanelWidget</title>
+<title>Płytki odbijające piłkę: Dokumentacja klasy SidePanelWidget</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Aplikacja gry
+   <div id="projectname">Płytki odbijające piłkę
    </div>
   </td>
  </tr>
@@ -132,6 +132,9 @@ Sloty publiczne</h2></td></tr>
 <tr class="memitem:aa24c83e3d9febfd47e810563458a8926"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_side_panel_widget.html#aa24c83e3d9febfd47e810563458a8926">checkBlockButtons</a> ()</td></tr>
 <tr class="memdesc:aa24c83e3d9febfd47e810563458a8926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot blokowania przycisków.  <a href="#aa24c83e3d9febfd47e810563458a8926">Więcej...</a><br /></td></tr>
 <tr class="separator:aa24c83e3d9febfd47e810563458a8926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528a9d4ceb4122c139abef5eb662815e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_side_panel_widget.html#a528a9d4ceb4122c139abef5eb662815e">pauzeGameFun</a> ()</td></tr>
+<tr class="memdesc:a528a9d4ceb4122c139abef5eb662815e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot zatrzymywania gry.  <a href="#a528a9d4ceb4122c139abef5eb662815e">Więcej...</a><br /></td></tr>
+<tr class="separator:a528a9d4ceb4122c139abef5eb662815e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Sygnały</h2></td></tr>
@@ -148,7 +151,7 @@ Metody publiczne</h2></td></tr>
 <tr class="memdesc:a17713943b4dc399c3e2fe12f6bd37225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor panela bocznego aplikacji.  <a href="#a17713943b4dc399c3e2fe12f6bd37225">Więcej...</a><br /></td></tr>
 <tr class="separator:a17713943b4dc399c3e2fe12f6bd37225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e50e08924724bf47728fc5e6d3a3c24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_side_panel_widget.html#a1e50e08924724bf47728fc5e6d3a3c24">checkConnection</a> ()</td></tr>
-<tr class="memdesc:a1e50e08924724bf47728fc5e6d3a3c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot sprawdzania połączenia z urządzeniem.  <a href="#a1e50e08924724bf47728fc5e6d3a3c24">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a1e50e08924724bf47728fc5e6d3a3c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda sprawdzania połączenia z urządzeniem.  <a href="#a1e50e08924724bf47728fc5e6d3a3c24">Więcej...</a><br /></td></tr>
 <tr class="separator:a1e50e08924724bf47728fc5e6d3a3c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -173,7 +176,7 @@ Atrybuty prywatne</h2></td></tr>
 <div class="textblock"><p>Klasa reprezentująca panel boczny aplikacji. </p>
 <p>Klasa jest widgetem zawierajacym czas gry oraz przyciski do zarzadzania gra </p>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8hpp_source.html#l00039">39</a> pliku <a class="el" href="side_widget_8hpp_source.html">sideWidget.hpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8hpp_source.html#l00041">41</a> pliku <a class="el" href="side_widget_8hpp_source.html">sideWidget.hpp</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a17713943b4dc399c3e2fe12f6bd37225"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17713943b4dc399c3e2fe12f6bd37225">&#9670;&nbsp;</a></span>SidePanelWidget()</h2>
@@ -204,28 +207,29 @@ Atrybuty prywatne</h2></td></tr>
 <p>Konstruktor panela bocznego aplikacji. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>&ndash; wskaźnik na klasę widgeta zawierającego grę oraz panel boczny </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>&ndash; wskaźnik na klasę widget'u zawierającego grę oraz panel boczny </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">gameWin</td><td>&ndash; wskaźnik na klasę okna głównego aplikacji</td></tr>
   </table>
   </dd>
 </dl>
-<p>Konstruktor przyjmuje jako parametry wskaźniki adresy do głownego okna programu oraz widgetu zawierającego grę oraz panel boczny. Początkowo jest ustawiany adres wskaźnika na timer który będzie wyświetlany na panelu bocznym. Następnie jest ustawiany wskaźnik na klase odpowiedzialną za połączenie z mikrokontrolerem w celu sprawdzania czy połączenie jest aktywne oraz wskaźnik na wartości z paramentrami gry. Jako kolejne zostaje wywołane setupUi oraz połączenie sygnałów pochodzących od przycisków na penelu bocznym oraz sygnałów z okna głównego takich jak sygnał wyzerowania sygnału, przetłumaczenia widgeta czy zablokowania przycisków </p>
+<p>Konstruktor przyjmuje jako parametry wskaźniki adresy do głownego okna programu oz widget'u zawierającego grę oraz panel bocz. Początkowo jest ustawiany adres wskaźnika na timer który będzie wyświlany na panelu bocznym. Następnie jest ustawiany wskaźnik na klase odpowiedzialną za połączenie z mikrokontrolerem, w celu sprawdzania czy połączenie jest aktywne oraz wskaźnik na wartości z paramentrami gry. Jako kolejne zostaje wywołane setupUi oraz połączenie sygnałów pochodzących od przycisków na penelu bocznym oraz sygnałów z okna głównego takich jak sygnał wyzerowania sygnału, przetłumaczenia widget'u czy zablokowania przycisków </p>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00019">19</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00026">26</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="side_widget_8hpp_source.html#l00070">accTime</a>, <a class="el" href="side_widget_8cpp_source.html#l00043">checkBlockButtons()</a>, <a class="el" href="side_widget_8cpp_source.html#l00145">EndGame()</a>, <a class="el" href="side_widget_8cpp_source.html#l00071">EndProgram()</a>, <a class="el" href="game_window_8hpp_source.html#l00092">gameWindow::gameInfo</a>, <a class="el" href="side_widget_8hpp_source.html#l00050">gamePar</a>, <a class="el" href="game_window_8hpp_source.html#l00125">gameWindow::gameParam</a>, <a class="el" href="main_widget_8hpp_source.html#l00053">mainWidget::gameTimer</a>, <a class="el" href="side_widget_8hpp_source.html#l00057">gameUART</a>, <a class="el" href="side_widget_8cpp_source.html#l00061">retranslatePanel()</a>, <a class="el" href="side_widget_8cpp_source.html#l00133">setTimerNull()</a>, <a class="el" href="side_widget_8hpp_source.html#l00064">timer</a>, <a class="el" href="side_widget_8cpp_source.html#l00082">updateTime()</a> i <a class="el" href="side_widget_8cpp_source.html#l00111">writeTime()</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="side_widget_8hpp_source.html#l00072">accTime</a>, <a class="el" href="side_widget_8cpp_source.html#l00060">checkBlockButtons()</a>, <a class="el" href="side_widget_8cpp_source.html#l00145">EndGame()</a>, <a class="el" href="side_widget_8cpp_source.html#l00084">EndProgram()</a>, <a class="el" href="game_window_8hpp_source.html#l00092">gameWindow::gameInfo</a>, <a class="el" href="side_widget_8hpp_source.html#l00052">gamePar</a>, <a class="el" href="game_window_8hpp_source.html#l00125">gameWindow::gameParam</a>, <a class="el" href="main_widget_8hpp_source.html#l00054">mainWidget::gameTimer</a>, <a class="el" href="side_widget_8hpp_source.html#l00059">gameUART</a>, <a class="el" href="main_widget_8hpp_source.html#l00060">mainWidget::okienko</a>, <a class="el" href="side_widget_8cpp_source.html#l00050">pauzeGameFun()</a>, <a class="el" href="side_widget_8cpp_source.html#l00076">retranslatePanel()</a>, <a class="el" href="side_widget_8cpp_source.html#l00135">setTimerNull()</a>, <a class="el" href="side_widget_8hpp_source.html#l00066">timer</a>, <a class="el" href="side_widget_8cpp_source.html#l00093">updateTime()</a> i <a class="el" href="side_widget_8cpp_source.html#l00116">writeTime()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_side_panel_widget_a17713943b4dc399c3e2fe12f6bd37225_cgraph.png" border="0" usemap="#class_side_panel_widget_a17713943b4dc399c3e2fe12f6bd37225_cgraph" alt=""/></div>
 <map name="class_side_panel_widget_a17713943b4dc399c3e2fe12f6bd37225_cgraph" id="class_side_panel_widget_a17713943b4dc399c3e2fe12f6bd37225_cgraph">
-<area shape="rect" id="node2" href="class_side_panel_widget.html#aa24c83e3d9febfd47e810563458a8926" title="Slot blokowania przycisków. " alt="" coords="496,49,695,90"/>
-<area shape="rect" id="node3" href="class_side_panel_widget.html#a0667394b67fa642b05a37d8087fbe3c3" title="Slot końca gry. " alt="" coords="250,107,438,133"/>
-<area shape="rect" id="node4" href="class_side_panel_widget.html#a2e732225cd6430685c65211e4f5ffc75" title="Slot odpowiedzialny za wyzerowanie czasu zegara. " alt="" coords="493,220,697,247"/>
-<area shape="rect" id="node5" href="class_side_panel_widget.html#a016153e76b4b75567913496a966cf890" title="Slot zakończenia programu. " alt="" coords="243,157,445,184"/>
-<area shape="rect" id="node6" href="class_side_panel_widget.html#aa2d4f3edb024980d4799b4d96d4c6b9c" title="Slot przetłumaczenia widgeta. " alt="" coords="249,209,439,250"/>
-<area shape="rect" id="node7" href="class_side_panel_widget.html#ad8a1275cd30793be9ac0f34ebd26309c" title="Slot aktualizacji czasu. " alt="" coords="245,275,443,301"/>
-<area shape="rect" id="node8" href="class_side_panel_widget.html#a5b022971e5298e57262dae3d526343e2" title="Slot obługi przycisku Resume. " alt="" coords="251,5,437,32"/>
+<area shape="rect" id="node2" href="class_side_panel_widget.html#aa24c83e3d9febfd47e810563458a8926" title="Slot blokowania przycisków. " alt="" coords="516,34,715,75"/>
+<area shape="rect" id="node3" href="class_side_panel_widget.html#a0667394b67fa642b05a37d8087fbe3c3" title="Slot końca gry. " alt="" coords="260,92,448,119"/>
+<area shape="rect" id="node4" href="class_side_panel_widget.html#a2e732225cd6430685c65211e4f5ffc75" title="Slot odpowiedzialny za wyzerowanie czasu zegara. " alt="" coords="513,231,717,257"/>
+<area shape="rect" id="node5" href="class_side_panel_widget.html#a016153e76b4b75567913496a966cf890" title="Slot zakończenia programu. " alt="" coords="253,143,455,169"/>
+<area shape="rect" id="node6" href="class_side_panel_widget.html#a528a9d4ceb4122c139abef5eb662815e" title="Slot zatrzymywania gry. " alt="" coords="243,193,465,220"/>
+<area shape="rect" id="node7" href="class_side_panel_widget.html#aa2d4f3edb024980d4799b4d96d4c6b9c" title="Slot przetłumaczenia widgeta. " alt="" coords="259,245,449,286"/>
+<area shape="rect" id="node8" href="class_side_panel_widget.html#ad8a1275cd30793be9ac0f34ebd26309c" title="Slot aktualizacji czasu. " alt="" coords="255,311,453,337"/>
+<area shape="rect" id="node9" href="class_side_panel_widget.html#a5b022971e5298e57262dae3d526343e2" title="Slot obługi przycisku Resume. " alt="" coords="261,41,447,68"/>
 </map>
 </div>
 
@@ -256,13 +260,13 @@ Oto graf wywołań dla tej funkcji:</div>
 </div><div class="memdoc">
 
 <p>Slot blokowania przycisków. </p>
-<p>Slot jest wywyoływany przez sygnał EmitBlockButtons() który jest emitowany przez okno główne aplikacji. W chwili wywołania następuje sprawdzenie ustawień czy przyciski powinny zostać zablokowane, jeśli tak to przyciski zostją zablokowane. </p>
+<p>Slot jest wywyoływany przez sygnał EmitBlockButtons() który jest emitowany przez okno główne aplikacji. W chwili wywołania następuje sprawdzenie ustawień czy przyciski powinny zostać zablokowane, jeśli tak to przyciski zostają zablokowane. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00043">43</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00060">60</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00054">gameParameters::blockButtons</a> i <a class="el" href="side_widget_8hpp_source.html#l00050">gamePar</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="game_parameters_8hpp_source.html#l00054">gameParameters::blockButtons</a> i <a class="el" href="side_widget_8hpp_source.html#l00052">gamePar</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00145">EndGame()</a>, <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget()</a> i <a class="el" href="side_widget_8cpp_source.html#l00111">writeTime()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00145">EndGame()</a>, <a class="el" href="side_widget_8cpp_source.html#l00026">SidePanelWidget()</a> i <a class="el" href="side_widget_8cpp_source.html#l00116">writeTime()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -291,12 +295,12 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Slot sprawdzania połączenia z urządzeniem. </p>
-<p>Slot jest wywoływany przez sygnał Jest on odpowiedzialny za blokowanie przycisku startu gry. Slot nic nie zwraca. </p>
+<p>Metoda sprawdzania połączenia z urządzeniem. </p>
+<p>Metoda jest odpowiedzialna za blokowanie przycisku startu gry. Metoda nic nie zwraca. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00097">97</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00104">104</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="side_widget_8hpp_source.html#l00057">gameUART</a> i <a class="el" href="uart_param_8hpp_source.html#l00051">UARTVal::isConnected</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="side_widget_8hpp_source.html#l00059">gameUART</a> i <a class="el" href="uart_param_8hpp_source.html#l00037">UARTVal::isConnected</a>.</p>
 
 </div>
 </div>
@@ -326,7 +330,7 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Sygnał zamknięcia aplikacji. </p>
 <p>Sygnał zamknięcia aplikacji w momencie wciśnięcia przycisku Exit Application </p>
 
-<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00071">EndProgram()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00084">EndProgram()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -402,13 +406,13 @@ Oto graf wywoływań tej funkcji:</div>
 </div><div class="memdoc">
 
 <p>Slot końca gry. </p>
-<p>Slot jest wywoływany w chwili kliknięcia przycisku Exit Application. Zeruje on wartość zegara oraz wysyła sygnał <a class="el" href="class_side_panel_widget.html#ae78f63432a769825f6f6578172d4e115" title="Sygnał końca gry. ">EmitEndGame()</a>. </p>
+<p>Slot jest wywoływany w chwili kliknięcia przycisku Exit application. Zeruje on wartość zegara oraz wysyła sygnał <a class="el" href="class_side_panel_widget.html#ae78f63432a769825f6f6578172d4e115" title="Sygnał końca gry. ">EmitEndGame()</a>. </p>
 
 <p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00145">145</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="side_widget_8cpp_source.html#l00043">checkBlockButtons()</a>, <a class="el" href="class_side_panel_widget.html#ae78f63432a769825f6f6578172d4e115">EmitEndGame()</a>, <a class="el" href="side_widget_8hpp_source.html#l00078">isStarted</a>, <a class="el" href="side_widget_8cpp_source.html#l00133">setTimerNull()</a> i <a class="el" href="side_widget_8hpp_source.html#l00064">timer</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="side_widget_8cpp_source.html#l00060">checkBlockButtons()</a>, <a class="el" href="class_side_panel_widget.html#ae78f63432a769825f6f6578172d4e115">EmitEndGame()</a>, <a class="el" href="side_widget_8hpp_source.html#l00080">isStarted</a>, <a class="el" href="side_widget_8cpp_source.html#l00135">setTimerNull()</a> i <a class="el" href="side_widget_8hpp_source.html#l00066">timer</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00026">SidePanelWidget()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
@@ -455,17 +459,59 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Slot zakończenia programu. </p>
 <p>Slot jest wywoływany w chwili naciśnięcia przycisku endGame. Powoduje wysłanie sygnału <a class="el" href="class_side_panel_widget.html#aa7e88a7eeff40a9995802fabc297a549" title="Sygnał zamknięcia aplikacji. ">EmitClosing()</a> odpowiedzialnego za zamknięcie aplikacji. Slot nic nie zwraca. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00071">71</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00084">84</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
 
 <p class="reference">Odwołuje się do <a class="el" href="class_side_panel_widget.html#aa7e88a7eeff40a9995802fabc297a549">EmitClosing()</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00026">SidePanelWidget()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_side_panel_widget_a016153e76b4b75567913496a966cf890_icgraph.png" border="0" usemap="#class_side_panel_widget_a016153e76b4b75567913496a966cf890_icgraph" alt=""/></div>
 <map name="class_side_panel_widget_a016153e76b4b75567913496a966cf890_icgraph" id="class_side_panel_widget_a016153e76b4b75567913496a966cf890_icgraph">
 <area shape="rect" id="node2" href="class_side_panel_widget.html#a17713943b4dc399c3e2fe12f6bd37225" title="Konstruktor panela bocznego aplikacji. " alt="" coords="256,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a528a9d4ceb4122c139abef5eb662815e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a528a9d4ceb4122c139abef5eb662815e">&#9670;&nbsp;</a></span>pauzeGameFun</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SidePanelWidget::pauzeGameFun </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot zatrzymywania gry. </p>
+<p>Slot jest wywoływany przez sygnał EmitPauzeGame() który jest emitowany przez widget gry ( podczas stracenia życia przez jednego gracza) i przez okno główne ekranu (podczas wywołania jednego z dialogów). </p>
+
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00050">50</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
+
+<p class="reference">Odwołuje się do <a class="el" href="side_widget_8hpp_source.html#l00080">isStarted</a> i <a class="el" href="side_widget_8hpp_source.html#l00066">timer</a>.</p>
+
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00026">SidePanelWidget()</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_side_panel_widget_a528a9d4ceb4122c139abef5eb662815e_icgraph.png" border="0" usemap="#class_side_panel_widget_a528a9d4ceb4122c139abef5eb662815e_icgraph" alt=""/></div>
+<map name="class_side_panel_widget_a528a9d4ceb4122c139abef5eb662815e_icgraph" id="class_side_panel_widget_a528a9d4ceb4122c139abef5eb662815e_icgraph">
+<area shape="rect" id="node2" href="class_side_panel_widget.html#a17713943b4dc399c3e2fe12f6bd37225" title="Konstruktor panela bocznego aplikacji. " alt="" coords="276,5,465,47"/>
 </map>
 </div>
 
@@ -495,11 +541,11 @@ Oto graf wywoływań tej funkcji:</div>
 </div><div class="memdoc">
 
 <p>Slot przetłumaczenia widgeta. </p>
-<p>Slot jest wywoływany przez sygnał EmitRetranslate() który jest emitowny przez okno główne aplikacji. W chwili wywołania następuje przetłumaczenie widgeta panela bocznego. Slot nic nie zwraca </p>
+<p>Slot jest wywoływany przez sygnał EmitRetranslate() który jest emitowny przez okno główne aplikacji. W chwili wywołania następuje przetłumaczenie widget'u panela bocznego. Slot nic nie zwraca </p>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00061">61</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00076">76</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00026">SidePanelWidget()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -537,11 +583,11 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Slot odpowiedzialny za wyzerowanie czasu zegara. </p>
 <p>Slot jest wywoływany przez sygnał EmitRestartGame() emitowany przez okno główne aplikacji. Ustawia on wartość timera na 00:00:00. Slot nic nie zwraca. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00133">133</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00135">135</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="side_widget_8hpp_source.html#l00070">accTime</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="side_widget_8hpp_source.html#l00072">accTime</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00145">EndGame()</a> i <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00145">EndGame()</a> i <a class="el" href="side_widget_8cpp_source.html#l00026">SidePanelWidget()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -580,11 +626,11 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Slot aktualizacji czasu. </p>
 <p>Slot jest wywoływany przez timeout timera. Jest on odpowiedzialny za ustawianie aktualnego czasu na liczniku czasu gry. Slot nic nie zwraca. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00082">82</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00093">93</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="side_widget_8hpp_source.html#l00070">accTime</a>, <a class="el" href="side_widget_8hpp_source.html#l00050">gamePar</a> i <a class="el" href="game_parameters_8hpp_source.html#l00074">gameParameters::gameTime</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="side_widget_8hpp_source.html#l00072">accTime</a>, <a class="el" href="side_widget_8hpp_source.html#l00052">gamePar</a> i <a class="el" href="game_parameters_8hpp_source.html#l00074">gameParameters::gameTime</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00026">SidePanelWidget()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
@@ -622,11 +668,11 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Slot obługi przycisku Resume. </p>
 <p>Slot obsługi przycisku odpowiedzialny za zatrzymywanie i wznawianie aplikcji, wraz z zmianą nazwy przycisku. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00111">111</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8cpp_source.html#l00116">116</a> pliku <a class="el" href="side_widget_8cpp_source.html">sideWidget.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="side_widget_8cpp_source.html#l00043">checkBlockButtons()</a>, <a class="el" href="side_widget_8hpp_source.html#l00078">isStarted</a> i <a class="el" href="side_widget_8hpp_source.html#l00064">timer</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="side_widget_8cpp_source.html#l00060">checkBlockButtons()</a>, <a class="el" href="side_widget_8hpp_source.html#l00080">isStarted</a> i <a class="el" href="side_widget_8hpp_source.html#l00066">timer</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00026">SidePanelWidget()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
@@ -670,9 +716,9 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Pole odmierząjące aktualny czas aplikacji w sekundach. </p>
 <p>Pole odmierząjące aktualny czas aplikacji w sekundach </p>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8hpp_source.html#l00070">70</a> pliku <a class="el" href="side_widget_8hpp_source.html">sideWidget.hpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8hpp_source.html#l00072">72</a> pliku <a class="el" href="side_widget_8hpp_source.html">sideWidget.hpp</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00133">setTimerNull()</a>, <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget()</a> i <a class="el" href="side_widget_8cpp_source.html#l00082">updateTime()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00135">setTimerNull()</a>, <a class="el" href="side_widget_8cpp_source.html#l00026">SidePanelWidget()</a> i <a class="el" href="side_widget_8cpp_source.html#l00093">updateTime()</a>.</p>
 
 </div>
 </div>
@@ -699,9 +745,9 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Wskaźnik na klasę <a class="el" href="classgame_parameters.html" title="Klasa zawierająca informacje na temat statystyk gry. ">gameParameters</a>. </p>
 <p>Wzkaźnik na klasę zawierającą statystyki dotyczące danej gry, jest on uzywany w celu zapisania aktualnego czasu gry i wyswietlenia go w oknie statystyk. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8hpp_source.html#l00050">50</a> pliku <a class="el" href="side_widget_8hpp_source.html">sideWidget.hpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8hpp_source.html#l00052">52</a> pliku <a class="el" href="side_widget_8hpp_source.html">sideWidget.hpp</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00043">checkBlockButtons()</a>, <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget()</a> i <a class="el" href="side_widget_8cpp_source.html#l00082">updateTime()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00060">checkBlockButtons()</a>, <a class="el" href="side_widget_8cpp_source.html#l00026">SidePanelWidget()</a> i <a class="el" href="side_widget_8cpp_source.html#l00093">updateTime()</a>.</p>
 
 </div>
 </div>
@@ -728,9 +774,9 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Wzkażnik na klasę <a class="el" href="class_u_a_r_t_val.html" title="Klasa zawierajaca informacje na temat gry. ">UARTVal</a>. </p>
 <p>Wskaźnik na klasę zawierającą dane odczytane z UART, jest on ożywany w celu sprawdzania czy aktualnie gra jest połączona z urządzeniem. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8hpp_source.html#l00057">57</a> pliku <a class="el" href="side_widget_8hpp_source.html">sideWidget.hpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8hpp_source.html#l00059">59</a> pliku <a class="el" href="side_widget_8hpp_source.html">sideWidget.hpp</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00097">checkConnection()</a> i <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00104">checkConnection()</a> i <a class="el" href="side_widget_8cpp_source.html#l00026">SidePanelWidget()</a>.</p>
 
 </div>
 </div>
@@ -763,9 +809,9 @@ Oto graf wywoływań tej funkcji:</div>
   </dd>
 </dl>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8hpp_source.html#l00078">78</a> pliku <a class="el" href="side_widget_8hpp_source.html">sideWidget.hpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8hpp_source.html#l00080">80</a> pliku <a class="el" href="side_widget_8hpp_source.html">sideWidget.hpp</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00145">EndGame()</a> i <a class="el" href="side_widget_8cpp_source.html#l00111">writeTime()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00145">EndGame()</a>, <a class="el" href="side_widget_8cpp_source.html#l00050">pauzeGameFun()</a> i <a class="el" href="side_widget_8cpp_source.html#l00116">writeTime()</a>.</p>
 
 </div>
 </div>
@@ -792,9 +838,9 @@ Oto graf wywoływań tej funkcji:</div>
 <p>Wskaźnik na zegar aplikacji. </p>
 <p>Wskaźnik na QTimer odpowiedzialny za pomiar czasu aplikacji. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="side_widget_8hpp_source.html#l00064">64</a> pliku <a class="el" href="side_widget_8hpp_source.html">sideWidget.hpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="side_widget_8hpp_source.html#l00066">66</a> pliku <a class="el" href="side_widget_8hpp_source.html">sideWidget.hpp</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00145">EndGame()</a>, <a class="el" href="side_widget_8cpp_source.html#l00019">SidePanelWidget()</a> i <a class="el" href="side_widget_8cpp_source.html#l00111">writeTime()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="side_widget_8cpp_source.html#l00145">EndGame()</a>, <a class="el" href="side_widget_8cpp_source.html#l00050">pauzeGameFun()</a>, <a class="el" href="side_widget_8cpp_source.html#l00026">SidePanelWidget()</a> i <a class="el" href="side_widget_8cpp_source.html#l00116">writeTime()</a>.</p>
 
 </div>
 </div>

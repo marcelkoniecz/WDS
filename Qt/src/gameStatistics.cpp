@@ -1,8 +1,15 @@
 #include "gameStatistics.hpp"
 
 /**
- * @brief Konstruktor widgetu statystyk
- *
+ * @file
+ *  @brief Definicje metod  klasy gameStatisticsWidget 
+ * 
+ * Definicje metod oraz slotów klasy gameStatisticsWidget. Klasa gameStatisticsWidget jest
+ * klasą pochodą QWidgeta.
+ */
+
+
+/**
  * @param[in] parent --Wskaźnik na klasę okna głównego aplikacji
  * 
  * Konstruktor kopiuje adres wskaźnika statystyk gry do pola klasy - gamePrmts 
@@ -24,8 +31,6 @@ gameStatisticsWidget::gameStatisticsWidget(gameWindow* parent) {
 
 }
 /**
- * @brief Slot zmiany języka
- *
  * Gdy klasa okna głównego wyśle sygnał że należy przeprowadzić translacje uruchomiony
  * zostaje poniższy slot. Slot nie przyjmuje żadnych parametrów oraz nic nie zwraca.
  */
@@ -35,8 +40,6 @@ void gameStatisticsWidget::retranslate() {
 }
 
 /**
- * @brief Metoda odpowiedzialna za rysowanie wykresu
- * 
  * Metoda klasy gameStatisticsWidget odpowiedzialna za rysowanie wykresu,
  * jest wywoływana za każdym razem kiedy następuje zmiana widgetu głownego na widget statystyk
  * Rysuje na wykresie dane z poprzedniej gry. Metoda nie przyjmuje argumentów i nic nie zwraca.
@@ -56,8 +59,6 @@ void gameStatisticsWidget::printChart() {
 }
 
 /**
- * @brief Slot obsługujący kliknięcie przycisku return
- *
  * Slot jest wywoływany podczas naciśnięcia przycisku return,
  * wysyła się wtedy sygnał do okna głównego aby wrócić do widgeta gry
  */

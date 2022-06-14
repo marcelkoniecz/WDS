@@ -1,19 +1,26 @@
 #include "sideWidget.hpp"
+/**
+ * @file
+ *  @brief Definicje metod  klasy SidePanelWidget 
+ * 
+ * Definicje metod oraz slotów klasy SidePanelWidget. Klasa SidePanelWidget jest
+ * klasą pochodą QWidgeta.
+ */
+
 
 /**
- * @brief Konstruktor panela bocznego aplikacji
  *
- * @param[in] parent -- wskaźnik na  klasę widgeta zawierającego grę oraz panel boczny
+ * @param[in] parent -- wskaźnik na  klasę widget'u zawierającego grę oraz panel boczny
  * @param[in] gameWin -- wskaźnik na klasę okna głównego aplikacji
  *
  * Konstruktor przyjmuje jako parametry wskaźniki adresy do głownego okna programu oz 
- * widgetu zawierającego grę oraz panel bocz. 
+ * widget'u zawierającego grę oraz panel bocz. 
  * Początkowo jest ustawiany adres wskaźnika na timer który będzie wyświlany 
- * na panelu bocznym. Następnie jest ustawiany wskaźnik na klase odpowiedzialnąza 
- * połączenie z mikrokontrolerem w celu sprawdzania czy połączenie jest aktywneraz 
- * wskaźnik na wartości z paramentrami gry. Jako kolejne zostaje wywołane setupUi az 
+ * na panelu bocznym. Następnie jest ustawiany wskaźnik na klase odpowiedzialną za 
+ * połączenie z mikrokontrolerem, w celu sprawdzania czy połączenie jest aktywne oraz 
+ * wskaźnik na wartości z paramentrami gry. Jako kolejne zostaje wywołane setupUi oraz 
  * połączenie sygnałów pochodzących od przycisków na penelu bocznym oraz sygnałów z okna
- * głównego takich jak sygnał wyzerowania sygnału, przetłumaczenia widgeta czy zablokania 
+ * głównego takich jak sygnał wyzerowania sygnału, przetłumaczenia widget'u czy zablokowania 
  * przycisków
  */
 SidePanelWidget::SidePanelWidget(mainWidget* parent, gameWindow* gameWin) {
@@ -36,8 +43,6 @@ SidePanelWidget::SidePanelWidget(mainWidget* parent, gameWindow* gameWin) {
 }
 
 /**
- * @brief Slot zatrzymywania gry
- * 
  * Slot jest wywoływany przez sygnał EmitPauzeGame() który jest emitowany przez widget gry (
  * podczas stracenia życia przez jednego gracza) i przez okno główne ekranu (podczas wywołania
  * jednego z dialogów).
@@ -48,11 +53,9 @@ void SidePanelWidget::pauzeGameFun() {
   isStarted = 0;
 }
 /**
- * @brief Slot blokowania przycisków
- *
- * Slot jest wywyoływany przez sygnał EmitBlockButtons() który jest emitowany przezkno 
+ * Slot jest wywyoływany przez sygnał EmitBlockButtons() który jest emitowany przez okno 
  * główne aplikacji. W chwili wywołania następuje sprawdzenie ustawień czy przyciski
- * powinny zostać zablokowane, jeśli tak to przyciski zostją zablokowane.
+ * powinny zostać zablokowane, jeśli tak to przyciski zostają zablokowane.
  */
 void SidePanelWidget::checkBlockButtons() {
   if (gamePar->blockButtons) {
@@ -66,10 +69,8 @@ void SidePanelWidget::checkBlockButtons() {
 }
 
 /**
- * @brief Slot przetłumaczenia widgeta
- *
  * Slot jest wywoływany przez sygnał EmitRetranslate() który jest emitowny przez okno
- * główne aplikacji. W chwili wywołania następuje przetłumaczenie widgeta panela bocznego.
+ * główne aplikacji. W chwili wywołania następuje przetłumaczenie widget'u panela bocznego.
  * Slot nic nie zwraca
  */
 void SidePanelWidget::retranslatePanel() {
@@ -77,8 +78,6 @@ void SidePanelWidget::retranslatePanel() {
 }
 
 /**
- * @brief Slot zakończenia programu
- *
  * Slot jest wywoływany w chwili naciśnięcia przycisku endGame. Powoduje wysłanie sygnału
  * EmitClosing() odpowiedzialnego za zamknięcie aplikacji. Slot nic nie zwraca.
  */
@@ -88,8 +87,6 @@ void SidePanelWidget::EndProgram() {
 }
 
 /**
- * @brief Slot aktualizacji czasu
- *
  * Slot jest wywoływany przez timeout timera. Jest on odpowiedzialny za ustawianie aktualnego
  * czasu na liczniku czasu gry. Slot nic nie zwraca.
  */
@@ -101,12 +98,8 @@ void SidePanelWidget::updateTime() {
 }
 
 /**
- * @brief Slot sprawdzania połączenia z urządzeniem
- *
- * Slot jest wywoływany przez sygn 
- * Jest on odpowiedzialny za blokowanie przycisku startu gry.
- * Slot nic nie zwraca.
- *
+ * Metoda jest odpowiedzialna za blokowanie przycisku startu gry.
+ * Metoda nic nie zwraca.
  */
 void SidePanelWidget::checkConnection() {
   if ((gameUART->isConnected))
@@ -117,8 +110,6 @@ void SidePanelWidget::checkConnection() {
 
 
 /**
- * @brief Slot obługi przycisku Resume
- *
  * Slot obsługi przycisku odpowiedzialny za zatrzymywanie i wznawianie aplikcji, wraz
  * z zmianą nazwy przycisku.
  */
@@ -137,8 +128,6 @@ void SidePanelWidget::writeTime() {
 }
 
 /**
- * @brief Slot odpowiedzialny za wyzerowanie czasu zegara
- *
  * Slot jest wywoływany przez sygnał EmitRestartGame() emitowany przez okno główne aplikacji.
  * Ustawia on wartość timera na 00:00:00. Slot nic nie zwraca.
  *
@@ -150,9 +139,7 @@ void SidePanelWidget::setTimerNull() {
 }
 
 /**
- * @brief Slot końca gry
- *
- * Slot jest wywoływany w chwili kliknięcia przycisku Exit Applicati. 
+ * Slot jest wywoływany w chwili kliknięcia przycisku Exit application. 
  * Zeruje on wartość zegara oraz wysyła sygnał EmitEndGame().
  */
 void SidePanelWidget::EndGame() {
@@ -162,4 +149,5 @@ void SidePanelWidget::EndGame() {
   emit EmitEndGame();
   checkBlockButtons();
 }
+
 

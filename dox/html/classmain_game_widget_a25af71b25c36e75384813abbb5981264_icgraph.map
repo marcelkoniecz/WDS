@@ -1,0 +1,7 @@
+<map id="mainGameWidget::resetPosition" name="mainGameWidget::resetPosition">
+<area shape="rect" id="node2" href="$classmain_game_widget.html#ae9bb1a8308fe76950982af3474be4a0f" title="Metoda sprawdzająca czy nastąpił koniec gry. " alt="" coords="269,5,455,47"/>
+<area shape="rect" id="node4" href="$classmain_game_widget.html#a9b6aaf75182714cb27c46e020b2c76f6" title="Slot wywoływany przez timer. " alt="" coords="784,46,987,73"/>
+<area shape="rect" id="node6" href="$classmain_game_widget.html#a2a2292016b7b2c03682f754024bcca62" title="Metoda aktualizacji widgeta. " alt="" coords="264,122,460,149"/>
+<area shape="rect" id="node3" href="$classmain_game_widget.html#a3421df966b8c06767ac28e3c39ee05ea" title="Metoda odpowiedzialny za &quot;krok&quot; gry. " alt="" coords="508,17,736,43"/>
+<area shape="rect" id="node5" href="$classmain_game_widget.html#ad0b4e7bc28a44195752370bbb56915bd" title="Konstruktor klasy widgetu gry. " alt="" coords="1035,39,1232,80"/>
+</map>

@@ -7,6 +7,7 @@ var searchData=
   ['emitdisconnectdevice',['EmitDisconnectDevice',['../classdis_dialog.html#a3bc2d5d3e693006b4c91fccf57ef72ab',1,'disDialog']]],
   ['emitendgame',['EmitEndGame',['../classmain_game_widget.html#a56c3a3a188113fc62127f75f5b3dacb2',1,'mainGameWidget::EmitEndGame()'],['../class_side_panel_widget.html#ae78f63432a769825f6f6578172d4e115',1,'SidePanelWidget::EmitEndGame()']]],
   ['emitopenstatistics',['EmitOpenStatistics',['../classend_dialog.html#a5ec0ea8b3f521d1f68620fe0e9f4753b',1,'endDialog']]],
+  ['emitpauzegame',['EmitPauzeGame',['../classmain_game_widget.html#adb71b0028361972589838335dd7832fc',1,'mainGameWidget::EmitPauzeGame()'],['../classgame_window.html#ab3b27b15d519f7c7dc44af55ae1d27be',1,'gameWindow::EmitPauzeGame()']]],
   ['emitrestartgame',['EmitRestartGame',['../classend_dialog.html#ae2e0b838ef3df5ce525de7527d187e84',1,'endDialog::EmitRestartGame()'],['../classgame_window.html#a999d830fdc70a0b871695f39bfcc3c1c',1,'gameWindow::EmitRestartGame()']]],
   ['emitretranslate',['EmitRetranslate',['../classgame_window.html#a9725bc29f7f025807cac02498085d1a2',1,'gameWindow']]],
   ['emitsettingssaved',['EmitSettingsSaved',['../classsett_dialog.html#a05f0d6456dca488e706aff5197202d34',1,'settDialog']]],

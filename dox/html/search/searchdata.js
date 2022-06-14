@@ -8,7 +8,8 @@ var indexSectionsWithContent =
   5: "ag",
   6: "ehmp",
   7: "gms",
-  8: "p"
+  8: "p",
+  9: "d"
 };
 
 var indexSectionNames =
@@ -21,7 +22,8 @@ var indexSectionNames =
   5: "enums",
   6: "enumvalues",
   7: "related",
-  8: "defines"
+  8: "defines",
+  9: "pages"
 };
 
 var indexSectionLabels =
@@ -34,6 +36,7 @@ var indexSectionLabels =
   5: "Wyliczenia",
   6: "Wartości wyliczeń",
   7: "Przyjaciele",
-  8: "Definicje"
+  8: "Definicje",
+  9: "Strony"
 };
 

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Aplikacja gry: Dokumentacja klasy disDialog</title>
+<title>Płytki odbijające piłkę: Dokumentacja klasy disDialog</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Aplikacja gry
+   <div id="projectname">Płytki odbijające piłkę
    </div>
   </td>
  </tr>
@@ -125,7 +125,7 @@ Sygnały</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:ae7369038843ff197ef07eb69b4d0f9ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdis_dialog.html#ae7369038843ff197ef07eb69b4d0f9ac">disDialog</a> (<a class="el" href="classgame_window.html">gameWindow</a> *parent=nullptr)</td></tr>
-<tr class="memdesc:ae7369038843ff197ef07eb69b4d0f9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor dialogu ustawień  <a href="#ae7369038843ff197ef07eb69b4d0f9ac">Więcej...</a><br /></td></tr>
+<tr class="memdesc:ae7369038843ff197ef07eb69b4d0f9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor dialogu rozłączenia.  <a href="#ae7369038843ff197ef07eb69b4d0f9ac">Więcej...</a><br /></td></tr>
 <tr class="separator:ae7369038843ff197ef07eb69b4d0f9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31a157181a0a70ef13226c7cdded31d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdis_dialog.html#a31a157181a0a70ef13226c7cdded31d8">StartDialog</a> (QString connectedDev)</td></tr>
 <tr class="memdesc:a31a157181a0a70ef13226c7cdded31d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda wyświetlająca dany stan połączenia.  <a href="#a31a157181a0a70ef13226c7cdded31d8">Więcej...</a><br /></td></tr>
@@ -135,7 +135,7 @@ Metody publiczne</h2></td></tr>
 <div class="textblock"><p>Klasa reprezentująca dialog rozłączenia. </p>
 <p>Klasa reprezentująca dialog rozłączenia, ukazuje się po wybraniu opcji z belki głównej. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="dialogs_8hpp_source.html#l00119">119</a> pliku <a class="el" href="dialogs_8hpp_source.html">dialogs.hpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="dialogs_8hpp_source.html#l00148">148</a> pliku <a class="el" href="dialogs_8hpp_source.html">dialogs.hpp</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="ae7369038843ff197ef07eb69b4d0f9ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7369038843ff197ef07eb69b4d0f9ac">&#9670;&nbsp;</a></span>disDialog()</h2>
@@ -153,7 +153,7 @@ Metody publiczne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Konstruktor dialogu ustawień </p>
+<p>Konstruktor dialogu rozłączenia. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>&ndash; Wskaźnik na klasę okna głównego aplikacji</td></tr>
@@ -162,9 +162,9 @@ Metody publiczne</h2></td></tr>
 </dl>
 <p>Konstruktor za pomocą setupUi oraz dziediczonej klasy, tworzy dialog stworzony w qtDesignerze. Na końcu następuje połączenie sygnału przetłumaczenia z wywołaniem slotu retlasate(). </p>
 
-<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00273">273</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00248">248</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
 
-<p class="reference">Odwołuje się do <a class="el" href="dialogs_8cpp_source.html#l00025">settDialog::retranslate()</a>.</p>
+<p class="reference">Odwołuje się do <a class="el" href="dialogs_8cpp_source.html#l00028">settDialog::retranslate()</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
@@ -201,7 +201,7 @@ Oto graf wywołań dla tej funkcji:</div>
 </div><div class="memdoc">
 
 <p>Sygnał rozłączenia urządzenia. </p>
-<p>Sygnał wysyłany podczas wciśnięcia przycisku rozłączenia, po wysłaniu sygnału gra rozłącza się z aktualnie połączonym mikrokontrolerem. </p>
+<p>Sygnał wysyłany podczas wciśnięcia przycisku rozłączenia, po wysłygnału gra rozłącza się z aktualnie połączonym mikrokontrolerem. </p>
 
 </div>
 </div>
@@ -231,7 +231,7 @@ Oto graf wywołań dla tej funkcji:</div>
 <p>Slot powrotu. </p>
 <p>W momencie klikniecia przycisku return zamykany jest dialog rozłączania. Slot nie przyjmuje żadnych argumentów i nic nie zwraca. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00328">328</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00296">296</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
 
 </div>
 </div>
@@ -261,7 +261,7 @@ Oto graf wywołań dla tej funkcji:</div>
 <p>Slot rozłączania podłączonego urządzenia. </p>
 <p>W momencie kliknięcia przycisku disconnect emitowany jest sygnał EmitDisconnectDevice oraz zamykany jest dialog rozłączania urządzenia. Slot nie przyjumje argumentów i nic nie zwraca. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00317">317</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00285">285</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
 
 </div>
 </div>
@@ -291,7 +291,7 @@ Oto graf wywołań dla tej funkcji:</div>
 <p>Slot zmiany języka. </p>
 <p>Gdy klasa okna głównego wyśle sygnał że należy przeprowadzić translacje uruchomiony zostaje poniższy slot. Slot nie przyjmuje żadnych parametrów oraz nic nie zwraca. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00285">285</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00258">258</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
 
 </div>
 </div>
@@ -320,9 +320,9 @@ Oto graf wywołań dla tej funkcji:</div>
 </dl>
 <p>Metoda wyświetla w polu lineEdit aktualną nazwe urządzenia oraz w zależności czy jest połączone urządzenie czy nie pozwala rozłąc je. Metoda jako argument przyjmuje QString który jest nazwą aktualnie połączonego urządzenia i nic nie zwraca. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00300">300</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="dialogs_8cpp_source.html#l00270">270</a> pliku <a class="el" href="dialogs_8cpp_source.html">dialogs.cpp</a>.</p>
 
-<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00197">gameWindow::on_actionDisconnect_triggered()</a>.</p>
+<p class="reference">Odwołania w <a class="el" href="game_window_8cpp_source.html#l00252">gameWindow::on_actionDisconnect_triggered()</a>.</p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">

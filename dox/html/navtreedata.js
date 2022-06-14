@@ -1,6 +1,9 @@
 var NAVTREE =
 [
-  [ "Aplikacja gry", "index.html", [
+  [ "Płytki odbijające piłkę", "index.html", [
+    [ "Dokumentacja projektu płytki sterowanej za pomocą akcelerometru", "index.html", [
+      [ "Opis programu", "index.html#Opis", null ]
+    ] ],
     [ "Klasy", "annotated.html", [
       [ "Lista klas", "annotated.html", "annotated_dup" ],
       [ "Indeks klas", "classes.html", null ],

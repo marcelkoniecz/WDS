@@ -1,4 +1,6 @@
 <map id="gameStatisticsWidget::printChart" name="gameStatisticsWidget::printChart">
 <area shape="rect" id="node2" href="$classgame_window.html#abd54e8cb424a0c92cbb16f5fcbbc5680" title="Slot odpowiedzialny za zmianę stackwidgeta na widget z statystykami. " alt="" coords="204,5,396,47"/>
+<area shape="rect" id="node4" href="$classgame_statistics_widget.html#a20abb1f53436507455add51cf55c229e" title="Slot zmiany języka. " alt="" coords="225,71,375,112"/>
 <area shape="rect" id="node3" href="$classgame_window.html#aa7c1120c524be0249920baf1c4db650f" title="Konstruktor nowego okna gry. " alt="" coords="444,13,632,39"/>
+<area shape="rect" id="node5" href="$classgame_statistics_widget.html#a5351156315f4359449dd833a658af89f" title="Konstruktor widgetu statystyk. " alt="" coords="459,71,617,112"/>
 </map>

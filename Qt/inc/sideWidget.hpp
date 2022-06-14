@@ -19,8 +19,10 @@
 #include "gameWindow.hpp"
 #include "gameParameters.hpp"
 #include "ui_sidePanelWidget.h"
+
 /**
- * @brief Plik nagłówkowy klasy SidePanelWidget
+ *@file
+ *  @brief Definicja klasy SidePanelWidget
  *
  * Plik nagłówkowy klasy SidePanelWidget
  *
@@ -77,18 +79,50 @@ private:
      */
     bool isStarted = false;
 public:
-
+    /**
+     * @brief Konstruktor panela bocznego aplikacji
+     */
     SidePanelWidget(mainWidget* parent = nullptr, gameWindow* gameWin = nullptr);
+    /**
+     * @brief Metoda sprawdzania połączenia z urządzeniem
+     *
+     */
     void checkConnection();
 
 public slots:
+    /**
+    * @brief Slot zakończenia programu 
+     *
+     */
     void EndProgram();
+    /**
+     * @brief Slot aktualizacji czasu
+     */
     void updateTime();
+    /**
+     * @brief Slot obługi przycisku Resume
+     */
     void writeTime();
+    /**
+     * @brief Slot końca gry
+     */
     void EndGame();
+    /**
+     * @brief Slot odpowiedzialny za wyzerowanie czasu zegara
+     */
     void setTimerNull();
+    /**
+     * @brief Slot przetłumaczenia widgeta
+     *
+     */
     void retranslatePanel();
+    /**
+    * @brief Slot blokowania przycisków
+     */
     void checkBlockButtons();
+    /**
+     * @brief Slot zatrzymywania gry
+     */
     void pauzeGameFun();
 signals:
     /**

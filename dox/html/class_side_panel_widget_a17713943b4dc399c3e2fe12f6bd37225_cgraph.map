@@ -1,9 +1,10 @@
 <map id="SidePanelWidget::SidePanelWidget" name="SidePanelWidget::SidePanelWidget">
-<area shape="rect" id="node2" href="$class_side_panel_widget.html#aa24c83e3d9febfd47e810563458a8926" title="Slot blokowania przycisków. " alt="" coords="496,49,695,90"/>
-<area shape="rect" id="node3" href="$class_side_panel_widget.html#a0667394b67fa642b05a37d8087fbe3c3" title="Slot końca gry. " alt="" coords="250,107,438,133"/>
-<area shape="rect" id="node4" href="$class_side_panel_widget.html#a2e732225cd6430685c65211e4f5ffc75" title="Slot odpowiedzialny za wyzerowanie czasu zegara. " alt="" coords="493,220,697,247"/>
-<area shape="rect" id="node5" href="$class_side_panel_widget.html#a016153e76b4b75567913496a966cf890" title="Slot zakończenia programu. " alt="" coords="243,157,445,184"/>
-<area shape="rect" id="node6" href="$class_side_panel_widget.html#aa2d4f3edb024980d4799b4d96d4c6b9c" title="Slot przetłumaczenia widgeta. " alt="" coords="249,209,439,250"/>
-<area shape="rect" id="node7" href="$class_side_panel_widget.html#ad8a1275cd30793be9ac0f34ebd26309c" title="Slot aktualizacji czasu. " alt="" coords="245,275,443,301"/>
-<area shape="rect" id="node8" href="$class_side_panel_widget.html#a5b022971e5298e57262dae3d526343e2" title="Slot obługi przycisku Resume. " alt="" coords="251,5,437,32"/>
+<area shape="rect" id="node2" href="$class_side_panel_widget.html#aa24c83e3d9febfd47e810563458a8926" title="Slot blokowania przycisków. " alt="" coords="516,34,715,75"/>
+<area shape="rect" id="node3" href="$class_side_panel_widget.html#a0667394b67fa642b05a37d8087fbe3c3" title="Slot końca gry. " alt="" coords="260,92,448,119"/>
+<area shape="rect" id="node4" href="$class_side_panel_widget.html#a2e732225cd6430685c65211e4f5ffc75" title="Slot odpowiedzialny za wyzerowanie czasu zegara. " alt="" coords="513,231,717,257"/>
+<area shape="rect" id="node5" href="$class_side_panel_widget.html#a016153e76b4b75567913496a966cf890" title="Slot zakończenia programu. " alt="" coords="253,143,455,169"/>
+<area shape="rect" id="node6" href="$class_side_panel_widget.html#a528a9d4ceb4122c139abef5eb662815e" title="Slot zatrzymywania gry. " alt="" coords="243,193,465,220"/>
+<area shape="rect" id="node7" href="$class_side_panel_widget.html#aa2d4f3edb024980d4799b4d96d4c6b9c" title="Slot przetłumaczenia widgeta. " alt="" coords="259,245,449,286"/>
+<area shape="rect" id="node8" href="$class_side_panel_widget.html#ad8a1275cd30793be9ac0f34ebd26309c" title="Slot aktualizacji czasu. " alt="" coords="255,311,453,337"/>
+<area shape="rect" id="node9" href="$class_side_panel_widget.html#a5b022971e5298e57262dae3d526343e2" title="Slot obługi przycisku Resume. " alt="" coords="261,41,447,68"/>
 </map>

@@ -7,6 +7,7 @@ var class_side_panel_widget =
     [ "EmitEndGame", "class_side_panel_widget.html#ae78f63432a769825f6f6578172d4e115", null ],
     [ "EndGame", "class_side_panel_widget.html#a0667394b67fa642b05a37d8087fbe3c3", null ],
     [ "EndProgram", "class_side_panel_widget.html#a016153e76b4b75567913496a966cf890", null ],
+    [ "pauzeGameFun", "class_side_panel_widget.html#a528a9d4ceb4122c139abef5eb662815e", null ],
     [ "retranslatePanel", "class_side_panel_widget.html#aa2d4f3edb024980d4799b4d96d4c6b9c", null ],
     [ "setTimerNull", "class_side_panel_widget.html#a2e732225cd6430685c65211e4f5ffc75", null ],
     [ "updateTime", "class_side_panel_widget.html#ad8a1275cd30793be9ac0f34ebd26309c", null ],

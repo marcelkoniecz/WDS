@@ -1,9 +1,14 @@
 #include "dialogs.hpp"
 
+/**
+ * @file
+ *  @brief Definicje metod dialogów
+ * 
+ * Definicje metod oraz slotów dialogów. Dialogi są
+ * klasą pochodą klasy QDialog.
+ */
 
 /**
- * @brief Konstruktor dialogu ustawień
- *
  * @param[in] parent -- Wskaźnik na klasę okna głównego aplikacji
  *
  * Konstruktor kopiuje adres wskaźnika ustawień gry okna głównego do pola klasy ptrGameSett
@@ -17,8 +22,6 @@ settDialog::settDialog(gameWindow* parent) {
 }
 
 /**
- * @brief Slot zmiany języka
- *
  * Gdy klasa okna głównego wyśle sygnał że należy przeprowadzić translacje uruchomiony
  * zostaje poniższy slot. Slot nie przyjmuje żadnych parametrów oraz nic nie zwraca.
  */
@@ -27,8 +30,6 @@ void settDialog::retranslate() {
 }
 
 /**
- * @brief Metoda ładowania parametrów ustawień
- *
  * Metoda odczytuje wartości wskaźnika do ustawień aplikacji, na podstawie odczytanych
  * parametrów  dialog ustawień wyświetla odpowiednie opcje które są w danym momencie wybrane.
  * Metoda nie przyjmuje żadnych parametrów oraz nic nie zwr. 
@@ -76,11 +77,8 @@ void settDialog::loadParam() {
 }
 
 /**
- * @brief Slot obsługujący kliknięcie przycisku return
- *
  *  Slot jest wywyoływany gdy nie mają zostać zapisane żadne ustawienia.
  *  Slot nie przyjmuje argumentów i nic nie zwraca.
- *
  */
 void settDialog::on_returnButton_clicked() {
   if (!ptrGameSett->rndBcnPlts) {
@@ -93,8 +91,6 @@ void settDialog::on_returnButton_clicked() {
 }
 
 /**
- * @brief Slot obsługujący klikniecie przycisku Save
- *
  * Slot jest wywoływany w momencie gdy ustawienia mają zostać zapie. 
  * W momencie wywołania do struktury ustawień programu zostają zapisane wybrane opcje.
  * Slot nie przyjmuje argumentów i nic nie zwraca.
@@ -121,8 +117,6 @@ void settDialog::on_saveButton_clicked() {
 
 
 /**
- * @brief Konstruktor dialogu końca gry
- *
  * @param[in] parent -- Wskaźnik na klasę okna głównego aplikacji
  *
  * Konstruktor za pomocą setupUi tworzy dialog stworzony w qtDesignerze. Na końcu następuje
@@ -135,8 +129,6 @@ endDialog::endDialog(gameWindow* parent) {
 }
 
 /**
- * @brief Slot zmiany języka
- *
  * Gdy klasa okna głównego wyśle sygnał że należy przeprowadzić translacje uruchomiony
  * zostaje poniższy slot. Slot nie przyjmuje żadnych parametrów oraz nic nie zwraca.
  */
@@ -145,8 +137,6 @@ void endDialog::retranslate() {
 }
 
 /**
- * @brief Slot kliknięcia przycisku statystyk
- *
  * W momencie kliknięcia przycisku ustawienia zostaje wysłany sygnał EmitOpenStatistics
  * oraz zostaje zamknięty dialog końca . 
  *  Slot nie przyjmuje żadnych parametrów oraz nic nie zwr. 
@@ -156,7 +146,6 @@ void endDialog::on_statisticsButton_clicked() {
   this->close();
 }
 /**
- * @brief Slot kliknięcia przycisku Restart
  * W momencie kliknięcia przyciku restart zostaje wysłany sygnał EmitRestarme 
  * oraz zostaje zamknięty dialog końca gry.
  *  Slot nie przyjmuje żadnych parametrów oraz nic nie zwraca.
@@ -167,8 +156,6 @@ void endDialog::on_restartButton_clicked() {
 }
 
 /**
- * @brief Slot kliknięcia przycisku Restart
- *
  *  W momencie kliknięcia przycisku exit zostaje wysłany sygnał EmitClosing
  * oraz zostaje zamknięty dialog końca gry.
  *  Slot nie przyjmuje żadnych parametrów oraz nic nie zwr. 
@@ -181,8 +168,6 @@ void endDialog::on_exitButton_clicked() {
 
 
 /**
- * @brief Konstruktor dialogu ustawień
- *
  * @param[in] parent -- Wskaźnik na klasę okna głównego aplikacji
  *
  * Konstruktor pomocą setupUi tworzy dialog stworzony w qtDesignerze i blokuje możliwość
@@ -197,8 +182,6 @@ conDialog::conDialog(gameWindow* parent) {
 }
 
 /**
- * @brief Slot zmiany języka
- *
  * Gdy klasa okna głównego wyśle sygnał że należy przeprowadzić translacje uruchomiony
  * zostaje poniższy slot. Slot nie przyjmuje żadnych parametrów oraz nic nie zwraca.
  */
@@ -207,8 +190,6 @@ void conDialog::retranslate() {
 }
 
 /**
- * @brief Slot kliknięcia przycisku cancel
- *
  * W momencie kliknieia przycisku cencel dialog połączenia się zamyka.
  * Slot nie przyjmuje żadnych parametrów oraz nic nie zwraca.
  */
@@ -217,8 +198,6 @@ void conDialog::on_cancelButton_clicked() {
 }
 
 /**
- * @brief Slot wyszukania dostępnych urządzeń
- *
  * W momencie naciśnięcia przycisku Search device następuje wyszukanie urzązeń 
  * połączonych do kompuetera. Jeśli żadne urządzenie nie zostało znalezione to pojawia się
  * informacja że żadne urządzenie nie zostało znalezione.
@@ -241,8 +220,6 @@ void conDialog::on_searchDeviceButton_clicked() {
 }
 
 /**
- * @brief  Slot połączenia z urządzenia
- *
  * W chwili naciśnięcia przycisku connect następuje wysłanie sygnału EmitChonDev 
  * z nazwą urządzenia. Jeśli nie zostało znalezione żadne urządzenie to nasępuje tylko
  * zamknięcie okna dialogu.
@@ -263,8 +240,6 @@ void conDialog::on_connectButton_clicked() {
 
 
 /**
- * @brief Konstruktor dialogu ustawień
- *
  * @param[in] parent -- Wskaźnik na klasę okna głównego aplikacji
  *
  * Konstruktor za pomocą setupUi oraz dziediczonej klasy, tworzy dialog stworzony w qtDesignerze.
@@ -277,8 +252,6 @@ disDialog::disDialog(gameWindow* parent) {
 }
 
 /**
- * @brief Slot zmiany języka
- *
  * Gdy klasa okna głównego wyśle sygnał że należy przeprowadzić translacje uruchomiony
  * zostaje poniższy slot. Slot nie przyjmuje żadnych parametrów oraz nic nie zwraca.
  */
@@ -287,10 +260,7 @@ void disDialog::retranslate() {
 }
 
 /**
- * @brief Metoda wyświetlająca dany stan połączenia
- *
  * @param[in] connectedDev-- Nazwa aktualnie połączonego urządzenia
- *
  *
  * Metoda wyświetla w polu lineEdit aktualną nazwe urządzenia oraz w zależności czy
  * jest połączone urządzenie czy nie pozwala rozłąc je. 
@@ -308,8 +278,6 @@ void disDialog::StartDialog(QString connectedDev) {
 }
 
 /**
- * @brief Slot rozłączania podłączonego urządzenia
- *
  * W momencie kliknięcia przycisku disconnect emitowany jest sygnał EmitDisconnectDevice
  * oraz zamykany jest dialog rozłączania urządzenia.
  * Slot nie przyjumje argumentów i nic nie zwraca.
@@ -320,7 +288,7 @@ void disDialog::on_disconnectButton_clicked() {
 }
 
 /**
- * @brief Slot powrotu
+
  *
  * W momencie klikniecia przycisku return zamykany jest dialog rozłączania.
  * Slot nie przyjmuje żadnych argumentów i nic nie zwraca.

@@ -4,7 +4,7 @@
 /**
  *
  * @file
- * @brief Plik nagłówkowy zawierający klasę imageParameters
+ * @brief Definicja klasy imageParameters
  *
  * Plik zawierający klasę z parametrami obrazów gry.
  */
